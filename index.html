@@ -1,284 +1,192 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#11110f" />
-  <title>Pedal nos Bálcãs — guia real de uma viagem de bicicleta</title>
-  <meta name="description" content="14 dias, 7 países/territórios e quase 700 km. Um roteiro real pelos Bálcãs, com mapas, histórias, perrengues, comida e logística." />
-  <style>
-:root{--ink:#11110f;--paper:#f2eee4;--paper2:#e8e1d4;--red:#d84c34;--green:#29483d;--muted:#777267;--line:rgba(17,17,15,.16);--white:#fff;--shadow:0 24px 70px rgba(17,17,15,.16)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}.site-shell{overflow:hidden}.section-grid{display:grid;grid-template-columns:minmax(18px,1fr) repeat(12,minmax(0,76px)) minmax(18px,1fr);column-gap:20px}.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 4vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(242,238,228,.92);backdrop-filter:blur(16px);z-index:20}.brand{color:inherit;text-decoration:none;font-weight:850;letter-spacing:.08em;font-size:13px;display:flex;gap:10px;align-items:center}.brand-dot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px rgba(216,76,52,.12)}.nav{display:flex;align-items:center;gap:24px}.nav a,.chat-link{font-size:13px;color:inherit;text-decoration:none;border:0;background:none;cursor:pointer}.chat-link{padding:10px 14px;border:1px solid var(--ink);border-radius:999px}.hero{min-height:760px;padding:72px 0 52px;position:relative}.hero-copy{grid-column:2/9;z-index:2}.eyebrow,.section-kicker,.mini-label{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(58px,8vw,112px);line-height:.89;letter-spacing:-.055em;margin:18px 0 26px;max-width:900px}.hero h1 em,.route-intro h2 em,.principles h2 em,.chat-promo h2 em{font-weight:400;color:var(--red)}.hero-deck{font-size:20px;line-height:1.5;max-width:650px;margin:0;color:#3f3c36}.hero-actions{display:flex;gap:12px;margin-top:32px}.btn{padding:14px 18px;border-radius:999px;border:1px solid var(--ink);font-weight:750;text-decoration:none;color:inherit;cursor:pointer;background:transparent}.btn.primary{background:var(--ink);color:var(--paper)}.hero-stats{grid-column:10/14;align-self:start;margin-top:22px;border-top:2px solid var(--ink);padding-top:16px}.hero-stamp{display:inline-block;background:var(--red);color:#fff;padding:7px 10px;font-size:10px;font-weight:900;letter-spacing:.12em;transform:rotate(1.8deg);margin-bottom:28px}.stat-row{display:flex;align-items:flex-end;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}.stat-row strong{font-family:Georgia,serif;font-size:44px;font-weight:500;line-height:1}.stat-row span{font-size:13px;color:#514d45;padding-bottom:5px}.stat-row.small strong{font-size:32px}.hero-route{grid-column:7/15;margin-top:-10px;align-self:end;opacity:.9}.hero-route svg{width:100%;overflow:visible}.hero-route .terrain{fill:none;stroke:rgba(41,72,61,.16);stroke-width:78;stroke-linecap:round}.hero-route .route-path{fill:none;stroke:var(--red);stroke-width:4;stroke-dasharray:7 10;stroke-linecap:round}.hero-route .route-node{fill:var(--paper);stroke:var(--ink);stroke-width:3}.hero-route .route-node.strong{fill:var(--ink)}.hero-route text{font-size:14px;font-weight:800;fill:var(--ink)}.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink);color:var(--paper);overflow:hidden}.ticker-track{display:flex;gap:20px;white-space:nowrap;padding:14px 4vw;font-size:11px;font-weight:800;letter-spacing:.09em}.ticker i{color:var(--red);font-style:normal}.route-section{padding:100px 0 120px}.route-section>.section-kicker{grid-column:2/5}.route-intro{grid-column:5/14}.route-intro h2,.section-heading h2,.principles h2,.chat-promo h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(42px,5vw,72px);line-height:.98;letter-spacing:-.045em;margin:0}.route-intro p{font-size:17px;line-height:1.6;max-width:720px;color:#4f4b43;margin:26px 0 0}.map-card{grid-column:2/14;margin-top:52px;background:#d8d7c8;border:1px solid rgba(17,17,15,.2);box-shadow:var(--shadow)}.map-topline{height:58px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;background:#e6e2d8;border-bottom:1px solid rgba(17,17,15,.16);font-size:11px;font-weight:850;letter-spacing:.08em}.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:8px}.map-switches{display:flex;gap:6px}.map-toggle{border:0;border-radius:999px;padding:8px 12px;background:rgba(17,17,15,.08);cursor:pointer;font-size:11px}.map-toggle.active{background:var(--ink);color:#fff}.map-canvas{height:580px;position:relative;background:radial-gradient(circle at 28% 32%,rgba(255,255,255,.6),transparent 24%),linear-gradient(135deg,#cfd2c4,#e4dfd0)}.map-canvas svg{width:100%;height:100%}.coastline path{fill:none;stroke:rgba(41,72,61,.35);stroke-width:80;stroke-linecap:round}.map-segment{fill:none;stroke:var(--red);stroke-width:5;stroke-linecap:round}.map-segment.transfer{stroke:var(--ink);stroke-width:3;stroke-dasharray:9 8}.map-point{fill:var(--paper);stroke:var(--ink);stroke-width:3;cursor:pointer}.map-point.active{fill:var(--red)}.map-label{font-size:14px;font-weight:800;fill:var(--ink)}.map-legend{position:absolute;left:18px;bottom:18px;display:flex;gap:14px;background:rgba(242,238,228,.92);padding:10px 12px;font-size:11px}.map-legend span{display:flex;align-items:center;gap:6px}.map-legend b{width:18px;height:3px;display:inline-block;background:var(--red)}.map-legend .legend-transfer{background:var(--ink);height:2px}.map-legend .legend-stop{width:8px;height:8px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}.map-card-float{position:absolute;right:22px;top:22px;width:min(300px,42vw);background:var(--paper);padding:18px;border:1px solid var(--ink);box-shadow:8px 8px 0 rgba(17,17,15,.16)}.map-card-float strong{display:block;font-family:Georgia,serif;font-size:28px;margin:8px 0 6px}.map-card-float span{font-size:12px;line-height:1.4;color:#565147}.days-section{padding:100px 0 80px;background:#e8e1d4;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.section-heading>.section-kicker{grid-column:2/5}.section-heading h2{grid-column:5/10}.section-heading p{grid-column:10/14;font-size:16px;line-height:1.55;margin:8px 0;color:#4f4b43}.days-strip{display:flex;gap:12px;overflow-x:auto;padding:42px 4vw 10px;scrollbar-width:none}.days-strip::-webkit-scrollbar{display:none}.day-card{min-width:260px;max-width:260px;height:330px;background:var(--paper);border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:.2s}.day-card:hover,.day-card.active{transform:translateY(-6px);border-color:var(--ink);box-shadow:8px 8px 0 rgba(17,17,15,.12)}.day-card .num{font-family:Georgia,serif;font-size:54px;color:var(--red)}.day-card .route{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.day-card h3{font-family:Georgia,serif;font-size:28px;line-height:1;margin:12px 0}.day-card p{font-size:13px;line-height:1.45;color:#5c584f}.day-card .km{font-size:12px;font-weight:800}.day-feature{background:var(--ink);color:var(--paper);padding:110px 0 0}.day-hero{padding-bottom:70px}.day-number{grid-column:2/4;font-family:Georgia,serif;font-size:150px;line-height:.8;color:var(--red)}.day-headline{grid-column:4/10}.day-headline h2{font-family:Georgia,serif;font-size:clamp(60px,7vw,100px);font-weight:500;line-height:.88;letter-spacing:-.05em;margin:14px 0 18px}.day-headline p{font-size:18px;line-height:1.55;color:#c8c2b8;max-width:620px}.eyebrow.light{color:#d7d0c3}.day-metrics{grid-column:11/14;align-self:end;border-top:1px solid rgba(255,255,255,.3)}.day-metrics div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16)}.day-metrics span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#aaa399}.day-metrics strong{font-size:15px}.photo-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1px;background:#2b2a26}.photo-panel{background:#191916}.photo-media{height:410px;position:relative;overflow:hidden;background:#0e0e0d}.photo-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.04) contrast(1.03)}.photo-label{position:absolute;left:18px;bottom:18px;z-index:2;font-size:10px;font-weight:900;letter-spacing:.12em;color:white;background:rgba(17,17,15,.72);padding:8px 9px}.photo-media:after{content:"";position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.58))}.photo-panel p{font-family:Georgia,serif;font-size:16px;line-height:1.4;padding:14px 18px 8px;margin:0;color:#d8d2c7}.photo-credit{display:block;padding:0 18px 18px;font-size:11px;color:#948d81}.photo-credit a{color:inherit}.day-body{padding:90px 0 120px}.theme-menu{grid-column:2/4;display:flex;flex-direction:column;align-items:flex-start;gap:4px}.theme-menu .mini-label{margin-bottom:12px;color:#888176}.theme{border:0;background:none;color:#8f897f;padding:7px 0;cursor:pointer;font-size:14px}.theme.active{color:var(--paper);font-weight:800}.story-card{grid-column:4/11}.story-meta{display:flex;gap:10px;font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--red);margin-bottom:16px}.story-card h3{font-family:Georgia,serif;font-size:46px;font-weight:500;line-height:1.02;letter-spacing:-.035em;margin:0 0 24px}.story-card p{font-family:Georgia,serif;font-size:20px;line-height:1.58;color:#d7d0c3}.source-chip{display:inline-block;margin-top:14px;border:1px solid rgba(255,255,255,.25);padding:9px 11px;border-radius:999px;color:#aaa399;font-size:11px}.side-note{grid-column:12/14;border-top:1px solid rgba(255,255,255,.32);padding-top:14px}.side-note .mini-label{color:#8f897f}.side-note p{font-size:14px;line-height:1.55;color:#c8c2b8}.ask-inline{border:0;background:var(--red);color:white;text-align:left;padding:12px;cursor:pointer;font-size:12px;font-weight:800}.principles{padding:120px 0}.principles>.section-kicker{grid-column:2/5}.principles>h2{grid-column:5/14}.principle-grid{grid-column:5/14;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:46px;border:1px solid var(--line)}.principle-grid>div{background:var(--paper);padding:28px}.principle-grid span{font-family:Georgia,serif;color:var(--red);font-size:34px}.principle-grid h3{font-family:Georgia,serif;font-size:26px;margin:20px 0 10px}.principle-grid p{font-size:14px;line-height:1.55;color:#575248}.chat-promo{background:var(--green);color:var(--paper);padding:95px 0}.chat-promo-copy{grid-column:2/10}.chat-promo h2{font-size:clamp(48px,6vw,82px)}.chat-promo h2 em{color:#f2ac91}.chat-promo p{max-width:650px;font-size:17px;line-height:1.6;color:#d6ded8}.chat-demo{grid-column:10/14;align-self:end;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;background:var(--paper);color:var(--ink);border:0;padding:18px;text-align:left;cursor:pointer;box-shadow:10px 10px 0 rgba(0,0,0,.18)}.chat-avatar{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;font-weight:900}.chat-demo b{display:block}.chat-demo small{display:block;margin-top:4px;color:#756f65}.chat-demo .arrow{font-size:24px}.footer{display:flex;justify-content:space-between;gap:20px;padding:26px 4vw;background:var(--ink);color:#b6afa3;border-top:1px solid rgba(255,255,255,.1);font-size:11px;letter-spacing:.06em}.chat-backdrop{position:fixed;inset:0;background:rgba(17,17,15,.45);opacity:0;pointer-events:none;transition:.25s;z-index:40}.chat-drawer{position:fixed;right:0;top:0;height:100vh;width:min(470px,100vw);background:#f4f0e7;z-index:50;transform:translateX(100%);transition:.32s ease;display:flex;flex-direction:column;box-shadow:-30px 0 70px rgba(17,17,15,.22)}.chat-drawer.open{transform:translateX(0)}.chat-backdrop.open{opacity:1;pointer-events:auto}.chat-header{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.chat-header strong{font-family:Georgia,serif;font-size:24px}.chat-header button{border:0;background:none;font-size:34px;cursor:pointer}.chat-context{display:flex;gap:7px;padding:12px 20px;border-bottom:1px solid var(--line);overflow-x:auto}.context-chip{font-size:10px;font-weight:850;letter-spacing:.06em;border:1px solid var(--line);border-radius:999px;padding:6px 8px}.chat-messages{flex:1;overflow:auto;padding:20px;display:flex;flex-direction:column;gap:12px}.msg{max-width:86%;padding:12px 14px;line-height:1.45;font-size:14px}.msg.bot{align-self:flex-start;background:white;border:1px solid var(--line)}.msg.user{align-self:flex-end;background:var(--ink);color:var(--paper)}.suggestions{display:flex;gap:7px;overflow-x:auto;padding:0 20px 14px}.suggestions button{white-space:nowrap;border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 10px;font-size:11px;cursor:pointer}.chat-input{display:flex;gap:8px;padding:14px 20px 20px;border-top:1px solid var(--line)}.chat-input input{flex:1;border:1px solid var(--line);background:white;padding:12px}.chat-input button{border:0;background:var(--red);color:white;font-weight:800;padding:0 16px;cursor:pointer}
-@media(max-width:900px){.section-grid{grid-template-columns:18px repeat(6,minmax(0,1fr)) 18px;column-gap:12px}.topbar{height:62px}.nav a{display:none}.nav{gap:8px}.chat-link{font-size:11px;padding:8px 10px}.hero{min-height:auto;padding:48px 0 34px}.hero-copy{grid-column:2/8}.hero h1{font-size:clamp(54px,17vw,86px)}.hero-deck{font-size:17px}.hero-stats{grid-column:2/8;margin-top:46px;display:grid;grid-template-columns:repeat(2,1fr);gap:0 14px}.hero-stamp{grid-column:1/3;width:max-content}.hero-route{grid-column:1/9;margin-top:20px}.route-section>.section-kicker,.section-heading>.section-kicker,.principles>.section-kicker{grid-column:2/8;margin-bottom:22px}.route-intro,.section-heading h2,.section-heading p,.principles>h2{grid-column:2/8}.section-heading p{margin-top:18px}.map-card{grid-column:1/9}.map-canvas{height:460px}.map-switches{display:none}.map-card-float{right:12px;top:12px;width:70%;}.day-number{grid-column:2/4;font-size:94px}.day-headline{grid-column:2/8;margin-top:28px}.day-headline h2{font-size:64px}.day-metrics{grid-column:2/8;margin-top:30px}.photo-grid{grid-template-columns:1fr;gap:1px}.photo-media{height:360px}.theme-menu{grid-column:2/8;flex-direction:row;overflow-x:auto;padding-bottom:18px}.theme{white-space:nowrap;margin-right:12px}.story-card{grid-column:2/8}.story-card h3{font-size:38px}.story-card p{font-size:18px}.side-note{grid-column:2/8;margin-top:40px}.principle-grid{grid-column:2/8;grid-template-columns:1fr}.chat-promo-copy{grid-column:2/8}.chat-demo{grid-column:2/8;margin-top:34px}.footer{flex-direction:column}.hero-actions{flex-direction:column;align-items:flex-start}.days-strip{padding-left:18px}.day-card{min-width:235px}.map-legend{flex-wrap:wrap}.ticker-track{font-size:10px}}
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#141311">
+<title>Pedal nos Bálcãs — 14 dias sobre duas rodas</title>
+<meta name="description" content="Um guia visual e narrativo de uma viagem real pelos Bálcãs: mapa Garmin, fotos, histórias, cultura, comida e logística.">
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{--paper:#f4efe5;--ink:#171613;--muted:#726d63;--red:#e45135;--green:#29443b;--sand:#dfd4c0;--line:rgba(23,22,19,.15);--white:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit} .serif{font-family:Georgia,"Times New Roman",serif}
+.nav{position:fixed;z-index:1000;left:0;right:0;top:0;height:68px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;color:white;background:linear-gradient(180deg,rgba(0,0,0,.62),rgba(0,0,0,0));}
+.brand{font-size:12px;font-weight:900;letter-spacing:.12em;text-decoration:none;display:flex;gap:9px;align-items:center} .brand:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+.navlinks{display:flex;gap:22px;align-items:center} .navlinks a{font-size:12px;text-decoration:none} .navlinks button{border:1px solid rgba(255,255,255,.7);border-radius:999px;background:rgba(0,0,0,.18);color:#fff;padding:9px 12px}
+.hero{min-height:92vh;position:relative;display:grid;align-items:end;overflow:hidden;color:white;background:#111}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.04)}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12) 20%,rgba(0,0,0,.25) 46%,rgba(0,0,0,.82) 100%)}
+.hero-inner{position:relative;z-index:2;padding:120px 6vw 60px;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,360px);gap:48px;align-items:end}
+.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:900}
+.hero h1{font-family:Georgia,serif;font-size:clamp(66px,9vw,132px);font-weight:500;line-height:.82;letter-spacing:-.06em;margin:16px 0 20px;max-width:1000px}
+.hero h1 em{color:#ff765d;font-weight:400} .hero p{font-size:18px;line-height:1.55;max-width:680px;color:#eee8df}
+.hero-actions{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap} .btn{display:inline-block;border-radius:999px;padding:12px 16px;font-size:12px;font-weight:800;text-decoration:none;border:1px solid rgba(255,255,255,.7)} .btn.fill{background:#fff;color:#111;border-color:#fff}
+.hero-card{backdrop-filter:blur(12px);background:rgba(14,14,12,.46);border:1px solid rgba(255,255,255,.28);padding:20px}
+.hero-card .metric{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.18)} .hero-card .metric:last-child{border:0}
+.hero-card strong{font-family:Georgia,serif;font-size:30px;font-weight:500} .hero-card span{font-size:11px;color:#d8d1c7;text-align:right}
+.scroll-note{position:absolute;z-index:3;right:4vw;bottom:18px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#ddd}
+.section{padding:96px 5vw} .section-head{display:grid;grid-template-columns:180px minmax(0,1fr) 340px;gap:40px;align-items:start;margin-bottom:42px}
+.section-head h2{font-family:Georgia,serif;font-size:clamp(44px,5vw,76px);line-height:.98;letter-spacing:-.045em;font-weight:500;margin:0} .section-head p{font-size:15px;line-height:1.65;color:#5e594f;margin:6px 0}
+.photo-rail{display:grid;grid-template-columns:repeat(7,minmax(220px,1fr));gap:10px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none} .photo-rail::-webkit-scrollbar{display:none}
+.journey-photo{margin:0;min-width:220px;background:#1a1916;color:#fff;position:relative;height:370px;overflow:hidden} .journey-photo img{width:100%;height:100%;object-fit:cover;transition:.4s;filter:saturate(.96)} .journey-photo:hover img{transform:scale(1.025)} .journey-photo:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8))}
+.journey-photo figcaption{position:absolute;z-index:2;left:16px;right:16px;bottom:15px} .journey-photo figcaption span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase} .journey-photo figcaption strong{display:block;font-family:Georgia,serif;font-size:24px;margin:4px 0} .journey-photo figcaption small{font-size:9px;color:#c9c3ba}
+.map-section{background:#161714;color:white} .map-section .section-head p{color:#b9b6af}
+.map-shell{border:1px solid rgba(255,255,255,.2);background:#10110f} .map-toolbar{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;gap:12px;border-bottom:1px solid rgba(255,255,255,.15);flex-wrap:wrap}
+.map-toolbar b{font-size:11px;letter-spacing:.12em;text-transform:uppercase} .map-legend{display:flex;gap:14px;font-size:11px;color:#cac7c0;flex-wrap:wrap} .swatch{display:inline-block;width:22px;height:3px;vertical-align:middle;margin-right:6px;background:#e45135} .swatch.dash{background:repeating-linear-gradient(90deg,#d8d2c7 0 5px,transparent 5px 9px)} 
+#map{height:640px;background:#d7d9d5} .leaflet-popup-content-wrapper{border-radius:0} .leaflet-popup-content{font-family:Inter,sans-serif;line-height:1.4} .leaflet-control-attribution{font-size:9px!important}
+.map-note{padding:13px 16px;font-size:11px;color:#aaa69f;border-top:1px solid rgba(255,255,255,.12)}
+.chapter{padding:110px 5vw;background:#0f100e;color:#eee9df} .chapter-top{display:grid;grid-template-columns:180px minmax(0,1fr) 320px;gap:40px;align-items:start}
+.big-no{font-family:Georgia,serif;font-size:124px;line-height:.8;color:var(--red)} .chapter h2{font-family:Georgia,serif;font-size:clamp(56px,6vw,92px);letter-spacing:-.05em;line-height:.9;font-weight:500;margin:8px 0 20px} .chapter-lede{font-size:19px;line-height:1.6;color:#c9c3b9;max-width:760px}
+.metrics{border-top:1px solid rgba(255,255,255,.35)} .metrics div{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15)} .metrics span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8f8a82} .metrics strong{font-size:14px}
+.story-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(340px,.8fr);gap:70px;margin-top:76px;align-items:start}
+.story p{font-family:Georgia,serif;font-size:21px;line-height:1.67;color:#ded8ce;margin:0 0 24px} .story p:first-child:first-letter{font-size:76px;line-height:.72;float:left;padding:10px 10px 0 0;color:#ff765d}
+.pullquote{font-family:Georgia,serif;font-size:38px;line-height:1.08;color:white;border-left:3px solid var(--red);padding-left:20px;margin:40px 0}
+.context-stack details{border-top:1px solid rgba(255,255,255,.22);padding:18px 0} .context-stack details:last-child{border-bottom:1px solid rgba(255,255,255,.22)} .context-stack summary{cursor:pointer;font-family:Georgia,serif;font-size:25px;list-style:none} .context-stack summary::-webkit-details-marker{display:none} .context-stack summary:after{content:"+";float:right;color:#ff765d} .context-stack details[open] summary:after{content:"–"} .context-stack p{font-size:14px;line-height:1.65;color:#bcb8b0} .source{font-size:10px;color:#84817b;text-transform:uppercase;letter-spacing:.08em}
+.day-gallery{display:grid;grid-template-columns:1.55fr .9fr .9fr;gap:8px;margin-top:66px} .day-gallery figure{margin:0;position:relative;overflow:hidden;min-height:430px} .day-gallery img{width:100%;height:100%;object-fit:cover} .day-gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.7);padding:7px 9px;font-size:10px;letter-spacing:.08em}
+.days{background:#e8dece} .days-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)} .day-card{background:var(--paper);padding:20px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between} .day-card b{font-family:Georgia,serif;font-size:42px;color:var(--red)} .day-card h3{font-family:Georgia,serif;font-size:24px;margin:10px 0 8px} .day-card p{font-size:12px;line-height:1.5;color:#625d53} .day-card small{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.chat-promo{background:var(--green);color:#f3ede4;display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:50px;align-items:end} .chat-promo h2{font-family:Georgia,serif;font-size:clamp(52px,6vw,86px);line-height:.95;letter-spacing:-.05em;font-weight:500;margin:0} .chat-promo p{line-height:1.65;color:#ccd4cf} .ask-card{background:#f4efe5;color:#171613;padding:22px;box-shadow:10px 10px 0 rgba(0,0,0,.25)} .ask-card strong{font-family:Georgia,serif;font-size:28px} .ask-card small{display:block;margin-top:7px;color:#6f6a61}
+footer{padding:26px 5vw;background:#111;color:#918b81;font-size:10px;line-height:1.7}
+@media(max-width:900px){
+ .navlinks a{display:none} .hero{min-height:820px} .hero-inner{grid-template-columns:1fr;padding:120px 22px 40px;gap:26px} .hero h1{font-size:66px} .hero p{font-size:16px}
+ .section{padding:72px 20px} .section-head,.chapter-top{grid-template-columns:1fr;gap:16px} .section-head>div:first-child{display:none} .section-head p{max-width:none} .photo-rail{margin-right:-20px}
+ #map{height:520px} .chapter{padding:80px 20px} .big-no{font-size:86px} .chapter h2{font-size:58px} .story-layout{grid-template-columns:1fr;gap:44px;margin-top:52px} .story p{font-size:19px} .pullquote{font-size:31px}
+ .day-gallery{grid-template-columns:1fr} .day-gallery figure{min-height:340px} .days-grid{grid-template-columns:1fr 1fr} .chat-promo{grid-template-columns:1fr} .scroll-note{display:none}
+}
 </style>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="Pedal nos Bálcãs">
-        <span class="brand-dot"></span>
-        <span>PEDAL NOS BÁLCÃS</span>
-      </a>
-      <nav class="nav">
-        <a href="#rota">Rota</a>
-        <a href="#dias">Dias</a>
-        <a href="#dia7">Dia 7</a>
-        <button class="chat-link" data-open-chat>Pergunte sobre a viagem</button>
-      </nav>
-    </header>
+<header class="nav">
+<a class="brand" href="#top">PEDAL NOS BÁLCÃS</a>
+<nav class="navlinks"><a href="#imagens">Imagens</a><a href="#mapa">Mapa real</a><a href="#dia7">Dia 7</a><a href="#dias">14 dias</a><button onclick="document.getElementById('chat').scrollIntoView({behavior:'smooth'})">Pergunte</button></nav>
+</header>
 
-    <main id="top">
-      <section class="hero section-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">14 dias · setembro de 2026</div>
-          <h1>Uma viagem real.<br><em>Não um roteiro perfeito.</em></h1>
-          <p class="hero-deck">Quase 700 km pelos Bálcãs, combinando bicicleta, trem, ônibus, ferry, barco e improviso. O que vale a pena, o que deu errado e o que eu faria diferente.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#dia7">Começar pelo Dia 7</a>
-            <button class="btn ghost" data-open-chat>Fazer uma pergunta</button>
-          </div>
-        </div>
+<section class="hero" id="top">
+<img class="hero-bg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor%20-%20Kotor.jpg" alt="Baía de Kotor">
+<div class="hero-shade"></div>
+<div class="hero-inner">
+<div>
+<div class="kicker">14 dias · setembro de 2026 · sem carro de apoio</div>
+<h1>Uma viagem real.<br><em>Com tudo o que deu certo — e errado.</em></h1>
+<p>Quase 700 km pelos Bálcãs, atravessando cidades, fronteiras, montanhas e lagos de bicicleta, trem, ônibus, ferry e improviso. Um guia para quem quer copiar a rota, mas também entender os lugares.</p>
+<div class="hero-actions"><a class="btn fill" href="#mapa">Ver o percurso real</a><a class="btn" href="#dia7">Ler um capítulo</a></div>
+</div>
+<aside class="hero-card">
+<div class="metric"><strong>14</strong><span>dias<br>de viagem</span></div>
+<div class="metric"><strong>≈700</strong><span>km<br>sobre a bike</span></div>
+<div class="metric"><strong>7</strong><span>países /<br>territórios</span></div>
+<div class="metric"><strong>0</strong><span>carro<br>de apoio</span></div>
+</aside>
+</div>
+<div class="scroll-note">role para explorar ↓</div>
+</section>
 
-        <div class="hero-stats">
-          <div class="hero-stamp">SEM CARRO DE APOIO</div>
-          <div class="stat-row"><strong>14</strong><span>dias</span></div>
-          <div class="stat-row"><strong>7</strong><span>países / territórios</span></div>
-          <div class="stat-row"><strong>≈700</strong><span>km de bike</span></div>
-          <div class="stat-row small"><strong>1</strong><span>ideia simples: pedalar onde vale, usar transporte quando ele compra experiência.</span></div>
-        </div>
+<section class="section" id="imagens">
+<div class="section-head"><div class="kicker">A viagem em imagens</div><h2>Antes de explicar a rota,<br><em class="serif" style="color:var(--red)">deixa eu te mostrar o caminho.</em></h2><p>Quero que o site tenha mais sensação de viagem e menos aparência de banco de dados. Estas imagens são referências editoriais dos destinos; depois entram as fotos reais da viagem.</p></div>
+<div class="photo-rail"><figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C5%A1%C4%8Dar%C5%A1ija%2C%20Sarajevo.jpg" alt="Sarajevo — BAŠČARŠIJA" loading="lazy"><figcaption><span>Sarajevo</span><strong>BAŠČARŠIJA</strong><small>Đana Talić · CC0</small></figcaption></figure>
+<figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Stari%20Most%20in%20Mostar%20%282025%29.jpg" alt="Mostar — STARI MOST" loading="lazy"><figcaption><span>Mostar</span><strong>STARI MOST</strong><small>Dudva · CC0</small></figcaption></figure>
+<figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dubrovnik%20Old%20City.jpg" alt="Dubrovnik — OLD TOWN" loading="lazy"><figcaption><span>Dubrovnik</span><strong>OLD TOWN</strong><small>Sheeba Samuel · Wikimedia Commons</small></figcaption></figure>
+<figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor%20-%20Kotor.jpg" alt="Kotor — BAÍA DE KOTOR" loading="lazy"><figcaption><span>Kotor</span><strong>BAÍA DE KOTOR</strong><small>Ingo Mehling · Wikimedia Commons</small></figcaption></figure>
+<figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Koman%20Lake%2C%20Albania..jpg" alt="Lago Koman — FERRY PELO CÂNION" loading="lazy"><figcaption><span>Lago Koman</span><strong>FERRY PELO CÂNION</strong><small>Analogos Albania · Wikimedia Commons</small></figcaption></figure>
+<figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Ohrid.JPG" alt="Ohrid — LAGO OHRID" loading="lazy"><figcaption><span>Ohrid</span><strong>LAGO OHRID</strong><small>Brams · domínio público</small></figcaption></figure>
+<figure class="journey-photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tirana%20Skanderbeg%20Square.JPG" alt="Tirana — SKANDERBEG SQUARE" loading="lazy"><figcaption><span>Tirana</span><strong>SKANDERBEG SQUARE</strong><small>Brams · domínio público</small></figcaption></figure></div>
+</section>
 
-        <div class="hero-route" aria-hidden="true">
-          <svg viewBox="0 0 900 430" role="img" aria-label="Rota ilustrada pelos Bálcãs">
-            <path class="terrain" d="M35 330 C150 270, 190 110, 320 150 S520 380, 610 250 S760 90, 865 130"/>
-            <path class="route-path" d="M85 92 C180 120 160 185 250 195 S300 275 380 270 S460 335 535 286 S640 245 710 310 S760 250 810 340"/>
-            <circle cx="85" cy="92" r="10" class="route-node strong"/><circle cx="250" cy="195" r="7" class="route-node"/><circle cx="380" cy="270" r="7" class="route-node"/><circle cx="535" cy="286" r="7" class="route-node"/><circle cx="710" cy="310" r="7" class="route-node"/><circle cx="810" cy="340" r="10" class="route-node strong"/>
-            <text x="52" y="66">Belgrado</text><text x="218" y="173">Sarajevo</text><text x="347" y="250">Kotor</text><text x="500" y="265">Shkodër</text><text x="674" y="288">Ohrid</text><text x="782" y="372">Tirana</text>
-          </svg>
-        </div>
-      </section>
+<section class="section map-section" id="mapa">
+<div class="section-head"><div class="kicker">O percurso de verdade</div><h2>O mapa mostra onde a roda realmente passou.</h2><p>As linhas vermelhas são GPS das atividades Garmin recuperadas via Tredict. As conexões pontilhadas representam deslocamentos em que ônibus, trem, ferry ou avião fizeram parte da viagem. Clique nos trechos para ver o dia e a distância registrada.</p></div>
+<div class="map-shell">
+<div class="map-toolbar"><b>GARMIN + ROTA EDITORIAL</b><div class="map-legend"><span><i class="swatch"></i>GPS registrado</span><span><i class="swatch dash"></i>conexão / transporte</span></div></div>
+<div id="map"></div>
+<div class="map-note">Observação: registro bruto não é necessariamente distância pedalada. No Dia 6, por exemplo, o Garmin marcou 83,4 km porque o arquivo inclui deslocamentos sobre a água; a distância editorial pedalada é de aproximadamente 68 km.</div>
+</div>
+</section>
 
-      <section class="ticker" aria-label="Resumo da rota">
-        <div class="ticker-track">
-          <span>BELGRADO</span><i>→</i><span>SARAJEVO</span><i>→</i><span>MOSTAR</span><i>→</i><span>DUBROVNIK</span><i>→</i><span>KOTOR</span><i>→</i><span>ULCINJ</span><i>→</i><span>SHKODËR</span><i>→</i><span>PRIZREN</span><i>→</i><span>SKOPJE</span><i>→</i><span>OHRID</span><i>→</i><span>TIRANA</span>
-        </div>
-      </section>
+<section class="chapter" id="dia7">
+<div class="chapter-top">
+<div class="big-no">07</div>
+<div><div class="kicker">Kotor · Montenegro</div><h2>Um dia ao redor da baía.</h2><p class="chapter-lede">Foi o dia em que a viagem deixou de ser “ir de um ponto ao outro” e virou simplesmente estar no lugar. Sem bagagem, sem hotel novo no fim do dia e sem pressa.</p></div>
+<div class="metrics"><div><span>Garmin</span><strong>28,8 km</strong></div><div><span>Ascensão</span><strong>305 m</strong></div><div><span>Temperatura média</span><strong>30,4 °C</strong></div><div><span>Rota</span><strong>Kotor → Verige → Kotor</strong></div></div>
+</div>
 
-      <section id="rota" class="route-section section-grid">
-        <div class="section-kicker">A viagem em uma tela</div>
-        <div class="route-intro">
-          <h2>O mapa não mostra só onde passei.<br>Mostra <em>como</em> a viagem aconteceu.</h2>
-          <p>Na versão completa, você poderá alternar entre a rota editorial, os trechos do Garmin e os deslocamentos do Timeline. Aqui, o mapa já nasce com a lógica certa: bicicleta é o fio condutor; os outros transportes explicam a viagem.</p>
-        </div>
-        <div class="map-card">
-          <div class="map-topline">
-            <div><span class="live-dot"></span> ROTA CURADA</div>
-            <div class="map-switches">
-              <button class="map-toggle active">Viagem</button>
-              <button class="map-toggle">Garmin</button>
-              <button class="map-toggle">Timeline</button>
-            </div>
-          </div>
-          <div class="map-canvas">
-            <svg viewBox="0 0 1000 620" aria-label="Mapa conceitual interativo da rota">
-              <g class="coastline">
-                <path d="M90 115 C210 70 300 110 338 162 C388 231 336 287 393 338 C440 381 535 361 580 420 C620 471 604 532 680 561"/>
-                <path d="M460 90 C540 109 598 156 619 216 C642 284 710 317 796 308 C862 301 914 333 938 401"/>
-              </g>
-              <g id="mapRoute"></g>
-            </svg>
-            <div class="map-legend"><span><b class="legend-bike"></b>Bicicleta</span><span><b class="legend-transfer"></b>Transporte</span><span><b class="legend-stop"></b>Parada</span></div>
-            <div class="map-card-float" id="mapInfo">
-              <div class="mini-label">DIA 7 · MONTENEGRO</div>
-              <strong>Kotor → Kotor</strong>
-              <span>28,8 km · sem bagagem · volta pela baía</span>
-            </div>
-          </div>
-        </div>
-      </section>
+<div class="day-gallery">
+<figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor%20-%20Kotor.jpg" alt="Baía de Kotor"><figcaption>KOTOR / BAÍA</figcaption></figure>
+<figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Church%20Of%20Our%20Lady%20of%20the%20Rocks.jpg" alt="Nossa Senhora das Rochas"><figcaption>NOSSA SENHORA DAS ROCHAS</figcaption></figure>
+<figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Our%20Lady%20of%20the%20Angels%20%28Bay%20of%20Kotor%29%2006.jpg" alt="Nossa Senhora dos Anjos"><figcaption>VERIGE / NOSSA SENHORA DOS ANJOS</figcaption></figure>
+</div>
 
-      <section id="dias" class="days-section">
-        <div class="section-heading section-grid">
-          <div class="section-kicker">Escolha um dia</div>
-          <h2>Não precisa ler na ordem.</h2>
-          <p>Cada dia funciona sozinho: rota, o que vale parar, onde comer, contexto histórico, o perrengue e a dica que evita repetir o erro.</p>
-        </div>
-        <div class="days-strip" id="daysStrip"></div>
-      </section>
+<div class="story-layout">
+<article class="story">
+<p>Saímos de Kotor sem as malas. Depois de dias carregando a viagem inteira na bicicleta, isso muda tudo: a bike fica mais leve e a cabeça também. A ideia era simples — contornar a baía, passar por Muo, Prčanj e Stoliv, chegar até Verige e voltar sem a obrigação de “vencer” uma etapa.</p>
+<p>Foi aí que Kotor virou minha cidade favorita da viagem. De bicicleta, a baía perde aquela escala de cartão-postal e começa a mostrar pequenas camadas: vilas grudadas na água, igrejas que aparecem entre casas, montanhas fechando o horizonte e barcos enormes atravessando um espaço que, de longe, parece pequeno.</p>
+<div class="pullquote">“Kotor tinha aquela aparência de cidade-maquete — até você começar a pedalar por dentro dela.”</div>
+<p>Na região de Perast aparece Nossa Senhora das Rochas, a ilha artificial que parece estar simplesmente pousada no meio da água. Mais adiante, no estreito de Verige, a imagem que ficou foi outra: a pequena Igreja de Nossa Senhora dos Anjos e, atrás dela, um navio de cruzeiro enorme passando pelo estreito. A escala da cena era absurda.</p>
+<p>Léo se juntou a nós na volta. Paramos novamente no Capasanta, dessa vez para sopa de peixe, e à noite fomos à Trattoria Karampana. Não foi o dia com mais quilômetros e nem de longe o mais difícil. Foi um dos que mais justificaram ter levado a bicicleta até ali.</p>
+<p>O que eu repetiria sem pensar: dormir em Kotor e reservar ao menos meio dia para pedalar a baía sem bagagem. O objetivo não é completar 28 km. É ganhar tempo para parar.</p>
+</article>
 
-      <section id="dia7" class="day-feature">
-        <div class="day-hero section-grid">
-          <div class="day-number">07</div>
-          <div class="day-headline">
-            <div class="eyebrow light">Kotor · Montenegro</div>
-            <h2>Um dia ao redor da baía.</h2>
-            <p>O tipo de dia que muda o ritmo da viagem: sem trocar de hotel, sem carregar bagagem e sem pressa para chegar em algum lugar.</p>
-          </div>
-          <div class="day-metrics">
-            <div><span>Garmin</span><strong>28,8 km</strong></div>
-            <div><span>Ascensão</span><strong>305 m</strong></div>
-            <div><span>Temperatura média</span><strong>30,4 °C</strong></div>
-            <div><span>Rota</span><strong>Kotor → Verige → Kotor</strong></div>
-          </div>
-        </div>
+<aside class="context-stack">
+<div class="kicker" style="margin-bottom:18px">Se quiser entender mais</div>
+<details open><summary>Por que Kotor importa historicamente?</summary><p>Na Idade Média, o porto natural de Kotor tornou-se um centro artístico e comercial importante. A região reúne cidades fortificadas, palácios, igrejas e assentamentos integrados às encostas da baía. A UNESCO reconheceu esse conjunto em 1979 e destaca a influência de Kotor e cidades vizinhas na difusão de culturas mediterrâneas para os Bálcãs.</p><div class="source">Fonte de contexto: UNESCO World Heritage Centre</div></details>
+<details><summary>Uma ilha construída por pessoas</summary><p>Nossa Senhora das Rochas — Gospa od Škrpjela — não é uma ilha natural. Ela foi formada ao longo de séculos com pedras e embarcações carregadas de rocha. A tradição local liga o início desse processo à descoberta de um ícone da Virgem com o Menino em 1452. A igreja atual foi concluída no século XVII.</p><div class="source">Contexto histórico: tradição de Perast / fontes patrimoniais</div></details>
+<details><summary>Verige: o gargalo da baía</summary><p>O estreito de Verige é a passagem estreita que conecta as partes interna e externa da baía. O próprio nome significa “correntes”; a tradição local associa o nome às correntes usadas para bloquear a passagem de embarcações. É exatamente essa geografia apertada que faz o lugar parecer tão estratégico quando visto de bicicleta.</p><div class="source">Tradição local + geografia da baía</div></details>
+<details><summary>Fiorde? Não exatamente.</summary><p>A aparência lembra um fiorde, mas a Baía de Kotor é normalmente classificada como uma ria: um vale fluvial inundado pelo mar. Essa diferença geológica ajuda a entender por que o relevo é tão dramático sem ter a origem glacial típica dos fiordes.</p></details>
+</aside>
+</div>
+</section>
 
-        <div class="photo-grid">
-          <figure class="photo-panel photo-main">
-            <div class="photo-media">
-              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor%20-%20Kotor.jpg" alt="Vista ampla da Baía de Kotor, em Montenegro" loading="eager" decoding="async" />
-              <span class="photo-label">KOTOR / BAÍA</span>
-            </div>
-            <p>“Kotor tinha aquela aparência de cidade-maquete.”</p>
-            <small class="photo-credit">Curadoria visual provisória · foto via Wikimedia Commons</small>
-          </figure>
-          <figure class="photo-panel">
-            <div class="photo-media">
-              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Church%20Of%20Our%20Lady%20of%20the%20Rocks.jpg" alt="A ilha e a igreja de Nossa Senhora das Rochas, na Baía de Kotor" loading="lazy" decoding="async" />
-              <span class="photo-label">NOSSA SENHORA DAS ROCHAS</span>
-            </div>
-            <p>Ilha artificial construída ao longo de séculos.</p>
-            <small class="photo-credit">Imagem curada para representar a parada em Perast e a ilha mais emblemática da baía.</small>
-          </figure>
-          <figure class="photo-panel">
-            <div class="photo-media">
-              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Our%20Lady%20of%20the%20Angels%20%28Bay%20of%20Kotor%29%2006.jpg" alt="Igreja de Nossa Senhora dos Anjos, perto do estreito de Verige" loading="lazy" decoding="async" />
-              <span class="photo-label">NOSSA SENHORA DOS ANJOS</span>
-            </div>
-            <p>A pequena igreja no estreito, com um navio enorme passando atrás.</p>
-            <small class="photo-credit">Escolhida para ancorar visualmente o trecho de Verige citado no texto.</small>
-          </figure>
-        </div>
+<section class="section days" id="dias">
+<div class="section-head"><div class="kicker">Os 14 dias</div><h2>Cada dia deve funcionar como um capítulo.</h2><p>Minha próxima etapa é levar esse mesmo nível de narrativa, fotos, contexto e mapa para cada um dos 14 dias — sem obrigar ninguém a ler tudo na ordem.</p></div>
+<div class="days-grid">
+<div class="day-card"><div><b>01</b><h3>Belgrado → Sarajevo</h3><p>São Sava, Kalemegdan, aeroporto sem dinheiro sérvio e a chegada à Baščaršija.</p></div><small>voo + pedal urbano</small></div>
+<div class="day-card"><div><b>02</b><h3>Sarajevo → Mostar</h3><p>Túnel da Esperança, Sarajevo Roses, ponte Latina e um trem que muda o ritmo da viagem.</p></div><small>32,7 km + trem</small></div>
+<div class="day-card"><div><b>03</b><h3>Mostar → Ravno</h3><p>Blagaj, vinhedos da Herzegovina, um atalho absurdo e seis furos no mesmo dia.</p></div><small>79 km</small></div>
+<div class="day-card"><div><b>04</b><h3>Ravno → Trebinje</h3><p>Popovo Polje, calor, falta de água, Tvrdoš e a chegada inesperada de Léo.</p></div><small>46,9 km</small></div>
+<div class="day-card"><div><b>05</b><h3>Trebinje → Dubrovnik</h3><p>O dia em que saúde falou mais alto: táxi para mim, pedal para os outros três.</p></div><small>recuperação + costa</small></div>
+<div class="day-card"><div><b>06</b><h3>Dubrovnik → Kotor</h3><p>Barco, ferry, fronteira e a lição de que GPS bruto nem sempre significa pedal real.</p></div><small>≈68 km pedalados</small></div>
+<div class="day-card"><div><b>07</b><h3>Baía de Kotor</h3><p>Sem malas, sem pressa, com Verige e duas igrejas que não podem ser confundidas.</p></div><small>28,8 km</small></div>
+<div class="day-card"><div><b>08</b><h3>Kotor → Ulcinj</h3><p>Ônibus até Cetinje, descida, lago Skadar, trem e mais um trecho de bike.</p></div><small>≈62 km + transportes</small></div>
+<div class="day-card"><div><b>09</b><h3>Ulcinj → Shkodër</h3><p>Chuva, fronteira de bicicleta e a chegada à cidade albanesa que vive sobre duas rodas.</p></div><small>46,5 km</small></div>
+<div class="day-card"><div><b>10</b><h3>Shkodër → Prizren</h3><p>O ferry do Lago Koman, ônibus improvisado e Kosovo no fim do dia.</p></div><small>51,1 km + ferry + bus</small></div>
+<div class="day-card"><div><b>11</b><h3>Prizren → Skopje</h3><p>94 km, Matka no limite da luz, parafuso de bagageiro e um pneu morrendo.</p></div><small>94,4 km + bus</small></div>
+<div class="day-card"><div><b>12</b><h3>Skopje → Ohrid</h3><p>Três lojas de bike, ônibus lotado, cordeiro repetido e Ohrid antes do pôr do sol.</p></div><small>15,5 km + bus</small></div>
+<div class="day-card"><div><b>13</b><h3>Ohrid → Prrenjas</h3><p>Sveti Naum, água cristalina, fronteira albanesa, pato defumado e a van que não levou as bikes.</p></div><small>≈76 km</small></div>
+<div class="day-card"><div><b>14</b><h3>Prrenjas → Tirana</h3><p>Últimos quilômetros, caixa de papelão, aeroporto e a desmontagem final da bicicleta.</p></div><small>65,4 km + bus</small></div>
+</div>
+</section>
 
-        <div class="day-body section-grid">
-          <aside class="theme-menu">
-            <div class="mini-label">VER ESTE DIA POR</div>
-            <button class="theme active" data-theme="historia">História</button>
-            <button class="theme" data-theme="pedal">O pedal</button>
-            <button class="theme" data-theme="comer">Comer</button>
-            <button class="theme" data-theme="curiosidades">Curiosidades</button>
-            <button class="theme" data-theme="dicas">Dicas práticas</button>
-          </aside>
+<section class="section chat-promo" id="chat">
+<div><div class="kicker">A camada interativa</div><h2>Não procure no guia.<br>Pergunte à viagem.</h2><p>“Qual foi o trecho mais difícil?”, “como levar quatro bikes em ônibus?”, “o Lago Koman vale o desvio?”, “onde vocês comeram em Skopje?”. A versão completa cruza diário, mapa, Garmin e os lugares realmente visitados.</p></div>
+<div class="ask-card"><strong>Pergunte sobre a viagem</strong><small>Próxima camada: respostas baseadas no histórico real da viagem.</small></div>
+</section>
 
-          <article class="story-card" id="storyCard">
-            <div class="story-meta"><span>DIA 7</span><span>HISTÓRIA</span></div>
-            <h3>O estreito de Verige ajuda a entender por que a baía sempre foi estratégica.</h3>
-            <p>Kotor carrega séculos de influência veneziana. Pedalar pela baía deixa isso mais claro do que apenas entrar na Old Town: fortificações, igrejas e pequenos povoados aparecem grudados entre a água e a montanha.</p>
-            <p>No ponto mais estreito, Verige significa “correntes”. A tradição local associa o nome às correntes usadas para bloquear a passagem de embarcações. Ali também fica a pequena Nossa Senhora dos Anjos — diferente de Nossa Senhora das Rochas, a ilha artificial mais famosa da região.</p>
-            <div class="source-chip">Diário da viagem · correção editorial priorizada</div>
-          </article>
+<footer>
+<strong>Pedal nos Bálcãs</strong><br>
+Fotos de referência dos destinos usadas nesta versão: Wikimedia Commons (créditos indicados em cada imagem). Mapa: OpenStreetMap + trilhas Garmin/Tredict. Conteúdo pessoal baseado no diário da viagem; contexto patrimonial de Kotor verificado em UNESCO World Heritage Centre.
+</footer>
 
-          <aside class="side-note">
-            <div class="mini-label">O QUE EU FARIA DE NOVO</div>
-            <p>Reservaria um dia inteiro sem bagagem para a baía. Foi um dos melhores usos de tempo da viagem.</p>
-            <button class="ask-inline" data-open-chat>“Onde vale dormir em Kotor?”</button>
-          </aside>
-        </div>
-      </section>
-
-      <section class="principles section-grid">
-        <div class="section-kicker">O que o site precisa fazer</div>
-        <h2>Menos “blog de viagem”.<br>Mais <em>memória consultável.</em></h2>
-        <div class="principle-grid">
-          <div><span>01</span><h3>Experiência real primeiro</h3><p>Se eu não vivi, o site não apresenta como experiência minha.</p></div>
-          <div><span>02</span><h3>Dado bruto ≠ história</h3><p>Garmin registra. O diário interpreta. Quando divergem, o site explica.</p></div>
-          <div><span>03</span><h3>Útil para copiar</h3><p>Transporte, bike, água, dinheiro, comida e erros entram porque ajudam outra pessoa.</p></div>
-          <div><span>04</span><h3>Pergunte à viagem</h3><p>O chat responde com o diário, Garmin, lugares e Timeline — sem inventar.</p></div>
-        </div>
-      </section>
-
-      <section class="chat-promo section-grid">
-        <div class="chat-promo-copy">
-          <div class="section-kicker">A camada que muda o produto</div>
-          <h2>Em vez de procurar a informação,<br><em>pergunte à viagem.</em></h2>
-          <p>“Qual foi o trecho mais difícil?”, “onde comer em Skopje?”, “quanto vocês realmente pedalaram até Kotor?” ou “se eu tivesse só 10 dias, o que você cortaria?”.</p>
-        </div>
-        <button class="chat-demo" data-open-chat>
-          <span class="chat-avatar">PB</span>
-          <span><b>Pergunte sobre a viagem</b><small>Diário + Garmin + mapa + Timeline</small></span>
-          <span class="arrow">↗</span>
-        </button>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span>PEDAL NOS BÁLCÃS</span>
-      <span>Uma viagem real para salvar, copiar e adaptar.</span>
-    </footer>
-  </div>
-
-  <div class="chat-backdrop" id="chatBackdrop"></div>
-  <aside class="chat-drawer" id="chatDrawer" aria-hidden="true">
-    <div class="chat-header">
-      <div><div class="mini-label">GUIA INTERATIVO</div><strong>Pergunte sobre a viagem</strong></div>
-      <button id="closeChat" aria-label="Fechar">×</button>
-    </div>
-    <div class="chat-context"><span class="context-chip">Diário</span><span class="context-chip">Garmin</span><span class="context-chip">Mapa</span><span class="context-chip">Dia 7</span></div>
-    <div class="chat-messages" id="chatMessages">
-      <div class="msg bot">Eu conheço a viagem pelo diário, pelos dados registrados e pelos lugares do roteiro. Pode perguntar como se estivesse falando com quem fez o percurso.</div>
-    </div>
-    <div class="suggestions" id="suggestions">
-      <button>Qual foi o trecho mais difícil?</button>
-      <button>Onde vale dormir em Kotor?</button>
-      <button>Quanto vocês realmente pedalaram de Dubrovnik a Kotor?</button>
-      <button>Quais foram os maiores erros da viagem?</button>
-    </div>
-    <form class="chat-input" id="chatForm">
-      <input id="chatInput" autocomplete="off" placeholder="Pergunte qualquer coisa sobre a viagem…" />
-      <button>Enviar</button>
-    </form>
-  </aside>
-
-  <script>
-const days = [
-  {n:1,route:'Belgrado → Sarajevo',title:'O começo, entre duas capitais',km:'voo + pedal urbano'},
-  {n:2,route:'Sarajevo → Mostar',title:'Sarajevo sobre duas rodas',km:'32,7 km + trem'},
-  {n:3,route:'Mostar → Ravno',title:'Seis câmaras e um desvio',km:'≈79 km'},
-  {n:4,route:'Ravno → Trebinje',title:'Calor, parreirais e companhia',km:'46,9 km'},
-  {n:5,route:'Trebinje → Dubrovnik',title:'Uma pausa em Dubrovnik',km:'táxi para Diogo'},
-  {n:6,route:'Dubrovnik → Kotor',title:'Pela costa até Kotor',km:'≈68 km + barco + ferry'},
-  {n:7,route:'Kotor → Kotor',title:'Um dia ao redor da baía',km:'28,8 km',active:true},
-  {n:8,route:'Kotor → Ulcinj',title:'Montanha, lago e litoral',km:'≈62 km + bus + trem'},
-  {n:9,route:'Ulcinj → Shkodër',title:'Chuva na fronteira',km:'46,5 km'},
-  {n:10,route:'Shkodër → Prizren',title:'Um lago no meio da rota',km:'51,1 km + ferry + bus'},
-  {n:11,route:'Prizren → Skopje',title:'Matka no fim da luz',km:'94,4 km + bus'},
-  {n:12,route:'Skopje → Ohrid',title:'Mudar o plano, chegar a Ohrid',km:'15,5 km + bus'},
-  {n:13,route:'Ohrid → Prrenjas',title:'O lago e a última subida',km:'≈76 km'},
-  {n:14,route:'Prrenjas → Tirana',title:'Até Tirana. E depois, casa.',km:'65,4 km + bus'}
-];
-const strip=document.getElementById('daysStrip');
-days.forEach(d=>{const el=document.createElement('article');el.className='day-card'+(d.active?' active':'');el.innerHTML=`<div><div class="num">${String(d.n).padStart(2,'0')}</div><div class="route">${d.route}</div><h3>${d.title}</h3><p>${d.n===7?'Minha cidade favorita da viagem. Um dia sem bagagem para entender a baía em outra escala.':'Uma etapa real da viagem, com transporte, escolhas e detalhes que ajudam a reproduzir o roteiro.'}</p></div><div class="km">${d.km}</div>`;el.onclick=()=>{if(d.n===7)document.querySelector('#dia7').scrollIntoView({behavior:'smooth'});};strip.appendChild(el)});
-
-const mapData=[
- {x:115,y:110,label:'Belgrado'}, {x:215,y:175,label:'Sarajevo'}, {x:272,y:240,label:'Mostar'}, {x:318,y:305,label:'Dubrovnik'}, {x:405,y:332,label:'Kotor',active:true}, {x:500,y:402,label:'Shkodër'}, {x:650,y:365,label:'Prizren'}, {x:733,y:415,label:'Skopje'}, {x:666,y:505,label:'Ohrid'}, {x:585,y:548,label:'Tirana'}
-];
-const route=document.getElementById('mapRoute');
-let path='M '+mapData.map((p,i)=>`${i?'L':' '}${p.x} ${p.y}`).join(' ');
-const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',path);p.setAttribute('class','map-segment');route.appendChild(p);
-mapData.forEach((pt,i)=>{const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',pt.x);c.setAttribute('cy',pt.y);c.setAttribute('r',pt.active?9:7);c.setAttribute('class','map-point'+(pt.active?' active':''));c.addEventListener('click',()=>{document.querySelectorAll('.map-point').forEach(n=>n.classList.remove('active'));c.classList.add('active');document.getElementById('mapInfo').innerHTML=`<div class="mini-label">PARADA DA ROTA</div><strong>${pt.label}</strong><span>${i===4?'Dia 7 · 28,8 km · volta pela baía':'Toque no dia correspondente para explorar a história.'}</span>`});route.appendChild(c);const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',pt.x+12);t.setAttribute('y',pt.y-10);t.setAttribute('class','map-label');t.textContent=pt.label;route.appendChild(t)});
-
-const stories={
- historia:{tag:'HISTÓRIA',title:'O estreito de Verige ajuda a entender por que a baía sempre foi estratégica.',p1:'Kotor carrega séculos de influência veneziana. Pedalar pela baía deixa isso mais claro do que apenas entrar na Old Town: fortificações, igrejas e pequenos povoados aparecem grudados entre a água e a montanha.',p2:'No ponto mais estreito, Verige significa “correntes”. A tradição local associa o nome às correntes usadas para bloquear a passagem de embarcações. Ali também fica a pequena Nossa Senhora dos Anjos — diferente de Nossa Senhora das Rochas, a ilha artificial mais famosa da região.'},
- pedal:{tag:'O PEDAL',title:'28,8 km sem bagagem mudaram completamente a experiência.',p1:'Depois de vários dias avançando de cidade em cidade, esse foi um pedal circular: Kotor, Muo, Prčanj, Stoliv, Verige e retorno. Sem alforjes e sem pressão para “chegar”, foi possível parar mais e prestar atenção na baía.',p2:'O Garmin registrou 28,8 km, cerca de 305 m de ascensão e temperatura média pouco acima de 30 °C. É um bom exemplo de quando menos quilometragem gerou mais viagem.'},
- comer:{tag:'COMER',title:'Sopa de peixe no Capasanta e jantar na Trattoria Karampana.',p1:'O Capasanta voltou a aparecer neste dia, agora com sopa de peixe. À noite, a escolha foi a Trattoria Karampana, dentro da experiência de Kotor.',p2:'No guia completo, cada restaurante ganha contexto: por que entrou, o que foi pedido e se eu voltaria. A ideia não é montar uma lista genérica de lugares “bem avaliados”.'},
- curiosidades:{tag:'CURIOSIDADES',title:'A baía parece um fiorde, mas geograficamente é uma ria.',p1:'A paisagem engana: montanhas altas caindo sobre uma lâmina estreita de água fazem muita gente chamar Kotor de fiorde. A formação, porém, é diferente: trata-se de uma ria, um vale fluvial inundado pelo mar.',p2:'Outra distinção importante no relato: Nossa Senhora das Rochas é a ilha artificial; Nossa Senhora dos Anjos é a pequena igreja junto ao estreito de Verige.'},
- dicas:{tag:'DICAS PRÁTICAS',title:'Se ficar em Kotor, reserve pelo menos um meio dia para pedalar sem bagagem.',p1:'A volta pela baía funciona melhor sem carregar tudo. O trânsito varia, mas os pequenos povoados, a água e as paradas tornam o trecho especialmente bom para um dia mais leve.',p2:'O ponto não é “fazer 28 km”. É usar um dia de base para enxergar Kotor além da Old Town. Para esta viagem, foi uma das decisões que mais valeu a pena.'}
-};
-document.querySelectorAll('.theme').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.theme').forEach(x=>x.classList.remove('active'));btn.classList.add('active');const s=stories[btn.dataset.theme];document.getElementById('storyCard').innerHTML=`<div class="story-meta"><span>DIA 7</span><span>${s.tag}</span></div><h3>${s.title}</h3><p>${s.p1}</p><p>${s.p2}</p><div class="source-chip">Diário da viagem · dados curados</div>`;}));
-
-const drawer=document.getElementById('chatDrawer'),backdrop=document.getElementById('chatBackdrop');
-function openChat(){drawer.classList.add('open');backdrop.classList.add('open');drawer.setAttribute('aria-hidden','false');setTimeout(()=>document.getElementById('chatInput').focus(),250)}
-function closeChat(){drawer.classList.remove('open');backdrop.classList.remove('open');drawer.setAttribute('aria-hidden','true')}
-document.querySelectorAll('[data-open-chat]').forEach(b=>b.addEventListener('click',openChat));document.getElementById('closeChat').onclick=closeChat;backdrop.onclick=closeChat;
-const answers={
- 'Qual foi o trecho mais difícil?':'O Dia 11, Prizren → Skopje, foi um dos mais duros: 94,4 km registrados, desvio para Matka no fim da luz, bagageiro do Guillermo soltando e pneu perdendo ar na chegada. O Dia 3 também foi pesado pela combinação de calor, erro de rota e seis câmaras furadas.',
- 'Onde vale dormir em Kotor?':'Na viagem, ficamos num hostel em Kotor, mas o nome não ficou registrado no diário. O que eu consigo afirmar é que usar Kotor como base valeu muito: no Dia 7 fizemos a volta da baía sem bagagem. Eu não inventaria um hotel específico sem recuperar esse dado.',
- 'Quanto vocês realmente pedalaram de Dubrovnik a Kotor?':'Cerca de 68 km reais. O registro bruto do Garmin marcou 83,4 km, mas inclui deslocamentos sobre a água. O trecho combinou barco Dubrovnik → Cavtat e ferry Kamenari → Lepetane, então o site precisa separar distância registrada de distância efetivamente pedalada.',
- 'Quais foram os maiores erros da viagem?':'Os que mais viraram aprendizado: usar o Google Maps em modo caminhada e cair num caminho cheio de espinhos; subestimar água no calor; contar com vans para quatro bicicletas; deixar a embalagem da bike para o fim; e fazer o desvio para Matka já perto do fim da luz.'
-};
-function addMsg(txt,type){const m=document.createElement('div');m.className='msg '+type;m.textContent=txt;document.getElementById('chatMessages').appendChild(m);m.scrollIntoView({behavior:'smooth',block:'end'})}
-function answer(q){addMsg(q,'user');setTimeout(()=>addMsg(answers[q]||'Nesta V0.1, o chat está simulando a experiência. Na versão conectada, eu vou buscar a resposta no diário, Garmin, lugares e Timeline antes de responder — e dizer quando o dado não existir.','bot'),300)}
-document.querySelectorAll('#suggestions button').forEach(b=>b.onclick=()=>answer(b.textContent));document.getElementById('chatForm').addEventListener('submit',e=>{e.preventDefault();const i=document.getElementById('chatInput');const q=i.value.trim();if(!q)return;answer(q);i.value=''});
-
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const tracks = [{"day": 2, "title": "Sarajevo — pedal urbano", "km": 32.7, "pts": [[43.85921, 18.42664], [43.85933, 18.42822], [43.85971, 18.43129], [43.85928, 18.43107], [43.85801, 18.43063], [43.85704, 18.42626], [43.85594, 18.4123], [43.85436, 18.40485], [43.85406, 18.39229], [43.84988, 18.36995], [43.85008, 18.35623], [43.85011, 18.35627], [43.85017, 18.3514], [43.84901, 18.35007], [43.8457, 18.34088], [43.84452, 18.34095], [43.8337, 18.34567], [43.82482, 18.35269], [43.81737, 18.34257], [43.81982, 18.33718], [43.82157, 18.33349], [43.82966, 18.31299], [43.83843, 18.31928], [43.84152, 18.32366], [43.84591, 18.3461], [43.84888, 18.3652], [43.85272, 18.38591], [43.8582, 18.39449], [43.85955, 18.40086], [43.85903, 18.41831], [43.8585, 18.42851], [43.85864, 18.42848], [43.85897, 18.43056], [43.85961, 18.43124], [43.85974, 18.42767], [43.85788, 18.40937], [43.86047, 18.39879], [43.86055, 18.39875]]}, {"day": 3, "title": "Mostar → Ravno", "km": 79.0, "pts": [[43.3404, 17.81337], [43.34018, 17.81422], [43.3393, 17.81472], [43.33531, 17.81503], [43.31855, 17.82728], [43.27729, 17.85466], [43.25695, 17.89995], [43.2565, 17.9033], [43.25677, 17.90244], [43.25785, 17.89164], [43.24672, 17.86985], [43.23448, 17.84448], [43.22758, 17.83877], [43.21908, 17.84199], [43.19493, 17.81783], [43.15104, 17.78795], [43.1373, 17.77944], [43.13733, 17.77942], [43.13729, 17.77944], [43.1346, 17.7744], [43.0942, 17.71819], [43.05246, 17.69565], [43.05308, 17.69039], [43.05311, 17.69038], [43.05348, 17.70592], [43.05289, 17.69051], [43.05289, 17.69051], [43.04895, 17.70125], [43.04591, 17.70513], [43.02149, 17.76297], [43.01746, 17.78262], [43.0105, 17.79481], [43.00799, 17.8055], [43.00292, 17.80182], [42.99198, 17.81862], [42.98816, 17.81986], [42.98624, 17.8117], [42.98625, 17.81172], [42.9862, 17.81178]]}, {"day": 4, "title": "Ravno → Trebinje", "km": 46.9, "pts": [[42.888, 17.97107], [42.88928, 17.97819], [42.88456, 17.9927], [42.87708, 17.99218], [42.8676, 18.00159], [42.8651, 18.0201], [42.85795, 18.0389], [42.85499, 18.06379], [42.85683, 18.08501], [42.84544, 18.09778], [42.83001, 18.10224], [42.81485, 18.11129], [42.80719, 18.13113], [42.79495, 18.14281], [42.79117, 18.15291], [42.78555, 18.16121], [42.77951, 18.17978], [42.78035, 18.19896], [42.77634, 18.21593], [42.77201, 18.21994], [42.76324, 18.23455], [42.75515, 18.23867], [42.7432, 18.24489], [42.73397, 18.2573], [42.72541, 18.26931], [42.72479, 18.26933], [42.7247, 18.26953], [42.72099, 18.28454], [42.71807, 18.29203], [42.71765, 18.29268], [42.71783, 18.29222], [42.71864, 18.29315], [42.7132, 18.30615], [42.71063, 18.31996], [42.7135, 18.33391], [42.71179, 18.34541], [42.71411, 18.34766]]}, {"day": 6, "title": "Dubrovnik → Kotor (registro bruto Garmin)", "km": 83.4, "pts": [[42.64145, 18.1089], [42.64092, 18.11135], [42.62864, 18.13986], [42.61413, 18.18126], [42.62165, 18.20493], [42.59752, 18.20931], [42.58087, 18.21787], [42.57838, 18.22142], [42.57491, 18.23982], [42.55689, 18.26862], [42.5494, 18.29241], [42.52469, 18.3397], [42.51531, 18.3741], [42.5057, 18.40357], [42.49804, 18.4214], [42.49045, 18.43397], [42.47685, 18.46421], [42.45502, 18.50391], [42.45786, 18.51307], [42.45866, 18.5152], [42.45841, 18.51463], [42.45814, 18.51427], [42.45284, 18.52933], [42.45424, 18.55981], [42.43931, 18.58638], [42.4374, 18.61372], [42.44798, 18.64577], [42.45894, 18.67122], [42.46673, 18.67444], [42.46655, 18.68375], [42.47667, 18.69022], [42.46483, 18.73416], [42.4542, 18.74802], [42.45406, 18.74814], [42.44059, 18.75422], [42.45226, 18.74936], [42.42256, 18.76197], [42.42552, 18.77114], [42.42566, 18.77114]]}, {"day": 7, "title": "Kotor → Verige → Kotor", "km": 28.8, "pts": [[42.42756, 18.77091], [42.42777, 18.76914], [42.43522, 18.76603], [42.43803, 18.76358], [42.4386, 18.76338], [42.43864, 18.76348], [42.43593, 18.76508], [42.42557, 18.76831], [42.4227, 18.76176], [42.43187, 18.7578], [42.44618, 18.75356], [42.45047, 18.75071], [42.4579, 18.74243], [42.46979, 18.72054], [42.47573, 18.69739], [42.4773, 18.69019], [42.4773, 18.6902], [42.47728, 18.69035], [42.47385, 18.70193], [42.46984, 18.72027], [42.4653, 18.7318], [42.46561, 18.7317], [42.46561, 18.7317], [42.46527, 18.73185], [42.46454, 18.73451], [42.45669, 18.74439], [42.45426, 18.74823], [42.45425, 18.74826], [42.45423, 18.74827], [42.44657, 18.75403], [42.43199, 18.75784], [42.42058, 18.76992], [42.41965, 18.77018], [42.42259, 18.77116], [42.42516, 18.77117], [42.42523, 18.77116], [42.42498, 18.77124], [42.42521, 18.77117], [42.42521, 18.77117]]}, {"day": 8, "title": "Cetinje → Virpazar", "km": 34.8, "pts": [[42.39013, 18.92779], [42.38323, 18.93177], [42.37775, 18.93393], [42.37095, 18.93445], [42.36283, 18.93353], [42.35037, 18.93381], [42.34018, 18.93384], [42.32968, 18.93289], [42.32594, 18.93393], [42.32324, 18.93733], [42.32294, 18.93858], [42.32166, 18.93995], [42.32353, 18.93611], [42.32034, 18.93485], [42.31603, 18.93437], [42.31517, 18.93491], [42.31475, 18.93542], [42.3114, 18.94071], [42.30356, 18.95684], [42.29366, 18.96067], [42.28559, 18.9664], [42.27476, 18.97079], [42.26604, 18.97531], [42.2587, 18.97344], [42.25079, 18.99808], [42.24756, 19.00801], [42.24399, 19.01036], [42.23829, 19.02842], [42.23176, 19.05734], [42.24133, 19.08331], [42.24646, 19.09062], [42.24659, 19.0906], [42.2463, 19.09054], [42.24643, 19.09054], [42.24613, 19.09194], [42.24688, 19.09002], [42.23995, 19.0835], [42.23952, 19.08395], [42.23947, 19.08388]]}, {"day": 8, "title": "Bar → Ulcinj", "km": 27.3, "pts": [[42.08726, 19.10503], [42.09169, 19.10796], [42.09213, 19.11197], [42.09232, 19.11203], [42.09232, 19.11206], [42.09144, 19.11185], [42.08781, 19.12153], [42.07876, 19.1255], [42.06829, 19.1274], [42.06111, 19.12898], [42.05705, 19.12814], [42.05226, 19.12771], [42.05106, 19.12901], [42.05032, 19.13134], [42.03985, 19.14446], [42.03162, 19.14888], [42.02731, 19.14994], [42.0252, 19.15547], [42.01494, 19.15445], [42.00625, 19.14982], [42.00033, 19.15274], [41.99549, 19.15318], [41.99321, 19.15366], [41.98925, 19.15627], [41.98059, 19.16235], [41.97484, 19.16961], [41.97278, 19.17464], [41.97142, 19.18001], [41.96653, 19.1889], [41.95064, 19.19445], [41.94076, 19.21361], [41.93576, 19.21813], [41.93328, 19.21529], [41.92991, 19.20742], [41.92469, 19.20382], [41.92454, 19.20383], [41.92443, 19.20316], [41.92441, 19.20314]]}, {"day": 9, "title": "Ulcinj → Shkodër", "km": 46.5, "pts": [[41.92238, 19.20989], [41.92285, 19.21335], [41.92806, 19.22098], [41.92768, 19.2357], [41.92895, 19.23875], [41.93484, 19.2506], [41.94153, 19.26501], [41.95354, 19.27172], [41.96311, 19.26854], [41.971, 19.26063], [41.9795, 19.2597], [41.98954, 19.26066], [41.99244, 19.26143], [41.99241, 19.26144], [41.99241, 19.26146], [41.9926, 19.26139], [42.00251, 19.26359], [42.01425, 19.2687], [42.0049, 19.29599], [42.00465, 19.29691], [42.00467, 19.29692], [42.00407, 19.29709], [42.00939, 19.3101], [42.00878, 19.32991], [42.01081, 19.35222], [42.01618, 19.36959], [42.01646, 19.37206], [42.01681, 19.37233], [42.01804, 19.3882], [42.01164, 19.41137], [42.01142, 19.41212], [42.01175, 19.42318], [42.01668, 19.44617], [42.02615, 19.46922], [42.042, 19.48259], [42.05206, 19.49589], [42.06531, 19.50917], [42.06888, 19.51267], [42.06932, 19.51254]]}, {"day": 10, "title": "Fierzë → Bajram Curri", "km": 16.4, "pts": [[42.26609, 20.0136], [42.26679, 20.01882], [42.27027, 20.02161], [42.27477, 20.02261], [42.27928, 20.02545], [42.28434, 20.02409], [42.29011, 20.02401], [42.29513, 20.02793], [42.29849, 20.03038], [42.29998, 20.03299], [42.30194, 20.03564], [42.30127, 20.03814], [42.30118, 20.0407], [42.30374, 20.0462], [42.30564, 20.04647], [42.31074, 20.04624], [42.31566, 20.05521], [42.31797, 20.06061], [42.32134, 20.06656], [42.32419, 20.07507], [42.32754, 20.07931], [42.32769, 20.07938], [42.32858, 20.07957], [42.33213, 20.07852], [42.33457, 20.08003], [42.33714, 20.08103], [42.34101, 20.08249], [42.3453, 20.08286], [42.34958, 20.08239], [42.35082, 20.08209], [42.35222, 20.08343], [42.35344, 20.08129], [42.35451, 20.0793], [42.35702, 20.07904], [42.35826, 20.07699], [42.35879, 20.07683], [42.35701, 20.07516], [42.3568, 20.0724], [42.35677, 20.07238]]}, {"day": 10, "title": "Gjakovë → Prizren", "km": 34.8, "pts": [[42.37404, 20.44572], [42.37024, 20.45486], [42.36396, 20.46915], [42.36025, 20.48627], [42.35945, 20.50129], [42.35643, 20.51571], [42.35315, 20.52543], [42.35159, 20.53762], [42.35658, 20.55202], [42.35795, 20.56005], [42.35593, 20.56441], [42.35165, 20.56608], [42.34388, 20.57255], [42.33646, 20.58079], [42.33442, 20.59113], [42.33077, 20.60468], [42.32698, 20.6169], [42.32034, 20.6259], [42.31427, 20.63548], [42.30827, 20.64508], [42.30202, 20.65523], [42.29582, 20.6662], [42.28801, 20.67437], [42.27876, 20.67916], [42.26832, 20.67775], [42.26312, 20.68086], [42.26032, 20.68307], [42.25744, 20.68175], [42.25045, 20.68689], [42.2448, 20.696], [42.23703, 20.70583], [42.23154, 20.71258], [42.22593, 20.72042], [42.2192, 20.72683], [42.21212, 20.73152], [42.2097, 20.74041], [42.20969, 20.74038], [42.20966, 20.74035], [42.20966, 20.74034]]}, {"day": 11, "title": "Shtime → Skopje", "km": 94.4, "pts": [[42.43297, 21.03973], [42.43269, 21.04037], [42.43273, 21.04033], [42.42833, 21.05752], [42.41279, 21.1036], [42.38853, 21.12761], [42.3707, 21.14933], [42.3465, 21.17881], [42.31699, 21.2034], [42.30649, 21.20543], [42.30634, 21.20553], [42.27527, 21.21694], [42.24217, 21.24261], [42.20923, 21.25282], [42.18157, 21.26516], [42.15537, 21.29466], [42.15533, 21.29479], [42.15538, 21.29469], [42.15542, 21.29465], [42.15234, 21.29723], [42.11923, 21.31722], [42.08042, 21.34232], [42.0552, 21.35674], [42.02515, 21.35066], [42.01137, 21.36025], [42.00926, 21.35988], [42.00891, 21.35452], [41.98939, 21.31567], [41.96264, 21.2985], [41.95264, 21.29934], [41.95779, 21.29589], [41.9736, 21.30913], [41.99415, 21.34135], [41.99836, 21.38212], [41.99527, 21.41298], [41.99591, 21.43195], [41.9962, 21.43299], [42.00187, 21.44009], [42.00187, 21.44009]]}, {"day": 12, "title": "Skopje urbano", "km": 13.2, "pts": [[41.988, 21.44977], [41.99171, 21.43702], [41.99097, 21.43024], [41.99098, 21.42986], [41.99112, 21.42998], [41.99097, 21.43032], [41.9963, 21.42434], [41.997, 21.42345], [41.99701, 21.42338], [42.0003, 21.42201], [42.00578, 21.41048], [42.00597, 21.41057], [42.0055, 21.411], [41.99939, 21.42353], [41.99467, 21.43023], [41.99339, 21.43034], [41.99384, 21.43087], [41.9941, 21.43085], [41.99442, 21.43035], [41.99404, 21.43077], [41.99376, 21.43109], [41.99406, 21.43105], [41.99389, 21.43094], [41.99397, 21.431], [41.99626, 21.43367], [41.99955, 21.43561], [41.99922, 21.43556], [41.99694, 21.43844], [41.99698, 21.43843], [41.99699, 21.43841], [41.99701, 21.43848], [41.99693, 21.43843], [41.9971, 21.43845], [41.99701, 21.43856], [41.99701, 21.43834], [41.99703, 21.43834], [41.9908, 21.44519], [41.99, 21.44504], [41.99, 21.44504]]}, {"day": 12, "title": "Ohrid urbano", "km": 2.4, "pts": [[41.11688, 20.7977], [41.11572, 20.79587], [41.11592, 20.79477], [41.11507, 20.79526], [41.11472, 20.79447], [41.11378, 20.7941], [41.11248, 20.79423], [41.11218, 20.79564], [41.1119, 20.79568], [41.11189, 20.79565], [41.11191, 20.7957], [41.11191, 20.7957], [41.11194, 20.79569], [41.1119, 20.7957], [41.11196, 20.79566], [41.11194, 20.79566], [41.11204, 20.79577], [41.11194, 20.79706], [41.11201, 20.79956], [41.11298, 20.79933], [41.11431, 20.80007], [41.11611, 20.80039], [41.11631, 20.79996], [41.1168, 20.79881], [41.11675, 20.79878], [41.11672, 20.79883], [41.11678, 20.79888], [41.11678, 20.79888], [41.11678, 20.79888], [41.11678, 20.79889], [41.11678, 20.79889], [41.11677, 20.79889], [41.11677, 20.7989], [41.11677, 20.7989], [41.11676, 20.7989], [41.11676, 20.7989], [41.11687, 20.79883]]}, {"day": 13, "title": "Ohrid → Prrenjas", "km": 76.3, "pts": [[41.11235, 20.79627], [41.11621, 20.80038], [41.10852, 20.80574], [41.08741, 20.79938], [41.08034, 20.80136], [41.05448, 20.80227], [41.02041, 20.80923], [41.00098, 20.80412], [40.98485, 20.79814], [40.96578, 20.78869], [40.95194, 20.79167], [40.94759, 20.7943], [40.92298, 20.77664], [40.91531, 20.74588], [40.914, 20.74053], [40.91394, 20.74045], [40.91244, 20.74189], [40.91092, 20.74509], [40.91095, 20.73192], [40.90125, 20.70725], [40.90163, 20.66563], [40.902, 20.66239], [40.90201, 20.66236], [40.90191, 20.66241], [40.89975, 20.6579], [40.89521, 20.66135], [40.90704, 20.65094], [40.93768, 20.63823], [40.96172, 20.6423], [40.9938, 20.63766], [41.02695, 20.6356], [41.0556, 20.63482], [41.06436, 20.63017], [41.06563, 20.62744], [41.06593, 20.61524], [41.06849, 20.59044], [41.06997, 20.5504], [41.06986, 20.55054], [41.06978, 20.55054]]}, {"day": 14, "title": "Prrenjas → Elbasan", "km": 53.7, "pts": [[41.06956, 20.5505], [41.06634, 20.5403], [41.06639, 20.51975], [41.07494, 20.49751], [41.07385, 20.47558], [41.07801, 20.46052], [41.08829, 20.44956], [41.10045, 20.43803], [41.11111, 20.42343], [41.12153, 20.41108], [41.12987, 20.40084], [41.13562, 20.38306], [41.14765, 20.37657], [41.15604, 20.35868], [41.16272, 20.3561], [41.16863, 20.33448], [41.17712, 20.3204], [41.17812, 20.31601], [41.17812, 20.31607], [41.1825, 20.31076], [41.18648, 20.30084], [41.18566, 20.28056], [41.18037, 20.2718], [41.17714, 20.26253], [41.16576, 20.24365], [41.16545, 20.22295], [41.16233, 20.20515], [41.1593, 20.18514], [41.15319, 20.16505], [41.14097, 20.15034], [41.13057, 20.13448], [41.12393, 20.11551], [41.11961, 20.09659], [41.11302, 20.08231], [41.11192, 20.07828], [41.11134, 20.0786], [41.11144, 20.0786], [41.11137, 20.07856]]}, {"day": 14, "title": "Farkë → Tirana", "km": 11.7, "pts": [[41.28326, 19.85404], [41.28749, 19.85173], [41.29872, 19.84153], [41.30584, 19.83877], [41.31328, 19.83472], [41.31314, 19.83061], [41.31728, 19.82383], [41.32438, 19.81872], [41.32838, 19.81256], [41.32808, 19.80617], [41.32922, 19.80548], [41.32951, 19.80634], [41.32919, 19.8055], [41.32924, 19.80542], [41.3293, 19.80545], [41.32926, 19.80549], [41.32916, 19.80551], [41.32928, 19.8055], [41.32928, 19.8055], [41.32935, 19.80548], [41.32932, 19.80549], [41.32906, 19.80566], [41.32931, 19.8055], [41.32916, 19.80564], [41.32863, 19.8058], [41.32695, 19.81053], [41.3254, 19.8157], [41.32538, 19.81609], [41.32542, 19.81609], [41.32547, 19.81506], [41.32535, 19.81429], [41.32602, 19.81436], [41.32587, 19.81455]]}];
+const stops = [["Belgrado", 44.8125, 20.4612, 1], ["Sarajevo", 43.8563, 18.4131, 2], ["Mostar", 43.3438, 17.8078, 3], ["Trebinje", 42.7119, 18.3436, 4], ["Dubrovnik", 42.6507, 18.0944, 5], ["Kotor", 42.4247, 18.7712, 7], ["Ulcinj", 41.9294, 19.2244, 8], ["Shkodër", 42.0693, 19.5033, 9], ["Prizren", 42.2139, 20.7397, 10], ["Skopje", 41.9981, 21.4254, 11], ["Ohrid", 41.1172, 20.8016, 12], ["Prrenjas", 41.0667, 20.55, 14], ["Tirana", 41.3275, 19.8187, 14]];
+const map=L.map('map',{zoomControl:true,scrollWheelZoom:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const bounds=[];
+const red='#e45135';
+tracks.forEach(t=>{
+  const line=L.polyline(t.pts,{color:red,weight:t.day===7?5:3,opacity:t.day===7?1:.78});
+  line.bindPopup(`<b>Dia ${t.day}</b><br>${t.title}<br><small>${t.km.toFixed(1).replace('.',',')} km registrados</small>`);
+  line.addTo(map); t.pts.forEach(p=>bounds.push(p));
+});
+for(let i=0;i<stops.length-1;i++) {
+  const a=stops[i],b=stops[i+1];
+  L.polyline([[a[1],a[2]],[b[1],b[2]]],{color:'#282722',weight:1.4,opacity:.5,dashArray:'6,8'}).addTo(map);
+}
+stops.forEach(s=>{
+  const m=L.circleMarker([s[1],s[2]],{radius:5,color:'#171613',weight:2,fillColor:'#f4efe5',fillOpacity:1}).addTo(map);
+  m.bindTooltip(`${s[0]} · Dia ${s[3]}`,{direction:'top'});
+});
+map.fitBounds(bounds,{padding:[25,25]});
 </script>
 </body>
 </html>
