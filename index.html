@@ -54,32 +54,98 @@ footer{padding:26px 5vw;background:#111;color:#918b81;font-size:10px;line-height
  #map{height:520px} .chapter{padding:80px 20px} .big-no{font-size:86px} .chapter h2{font-size:58px} .story-layout{grid-template-columns:1fr;gap:44px;margin-top:52px} .story p{font-size:19px} .pullquote{font-size:31px}
  .day-gallery{grid-template-columns:1fr} .day-gallery figure{min-height:340px} .days-grid{grid-template-columns:1fr 1fr} .chat-promo{grid-template-columns:1fr} .scroll-note{display:none}
 }
+
+/* v0.4 — direção editorial inspirada na referência visual enviada pelo usuário */
+:root{--paper:#f3eee4;--ink:#183229;--red:#d95437;--gold:#e8ad52;--cream:#f3eee4}
+.manuscript-nav{position:sticky;top:0;height:94px;background:#f3eee4;color:#173129;padding:0 5.2vw;border-bottom:1px solid rgba(24,50,41,.08);box-shadow:none}
+.manuscript-brand{gap:14px;letter-spacing:0;text-transform:none}.manuscript-brand:before{display:none}
+.brandmark{width:52px;height:42px;display:block}.brandmark svg{width:100%;height:100%}
+.brandtype{display:flex;flex-direction:column;line-height:.9}.brandtype strong{font-family:Georgia,serif;font-size:31px;letter-spacing:-.04em}.brandtype small{font-family:Georgia,serif;font-size:13px;letter-spacing:.22em;margin-top:7px}
+.manuscript-links{gap:42px}.manuscript-links a{font-weight:800;letter-spacing:.06em;font-size:13px}.manuscript-links .nav-cta{color:var(--red);font-weight:900}.manuscript-links .nav-cta span{font-size:18px;margin-left:6px}
+.manuscript-hero{min-height:calc(100vh - 94px);background:#14231f}
+.manuscript-hero .hero-bg{object-position:center 45%;filter:saturate(.82) contrast(1.02)}
+.manuscript-hero .hero-shade{background:linear-gradient(90deg,rgba(7,27,24,.86) 0%,rgba(7,27,24,.70) 34%,rgba(7,27,24,.30) 68%,rgba(7,27,24,.22) 100%),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.18))}
+.manuscript-inner{padding:70px 7.4vw 76px;grid-template-columns:minmax(0,1fr) 220px;align-items:end}
+.hero-kicker{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.18em;font-weight:900;color:#f1cf98;margin-bottom:32px}.hero-kicker span{width:12px;height:12px;border-radius:50%;background:#e7ad52;box-shadow:0 0 0 5px rgba(231,173,82,.18)}
+.manuscript-copy{max-width:880px}.manuscript-hero h1{font-size:clamp(82px,10vw,148px);line-height:.78;letter-spacing:-.065em;margin:0 0 34px}.manuscript-hero h1 span{color:white}.manuscript-hero h1 em{display:inline-block;color:var(--gold);font-weight:400;font-style:italic}
+.manuscript-hero p{font-size:22px;line-height:1.6;max-width:690px;color:#f4f1eb;margin:0}
+.manuscript-actions{align-items:center;gap:32px;margin-top:38px}.manuscript-primary{border-radius:0;background:var(--red)!important;color:#fff!important;border-color:var(--red)!important;padding:18px 24px;font-size:13px;letter-spacing:.03em}.manuscript-primary b{font-size:22px;margin-left:16px}
+.manuscript-secondary{color:#fff;text-decoration:none;font-size:13px;font-weight:800}.manuscript-secondary span{font-size:18px;margin-left:10px}
+.journey-badge{align-self:end;justify-self:end;width:146px;height:146px;border-radius:50%;border:1px solid rgba(255,255,255,.55);box-shadow:0 0 0 9px rgba(255,255,255,.06),0 0 0 18px rgba(255,255,255,.035);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(8deg);margin-bottom:18px}
+.journey-badge strong{font-family:Georgia,serif;font-size:40px;font-style:italic;line-height:.9}.journey-badge span{font-size:9px;line-height:1.25;font-weight:900;letter-spacing:.13em;text-align:center;margin-top:8px}
+.hero-bottomline{position:absolute;left:5.2vw;right:5.2vw;bottom:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.35);display:flex;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.11em;font-weight:800;color:#d7d6d1}
+.opening-story{padding:105px 7vw;background:#f3eee4;display:grid;grid-template-columns:150px minmax(0,1fr);gap:44px;border-bottom:1px solid rgba(24,50,41,.12)}
+.opening-index{font-family:Georgia,serif;color:var(--red);font-size:86px;line-height:1}.opening-copy{max-width:1120px}.opening-copy h2{font-family:Georgia,serif;font-size:clamp(48px,5vw,78px);line-height:.98;letter-spacing:-.045em;font-weight:500;margin:14px 0 22px;color:#173129}.opening-copy h2 em{color:var(--red);font-weight:400}.opening-lede{font-size:19px;line-height:1.65;color:#504d46;max-width:850px}
+.opening-columns{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;margin-top:50px}.opening-columns h3{font-family:Georgia,serif;font-size:28px;margin:0 0 16px;color:#173129}.opening-columns p{font-size:15px;line-height:1.8;color:#5b574f}.opening-columns aside{border-left:1px solid rgba(24,50,41,.18);padding-left:32px}
+.section-head h2,.chapter h2{color:inherit}
+@media(max-width:900px){
+ .manuscript-nav{height:76px;padding:0 18px}.brandmark{width:42px}.brandtype strong{font-size:25px}.brandtype small{font-size:10px}.manuscript-links a:not(.nav-cta){display:none}.manuscript-links{gap:0}.manuscript-links .nav-cta{font-size:10px}
+ .manuscript-hero{min-height:760px}.manuscript-inner{padding:80px 22px 86px;grid-template-columns:1fr}.manuscript-hero h1{font-size:73px;line-height:.82}.manuscript-hero p{font-size:17px}.journey-badge{width:112px;height:112px;position:absolute;right:28px;bottom:68px}.journey-badge strong{font-size:30px}.hero-bottomline{left:20px;right:20px;font-size:8px}.hero-bottomline span:last-child{display:none}
+ .opening-story{grid-template-columns:1fr;padding:72px 20px}.opening-index{font-size:64px}.opening-columns{grid-template-columns:1fr;gap:28px}.opening-columns aside{border-left:0;border-top:1px solid rgba(24,50,41,.18);padding-left:0;padding-top:26px}
+}
 </style>
 </head>
 <body>
-<header class="nav">
-<a class="brand" href="#top">PEDAL NOS BÁLCÃS</a>
-<nav class="navlinks"><a href="#imagens">Imagens</a><a href="#mapa">Mapa real</a><a href="#dia7">Dia 7</a><a href="#dias">14 dias</a><button onclick="document.getElementById('chat').scrollIntoView({behavior:'smooth'})">Pergunte</button></nav>
+<header class="nav manuscript-nav">
+<a class="brand manuscript-brand" href="#top" aria-label="Pedal nos Bálcãs">
+  <span class="brandmark" aria-hidden="true">
+    <svg viewBox="0 0 78 48">
+      <path d="M7 15 L21 5 L31 14 L42 4 L55 15" fill="none" stroke="#91a99e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="20" cy="34" r="10" fill="none" stroke="#d9573b" stroke-width="3"/>
+      <circle cx="52" cy="34" r="10" fill="none" stroke="#d9573b" stroke-width="3"/>
+      <path d="M20 34 L31 20 L40 34 L28 34 L35 23 L47 23 L52 34 M31 20 L27 17 M47 23 L44 17" fill="none" stroke="#d9573b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </span>
+  <span class="brandtype"><strong>Pedal</strong><small>NOS BÁLCÃS</small></span>
+</a>
+<nav class="navlinks manuscript-links">
+  <a href="#dias">ROTEIRO</a>
+  <a href="#temas">TEMAS</a>
+  <a href="#imagens">FOTOS</a>
+  <a href="#sobre">SOBRE</a>
+  <a class="nav-cta" href="#mapa">EXPLORAR A VIAGEM <span>↗</span></a>
+</nav>
 </header>
 
-<section class="hero" id="top">
-<img class="hero-bg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Kotor%20-%20Kotor.jpg" alt="Baía de Kotor">
+<section class="hero manuscript-hero" id="top">
+<img class="hero-bg" src="https://commons.wikimedia.org/wiki/Special:FilePath/Montenegro%20Bay%20of%20Kotor.jpg" alt="Baía de Kotor, Montenegro">
 <div class="hero-shade"></div>
-<div class="hero-inner">
-<div>
-<div class="kicker">14 dias · setembro de 2026 · sem carro de apoio</div>
-<h1>Uma viagem real.<br><em>Com tudo o que deu certo — e errado.</em></h1>
-<p>Quase 700 km pelos Bálcãs, atravessando cidades, fronteiras, montanhas e lagos de bicicleta, trem, ônibus, ferry e improviso. Um guia para quem quer copiar a rota, mas também entender os lugares.</p>
-<div class="hero-actions"><a class="btn fill" href="#mapa">Ver o percurso real</a><a class="btn" href="#dia7">Ler um capítulo</a></div>
+<div class="hero-inner manuscript-inner">
+  <div class="manuscript-copy">
+    <div class="hero-kicker"><span></span>CADERNO DE UMA VIAGEM REAL</div>
+    <h1><span>Pedal</span><br><em>nos Bálcãs</em></h1>
+    <p>Cidades antigas, estradas de montanha e planos que mudam no caminho. Uma viagem de bicicleta contada por quem esteve lá.</p>
+    <div class="hero-actions manuscript-actions">
+      <a class="btn fill manuscript-primary" href="#mapa">PERCORRER A ROTA <b>→</b></a>
+      <a class="manuscript-secondary" href="#temas">Escolher um tema <span>↓</span></a>
+    </div>
+  </div>
+  <aside class="journey-badge" aria-label="14 etapas narradas">
+    <strong>14</strong><span>ETAPAS<br>NARRADAS</span>
+  </aside>
 </div>
-<aside class="hero-card">
-<div class="metric"><strong>14</strong><span>dias<br>de viagem</span></div>
-<div class="metric"><strong>≈700</strong><span>km<br>sobre a bike</span></div>
-<div class="metric"><strong>7</strong><span>países /<br>territórios</span></div>
-<div class="metric"><strong>0</strong><span>carro<br>de apoio</span></div>
-</aside>
-</div>
-<div class="scroll-note">role para explorar ↓</div>
+<div class="hero-bottomline"><span>01 — A ESTRADA COMEÇA ANTES DO PRIMEIRO PEDAL</span><span>ARQUIVO PESSOAL · SET/2026</span></div>
+</section>
+
+<section class="opening-story" id="temas">
+  <div class="opening-index">01</div>
+  <div class="opening-copy">
+    <div class="kicker">A estrada começa antes do primeiro pedal</div>
+    <h2>Não é só um roteiro.<br>É uma história que você pode <em>abrir por camadas.</em></h2>
+    <p class="opening-lede">Quem quiser apenas copiar a rota encontra mapa, quilometragem e logística. Quem quiser ficar mais tempo encontra o que aconteceu de verdade — e também a história dos lugares que atravessamos.</p>
+    <div class="opening-columns">
+      <div>
+        <h3>O relato</h3>
+        <p>A viagem começou em Belgrado antes mesmo de existir um primeiro grande trecho de bike. São Sava, Kalemegdan e a Igreja Ružica vieram antes do aeroporto — e antes de descobrir, sem dinheiro sérvio, que nem todo ônibus aceitava cartão. Depois do voo, Sarajevo apareceu com a Baščaršija, marcas de guerra nas fachadas e duas bicicletas que ainda precisavam ser compradas.</p>
+        <p>É esse tipo de detalhe que eu quero preservar aqui: não a versão “perfeita” da viagem, mas as decisões, improvisos, erros e encontros que mudaram o roteiro.</p>
+      </div>
+      <aside>
+        <h3>O contexto</h3>
+        <p>Belgrado nasceu sobre camadas muito anteriores à Sérvia moderna — a antiga Singidunum romana ocupava a região estratégica junto aos rios Sava e Danúbio. Sarajevo, por sua vez, carrega na paisagem tanto a herança otomana quanto as marcas muito recentes do cerco de 1992–1996.</p>
+        <p>Ao longo dos 14 dias, cada capítulo abre essa segunda leitura: por que aquela cidade existe ali, o que aquela fronteira significa e como geografia, religião, impérios e guerras ainda aparecem no caminho.</p>
+      </aside>
+    </div>
+  </div>
 </section>
 
 <section class="section" id="imagens">
@@ -155,7 +221,7 @@ footer{padding:26px 5vw;background:#111;color:#918b81;font-size:10px;line-height
 </div>
 </section>
 
-<section class="section chat-promo" id="chat">
+<section class="section chat-promo" id="sobre">
 <div><div class="kicker">A camada interativa</div><h2>Não procure no guia.<br>Pergunte à viagem.</h2><p>“Qual foi o trecho mais difícil?”, “como levar quatro bikes em ônibus?”, “o Lago Koman vale o desvio?”, “onde vocês comeram em Skopje?”. A versão completa cruza diário, mapa, Garmin e os lugares realmente visitados.</p></div>
 <div class="ask-card"><strong>Pergunte sobre a viagem</strong><small>Próxima camada: respostas baseadas no histórico real da viagem.</small></div>
 </section>
