@@ -388,12 +388,12 @@ function current(){return days.find(x=>x.d===activeDay)}
 function allPhotoList(d){return (d.photos||[]).filter(p=>PHOTO_DATA[p[0]]).map(p=>({key:p[0],title:photoFor(d,p[0])[0],caption:photoFor(d,p[0])[1]}))}
 function listByKeys(d,keys){const by=new Map(allPhotoList(d).map(p=>[p.key,p]));return (keys||[]).map(k=>by.get(k)).filter(Boolean)}
 function topPhotoList(d){
- const all=allPhotoList(d),cfg=CURATION[d.d];
+ const all=allPhotoList(d),cfg=(window.CURATION_EXT||CURATION)[d.d];
  if(cfg?.top){const picked=listByKeys(d,cfg.top);if(picked.length)return picked}
  const cut=Math.max(1,Math.ceil(all.length/2));return all.slice(0,cut)
 }
 function morePhotoList(d){
- const all=allPhotoList(d),cfg=CURATION[d.d];
+ const all=allPhotoList(d),cfg=(window.CURATION_EXT||CURATION)[d.d];
  if(cfg?.more){const picked=listByKeys(d,cfg.more);if(picked.length)return picked}
  const used=new Set(topPhotoList(d).map(p=>p.key));return all.filter(p=>!used.has(p.key))
 }
