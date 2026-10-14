@@ -1,98 +1,74 @@
 module.exports = async function handler(req, res) {
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   if (req.method !== 'POST') return res.status(405).json({ error: 'method_not_allowed' });
-
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
     const question = String(body.question || '').trim().slice(0, 1200);
     const activeDay = Number(body.activeDay || 0);
-    const context = Array.isArray(body.context) ? body.context.slice(0, 4) : [];
-    const global = String(body.global || '').slice(0, 5000);
-    const history = Array.isArray(body.history) ? body.history.slice(-6).filter(m => m && ['user','assistant'].includes(m.role) && typeof m.content === 'string').map(m => ({ role: m.role, content: m.content.slice(0, 1200) })) : [];
-
+    const context = Array.isArray(body.context) ? body.context.slice(0, 14) : [];
+    const hintDays = Array.isArray(body.hintDays) ? body.hintDays.slice(0, 4) : [];
+    const global = String(body.global || '').slice(0, 6000);
+    const history = Array.isArray(body.history) ? body.history.slice(-8).filter(m => m && ['user','assistant'].includes(m.role) && typeof m.content === 'string').map(m => ({ role: m.role, content: m.content.slice(0, 1400) })) : [];
     if (!question) return res.status(400).json({ error: 'empty_question' });
 
-    const contextText = JSON.stringify({ contexto_geral: global, dias_relevantes: context }, null, 2);
-    const token = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
-
-    // A deterministic fallback keeps the chat useful even if the AI Gateway
-    // is temporarily unavailable or the account has no AI credit.
-    const fallback = () => {
-      const d = context[0];
-      if (!d) return {
-        answer: 'Essa informação não está registrada no material da viagem que tenho aqui.',
-        day: null,
-        mode: 'fallback'
-      };
-      const clean = String(d.resumo || '').replace(/\s+/g, ' ').trim();
-      return {
-        answer: `Isso aparece principalmente no Dia ${d.dia} (${d.rota}). ${clean}`,
-        day: d.dia || null,
-        mode: 'fallback'
-      };
+    const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    const fallback=()=>{
+      const s=norm(question);
+      if(/mais dificil|trecho dificil|dia dificil|mais pesado/.test(s))return {answer:'Em distância, o maior pedal foi o Dia 11: 94,4 km entre Shtime e Skopje. Em perrengue mecânico, o Dia 3 foi pior: 79 km, espinhos e seis furos.',day:11,mode:'fallback'};
+      if(/koman/.test(s))return {answer:'Sim. O ferry do Lago Koman foi um dos grandes acertos da viagem. O ponto de atenção é a logística: transfer até Koman, ferry e a conexão seguinte precisam estar combinados. Depois do ferry ainda houve pedal até Bajram Curri e, mais tarde, de Gjakovë a Prizren.',day:10,mode:'fallback'};
+      if(/dubrovnik.*kotor|kotor.*dubrovnik|83.?4|68 km/.test(s))return {answer:'A distância útil é aproximadamente 68 km pedalados. O Garmin registrou 83,4 km brutos porque barco e ferry entraram no arquivo.',day:6,mode:'fallback'};
+      if(/sebilj/.test(s))return {answer:'O Sebilj é a fonte em forma de quiosque no centro da Baščaršija, o antigo bazar otomano de Sarajevo. A fonte original da praça era do século XVIII e a estrutura atual é do fim do século XIX. Na viagem, ele marcou o começo do primeiro pedal por Sarajevo.',day:2,mode:'fallback'};
+      if(/tunnel|tunel/.test(s))return {answer:'O Tunnel of Hope foi escavado em 1993 sob a pista do aeroporto durante o cerco de Sarajevo. Tinha cerca de 800 metros e serviu como ligação vital entre a cidade sitiada e o território livre, transportando pessoas e suprimentos.',day:2,mode:'fallback'};
+      const tokens=s.split(/\s+/).filter(x=>x.length>4);
+      let best=null,score=0;
+      for(const d of context){const blob=norm(JSON.stringify(d));let sc=0;for(const t of tokens)if(blob.includes(t))sc++;if(sc>score){score=sc;best=d}}
+      if(best&&score>=2)return {answer:'Isso aparece no Dia '+best.dia+' ('+best.rota+'). '+String(best.resumo||'').replace(/\s+/g,' ').trim(),day:best.dia||null,mode:'fallback'};
+      return {answer:'Essa informação não está registrada com segurança no material da viagem que tenho aqui.',day:null,mode:'fallback'};
     };
 
+    const token = process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
     if (!token) return res.status(200).json(fallback());
 
+    const contextText = JSON.stringify({ contexto_geral: global, dias_relevantes: hintDays, viagem_completa: context }, null, 2);
     const system = `Você é o guia interativo do site "Pedal nos Bálcãs", uma viagem real feita por Diogo Ruiz em setembro de 2026.
-
 REGRAS:
 - Responda para quem está visitando o site, não para Diogo.
-- Use apenas os fatos fornecidos no CONTEXTO DA VIAGEM abaixo.
-- Não invente locais, preços, datas, distâncias, restaurantes, acontecimentos ou opiniões.
-- Se a resposta não estiver registrada, diga de forma natural: "Essa informação não está registrada no diário que tenho aqui."
-- Não avise antecipadamente que você só sabe o que está no diário. Apenas responda.
-- Quando houver diferença entre GPS bruto e distância curada, explique a diferença.
-- Separe experiência pessoal de contexto histórico. Você pode dizer "na viagem, Diogo..." ou "neste dia...".
-- Seja útil para alguém planejando a própria viagem.
-- Responda em português do Brasil, em 2 a 5 parágrafos curtos, normalmente entre 70 e 180 palavras.
-- Se a pergunta for sobre um lugar citado, explique rapidamente o que ele é antes de contar o que aconteceu ali.
-- Não dê horários, preços ou condições atuais como se fossem válidos hoje; o relato é de setembro de 2026.
-
+- Use apenas os fatos do CONTEXTO DA VIAGEM.
+- Não invente lugares, datas, preços, distâncias, restaurantes, acontecimentos ou opiniões.
+- Se a informação não estiver registrada, diga isso naturalmente, sem avisar antes.
+- Se a pergunta mencionar um lugar, primeiro explique em uma ou duas frases o que é o lugar e por que ele importa; depois conecte com o que aconteceu na viagem.
+- Diferencie GPS bruto de distância curada quando houver essa diferença.
+- Priorize o relato real da viagem. Contexto histórico serve para ajudar o visitante a entender o que está vendo.
+- Seja útil para alguém que pensa em repetir a rota.
+- Responda em português do Brasil, normalmente em 2 a 5 parágrafos curtos.
+- Não trate horários, preços ou condições atuais como se fossem válidos hoje; o relato é de setembro de 2026.
 CONTEXTO DA VIAGEM:
 ${contextText}`;
 
     const gateway = await fetch('https://ai-gateway.vercel.sh/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        model: 'openai/gpt-5.4-mini',
-        temperature: 0.2,
-        max_tokens: 550,
-        messages: [
-          { role: 'system', content: system },
-          ...history,
-          { role: 'user', content: question }
-        ]
+      method:'POST',
+      headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json'},
+      body:JSON.stringify({
+        model:'anthropic/claude-sonnet-5',
+        temperature:0.15,
+        max_tokens:650,
+        messages:[{role:'system',content:system},...history,{role:'user',content:question}]
       })
     });
+    if(!gateway.ok){console.error('AI Gateway',gateway.status,(await gateway.text().catch(()=>'' )).slice(0,500));return res.status(200).json(fallback())}
+    const data=await gateway.json();
+    const answer=data?.choices?.[0]?.message?.content?.trim();
+    if(!answer)return res.status(200).json(fallback());
 
-    if (!gateway.ok) {
-      const detail = await gateway.text().catch(() => '');
-      console.error('AI Gateway', gateway.status, detail.slice(0, 500));
-      return res.status(200).json(fallback());
-    }
+    let day=null;
+    const explicit=question.toLowerCase().match(/\bdia\s*(\d{1,2})\b/);
+    if(explicit)day=Number(explicit[1]);
+    else if(hintDays.length===1)day=hintDays[0]?.dia||null;
+    else if(activeDay&&hintDays[0]?.dia===activeDay)day=activeDay;
 
-    const data = await gateway.json();
-    const answer = data?.choices?.[0]?.message?.content?.trim();
-    if (!answer) return res.status(200).json(fallback());
-
-    // Offer a day deep-link only when one relevant day clearly dominates.
-    let day = null;
-    if (context.length === 1) day = context[0]?.dia || null;
-    else {
-      const q = question.toLowerCase();
-      const explicit = q.match(/\bdia\s*(\d{1,2})\b/);
-      if (explicit) day = Number(explicit[1]);
-      else if (activeDay && context[0]?.dia === activeDay) day = activeDay;
-    }
-
-    return res.status(200).json({ answer, day, mode: 'ai' });
-  } catch (err) {
+    return res.status(200).json({answer,day,mode:'ai'});
+  } catch(err) {
     console.error(err);
-    return res.status(500).json({ error: 'chat_failed' });
+    return res.status(500).json({error:'chat_failed'});
   }
 };
