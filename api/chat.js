@@ -29,7 +29,7 @@ module.exports = async function handler(req, res) {
       const s=norm(question);
       if(/(quantos|quantas).*\b(pais|paises|territorio|territorios)\b/.test(s))return {answer:'A viagem passou por 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte.',day:null,mode:'fallback'};
       if(/(quantos|quanto).*\bkm\b|quilometr|distancia total|km.*pedal|pedalados/.test(s))return {answer:'Foram quase 700 km pedalados ao longo dos 14 dias.',day:null,mode:'fallback'};
-      if(/mais dificil|trecho dificil|dia dificil|mais pesado/.test(s))return {answer:'Em distância, o maior pedal foi o Dia 11: 94,4 km entre Shtime e Skopje. Em perrengue mecânico, o Dia 3 foi pior: 79 km, espinhos e seis furos.',day:11,mode:'fallback'};
+      if(/pior.*dia|dia.*pior/.test(s))return {answer:'Se “pior” significa maior perrengue, o Dia 3 (Mostar → Ravno) foi o mais caótico: 79 km, atalho errado, espinhos e seis furos, além de um resgate de carro no fim. Em esforço físico, o Dia 11 foi o maior pedal, com 94,4 km. Em saúde, o Dia 5 foi o mais comprometido, com gastroenterite e táxi até Dubrovnik.',day:3,mode:'fallback'};\n      if(/mais dificil|trecho dificil|dia dificil|mais pesado/.test(s))return {answer:'Em distância, o maior pedal foi o Dia 11: 94,4 km entre Shtime e Skopje. Em perrengue mecânico, o Dia 3 foi pior: 79 km, espinhos e seis furos.',day:11,mode:'fallback'};
       if(/koman/.test(s))return {answer:'Sim. O ferry do Lago Koman foi um dos grandes acertos da viagem. O ponto de atenção é a logística: transfer até Koman, ferry e a conexão seguinte precisam estar combinados. Depois do ferry ainda houve pedal até Bajram Curri e, mais tarde, de Gjakovë a Prizren.',day:10,mode:'fallback'};
       if(/dubrovnik.*kotor|kotor.*dubrovnik|83.?4|68 km/.test(s))return {answer:'A distância útil é aproximadamente 68 km pedalados. O Garmin registrou 83,4 km brutos porque barco e ferry entraram no arquivo.',day:6,mode:'fallback'};
       if(/sebilj/.test(s))return {answer:'O Sebilj é a fonte em forma de quiosque no centro da Baščaršija, o antigo bazar otomano de Sarajevo. A fonte original da praça era do século XVIII e a estrutura atual é do fim do século XIX. Na viagem, ele marcou o começo do primeiro pedal por Sarajevo.',day:2,mode:'fallback'};
@@ -55,7 +55,7 @@ REGRAS:
 - Diferencie GPS bruto de distância curada quando houver essa diferença.
 - Priorize o relato real da viagem. Contexto histórico serve para ajudar o visitante a entender o que está vendo.
 - Seja útil para alguém que pensa em repetir a rota.
-- Responda em português do Brasil, normalmente em 2 a 5 parágrafos curtos.
+- Responda em português do Brasil, normalmente em 2 a 5 parágrafos curtos.\n- Para perguntas comparativas (pior dia, melhor trecho, mais difícil, favorito), compare os 14 dias e explique o critério em vez de procurar apenas uma palavra exata.
 - Não trate horários, preços ou condições atuais como se fossem válidos hoje; o relato é de setembro de 2026.
 CONTEXTO DA VIAGEM:
 ${contextText}`;
@@ -64,7 +64,7 @@ ${contextText}`;
       method:'POST',
       headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json'},
       body:JSON.stringify({
-        model:'anthropic/claude-sonnet-5',
+        model:'openai/gpt-5.6-sol',
         temperature:0.15,
         max_tokens:650,
         messages:[{role:'system',content:system},...history,{role:'user',content:question}]
