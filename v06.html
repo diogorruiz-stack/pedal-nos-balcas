@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f0e7">
+<title>Pedal nos Bálcãs — caderno de uma viagem real</title>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{--paper:#f4f0e7;--paper2:#ece5d9;--ink:#173129;--muted:#6e6960;--orange:#f15a37;--gold:#e5ad55;--line:rgba(23,49,41,.14);--dark:#10231e;--white:#fff;--shadow:0 18px 60px rgba(16,35,30,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}button,input{font:inherit}img{display:block;width:100%}a{color:inherit}.wrap{width:min(1450px,92vw);margin:auto}
+.loading{position:fixed;inset:0;z-index:3000;display:grid;place-content:center;background:var(--paper);font-family:Georgia,serif;font-size:26px}.loading small{display:block;font-family:Inter,sans-serif;font-size:10px;letter-spacing:.16em;text-align:center;margin-top:8px;color:var(--muted)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(244,240,231,.97);backdrop-filter:blur(15px);position:sticky;top:0;z-index:1000;border-bottom:1px solid var(--line)}
+.brand{display:flex;gap:12px;align-items:center;text-decoration:none}.brand svg{width:48px;height:38px}.brandtype{line-height:.85}.brandtype b{display:block;font-family:Georgia,serif;font-size:28px;letter-spacing:-.04em}.brandtype span{display:block;font-family:Georgia,serif;font-size:11px;letter-spacing:.22em;margin-top:7px}.navlinks{display:flex;gap:28px;align-items:center}.navlinks a{text-decoration:none;font-size:10px;font-weight:850;letter-spacing:.09em}.navlinks .accent{color:var(--orange)}
+.hero{height:calc(100vh - 82px);min-height:650px;position:relative;overflow:hidden;color:#fff;background:#12231f}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,33,28,.91) 0%,rgba(8,33,28,.69) 35%,rgba(8,33,28,.22) 70%,rgba(8,33,28,.08) 100%),linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.20))}.hero-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:55px 7.2vw 84px;max-width:1030px}.eyebrow{display:flex;gap:9px;align-items:center;font-size:10px;letter-spacing:.18em;font-weight:900;color:#f2cf98}.eyebrow i{width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(229,172,84,.18)}.hero h1{font-family:Georgia,serif;font-size:clamp(82px,10vw,145px);line-height:.79;letter-spacing:-.065em;font-weight:500;margin:30px 0 28px}.hero h1 em{color:var(--gold);font-weight:400}.hero p{max-width:690px;font-size:20px;line-height:1.62;margin:0;color:#f4f0e9}.hero-actions{display:flex;align-items:center;gap:30px;margin-top:38px}.primary{background:var(--orange);color:#fff;text-decoration:none;padding:18px 23px;font-size:11px;font-weight:900;letter-spacing:.05em}.primary span{font-size:20px;margin-left:15px}.text-link{color:white;text-decoration:none;font-size:11px;font-weight:800}.text-link span{margin-left:9px;font-size:18px}.badge{position:absolute;right:7vw;bottom:78px;z-index:3;width:142px;height:142px;border-radius:50%;border:1px solid rgba(255,255,255,.56);box-shadow:0 0 0 9px rgba(255,255,255,.06),0 0 0 18px rgba(255,255,255,.035);display:grid;place-content:center;text-align:center;transform:rotate(7deg)}.badge b{font-family:Georgia,serif;font-size:39px;font-style:italic;line-height:1}.badge span{font-size:9px;line-height:1.25;font-weight:900;letter-spacing:.13em;margin-top:7px}.hero-footer{position:absolute;z-index:3;left:5vw;right:5vw;bottom:17px;border-top:1px solid rgba(255,255,255,.34);padding-top:11px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.12em;font-weight:800;color:#dedbd5}
+.section{padding:82px 0}.section-kicker{font-size:9px;letter-spacing:.17em;font-weight:900;text-transform:uppercase;color:var(--orange)}.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,430px);gap:60px;align-items:end;margin-bottom:34px}.section-head h2{font-family:Georgia,serif;font-size:clamp(44px,5vw,70px);line-height:.96;letter-spacing:-.05em;font-weight:500;margin:9px 0 0}.section-head h2 em{font-weight:400;color:var(--orange)}.section-head p{font-size:15px;line-height:1.68;color:#615d55;margin:0}
+.date-strip{display:flex;gap:8px;overflow-x:auto;padding:2px 0 15px;scrollbar-width:none;scroll-snap-type:x proximity}.date-strip::-webkit-scrollbar{display:none}.date-btn{flex:0 0 auto;border:1px solid var(--line);background:rgba(255,255,255,.48);color:var(--ink);padding:11px 13px 10px;min-width:80px;text-align:left;cursor:pointer;transition:.2s;scroll-snap-align:start}.date-btn:hover{transform:translateY(-2px);background:#fff}.date-btn.active{background:var(--ink);color:#fff;border-color:var(--ink)}.date-btn b{display:block;font-family:Georgia,serif;font-size:21px;line-height:1}.date-btn span{display:block;font-size:8px;letter-spacing:.12em;text-transform:uppercase;margin-top:5px;opacity:.72}
+.explorer-grid{display:grid;grid-template-columns:minmax(0,1.14fr) minmax(330px,.86fr);gap:18px}.day-panel,.map-card{background:#fff;border:1px solid var(--line);box-shadow:0 8px 30px rgba(16,35,30,.045)}.day-panel{overflow:hidden}.top-media{position:relative;height:440px;background:var(--dark);overflow:hidden}.top-media img{width:100%;height:100%;object-fit:cover}.top-media:after{content:"";position:absolute;inset:58% 0 0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75));pointer-events:none}.top-caption{position:absolute;z-index:3;left:22px;right:80px;bottom:18px;color:#fff}.top-caption b{display:block;font-family:Georgia,serif;font-size:27px;font-weight:500}.top-caption span{display:block;font-size:11px;line-height:1.48;color:#e7e2d9;margin-top:5px}.top-controls{position:absolute;right:17px;bottom:18px;z-index:4;display:flex;gap:5px}.top-controls button{width:38px;height:38px;border:1px solid rgba(255,255,255,.42);background:rgba(12,27,23,.72);color:#fff;cursor:pointer}.top-count{position:absolute;top:16px;right:16px;z-index:4;background:rgba(12,27,23,.75);color:#fff;padding:7px 9px;font-size:9px;letter-spacing:.12em}.top-empty{height:100%;display:grid;place-content:end;padding:25px;color:#fff;font-size:9px;letter-spacing:.13em;background:linear-gradient(145deg,#1e3b32,#759186)}
+.day-copy{padding:24px 27px 25px}.day-meta{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);padding-bottom:15px}.day-no{font-family:Georgia,serif;color:var(--orange);font-size:42px;line-height:.9}.day-route{font-family:Georgia,serif;font-size:33px;line-height:1.04;letter-spacing:-.038em;margin:9px 0 7px}.day-stats{font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#766f64}.tabs{display:flex;gap:4px;margin:18px 0 15px;flex-wrap:wrap}.tab{border:0;background:#eee7dc;color:#4e514b;padding:9px 11px;font-size:9px;letter-spacing:.1em;font-weight:900;cursor:pointer}.tab.active{background:var(--orange);color:#fff}.tab-copy{font-family:Georgia,serif;font-size:17px;line-height:1.63;color:#3f433e}.tab-copy p{margin:0 0 12px}.tab-copy strong{color:var(--ink)}.day-food{margin-top:17px;padding-top:15px;border-top:1px solid var(--line);font-size:11px;line-height:1.5;color:#68635a}.day-food b{color:var(--ink)}
+.map-card{padding:13px;display:flex;flex-direction:column}.map-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;padding:7px 4px 11px}.map-head b{font-family:Georgia,serif;font-size:20px}.map-head span{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:#777168}.mapbox{height:365px;background:#dfe4df}.bike-pin{width:29px;height:29px;border-radius:50%;display:grid;place-content:center;background:#fffaf0;border:2px solid var(--orange);font-size:16px;box-shadow:0 4px 10px rgba(0,0,0,.16)}.map-note{font-size:10px;line-height:1.5;color:#777168;padding:9px 4px 0}.leaflet-control-attribution{font-size:8px!important}.leaflet-popup-content-wrapper{border-radius:3px}
+.photo-rail-wrap{margin-top:18px;background:#fff;border:1px solid var(--line);padding:16px}.carousel-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:13px}.carousel-head h3{font-family:Georgia,serif;font-size:27px;margin:3px 0 0;font-weight:500}.carousel-head .count{font-size:9px;letter-spacing:.12em;color:#817a6f}.carousel-controls{display:flex;gap:7px;margin-top:7px}.carousel-controls button{width:38px;height:38px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--ink);font-size:18px}.photo-rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.photo-rail::-webkit-scrollbar{display:none}.rail-card{flex:0 0 min(56vw,540px);height:360px;position:relative;overflow:hidden;background:var(--dark);scroll-snap-align:start;margin:0}.rail-card img{height:100%;object-fit:cover}.rail-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8))}.rail-card figcaption{position:absolute;z-index:2;left:17px;right:17px;bottom:15px;color:#fff}.rail-card figcaption b{display:block;font-family:Georgia,serif;font-size:24px;font-weight:500}.rail-card figcaption span{display:block;margin-top:5px;font-size:11px;line-height:1.45;color:#ddd9d0}.empty-photos{padding:30px;border:1px dashed rgba(23,49,41,.25);background:var(--paper);font-family:Georgia,serif;font-size:18px;color:#55514a}
+.story-bridge{margin-top:22px;background:var(--ink);color:#fff;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:28px;padding:23px 28px;box-shadow:var(--shadow)}.story-bridge small{display:block;font-size:8px;letter-spacing:.14em;color:#d5cfc4;font-weight:850}.story-bridge strong{display:block;font-family:Georgia,serif;font-size:27px;font-weight:500;margin-top:5px}.story-bridge button{border:0;background:var(--orange);color:white;padding:15px 18px;font-size:9px;font-weight:900;letter-spacing:.08em;cursor:pointer}.story-bridge button span{font-size:18px;margin-left:10px}
+.feature{padding:98px 0 110px;background:#eee7dc}.feature-toolbar{position:sticky;top:82px;z-index:50;background:rgba(238,231,220,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);border-top:1px solid var(--line);margin:-98px 0 68px;padding:10px 0}.feature-toolbar-inner{width:min(1450px,92vw);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}.feature-toolbar button{border:1px solid var(--line);background:#fff;padding:10px 12px;font-size:8px;font-weight:850;letter-spacing:.08em;cursor:pointer}.feature-toolbar b{font-family:Georgia,serif;font-size:18px;font-weight:500}.feature-grid{display:grid;grid-template-columns:120px minmax(0,1fr);gap:42px}.feature-no{font-family:Georgia,serif;color:var(--orange);font-size:90px}.feature-copy h2{font-family:Georgia,serif;font-size:clamp(48px,5.3vw,80px);line-height:.94;letter-spacing:-.05em;font-weight:500;margin:8px 0 20px}.feature-lede{font-family:Georgia,serif;font-size:23px;line-height:1.55;max-width:960px;color:#3c4943}.article-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.65fr);gap:62px;margin-top:48px}.article-grid article p{font-family:Georgia,serif;font-size:20px;line-height:1.72;margin:0 0 24px;color:#38423d}.pull{font-family:Georgia,serif;font-size:34px;line-height:1.18;color:var(--ink);border-left:3px solid var(--orange);padding-left:21px;margin:38px 0}
+.layers{min-width:0}.layers details{border-top:1px solid var(--line);padding:18px 0}.layers details:last-child{border-bottom:1px solid var(--line)}.layers summary{cursor:pointer;font-family:Georgia,serif;font-size:25px;list-style:none}.layers summary::-webkit-details-marker{display:none}.layers summary:after{content:"+";float:right;color:var(--orange)}.layers details[open] summary:after{content:"–"}.layers p,.layers li{font-size:13px;line-height:1.68;color:#666158}.stop-list{display:grid;gap:14px;margin-top:18px}.stop-card{padding:0 0 14px;border-bottom:1px solid rgba(23,49,41,.09)}.stop-card:last-child{border-bottom:0}.stop-card b{display:block;font-family:Georgia,serif;font-size:18px;color:var(--ink);margin-bottom:4px}.stop-card p{margin:0;font-size:12.5px;line-height:1.6}.context-block p{margin:12px 0}.context-block strong{display:block;color:var(--ink);margin-bottom:2px}
+.more-photos{margin-top:55px;padding-top:32px;border-top:1px solid var(--line)}.more-photos .photo-rail{margin-top:14px}.more-photos .rail-card{flex-basis:min(48vw,500px);height:330px}
+.chat-launch{position:fixed;right:22px;bottom:22px;z-index:1400;border:0;background:var(--orange);color:#fff;border-radius:999px;padding:14px 18px;box-shadow:0 12px 35px rgba(30,45,40,.25);font-size:10px;font-weight:900;letter-spacing:.05em;cursor:pointer}.chat-launch span{font-size:16px;margin-right:7px}.chat-panel{position:fixed;z-index:1500;right:22px;bottom:78px;width:min(420px,calc(100vw - 28px));height:min(650px,78vh);background:#fff;border:1px solid var(--line);box-shadow:0 24px 90px rgba(0,0,0,.25);display:none;grid-template-rows:auto 1fr auto}.chat-panel.open{display:grid}.chat-head{padding:18px 18px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}.chat-head b{font-family:Georgia,serif;font-size:24px}.chat-head small{display:block;color:#746e65;margin-top:4px;line-height:1.4}.chat-close{border:0;background:none;font-size:22px;cursor:pointer}.chat-mid{min-height:0;display:grid;grid-template-rows:1fr auto}.messages{overflow:auto;padding:16px;background:#faf7f1}.msg{max-width:89%;padding:11px 12px;margin:0 0 10px;font-size:12px;line-height:1.55;border-radius:12px;white-space:pre-line}.msg.bot{background:#fff;border:1px solid var(--line)}.msg.user{background:var(--ink);color:#fff;margin-left:auto}.msg.loading-msg{color:#777;font-style:italic}.msg .open-day{margin-top:9px;border:0;background:#eee6da;padding:7px 9px;font-size:8px;font-weight:850;cursor:pointer}.quick{display:flex;gap:6px;overflow-x:auto;padding:0 16px 12px;background:#faf7f1;scrollbar-width:none}.quick button{flex:0 0 auto;border:1px solid var(--line);background:#fff;padding:8px 9px;font-size:8px;cursor:pointer}.chat-form{display:flex;gap:7px;padding:12px;border-top:1px solid var(--line)}.chat-form input{flex:1;border:1px solid var(--line);padding:11px 12px;outline:none}.chat-form button{border:0;background:var(--orange);color:#fff;padding:0 14px;font-weight:900;cursor:pointer}.chat-form button:disabled{opacity:.5}
+.footer{padding:38px 5vw;background:#0e1e19;color:#b8c0bc;display:flex;justify-content:space-between;gap:30px;font-size:10px;line-height:1.6}.footer b{color:#fff}
+@media(max-width:950px){
+.nav{height:72px;padding:0 18px}.navlinks a:not(.accent){display:none}.brand svg{width:42px}.brandtype b{font-size:25px}.brandtype span{font-size:9px}.navlinks .accent{font-size:8px}.hero{height:780px;min-height:0}.hero>img{object-position:54% center}.hero-inner{padding:70px 21px 110px;justify-content:center}.hero h1{font-size:70px}.hero p{font-size:16px}.badge{width:105px;height:105px;right:25px;bottom:69px}.badge b{font-size:30px}.hero-footer{left:20px;right:20px;font-size:7px}.hero-footer span:last-child{display:none}
+.section{padding:66px 0}.section-head{grid-template-columns:1fr;gap:16px}.section-head h2{font-size:49px}.section-head p{font-size:14px}.explorer-grid{grid-template-columns:1fr}.top-media{height:390px}.mapbox{height:310px}.rail-card{flex-basis:84vw;height:350px}.story-bridge{grid-template-columns:1fr;padding:22px}.story-bridge strong{font-size:23px}.story-bridge button{justify-self:start}
+.feature{padding-top:72px}.feature-toolbar{top:72px;margin:-72px 0 52px}.feature-grid{grid-template-columns:1fr;gap:6px}.feature-no{font-size:62px}.feature-copy h2{font-size:51px}.feature-lede{font-size:20px}.article-grid{grid-template-columns:1fr;gap:34px}.more-photos .rail-card{flex-basis:84vw;height:340px}
+.chat-launch{right:14px;bottom:14px}.chat-panel{right:7px;bottom:67px;width:calc(100vw - 14px);height:75vh}
+}
+@media(max-width:560px){.hero h1{font-size:58px}.hero-actions{gap:18px;align-items:flex-start;flex-direction:column}.date-btn{min-width:72px}.day-route{font-size:29px}.top-media{height:340px}.top-caption b{font-size:23px}.rail-card{flex-basis:88vw;height:330px}.feature-copy h2{font-size:44px}.article-grid article p{font-size:18px}.pull{font-size:29px}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="loading" id="loading">Abrindo o caderno<small>carregando fotos e rotas reais</small></div>
+<nav class="nav">
+<a class="brand" href="#top"><svg viewBox="0 0 78 48"><path d="M7 15 L21 5 L31 14 L42 4 L55 15" fill="none" stroke="#91a99e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="34" r="10" fill="none" stroke="#d9573b" stroke-width="3"/><circle cx="52" cy="34" r="10" fill="none" stroke="#d9573b" stroke-width="3"/><path d="M20 34 L31 20 L40 34 L28 34 L35 23 L47 23 L52 34 M31 20 L27 17 M47 23 L44 17" fill="none" stroke="#d9573b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brandtype"><b>Pedal</b><span>NOS BÁLCÃS</span></span></a>
+<div class="navlinks"><a href="#roteiro">ROTEIRO</a><a href="#historia">HISTÓRIAS</a><a href="#fotosDia">FOTOS</a><a class="accent" href="#roteiro">EXPLORAR A VIAGEM ↗</a></div>
+</nav>
+
+<header class="hero" id="top"><img id="heroImg" alt="Ciclista em estrada de montanha nos Bálcãs"><div class="hero-inner"><div class="eyebrow"><i></i>CADERNO DE UMA VIAGEM REAL</div><h1>Pedal<br><em>nos Bálcãs</em></h1><p>Cidades antigas, estradas de montanha e planos que mudam no caminho. Uma viagem de bicicleta contada por quem esteve lá.</p><div class="hero-actions"><a class="primary" href="#roteiro">PERCORRER A ROTA <span>→</span></a><a class="text-link" href="#historia">LER AS HISTÓRIAS <span>↓</span></a></div></div><div class="badge"><b>14</b><span>ETAPAS<br>NARRADAS</span></div><div class="hero-footer"><span>14 DIAS · SETEMBRO DE 2026 · SEM CARRO DE APOIO</span><span>ARQUIVO PESSOAL</span></div></header>
+
+<main>
+<section class="section" id="roteiro"><div class="wrap">
+<div class="section-head"><div><div class="section-kicker">Escolha uma data</div><h2>Um dia de cada vez.<br><em>O mapa, as fotos e a história mudam juntos.</em></h2></div><p>Comece pelo resumo, navegue pelas fotos daquele dia e veja onde a bicicleta passou. A matéria completa continua logo abaixo — sem obrigar quem só quer consultar a rota a ler tudo.</p></div>
+<div class="date-strip" id="dateStrip"></div>
+
+<div class="explorer-grid">
+<section class="day-panel">
+<div class="top-media" id="topMedia"><img id="topImg" alt=""><div class="top-caption"><b id="topTitle"></b><span id="topText"></span></div><div class="top-controls"><button id="topPrev">←</button><button id="topNext">→</button></div><span class="top-count" id="topCount"></span></div>
+<div class="day-copy"><div class="day-meta"><div><div class="day-no" id="dayNo"></div><div class="day-route" id="dayRoute"></div><div class="day-stats" id="dayStats"></div></div><div class="section-kicker" id="dayDate"></div></div><div class="tabs"><button class="tab active" data-tab="summary">RELATO</button><button class="tab" data-tab="context">ENTENDA O LUGAR</button><button class="tab" data-tab="practical">PRÁTICO</button></div><div class="tab-copy" id="tabCopy"></div><div class="day-food" id="dayFood"></div></div>
+</section>
+<section class="map-card"><div class="map-head"><div><div class="section-kicker">Rota do dia</div><b id="mapTitle"></b></div><span>GPS real quando disponível</span></div><div class="mapbox" id="map"></div><div class="map-note" id="mapNote"></div></section>
+</div>
+
+<section class="photo-rail-wrap" id="fotosDia"><div class="carousel-head"><div><div class="section-kicker">Arquivo pessoal</div><h3>Mais imagens deste dia</h3></div><div><span class="count" id="photoCount"></span><div class="carousel-controls"><button id="photoPrev">←</button><button id="photoNext">→</button></div></div></div><div class="photo-rail" id="photoRail"></div></section>
+
+<div class="story-bridge"><div><small>VOCÊ VIU O RESUMO. AGORA DÁ PARA MERGULHAR.</small><strong id="bridgeText"></strong></div><button id="readFull">LER A HISTÓRIA COMPLETA <span>↓</span></button></div>
+</div></section>
+
+<section class="feature" id="historia"><div class="feature-toolbar"><div class="feature-toolbar-inner"><button id="prevDay">← DIA ANTERIOR</button><b id="featureToolbarTitle"></b><button id="nextDay">PRÓXIMO DIA →</button></div></div><div class="wrap"><div class="feature-grid"><div class="feature-no" id="featureNo"></div><div class="feature-copy"><div class="section-kicker" id="featureDate"></div><h2 id="featureRoute"></h2><div class="feature-lede" id="featureHook"></div><div class="article-grid"><article id="featureStory"></article><aside class="layers"><details open><summary>O que vale a parada</summary><div class="stop-list" id="stopList"></div></details><details open><summary>Para entender o lugar</summary><div class="context-block" id="featureContext"></div></details><details><summary>Se você fizer essa rota</summary><p id="featurePractical"></p></details><details><summary>Comida deste dia</summary><p id="featureFood"></p></details></aside></div><section class="more-photos"><div class="carousel-head"><div><div class="section-kicker">Continue explorando</div><h3>O dia em imagens</h3></div><div class="carousel-controls"><button id="detailPrev">←</button><button id="detailNext">→</button></div></div><div class="photo-rail" id="detailRail"></div></section></div></div></div></section>
+</main>
+
+<footer class="footer"><div><b>PEDAL NOS BÁLCÃS</b><br>14 dias · quase 700 km · setembro de 2026.</div><div>Fotos do arquivo pessoal. Traçados de atividade Garmin/Tredict. Mapa-base OpenStreetMap.</div></footer>
+
+<button class="chat-launch" id="chatLaunch"><span>◌</span> PERGUNTE À VIAGEM</button>
+<section class="chat-panel" id="chatPanel"><div class="chat-head"><div><b>Pergunte à viagem</b><small>Rotas, comida, lugares, transporte, perrengues e decisões do caminho.</small></div><button class="chat-close" id="chatClose">×</button></div><div class="chat-mid"><div class="messages" id="messages"></div><div class="quick" id="quick"></div></div><form class="chat-form" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Ex.: o que é o Sebilj?"><button id="chatSend">→</button></form></section>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+let PHOTO_DATA={},legacyDays=[],tracks=[],days=[],map,layerGroup,activeDay=1,activeTab='summary',topIndex=0;
+
+const ENHANCE={
+1:{
+summary:`<p><strong>Belgrado foi o prólogo.</strong> Antes de existir um grande trecho de bicicleta, o roteiro passou pelo Templo de São Sava, pela fortaleza de Kalemegdan, pelo monumento Pobednik e pela pequena Igreja Ružica — onde lustres feitos com cartuchos, baionetas e peças militares transformam memória de guerra em decoração religiosa.</p><p>Depois veio o voo para Sarajevo. A chegada à Bósnia mudou completamente o cenário: Baščaršija, marcas da guerra nas fachadas e, ainda naquela noite, a missão de comprar as bicicletas que colocariam a viagem de fato sobre duas rodas.</p>`,
+context:`<p><strong>Belgrado.</strong> A cidade cresceu numa posição estratégica onde Sava e Danúbio se encontram; a região já era ocupada pela Singidunum romana.</p><p><strong>Sarajevo.</strong> O centro otomano e as marcas do cerco de 1992–1996 coexistem a poucos minutos um do outro, algo que seria ainda mais evidente no pedal da manhã seguinte.</p>`,
+stops:[
+["Kalemegdan","A fortaleza ocupa a área mais estratégica de Belgrado, acima do encontro dos rios Sava e Danúbio. Foi uma boa primeira leitura da cidade antes de seguir para a Bósnia."],
+["Igreja Ružica","Pequena igreja dentro da área de Kalemegdan. O detalhe que ficou na memória foram os lustres montados com cartuchos, baionetas e outros materiais militares."],
+["Baščaršija","A chegada a Sarajevo terminou no núcleo otomano da cidade. O contraste com Belgrado foi imediato — e no dia seguinte esse bairro seria o ponto de partida do primeiro pedal."]
+],
+photoCaptions:{
+d1_1:["Kalemegdan","A fortaleza de Belgrado fica acima do encontro dos rios Sava e Danúbio — uma boa primeira leitura da cidade antes do voo."],
+d1_2:["Igreja Ružica","Uma pequena igreja dentro de Kalemegdan, conhecida pelos detalhes feitos com material militar."],
+d1_3:["Ružica por dentro","Os lustres feitos com cartuchos e outras peças militares são o detalhe que torna a igreja tão incomum."],
+d1_4:["Detalhe dos lustres","Memória militar transformada em ornamentação religiosa."],
+d1_5:["Fim do primeiro dia","Já em Sarajevo, com as bicicletas ainda por comprar e o primeiro pedal reservado para a manhã seguinte."]
+}
+},
+2:{
+summary:`<p><strong>O primeiro pedal começou no coração otomano de Sarajevo.</strong> A Baščaršija é o antigo bazar da cidade e, no centro da praça, o Sebilj — a fonte de madeira de 1753 que virou um dos símbolos de Sarajevo. Foi dali que as bicicletas começaram a costurar lugares que, vistos apenas como uma lista, parecem não ter relação entre si.</p><p>Da fonte seguimos para a <strong>Ponte Latina</strong>, ao lado do ponto onde o arquiduque Francisco Ferdinando e Sophie foram assassinados em 1914, e para as <strong>Sarajevo Roses</strong>: marcas de impactos de morteiros preservadas no pavimento e preenchidas de vermelho para lembrar civis mortos durante o cerco. Depois veio o <strong>Tunnel of Hope</strong>, escavado sob a pista do aeroporto em 1993 para ligar a cidade sitiada ao território livre.</p><p>Na volta entramos em <strong>Istočno Sarajevo</strong>, já na Republika Srpska. Não era uma fronteira internacional: continuávamos na Bósnia e Herzegovina, mas símbolos, placas e alfabeto mudavam rápido o suficiente para tornar visível a arquitetura política do pós-guerra. Depois de corrigir o bagageiro do Guillermo, as bikes entraram no trem para Mostar. A noite terminou diante da Stari Most iluminada.</p>`,
+context:`<p><strong>Uma cidade em camadas.</strong> Baščaršija e o Sebilj ajudam a enxergar a Sarajevo otomana; a Ponte Latina coloca a cidade no centro da história europeia de 1914; Sarajevo Roses e Tunnel of Hope trazem o cerco de 1992–1996 para a escala da rua.</p><p><strong>Istočno Sarajevo.</strong> A Bósnia e Herzegovina é formada por entidades políticas internas. Ao pedalar para Istočno Sarajevo, a viagem entrou na Republika Srpska sem sair do país — por isso a sensação de “fronteira sem fronteira”.</p><p><strong>Mostar.</strong> A Stari Most foi construída no século XVI, destruída durante a guerra dos anos 1990 e reconstruída. Hoje a área da ponte histórica é Patrimônio Mundial da UNESCO.</p>`,
+stops:[
+["Baščaršija + Sebilj","Baščaršija é o antigo bazar otomano. O Sebilj, a fonte de madeira no centro da praça, foi construído em 1753 e virou um símbolo de Sarajevo. Há até a tradição local de que quem bebe de suas fontes acaba voltando à cidade."],
+["Ponte Latina","A ponte em si é discreta; o peso está no que aconteceu ao lado dela. Em 28 de junho de 1914, Gavrilo Princip assassinou o arquiduque Francisco Ferdinando e sua esposa Sophie — o episódio que ajudou a desencadear a Primeira Guerra Mundial."],
+["Sarajevo Roses","São cicatrizes de explosões de morteiros preservadas no pavimento. Algumas foram preenchidas de vermelho nos pontos associados à morte de civis durante o cerco, transformando uma marca física da guerra em memorial espalhado pela cidade."],
+["Tunnel of Hope","Escavado em 1993 sob a pista do aeroporto, tinha cerca de 800 metros e foi uma conexão vital entre a Sarajevo sitiada e o território livre. Por ali passaram pessoas, alimentos, medicamentos, cabos e outros suprimentos. Hoje parte do túnel pode ser visitada."],
+["Istočno Sarajevo","Atravessar para o lado oriental foi importante justamente porque não havia uma fronteira internacional. Ainda era Bósnia e Herzegovina, mas já dentro da Republika Srpska; bandeiras, escrita e referências mudavam diante da bicicleta."],
+["Trem Sarajevo–Mostar","Depois do pedal urbano, o trem foi uma das melhores decisões logísticas da viagem: bikes simples de embarcar e uma travessia montanhosa que desce em direção à Herzegovina."],
+["Stari Most","A ponte de pedra de Mostar encerrou o dia. Construída no período otomano, destruída em 1993 e reconstruída, funciona hoje como símbolo da cidade e da reconstrução do pós-guerra."]
+],
+photoCaptions:{
+d2_1:["Sebilj","A fonte de madeira de 1753 fica no coração da Baščaršija e se tornou um dos símbolos de Sarajevo."],
+d2_2:["Sarajevo Rose","Uma das marcas de impacto preservadas no pavimento. O vermelho transforma a cicatriz da explosão em memorial."],
+d2_3:["As marcas continuam nas fachadas","Mesmo décadas depois do cerco, estilhaços e impactos ainda aparecem fora dos museus."],
+d2_4:["O primeiro pedal","As bikes diante do Sebilj: aqui a viagem finalmente começou de bicicleta."],
+d2_5:["Bicicletas no trem","Sarajevo → Mostar foi uma das experiências mais simples da viagem para transportar as bikes."],
+d2_6:["Na estação","Bagagem, bicicletas e a conexão que comprou tempo sem apagar a experiência do caminho."],
+d2_7:["Stari Most","A primeira visão da ponte histórica de Mostar no fim da tarde."],
+d2_8:["Mostar mudando de luz","A ponte, o rio Neretva e as montanhas ao redor pouco antes de escurecer."],
+d2_9:["Stari Most à noite","O Dia 2 terminou com a ponte iluminada e a cidade já quase vazia."]
+}
+},
+3:{stops:[
+["Blagaj","A nascente do rio Buna surge aos pés de um paredão e foi a principal parada antes de o dia entrar nos vinhedos e nos problemas mecânicos."],
+["Vinhedos da Herzegovina","O trajeto cruzou uma região ligada às uvas Žilavka e Blatina. A paisagem rural foi parte importante do dia — até o atalho errado começar a sequência de furos."],
+["Hotel Stanica Ravno","Uma antiga estação ferroviária transformada em hotel. Depois dos seis furos, da subida e da carona inesperada, virou o ponto de chegada perfeito."]
+]},
+4:{stops:[
+["Popovo Polje","Grande vale cárstico cercado de parreirais. Bonito, aberto e quente — justamente por isso água virou a questão central do dia."],
+["Mosteiro de Tvrdoš","Mosteiro ortodoxo nos arredores de Trebinje. Além do ofício religioso, a parada mostrou a tradição vinícola dos monges e resolveu a urgência mais prática daquele momento: água."],
+["Trebinje","A chegada já seria marcante pelo calor e pelo desgaste; ficou ainda mais memorável quando Léo apareceu de surpresa para entrar na viagem."]
+]},
+5:{stops:[
+["Trebinje → Adriático","A etapa mostra em poucos quilômetros a mudança entre o interior montanhoso da Herzegovina e a costa croata."],
+["Old Town de Dubrovnik","As muralhas e ruas de pedra valem a visita, mas com uma bike carregada as escadas mudam completamente o que significa estar “bem localizado”."],
+["Costa na chegada","Os três que pedalaram chegaram com luz de fim de tarde. Foi o tipo de visual que explica por que adaptar o roteiro pode ser melhor do que insistir em cumprir um plano doente."]
+]},
+6:{stops:[
+["Dubrovnik cedo","Antes de sair, a cidade pôde ser vista com mais calma e com menos multidões."],
+["Barco até Cavtat","Em vez de usar só estrada, as bicicletas embarcaram num barco pelo Adriático. Foi transporte, mas também parte da experiência."],
+["Kamenari → Lepetane","O ferry atravessa o estreito da Baía de Kotor e encurta o percurso. No Garmin, porém, essa travessia entrou no arquivo e inflou a distância bruta."],
+["Baía de Kotor","O fechamento do dia foi pedalando pela água até Prčanj. A baía parece um fiorde, mas geologicamente é uma ria."]
+]},
+7:{stops:[
+["Old Town de Kotor","Cidade murada com forte herança veneziana. Vale cedo ou à noite, quando o movimento dos cruzeiros cai."],
+["Margem oeste da baía","Muo, Prčanj e Stoliv formam o melhor trecho para pedalar sem pressa e, nesse dia, sem bagagem."],
+["Nossa Senhora das Rochas","Ilha artificial em frente a Perast. Foi vista durante o pedal pela baía e não deve ser confundida com a pequena igreja de Nossa Senhora dos Anjos, mais adiante em Verige."],
+["Verige + Nossa Senhora dos Anjos","No estreito de Verige, a pequena igreja ficou minúscula quando um grande navio de cruzeiro atravessou o gargalo. Foi uma das cenas mais fortes do dia."]
+]},
+8:{stops:[
+["Cetinje","Antiga capital real de Montenegro. O ônibus foi usado para vencer a subida até ali e preservar energia para o trecho mais interessante."],
+["Descida ao Lago Skadar","Cerca de 34 km por estradas rurais, com maçãs e amoras no caminho e uma sensação bem diferente da costa."],
+["Virpazar → Bar de trem","As bikes entraram inteiras e sem custo extra. Depois de vários ônibus imprevisíveis, o trem foi quase um alívio logístico."],
+["Ulcinj","A chegada veio já à noite, encerrando um dia que misturou ônibus, pedal, trilha errada e trem."]
+]},
+9:{stops:[
+["Sukobin–Muriqan","Na fronteira Montenegro–Albânia, as bicicletas passaram enquanto os carros formavam fila. Um raro momento em que estar de bike simplificou a burocracia."],
+["Shkodër","Cidade em que a bicicleta faz parte da rotina local. A chegada combinou com o espírito da viagem."],
+["Hotel Rozafa","Mais que hospedagem, virou referência logística para descobrir de onde sairia o transporte ao Lago Koman."],
+["Fisi","Jantar de comida albanesa com tavë kosi e uma lembrança prática: cartão não era garantia."]
+]},
+10:{stops:[
+["Lago Koman","Reservatório artificial que ocupa um vale extremamente estreito entre montanhas. A travessia de ferry foi um dos visuais mais impressionantes da viagem."],
+["Fierzë → Bajram Curri","Trecho curto em distância, mas com subida suficiente para transformar o relógio do ônibus em pressão."],
+["Gjakovë → Prizren","Depois do ônibus para Kosovo, ainda houve cerca de 35 km de pedal. A escolha de usar transporte comprou tempo para chegar a Prizren sobre duas rodas."],
+["Prizren","Cidade de forte herança otomana e central para a história albanesa. À noite, a recomendação unânime do Beska acabou sendo uma das decepções gastronômicas."]
+]},
+11:{stops:[
+["Prizren → Shtime de ônibus","O trecho curto de ônibus eliminou uma subida pouco interessante e deixou energia para os 94,4 km registrados no restante do dia."],
+["Cânion Matka","O rio Treska passa entre paredões de calcário. A chegada aconteceu tarde demais para barco ou caiaque — e ficou a sensação clara de que Matka merecia meio dia."],
+["Ferragem no caminho","Quando o bagageiro do Guillermo começou a soltar, um homem forneceu parafusos e se recusou a cobrar. Um pequeno encontro que virou parte da memória da etapa."],
+["Skopje","A primeira impressão foi monumental. Só depois ficou claro que boa parte da aparência “antiga” do centro vinha do projeto Skopje 2014."]
+]},
+12:{stops:[
+["Skopje de bike","A busca por uma mala para a bicicleta acabou virando um passeio urbano por três bicicletarias e pelo centro monumental."],
+["Mother Teresa Memorial House","Madre Teresa nasceu em Skopje em 1910. O memorial atual não é a casa onde nasceu; fica próximo do local da igreja em que foi batizada."],
+["Igreja de São Constantino e Santa Helena","Por dentro parece muito antiga, mas o templo atual é recente — outro exemplo de como Skopje mistura aparência histórica e construção contemporânea."],
+["Ohrid","A chegada ainda com luz revelou imediatamente por que a cidade seria uma das favoritas: lago, igrejas e um centro histórico que desce até a água."]
+]},
+13:{stops:[
+["Margem do Lago Ohrid","O início do dia foi um dos pedais mais bonitos e tranquilos da viagem, acompanhando a água até Sveti Naum."],
+["Mosteiro de Sveti Naum","No túmulo do santo existe a tradição de encostar o ouvido e ouvir batidas. Na experiência de Diogo, ele ouviu."],
+["Sveta Petka","Pequena capela onde água cristalina corre por dentro — uma parada fácil de perder se a viagem virar só quilometragem."],
+["Rosa e Tymosur","Em Pogradec, pato defumado e vinho viraram uma pausa longa. Depois, a van que não levou as bikes devolveu o grupo à estrada."]
+]},
+14:{stops:[
+["Vale do Shkumbin","O último grande pedal seguiu o vale até Elbasan, num corredor usado desde a antiga Via Egnatia."],
+["Elbasan","A cidade cresceu em torno de uma fortaleza e ainda mantém vida dentro das muralhas: ruas, casas, igreja, mesquita e restaurantes."],
+["Ônibus para Tirana","Só duas bicicletas couberam no primeiro ônibus. O grupo terminou a viagem como tinha viajado várias vezes: adaptando a logística em tempo real."],
+["Absolute Bike & Rent","Depois de três bicicletarias sem solução em Skopje, três caixas de papelão em Tirana finalmente resolveram como colocar as bikes no avião."]
+]}
+};
+
+const GLOBAL_GUIDE=`A viagem durou 14 dias em setembro de 2026, sem carro de apoio, misturando bicicleta, trem, ônibus, ferry, barco e improviso. Quase 700 km foram pedalados. Lições recorrentes: bike em ônibus depende de negociação e espaço; vans são ruins para quatro bikes; cada ciclista precisa de autonomia mecânica; rota de pedestre no Maps pode ser péssima para bike carregada; água é logística; dinheiro vivo fez falta especialmente na Albânia; caixas de papelão resolveram o voo; transporte foi usado para comprar tempo e experiência, não para provar resistência.`;
+
+function extract(text,start,end){
+ const a=text.indexOf(start),b=text.indexOf(end,a+start.length);
+ if(a<0||b<0)throw new Error('Não consegui ler os dados da versão-base.');
+ return JSON.parse(text.slice(a+start.length,b));
+}
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function photoFor(d,key){const ov=ENHANCE[d.d]?.photoCaptions?.[key];if(ov)return ov;const p=d.photos?.find(x=>x[0]===key);return p?[p[1],p[2]]:[key,'Arquivo pessoal da viagem.']}
+function enhanceDays(base){
+ return base.map(d=>{const e=ENHANCE[d.d]||{};return {...d,...e,stops:e.stops||d.worth.map(x=>[x,'Parada registrada no diário desta etapa.'])}})
+}
+function current(){return days.find(x=>x.d===activeDay)}
+function photoList(d){return (d.photos||[]).map(p=>({key:p[0],title:photoFor(d,p[0])[0],caption:photoFor(d,p[0])[1]}))}
+function renderTop(d){
+ const ps=photoList(d),box=document.getElementById('topMedia');
+ if(!ps.length){box.innerHTML='<div class="top-empty">FOTOS DESTE DIA AINDA NÃO ASSOCIADAS COM SEGURANÇA</div>';return}
+ topIndex=Math.max(0,Math.min(topIndex,ps.length-1));const p=ps[topIndex];
+ box.innerHTML=`<img src="${PHOTO_DATA[p.key]}" alt="${esc(p.title)}"><div class="top-caption"><b>${esc(p.title)}</b><span>${esc(p.caption)}</span></div><div class="top-controls"><button id="topPrev">←</button><button id="topNext">→</button></div><span class="top-count">${topIndex+1} / ${ps.length}</span>`;
+ document.getElementById('topPrev').onclick=()=>{topIndex=(topIndex-1+ps.length)%ps.length;renderTop(d)};
+ document.getElementById('topNext').onclick=()=>{topIndex=(topIndex+1)%ps.length;renderTop(d)};
+}
+function renderRail(id,d,full=true){
+ const el=document.getElementById(id),ps=photoList(d);el.innerHTML='';
+ if(!ps.length){el.innerHTML='<div class="empty-photos">Ainda não há imagens deste dia associadas com segurança. O site prefere deixar o espaço vazio a misturar datas ou lugares.</div>';return}
+ ps.forEach(p=>{const f=document.createElement('figure');f.className='rail-card';f.innerHTML=`<img src="${PHOTO_DATA[p.key]}" alt="${esc(p.title)}" loading="lazy"><figcaption><b>${esc(p.title)}</b><span>${esc(p.caption)}</span></figcaption>`;el.appendChild(f)})
+}
+function tabHtml(d,key){if(key==='summary')return d.summary||`<p>${esc(d.hook)}</p><p>${esc(d.summary||'')}</p>`;if(key==='context')return d.context||'';return `<p>${esc(d.practical||'')}</p>`}
+function drawDay(d){
+ layerGroup.clearLayers();const segs=tracks.filter(t=>t.day===d.d);let all=[];
+ if(segs.length){segs.forEach((s,si)=>{L.polyline(s.pts,{color:'#fff8e8',weight:11,opacity:.98,lineCap:'round'}).addTo(layerGroup);L.polyline(s.pts,{color:'#f15a37',weight:6.2,opacity:1,lineCap:'round'}).addTo(layerGroup).bindPopup(`<b>Dia ${d.d}</b><br>${esc(s.title)}<br>${String(s.km).replace('.',',')} km registrados`);s.pts.forEach(p=>all.push(p));[.18,.48,.78].forEach(fr=>{const p=s.pts[Math.min(s.pts.length-1,Math.round((s.pts.length-1)*fr))];L.marker(p,{icon:L.divIcon({className:'',html:'<div class="bike-pin">🚲</div>',iconSize:[29,29],iconAnchor:[14,14]})}).addTo(layerGroup)});if(si>0){const a=segs[si-1].pts.at(-1),b=s.pts[0];L.polyline([a,b],{color:'#403e39',weight:2.4,dashArray:'5 8',opacity:.72}).addTo(layerGroup)}});map.fitBounds(all,{padding:[34,34],maxZoom:11});document.getElementById('mapNote').textContent=d.d===6?'O Garmin registrou 83,4 km brutos, mas a distância pedalada curada é ≈68 km: barco e ferry entraram no arquivo.':'O traçado pedalado está em laranja forte com halo claro. As bicicletas ajudam a diferenciar o pedal das conexões por outros transportes.'}
+ else{const pts=d.fallback||[];if(pts.length){L.polyline(pts,{color:'#403e39',weight:2.5,dashArray:'6 8',opacity:.7}).addTo(layerGroup);map.fitBounds(pts,{padding:[52,52],maxZoom:8})}document.getElementById('mapNote').textContent='Neste dia não há um track de pedal relevante no arquivo disponível; o mapa mostra apenas a conexão editorial da etapa.'}
+}
+function renderDetail(d){
+ document.getElementById('featureNo').textContent=String(d.d).padStart(2,'0');document.getElementById('featureDate').textContent=`${d.date} · 2026`;document.getElementById('featureRoute').textContent=d.route;document.getElementById('featureHook').textContent=d.hook;document.getElementById('featureToolbarTitle').textContent=`Dia ${d.d} · ${d.route}`;
+ const story=document.getElementById('featureStory');story.innerHTML=(d.story||[]).map((p,i)=>i===2&&d.story.length>3?`<div class="pull">${esc(p)}</div>`:`<p>${esc(p)}</p>`).join('');
+ document.getElementById('stopList').innerHTML=d.stops.map(x=>`<div class="stop-card"><b>${esc(x[0])}</b><p>${esc(x[1])}</p></div>`).join('');
+ document.getElementById('featureContext').innerHTML=d.context||'';document.getElementById('featurePractical').textContent=d.practical||'';document.getElementById('featureFood').textContent=d.food||'';
+ renderRail('detailRail',d);document.getElementById('prevDay').disabled=d.d===1;document.getElementById('nextDay').disabled=d.d===14;
+}
+function selectDay(n,opt={}){
+ activeDay=n;topIndex=0;const d=current();document.querySelectorAll('.date-btn').forEach(b=>b.classList.toggle('active',+b.dataset.day===n));
+ document.getElementById('dayNo').textContent=String(n).padStart(2,'0');document.getElementById('dayRoute').textContent=d.route;document.getElementById('dayStats').textContent=d.stats;document.getElementById('dayDate').textContent=d.date+' · 2026';document.getElementById('mapTitle').textContent=d.route;document.getElementById('dayFood').innerHTML=`<b>Comida:</b> ${esc(d.food||'')}`;document.getElementById('bridgeText').textContent=`Continue o Dia ${n}: a história completa, os lugares e as decisões que mudaram a rota.`;
+ activeTab='summary';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab==='summary'));document.getElementById('tabCopy').innerHTML=tabHtml(d,'summary');renderTop(d);renderRail('photoRail',d);document.getElementById('photoCount').textContent=d.photos?.length?`${d.photos.length} fotos`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
+ if(opt.detail)document.getElementById('historia').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
+const aliases={sebılij:2,sebilj:2,bascarsija:2,latin:2,'sarajevo rose':2,tunnel:2,tunel:2,mostar:2,blagaj:3,ravno:3,tvrdos:4,trebinje:4,dubrovnik:6,cavtat:6,kotor:7,verige:7,ulcinj:8,skadar:8,shkoder:9,koman:10,prizren:10,matka:11,skopje:11,ohrid:12,'sveti naum':13,pogradec:13,prrenjas:14,tirana:14};
+const stopWords=new Set('qual quais como onde porque por que pra para uma umas uns com sem dos das de da do no na nos nas o a os as e em foi eram era muito mais menos viagem voces vocês voce você sobre quero saber esse essa isso ali la lá'.split(' '));
+function relevantDays(q){
+ const s=normalize(q),score=new Map(days.map(d=>[d.d,d.d===activeDay?.5:0]));Object.entries(aliases).forEach(([a,d])=>{if(s.includes(a))score.set(d,(score.get(d)||0)+6)});
+ const toks=s.split(/[^a-z0-9]+/).filter(t=>t.length>3&&!stopWords.has(t));
+ days.forEach(d=>{const blob=normalize([d.route,d.hook,d.summary,d.context,d.practical,d.food,...(d.story||[]),...(d.stops||[]).flat()].join(' '));toks.forEach(t=>{if(blob.includes(t))score.set(d.d,(score.get(d.d)||0)+1)})});
+ return [...score].sort((a,b)=>b[1]-a[1]).slice(0,4).map(([id])=>days.find(d=>d.d===id));
+}
+function compactContext(ds){return ds.map(d=>({dia:d.d,data:d.date,rota:d.route,gancho:d.hook,resumo:(d.summary||'').replace(/<[^>]+>/g,' '),historia:d.story,contexto:(d.context||'').replace(/<[^>]+>/g,' '),pratico:d.practical,comida:d.food,lugares:d.stops}));}
+function addMsg(text,who='bot',day=null,loading=false){const m=document.createElement('div');m.className='msg '+who+(loading?' loading-msg':'');m.textContent=text;if(day){const b=document.createElement('button');b.className='open-day';b.textContent=`ABRIR DIA ${day}`;b.onclick=()=>{selectDay(day);document.getElementById('roteiro').scrollIntoView({behavior:'smooth'})};m.appendChild(b)}document.getElementById('messages').appendChild(m);document.getElementById('messages').scrollTop=999999;return m}
+async function ask(q){
+ q=q.trim();if(!q)return;addMsg(q,'user');const wait=addMsg('Buscando no diário da viagem…','bot',null,true);document.getElementById('chatSend').disabled=true;
+ const rel=relevantDays(q);try{const r=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:q,activeDay,context:compactContext(rel),global:GLOBAL_GUIDE})});if(!r.ok)throw new Error('api');const j=await r.json();wait.remove();addMsg(j.answer||'Não consegui responder agora.','bot',j.day||null)}catch(e){wait.remove();const d=rel[0];if(d){const plain=(d.summary||'').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();addMsg(`Isso aparece principalmente no Dia ${d.d} (${d.route}). ${plain}`,'bot',d.d)}else addMsg('Essa informação não está registrada no material da viagem que tenho aqui.','bot')}finally{document.getElementById('chatSend').disabled=false}}
+async function boot(){
+ try{
+  const text=await fetch('/index.html',{cache:'force-cache'}).then(r=>r.text());
+  PHOTO_DATA=extract(text,'const PHOTO_DATA=',';\\nconst days=');
+  legacyDays=extract(text,'const days=',';\\nconst tracks=');
+  tracks=extract(text,'const tracks=',';\\nfunction');
+  days=enhanceDays(legacyDays);
+  document.getElementById('heroImg').src=PHOTO_DATA.hero;
+  days.forEach(d=>{const b=document.createElement('button');b.className='date-btn';b.dataset.day=d.d;b.innerHTML=`<b>${String(d.d).padStart(2,'0')}</b><span>${d.date}</span>`;b.onclick=()=>selectDay(d.d);dateStrip.appendChild(b)});
+  map=L.map('map',{zoomControl:false,scrollWheelZoom:false,attributionControl:true});L.control.zoom({position:'bottomright'}).addTo(map);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);layerGroup=L.layerGroup().addTo(map);
+  document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{activeTab=t.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));document.getElementById('tabCopy').innerHTML=tabHtml(current(),activeTab)});
+  document.getElementById('readFull').onclick=()=>document.getElementById('historia').scrollIntoView({behavior:'smooth'});document.getElementById('prevDay').onclick=()=>activeDay>1&&selectDay(activeDay-1,{detail:true});document.getElementById('nextDay').onclick=()=>activeDay<14&&selectDay(activeDay+1,{detail:true});
+  [['photoPrev','photoRail',-1],['photoNext','photoRail',1],['detailPrev','detailRail',-1],['detailNext','detailRail',1]].forEach(([b,id,dir])=>document.getElementById(b).onclick=()=>document.getElementById(id).scrollBy({left:dir*Math.min(innerWidth*.72,600),behavior:'smooth'}));
+  const quickQs=['O que é o Sebilj?','O Lago Koman vale o desvio?','Como as bikes foram nos ônibus?','Qual foi o trecho mais difícil?','Onde comer em Skopje?'];quickQs.forEach(q=>{const b=document.createElement('button');b.textContent=q;b.onclick=()=>ask(q);quick.appendChild(b)});
+  addMsg('O que você quer saber sobre a viagem?');
+  document.getElementById('chatLaunch').onclick=()=>chatPanel.classList.toggle('open');document.getElementById('chatClose').onclick=()=>chatPanel.classList.remove('open');document.getElementById('chatForm').onsubmit=e=>{e.preventDefault();const q=chatInput.value;chatInput.value='';ask(q)};
+  selectDay(1);document.getElementById('loading').remove();setTimeout(()=>map.invalidateSize(),200);
+ }catch(e){document.getElementById('loading').innerHTML='Não consegui abrir a viagem<small>recarregue a página em alguns segundos</small>';console.error(e)}
+}
+boot();
+</script>
+</body></html>
