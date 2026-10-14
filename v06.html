@@ -62,7 +62,7 @@
 <div class="story-bridge"><div><small>VOCÊ VIU O RESUMO. AGORA DÁ PARA MERGULHAR.</small><strong id="bridgeText"></strong></div><button id="readFull">LER A HISTÓRIA COMPLETA <span>↓</span></button></div>
 </div></section>
 
-<section class="feature" id="historia"><div class="feature-toolbar"><div class="feature-toolbar-inner"><button id="prevDay">← DIA ANTERIOR</button><b id="featureToolbarTitle"></b><button id="nextDay">PRÓXIMO DIA →</button></div></div><div class="wrap"><div class="feature-grid"><div class="feature-no" id="featureNo"></div><div class="feature-copy"><div class="section-kicker" id="featureDate"></div><h2 id="featureRoute"></h2><div class="feature-lede" id="featureHook"></div><div class="article-grid"><article id="featureStory"></article><aside class="layers"><details open><summary>O que vale a parada</summary><div class="stop-list" id="stopList"></div></details><details open><summary>Para entender o lugar</summary><div class="context-block" id="featureContext"></div></details><details><summary>Se você fizer essa rota</summary><p id="featurePractical"></p></details><details><summary>Comida deste dia</summary><p id="featureFood"></p></details></aside></div><section class="more-photos"><div class="carousel-head"><div><div class="section-kicker">Continue explorando</div><h3>Mais fotos para continuar a história</h3></div><div class="carousel-controls"><button id="detailPrev">←</button><button id="detailNext">→</button></div></div><div class="photo-rail" id="detailRail"></div></section></div></div></div></section>
+<section class="feature" id="historia"><div class="feature-toolbar"><div class="feature-toolbar-inner"><button id="prevDay">← DIA ANTERIOR</button><b id="featureToolbarTitle"></b><button id="nextDay">PRÓXIMO DIA →</button></div></div><div class="wrap"><div class="feature-grid"><div class="feature-no" id="featureNo"></div><div class="feature-copy"><div class="section-kicker" id="featureDate"></div><h2 id="featureRoute"></h2><div class="feature-lede" id="featureHook"></div><div class="article-grid"><article id="featureStory"></article><aside class="layers"><details open><summary>O que vale a parada</summary><div class="stop-list" id="stopList"></div></details><details open><summary>Para entender o lugar</summary><div class="context-block" id="featureContext"></div></details><details><summary>Se você fizer essa rota</summary><p id="featurePractical"></p></details><details><summary>Comida deste dia</summary><p id="featureFood"></p></details></aside></div></div></div></div></section>
 </main>
 
 <footer class="footer"><div><b>PEDAL NOS BÁLCÃS</b><br>14 dias · quase 700 km · setembro de 2026.</div><div>Fotos do arquivo pessoal. Traçados de atividade Garmin/Tredict. Mapa-base OpenStreetMap.</div></footer>
@@ -85,25 +85,34 @@
 <script src="photos-v05-12.js"></script>
 <script src="photos-v05-13.js"></script>
 <script src="photos-v05-14.js"></script>
+<script src="photos-v05-15.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 let PHOTO_DATA={},legacyDays=[],tracks=[],days=[],map,layerGroup,activeDay=1,activeTab='summary',topIndex=0;
 
 const ENHANCE={
 1:{
-summary:`<p><strong>Belgrado foi o prólogo.</strong> Antes de existir um grande trecho de bicicleta, o roteiro passou pelo Templo de São Sava, pela fortaleza de Kalemegdan, pelo monumento Pobednik e pela pequena Igreja Ružica — onde lustres feitos com cartuchos, baionetas e peças militares transformam memória de guerra em decoração religiosa.</p><p>Depois veio o voo para Sarajevo. A chegada à Bósnia mudou completamente o cenário: Baščaršija, marcas da guerra nas fachadas e, ainda naquela noite, a missão de comprar as bicicletas que colocariam a viagem de fato sobre duas rodas.</p>`,
-context:`<p><strong>Belgrado.</strong> A cidade cresceu numa posição estratégica onde Sava e Danúbio se encontram; a região já era ocupada pela Singidunum romana.</p><p><strong>Sarajevo.</strong> O centro otomano e as marcas do cerco de 1992–1996 coexistem a poucos minutos um do outro, algo que seria ainda mais evidente no pedal da manhã seguinte.</p>`,
+summary:`<p><strong>Belgrado foi o prólogo.</strong> Antes de existir um grande trecho de bicicleta, o roteiro passou pelo Templo de São Sava, pela fortaleza de Kalemegdan, pelo Pobednik e pela pequena Igreja Ružica — onde lustres feitos com cartuchos, baionetas e outras peças militares transformam memória de guerra em ornamentação religiosa.</p><p>Depois veio o voo para Sarajevo e uma mudança completa de cenário: Baščaršija, arquitetura otomana e marcas da guerra ainda visíveis nas fachadas. Mas faltava o objeto principal da viagem: <strong>as bicicletas ainda precisavam ser escolhidas e compradas ali.</strong> Diogo saiu do Trek Bike Centar com uma Trek Marlin 5; Giggio comprou uma Specialized na M-Bike. A foto dentro da loja registra o momento em que o roteiro deixou de ser só um plano e ganhou as bikes que atravessariam os Bálcãs.</p>`,
+context:`<p><strong>Belgrado.</strong> A cidade ocupa uma posição estratégica no encontro dos rios Sava e Danúbio; a região já era ocupada pela Singidunum romana.</p><p><strong>Sarajevo.</strong> A chegada coloca lado a lado a herança otomana da Baščaršija e marcas muito recentes do cerco de 1992–1996. O primeiro pedal pela cidade viria apenas na manhã seguinte.</p><p><strong>Por que a escolha das bikes importa.</strong> Esta não foi uma viagem em que as bicicletas chegaram prontas de casa. Parte do primeiro dia foi justamente encontrar modelos adequados, comprar e começar a montar a logística sobre duas rodas.</p>`,
+story:[
+"Belgrado abriu a viagem antes de a bicicleta entrar em cena. O roteiro passou pelo Templo de São Sava, pela fortaleza de Kalemegdan, pelo Pobednik e pela Igreja Ružica. Dentro da pequena igreja, os lustres feitos com cartuchos, baionetas e outras peças militares condensavam numa imagem só a relação da região com guerras sucessivas.",
+"Na hora de seguir para o aeroporto apareceu a primeira improvisação logística: sem moeda sérvia e com ônibus que não aceitavam cartão, foi preciso encontrar uma combinação de transporte que não dependesse de dinheiro vivo. Depois veio o voo para Sarajevo.",
+"A Baščaršija marcou a chegada à Bósnia, mas a missão mais importante daquela noite ainda estava pendente: não havia bicicleta esperando pronta. Diogo comprou uma Trek Marlin 5 no Trek Bike Centar; Giggio saiu da M-Bike com uma Specialized. Escolher as bikes ali fazia parte do próprio roteiro — era o equipamento que sustentaria o restante da viagem.",
+"O dia terminou com comida bósnia — sirnica e kaftas — e as bicicletas finalmente resolvidas. O primeiro pedal por Sarajevo ficaria para a manhã seguinte."
+],
 stops:[
-["Kalemegdan","A fortaleza ocupa a área mais estratégica de Belgrado, acima do encontro dos rios Sava e Danúbio. Foi uma boa primeira leitura da cidade antes de seguir para a Bósnia."],
-["Igreja Ružica","Pequena igreja dentro da área de Kalemegdan. O detalhe que ficou na memória foram os lustres montados com cartuchos, baionetas e outros materiais militares."],
-["Baščaršija","A chegada a Sarajevo terminou no núcleo otomano da cidade. O contraste com Belgrado foi imediato — e no dia seguinte esse bairro seria o ponto de partida do primeiro pedal."]
+["Kalemegdan","A fortaleza ocupa a posição mais estratégica de Belgrado, acima do encontro dos rios Sava e Danúbio. Foi a primeira grande leitura da cidade antes do voo."],
+["Igreja Ružica","Pequena igreja dentro de Kalemegdan. O detalhe memorável são os lustres montados com cartuchos, baionetas e outros materiais militares."],
+["Baščaršija","O antigo núcleo otomano de Sarajevo marcou a chegada à Bósnia. No dia seguinte, o primeiro pedal começaria ali."],
+["Escolha das bicicletas","A viagem ainda não tinha bikes próprias. Diogo comprou uma Trek Marlin 5 no Trek Bike Centar e Giggio uma Specialized na M-Bike — uma etapa prática que também virou parte da história."]
 ],
 photoCaptions:{
+d1_shop:["Escolhendo as bicicletas em Sarajevo","A viagem ainda não tinha bicicletas prontas. Diogo comprou uma Trek Marlin 5 no Trek Bike Centar e Giggio uma Specialized na M-Bike. A foto na loja registra o começo prático da aventura sobre duas rodas."],
 d1_1:["Kalemegdan","A fortaleza de Belgrado fica acima do encontro dos rios Sava e Danúbio — uma boa primeira leitura da cidade antes do voo."],
 d1_2:["Igreja Ružica","Uma pequena igreja dentro de Kalemegdan, conhecida pelos detalhes feitos com material militar."],
 d1_3:["Ružica por dentro","Os lustres feitos com cartuchos e outras peças militares são o detalhe que torna a igreja tão incomum."],
 d1_4:["Detalhe dos lustres","Memória militar transformada em ornamentação religiosa."],
-d1_5:["Fim do primeiro dia","Já em Sarajevo, com as bicicletas ainda por comprar e o primeiro pedal reservado para a manhã seguinte."]
+d1_5:["Primeira noite em Sarajevo","A chegada à Bósnia fechou o dia; o primeiro pedal pela cidade aconteceria apenas na manhã seguinte."]
 }
 },
 2:{
@@ -138,11 +147,32 @@ d2_8:["Mostar mudando de luz","A ponte, o rio Neretva e as montanhas ao redor po
 d2_9:["Stari Most à noite","O Dia 2 terminou com a ponte iluminada e a cidade já quase vazia."]
 }
 },
-3:{stops:[
-["Blagaj","A nascente do rio Buna surge aos pés de um paredão e foi a principal parada antes de o dia entrar nos vinhedos e nos problemas mecânicos."],
-["Vinhedos da Herzegovina","O trajeto cruzou uma região ligada às uvas Žilavka e Blatina. A paisagem rural foi parte importante do dia — até o atalho errado começar a sequência de furos."],
-["Hotel Stanica Ravno","Uma antiga estação ferroviária transformada em hotel. Depois dos seis furos, da subida e da carona inesperada, virou o ponto de chegada perfeito."]
-]},
+3:{
+summary:`<p><strong>Este foi o dia em que um erro pequeno virou o maior perrengue mecânico da viagem.</strong> Depois de Blagaj e dos vinhedos da Herzegovina, o Google Maps estava configurado no modo a pé e levou as bicicletas carregadas para um caminho cheio de espinhos. Eles ficaram presos nos pneus e começaram uma sequência de seis furos.</p><p>Trocar a câmara não bastava: se o espinho continuasse dentro do pneu, o problema voltava. Depois vieram a subida de Svitava, a carona que levou Giggio, o pneu de Diogo já sem condição de continuar e o morador que desviou dezenas de quilômetros para levá-lo até Ravno. Guillermo foi quem completou o trecho final pedalando.</p>`,
+context:`<p><strong>Blagaj.</strong> A nascente do rio Buna surge aos pés de um grande paredão cárstico e faz parte de uma das paisagens mais conhecidas da Herzegovina.</p><p><strong>Vinhedos da Herzegovina.</strong> A rota atravessou uma região associada às uvas Žilavka e Blatina antes de entrar no trecho que causou os furos.</p><p><strong>Ćiro Trail e Ravno.</strong> Parte da rota acompanha o antigo corredor ferroviário da Herzegovina. O Hotel Stanica Ravno, instalado numa antiga estação, terminou virando o porto seguro de um dia caótico.</p>`,
+story:[
+"O dia saiu de Mostar por Blagaj e entrou nos vinhedos da Herzegovina. Até ali, era exatamente o tipo de pedal que justificava a viagem: paisagem, estrada rural e calor.",
+"O problema começou com um detalhe banal. O Google Maps estava no modo a pé e sugeriu um caminho que parecia atalho. Para bicicletas carregadas, não era. O trecho tinha espinhos, e eles ficaram presos nos pneus.",
+"Vieram seis furos. A foto do conserto representa o que a contagem não mostra: desmontar roda, procurar o espinho, trocar câmara, perceber que o pneu furou de novo e repetir o processo. A principal lição foi simples — antes de colocar outra câmara, era preciso passar a mão por dentro do pneu e retirar a causa.",
+"Depois ainda veio a subida de Svitava. Giggio conseguiu uma carona. Diogo ficou com o pneu inutilizado até um morador aparecer e desviar dezenas de quilômetros para levá-lo a Ravno. Guillermo, justamente o menos experiente do grupo, terminou o trecho final pedalando.",
+"O Hotel Stanica Ravno, numa antiga estação ferroviária, não foi apenas hospedagem naquela noite: virou o ponto em que um dos dias mais difíceis da viagem finalmente terminou."
+],
+stops:[
+["Blagaj","A nascente do rio Buna surge aos pés de um paredão e foi a grande parada antes de o dia entrar nos vinhedos e nos problemas mecânicos."],
+["O atalho dos espinhos","O Maps estava no modo a pé. O caminho impróprio para bikes carregadas deixou espinhos presos nos pneus e disparou a sequência de seis furos."],
+["Subida de Svitava","Depois dos furos, ainda faltava vencer a subida. O desgaste mecânico transformou um trecho já exigente em um problema logístico."],
+["Hotel Stanica Ravno","Antiga estação ferroviária transformada em hotel. Depois dos furos, da carona e do fim do pedal, virou o ponto de chegada perfeito."]
+],
+photoCaptions:{
+d3_1:["Saída de Mostar","O dia ainda parecia simples antes do atalho errado e dos problemas mecânicos."],
+d3_2:["Blagaj","A nascente do Buna foi a grande parada antes de entrar nos vinhedos da Herzegovina."],
+d3_3:["Vinhedos da Herzegovina","A paisagem rural veio antes do caminho de espinhos que mudaria completamente a etapa."],
+d3_4:["O dia se estendeu até a luz baixar","Os problemas mecânicos consumiram horas e empurraram o restante da etapa para o fim da tarde."],
+d3_5:["Resgate improvisado","Com o pneu já sem condição de seguir, a bicicleta terminou dentro do carro do morador que desviou dezenas de quilômetros para levar Diogo até Ravno."],
+d3_6:["Seis furos e os espinhos","O conserto virou parte central do dia: os espinhos do atalho tinham ficado nos pneus e furavam as câmaras novamente enquanto não fossem retirados."],
+d3_7:["Finalmente Ravno","O jantar depois de um dos dias mais desgastantes da viagem."]
+}
+},
 4:{stops:[
 ["Popovo Polje","Grande vale cárstico cercado de parreirais. Bonito, aberto e quente — justamente por isso água virou a questão central do dia."],
 ["Mosteiro de Tvrdoš","Mosteiro ortodoxo nos arredores de Trebinje. Além do ofício religioso, a parada mostrou a tradição vinícola dos monges e resolveu a urgência mais prática daquele momento: água."],
@@ -209,7 +239,19 @@ d2_9:["Stari Most à noite","O Dia 2 terminou com a ponte iluminada e a cidade j
 ]}
 };
 
-const GLOBAL_GUIDE=`A viagem durou 14 dias em setembro de 2026, sem carro de apoio, misturando bicicleta, trem, ônibus, ferry, barco e improviso. Quase 700 km foram pedalados. O roteiro foi Belgrado → Sarajevo → Mostar → Ravno → Trebinje → Dubrovnik → Kotor → Ulcinj → Shkodër → Lago Koman → Prizren → Skopje → Ohrid → Prrenjas → Tirana. Diogo começou a viagem com Giggio e Guillermo; Léo entrou de surpresa em Trebinje e seguiu com o grupo. Em Sarajevo, Diogo comprou uma Trek Marlin 5 e Giggio uma Specialized. Lições recorrentes: bike em ônibus depende de negociação e espaço; vans são ruins para quatro bikes; cada ciclista precisa de autonomia mecânica; rota de pedestre no Maps pode ser péssima para bike carregada; água é logística; dinheiro vivo fez falta especialmente na Albânia; caixas de papelão resolveram o voo; transporte foi usado para comprar tempo e experiência, não para provar resistência.`;
+const CURATION={
+  1:{top:["d1_shop","d1_3","d1_2"],more:["d1_1","d1_4","d1_5"]},
+  2:{top:["d2_1","d2_2","d2_5","d2_8"],more:["d2_3","d2_4","d2_6","d2_7","d2_9"]},
+  3:{top:["d3_2","d3_6","d3_5","d3_4"],more:["d3_1","d3_3","d3_7"]},
+  4:{top:["d4_2","d4_3"],more:["d4_1","d4_4"]},
+  10:{top:["d10_1","d10_3","d10_6","d10_8"],more:["d10_2","d10_4","d10_5","d10_7"]},
+  11:{top:["d11_5","d11_4","d11_6","d11_3"],more:["d11_1","d11_2"]},
+  12:{top:["d12_1","d12_3","d12_5"],more:["d12_2","d12_4"]},
+  13:{top:["d13_6","d13_1","d13_7"],more:["d13_2","d13_3","d13_4","d13_5"]},
+  14:{top:["d14_1","d14_4","d14_6"],more:["d14_2","d14_3","d14_5"]}
+};
+
+const GLOBAL_GUIDE=`A viagem durou 14 dias em setembro de 2026, sem carro de apoio, misturando bicicleta, trem, ônibus, ferry, barco e improviso. Quase 700 km foram pedalados. Foram 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte. O roteiro foi Belgrado → Sarajevo → Mostar → Ravno → Trebinje → Dubrovnik → Kotor → Ulcinj → Shkodër → Lago Koman → Prizren → Skopje → Ohrid → Prrenjas → Tirana. Diogo começou a viagem com Giggio e Guillermo; Léo entrou de surpresa em Trebinje e seguiu com o grupo. Em Sarajevo, Diogo comprou uma Trek Marlin 5 e Giggio uma Specialized. Lições recorrentes: bike em ônibus depende de negociação e espaço; vans são ruins para quatro bikes; cada ciclista precisa de autonomia mecânica; rota de pedestre no Maps pode ser péssima para bike carregada; água é logística; dinheiro vivo fez falta especialmente na Albânia; caixas de papelão resolveram o voo; transporte foi usado para comprar tempo e experiência, não para provar resistência.`;
 
 function extract(text,start,end){
  const a=text.indexOf(start),b=text.indexOf(end,a+start.length);
@@ -239,20 +281,35 @@ function extractArray(text,marker){
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function photoFor(d,key){const ov=ENHANCE[d.d]?.photoCaptions?.[key];if(ov)return ov;const p=d.photos?.find(x=>x[0]===key);return p?[p[1],p[2]]:[key,'Arquivo pessoal da viagem.']}
 function enhanceDays(base){
- return base.map(d=>{const e=ENHANCE[d.d]||{};return {...d,...e,stops:e.stops||d.worth.map(x=>[x,'Parada registrada no diário desta etapa.'])}})
+ return base.map(d=>{
+   const e=ENHANCE[d.d]||{};
+   const extras=d.d===1?[["d1_shop","Escolhendo as bicicletas em Sarajevo","A compra das bikes fez parte do primeiro dia."]]:[];
+   return {...d,...e,photos:[...extras,...(d.photos||[])],stops:e.stops||d.worth.map(x=>[x,'Parada registrada no diário desta etapa.'])};
+ })
 }
 function current(){return days.find(x=>x.d===activeDay)}
-function photoList(d){return (d.photos||[]).map(p=>({key:p[0],title:photoFor(d,p[0])[0],caption:photoFor(d,p[0])[1]}))}
+function allPhotoList(d){return (d.photos||[]).filter(p=>PHOTO_DATA[p[0]]).map(p=>({key:p[0],title:photoFor(d,p[0])[0],caption:photoFor(d,p[0])[1]}))}
+function listByKeys(d,keys){const by=new Map(allPhotoList(d).map(p=>[p.key,p]));return (keys||[]).map(k=>by.get(k)).filter(Boolean)}
+function topPhotoList(d){
+ const all=allPhotoList(d),cfg=CURATION[d.d];
+ if(cfg?.top){const picked=listByKeys(d,cfg.top);if(picked.length)return picked}
+ const cut=Math.max(1,Math.ceil(all.length/2));return all.slice(0,cut)
+}
+function morePhotoList(d){
+ const all=allPhotoList(d),cfg=CURATION[d.d];
+ if(cfg?.more){const picked=listByKeys(d,cfg.more);if(picked.length)return picked}
+ const used=new Set(topPhotoList(d).map(p=>p.key));return all.filter(p=>!used.has(p.key))
+}
 function renderTop(d){
- const ps=photoList(d),box=document.getElementById('topMedia');
+ const ps=topPhotoList(d),box=document.getElementById('topMedia');
  if(!ps.length){box.innerHTML='<div class="top-empty">FOTOS DESTE DIA AINDA NÃO ASSOCIADAS COM SEGURANÇA</div>';return}
  topIndex=Math.max(0,Math.min(topIndex,ps.length-1));const p=ps[topIndex];
  box.innerHTML=`<img src="${PHOTO_DATA[p.key]}" alt="${esc(p.title)}"><div class="top-caption"><b>${esc(p.title)}</b><span>${esc(p.caption)}</span></div><div class="top-controls"><button id="topPrev">←</button><button id="topNext">→</button></div><span class="top-count">${topIndex+1} / ${ps.length}</span>`;
  document.getElementById('topPrev').onclick=()=>{topIndex=(topIndex-1+ps.length)%ps.length;renderTop(d)};
  document.getElementById('topNext').onclick=()=>{topIndex=(topIndex+1)%ps.length;renderTop(d)};
 }
-function renderRail(id,d,full=true){
- const el=document.getElementById(id),ps=photoList(d);el.innerHTML='';
+function renderRail(id,d){
+ const el=document.getElementById(id),ps=morePhotoList(d);el.innerHTML='';
  if(!ps.length){el.innerHTML='<div class="empty-photos">Ainda não há imagens deste dia associadas com segurança. O site prefere deixar o espaço vazio a misturar datas ou lugares.</div>';return}
  ps.forEach(p=>{const f=document.createElement('figure');f.className='rail-card';f.innerHTML=`<img src="${PHOTO_DATA[p.key]}" alt="${esc(p.title)}" loading="lazy"><figcaption><b>${esc(p.title)}</b><span>${esc(p.caption)}</span></figcaption>`;el.appendChild(f)})
 }
@@ -267,12 +324,12 @@ function renderDetail(d){
  const story=document.getElementById('featureStory');story.innerHTML=(d.story||[]).map((p,i)=>i===2&&d.story.length>3?`<div class="pull">${esc(p)}</div>`:`<p>${esc(p)}</p>`).join('');
  document.getElementById('stopList').innerHTML=d.stops.map(x=>`<div class="stop-card"><b>${esc(x[0])}</b><p>${esc(x[1])}</p></div>`).join('');
  document.getElementById('featureContext').innerHTML=d.context||'';document.getElementById('featurePractical').textContent=d.practical||'';document.getElementById('featureFood').textContent=d.food||'';
- renderRail('detailRail',d);document.getElementById('prevDay').disabled=d.d===1;document.getElementById('nextDay').disabled=d.d===14;
+ document.getElementById('prevDay').disabled=d.d===1;document.getElementById('nextDay').disabled=d.d===14;
 }
 function selectDay(n,opt={}){
  activeDay=n;topIndex=0;const d=current();document.querySelectorAll('.date-btn').forEach(b=>b.classList.toggle('active',+b.dataset.day===n));
  document.getElementById('dayNo').textContent=String(n).padStart(2,'0');document.getElementById('dayRoute').textContent=d.route;document.getElementById('dayStats').textContent=d.stats;document.getElementById('dayDate').textContent=d.date+' · 2026';document.getElementById('mapTitle').textContent=d.route;document.getElementById('dayFood').innerHTML=`<b>Comida:</b> ${esc(d.food||'')}`;document.getElementById('bridgeText').textContent=`Continue o Dia ${n}: a história completa, os lugares e as decisões que mudaram a rota.`;
- activeTab='summary';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab==='summary'));document.getElementById('tabCopy').innerHTML=tabHtml(d,'summary');renderTop(d);renderRail('photoRail',d);document.getElementById('photoCount').textContent=d.photos?.length?`${d.photos.length} fotos`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
+ activeTab='summary';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab==='summary'));document.getElementById('tabCopy').innerHTML=tabHtml(d,'summary');renderTop(d);renderRail('photoRail',d);const moreCount=morePhotoList(d).length;document.getElementById('photoCount').textContent=moreCount?`${moreCount} fotos diferentes`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
  if(opt.detail)document.getElementById('historia').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
@@ -287,6 +344,17 @@ function relevantDays(q){
 function compactContext(ds){return ds.map(d=>({dia:d.d,data:d.date,rota:d.route,gancho:d.hook,resumo:(d.summary||'').replace(/<[^>]+>/g,' '),historia:d.story,contexto:(d.context||'').replace(/<[^>]+>/g,' '),pratico:d.practical,comida:d.food,lugares:d.stops}));}
 function addMsg(text,who='bot',day=null,loading=false){const m=document.createElement('div');m.className='msg '+who+(loading?' loading-msg':'');m.textContent=text;if(day){const b=document.createElement('button');b.className='open-day';b.textContent=`ABRIR DIA ${day}`;b.onclick=()=>{selectDay(day);document.getElementById('roteiro').scrollIntoView({behavior:'smooth'})};m.appendChild(b)}document.getElementById('messages').appendChild(m);document.getElementById('messages').scrollTop=999999;return m}
 const chatHistory=[];
+function directFact(q){
+ const s=normalize(q);
+ if(/(quantos|quantas).*\b(pais|paises|territorio|territorios)\b|\b(paises|territorios).*\b(passou|percorreu|viagem)\b/.test(s))return {answer:'A viagem passou por 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte.',day:null};
+ if(/(quantos|quanto).*\bkm\b|quilometr|distancia total|km.*pedal|pedalados/.test(s))return {answer:'Foram quase 700 km pedalados ao longo dos 14 dias. Esse é o total editorial da viagem; em alguns arquivos Garmin o número bruto precisa ser interpretado porque barco e ferry também entraram no registro.',day:null};
+ if(/(quantos|quanto).*dias|durou.*dias|duracao/.test(s))return {answer:'A viagem durou 14 dias, em setembro de 2026.',day:null};
+ if(/carro.*apoio|apoio.*carro/.test(s))return {answer:'Não houve carro de apoio. A viagem combinou bicicleta, trem, ônibus, ferry, barco e improviso para conectar as etapas.',day:null};
+ if(/quem.*(viajou|foi)|quantas pessoas|grupo|companheir/.test(s))return {answer:'A viagem começou com Diogo, Giggio e Guillermo. Léo entrou de surpresa em Trebinje e, a partir dali, o grupo passou a ter quatro pessoas.',day:4};
+ if(/maior.*pedal|maior.*distancia|maior.*distância/.test(s))return {answer:'O maior pedal registrado foi no Dia 11: 94,4 km entre Shtime e Skopje, depois de um ônibus curto a partir de Prizren.',day:11};
+ if(/cidade.*favorita|favorita.*cidade/.test(s))return {answer:'Kotor foi a cidade favorita da viagem. O segundo dia ali, pedalando a baía sem bagagem, foi justamente um dos momentos em que a viagem deixou de ser apenas deslocamento entre cidades.',day:7};
+ return null;
+}
 function localFallback(q){
  const s=normalize(q);
  if(/mais dificil|trecho dificil|dia dificil|mais pesado/.test(s))return {answer:'Em distância, o maior pedal foi o Dia 11: 94,4 km entre Shtime e Skopje. Em perrengue mecânico, o Dia 3 foi pior: 79 km, espinhos e seis furos.',day:11};
@@ -298,8 +366,10 @@ function localFallback(q){
  return {answer:'Essa informação não está registrada com segurança no material da viagem que tenho aqui.',day:null};
 }
 async function ask(q){
- q=q.trim();if(!q)return;addMsg(q,'user');const wait=addMsg('Buscando no diário da viagem…','bot',null,true);document.getElementById('chatSend').disabled=true;
- const rel=relevantDays(q);chatHistory.push({role:'user',content:q});try{const r=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:q,activeDay,context:compactContext(days),hintDays:compactContext(rel),global:GLOBAL_GUIDE,history:chatHistory.slice(-7,-1)})});if(!r.ok)throw new Error('api');const j=await r.json();wait.remove();const a=j.answer||'Não consegui responder agora.';addMsg(a,'bot',j.day||null);chatHistory.push({role:'assistant',content:a})}catch(e){wait.remove();const fb=localFallback(q);addMsg(fb.answer,'bot',fb.day)}finally{document.getElementById('chatSend').disabled=false}}
+ q=q.trim();if(!q)return;addMsg(q,'user');chatHistory.push({role:'user',content:q});
+ const direct=directFact(q);if(direct){addMsg(direct.answer,'bot',direct.day);chatHistory.push({role:'assistant',content:direct.answer});return}
+ const wait=addMsg('Buscando no diário da viagem…','bot',null,true);document.getElementById('chatSend').disabled=true;
+ const rel=relevantDays(q);try{const r=await fetch('/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:q,activeDay,context:compactContext(days),hintDays:compactContext(rel),global:GLOBAL_GUIDE,history:chatHistory.slice(-7,-1)})});if(!r.ok)throw new Error('api');const j=await r.json();wait.remove();const a=j.answer||'Não consegui responder agora.';addMsg(a,'bot',j.day||null);chatHistory.push({role:'assistant',content:a})}catch(e){wait.remove();const fb=localFallback(q);addMsg(fb.answer,'bot',fb.day)}finally{document.getElementById('chatSend').disabled=false}}
 async function boot(){
  try{
   const text=await fetch('/legacy-v05.html',{cache:'force-cache'}).then(r=>r.text());
@@ -312,8 +382,8 @@ async function boot(){
   map=L.map('map',{zoomControl:false,scrollWheelZoom:false,attributionControl:true});L.control.zoom({position:'bottomright'}).addTo(map);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);layerGroup=L.layerGroup().addTo(map);
   document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{activeTab=t.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));document.getElementById('tabCopy').innerHTML=tabHtml(current(),activeTab)});
   document.getElementById('readFull').onclick=()=>document.getElementById('historia').scrollIntoView({behavior:'smooth'});document.getElementById('prevDay').onclick=()=>activeDay>1&&selectDay(activeDay-1,{detail:true});document.getElementById('nextDay').onclick=()=>activeDay<14&&selectDay(activeDay+1,{detail:true});
-  [['photoPrev','photoRail',-1],['photoNext','photoRail',1],['detailPrev','detailRail',-1],['detailNext','detailRail',1]].forEach(([b,id,dir])=>document.getElementById(b).onclick=()=>document.getElementById(id).scrollBy({left:dir*Math.min(innerWidth*.72,600),behavior:'smooth'}));
-  const quickQs=['O que é o Sebilj?','O Lago Koman vale o desvio?','Como as bikes foram nos ônibus?','Qual foi o trecho mais difícil?','Onde comer em Skopje?'];quickQs.forEach(q=>{const b=document.createElement('button');b.textContent=q;b.onclick=()=>ask(q);quick.appendChild(b)});
+  [['photoPrev','photoRail',-1],['photoNext','photoRail',1]].forEach(([b,id,dir])=>document.getElementById(b).onclick=()=>document.getElementById(id).scrollBy({left:dir*Math.min(innerWidth*.72,600),behavior:'smooth'}));
+  const quickQs=['Quantos km foram pedalados?','Por quantos países a viagem passou?','O que é o Sebilj?','O Lago Koman vale o desvio?','Como as bikes foram nos ônibus?','Qual foi o trecho mais difícil?'];quickQs.forEach(q=>{const b=document.createElement('button');b.textContent=q;b.onclick=()=>ask(q);quick.appendChild(b)});
   addMsg('O que você quer saber sobre a viagem?');
   document.getElementById('chatLaunch').onclick=()=>chatPanel.classList.toggle('open');document.getElementById('chatClose').onclick=()=>chatPanel.classList.remove('open');document.getElementById('chatForm').onsubmit=e=>{e.preventDefault();const q=chatInput.value;chatInput.value='';ask(q)};
   selectDay(1);document.getElementById('loading').remove();setTimeout(()=>map.invalidateSize(),200);
