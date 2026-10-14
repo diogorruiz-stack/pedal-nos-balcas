@@ -8,6 +8,7 @@ module.exports = async function handler(req, res) {
     const activeDay = Number(body.activeDay || 0);
     const context = Array.isArray(body.context) ? body.context.slice(0, 4) : [];
     const global = String(body.global || '').slice(0, 5000);
+    const history = Array.isArray(body.history) ? body.history.slice(-6).filter(m => m && ['user','assistant'].includes(m.role) && typeof m.content === 'string').map(m => ({ role: m.role, content: m.content.slice(0, 1200) })) : [];
 
     if (!question) return res.status(400).json({ error: 'empty_question' });
 
@@ -63,6 +64,7 @@ ${contextText}`;
         max_tokens: 550,
         messages: [
           { role: 'system', content: system },
+          ...history,
           { role: 'user', content: question }
         ]
       })
