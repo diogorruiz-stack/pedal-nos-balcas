@@ -70,6 +70,21 @@
 <button class="chat-launch" id="chatLaunch"><span>◌</span> PERGUNTE À VIAGEM</button>
 <section class="chat-panel" id="chatPanel"><div class="chat-head"><div><b>Pergunte à viagem</b><small>Rotas, comida, lugares, transporte, perrengues e decisões do caminho.</small></div><button class="chat-close" id="chatClose">×</button></div><div class="chat-mid"><div class="messages" id="messages"></div><div class="quick" id="quick"></div></div><form class="chat-form" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Ex.: o que é o Sebilj?"><button id="chatSend">→</button></form></section>
 
+<script>window.PHOTO_DATA={};</script>
+<script src="photos-v05-1.js"></script>
+<script src="photos-v05-2.js"></script>
+<script src="photos-v05-3.js"></script>
+<script src="photos-v05-4.js"></script>
+<script src="photos-v05-5.js"></script>
+<script src="photos-v05-6.js"></script>
+<script src="photos-v05-7.js"></script>
+<script src="photos-v05-8.js"></script>
+<script src="photos-v05-9.js"></script>
+<script src="photos-v05-10.js"></script>
+<script src="photos-v05-11.js"></script>
+<script src="photos-v05-12.js"></script>
+<script src="photos-v05-13.js"></script>
+<script src="photos-v05-14.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 let PHOTO_DATA={},legacyDays=[],tracks=[],days=[],map,layerGroup,activeDay=1,activeTab='summary',topIndex=0;
@@ -200,6 +215,26 @@ function extract(text,start,end){
  const a=text.indexOf(start),b=text.indexOf(end,a+start.length);
  if(a<0||b<0)throw new Error('Não consegui ler os dados da versão-base.');
  return JSON.parse(text.slice(a+start.length,b));
+}
+function extractArray(text,marker){
+ const a=text.indexOf(marker);
+ if(a<0)throw new Error('Não encontrei '+marker);
+ const start=text.indexOf('[',a+marker.length);
+ if(start<0)throw new Error('Array não encontrado para '+marker);
+ let depth=0,inStr=false,quote='',escNext=false;
+ for(let i=start;i<text.length;i++){
+   const ch=text[i];
+   if(inStr){
+     if(escNext){escNext=false;continue}
+     if(ch==='\\'){escNext=true;continue}
+     if(ch===quote){inStr=false;quote=''}
+     continue
+   }
+   if(ch==='"'||ch==="'"){inStr=true;quote=ch;continue}
+   if(ch==='[')depth++;
+   else if(ch===']'){depth--;if(depth===0)return JSON.parse(text.slice(start,i+1))}
+ }
+ throw new Error('Array incompleto para '+marker);
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function photoFor(d,key){const ov=ENHANCE[d.d]?.photoCaptions?.[key];if(ov)return ov;const p=d.photos?.find(x=>x[0]===key);return p?[p[1],p[2]]:[key,'Arquivo pessoal da viagem.']}
