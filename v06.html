@@ -116,7 +116,7 @@ d1_5:["Primeira noite em Sarajevo","A chegada à Bósnia fechou o dia; o primeir
 }
 },
 2:{
-summary:`<p><strong>O primeiro pedal começou no coração otomano de Sarajevo.</strong> A Baščaršija é o antigo bazar da cidade e, no centro da praça, o Sebilj — a fonte em forma de quiosque que virou um dos símbolos de Sarajevo. A tradição desse tipo de fonte pública vem do período otomano; a fonte original da praça era do século XVIII e a estrutura atual é do fim do século XIX. Foi dali que as bicicletas começaram a costurar lugares que, vistos apenas como uma lista, parecem não ter relação entre si.</p><p>Da fonte seguimos para a <strong>Ponte Latina</strong>, ao lado do ponto onde o arquiduque Francisco Ferdinando e Sophie foram assassinados em 1914, e para as <strong>Sarajevo Roses</strong>: marcas de impactos de morteiros preservadas no pavimento e preenchidas de vermelho para lembrar civis mortos durante o cerco. Depois veio o <strong>Tunnel of Hope</strong>, escavado sob a pista do aeroporto em 1993 para ligar a cidade sitiada ao território livre.</p><p>Na volta entramos em <strong>Istočno Sarajevo</strong>, já na Republika Srpska. Não era uma fronteira internacional: continuávamos na Bósnia e Herzegovina, mas símbolos, placas e alfabeto mudavam rápido o suficiente para tornar visível a arquitetura política do pós-guerra. Depois de corrigir o bagageiro do Guillermo, as bikes entraram no trem para Mostar. A noite terminou diante da Stari Most iluminada.</p>`,
+summary:`<p><strong>O primeiro pedal começou no coração otomano de Sarajevo.</strong> A Baščaršija é o antigo bazar da cidade e, no centro da praça, o Sebilj — a fonte em forma de quiosque que virou um dos símbolos de Sarajevo. A tradição desse tipo de fonte pública vem do período otomano; a fonte original da praça era do século XVIII e a estrutura atual é do fim do século XIX. Foi dali que as bicicletas começaram a costurar lugares que, vistos apenas como uma lista, parecem não ter relação entre si.</p><p>Da fonte seguimos para a <strong>Ponte Latina</strong>, ao lado do ponto onde o arquiduque Francisco Ferdinando e Sophie foram assassinados em 1914, e para as <strong>Sarajevo Roses</strong>: marcas de impactos de morteiros preservadas no pavimento e preenchidas de vermelho para lembrar civis mortos durante o cerco. Depois veio o <strong>Tunnel of Hope</strong>, escavado sob a pista do aeroporto em 1993 para ligar a cidade sitiada ao território livre.</p><p>Na volta entramos em <strong>Istočno Sarajevo</strong>, já na Republika Srpska. Não era uma fronteira internacional: continuávamos na Bósnia e Herzegovina, mas símbolos, placas e alfabeto mudavam rápido o suficiente para tornar visível a arquitetura política do pós-guerra. Depois de corrigir o bagageiro do Guillermo, o pedal por Sarajevo terminou na estação. As bicicletas entraram inteiras no trem para Mostar — uma das decisões logísticas mais fáceis e bonitas da viagem. O vagão seguiu pelas montanhas da Bósnia até a Herzegovina; já em Mostar, a noite terminou diante da Stari Most iluminada.</p>`,
 context:`<p><strong>Uma cidade em camadas.</strong> Baščaršija e o Sebilj ajudam a enxergar a Sarajevo otomana; a Ponte Latina coloca a cidade no centro da história europeia de 1914; Sarajevo Roses e Tunnel of Hope trazem o cerco de 1992–1996 para a escala da rua.</p><p><strong>Istočno Sarajevo.</strong> A Bósnia e Herzegovina é formada por entidades políticas internas. Ao pedalar para Istočno Sarajevo, a viagem entrou na Republika Srpska sem sair do país — por isso a sensação de “fronteira sem fronteira”.</p><p><strong>Mostar.</strong> A Stari Most foi construída no século XVI, destruída durante a guerra dos anos 1990 e reconstruída. Hoje a área da ponte histórica é Patrimônio Mundial da UNESCO.</p>`,
 stops:[
 ["Baščaršija + Sebilj","Baščaršija é o antigo bazar otomano. O Sebilj é a fonte em forma de quiosque no centro da praça e um dos símbolos de Sarajevo. A fonte original da Baščaršija era do século XVIII; a estrutura atual é do fim do século XIX. Há ainda a tradição local de que quem bebe das fontes de Sarajevo acaba voltando à cidade."],
@@ -240,8 +240,8 @@ d3_7:["Finalmente Ravno","O jantar depois de um dos dias mais desgastantes da vi
 };
 
 const CURATION={
-  1:{top:["d1_shop","d1_3","d1_2"],more:["d1_1","d1_4","d1_5"]},
-  2:{top:["d2_1","d2_2","d2_5","d2_8"],more:["d2_3","d2_4","d2_6","d2_7","d2_9"]},
+  1:{top:["d1_1","d1_2","d1_3","d1_shop"],more:["d1_4","d1_5"]},
+  2:{top:["d2_1","d2_2","d2_4","d2_5","d2_8"],more:["d2_3","d2_6","d2_7","d2_9"]},
   3:{top:["d3_2","d3_6","d3_5","d3_4"],more:["d3_1","d3_3","d3_7"]},
   4:{top:["d4_2","d4_3"],more:["d4_1","d4_4"]},
   10:{top:["d10_1","d10_3","d10_6","d10_8"],more:["d10_2","d10_4","d10_5","d10_7"]},
@@ -353,6 +353,9 @@ function directFact(q){
  if(/quem.*(viajou|foi)|quantas pessoas|grupo|companheir/.test(s))return {answer:'A viagem começou com Diogo, Giggio e Guillermo. Léo entrou de surpresa em Trebinje e, a partir dali, o grupo passou a ter quatro pessoas.',day:4};
  if(/maior.*pedal|maior.*distancia|maior.*distância/.test(s))return {answer:'O maior pedal registrado foi no Dia 11: 94,4 km entre Shtime e Skopje, depois de um ônibus curto a partir de Prizren.',day:11};
  if(/cidade.*favorita|favorita.*cidade/.test(s))return {answer:'Kotor foi a cidade favorita da viagem. O segundo dia ali, pedalando a baía sem bagagem, foi justamente um dos momentos em que a viagem deixou de ser apenas deslocamento entre cidades.',day:7};
+ if(/pior.*dia|dia.*pior/.test(s))return {answer:'Se “pior” significa maior perrengue, o Dia 3 (Mostar → Ravno) foi provavelmente o mais caótico: 79 km, um atalho errado no modo a pé, espinhos e seis furos, além do resgate de carro no fim. Se a comparação for esforço físico, o Dia 11 foi o maior pedal, com 94,4 km até Skopje. E o Dia 5 foi o pior do ponto de vista de saúde, porque Diogo ainda estava com gastroenterite e precisou ir de táxi para Dubrovnik.',day:3};
+ if(/melhor.*dia|dia.*melhor|favorito.*dia|dia.*favorito/.test(s))return {answer:'Não existe um único “melhor dia” registrado como ranking, mas dois aparecem claramente como destaques: o Dia 7 em Kotor, quando a baía foi pedalada sem bagagem, e o Dia 10 pelo ferry do Lago Koman, descrito como um dos grandes acertos da viagem.',day:7};
+ if(/qual.*bike|qual.*bicicleta|compr.*bike|compr.*bicicleta|trek marlin|specialized/.test(s))return {answer:'As bicicletas foram compradas em Sarajevo no Dia 1. Diogo comprou uma Trek Marlin 5 no Trek Bike Centar; Giggio comprou uma Specialized na M-Bike. A escolha e os ajustes das bikes fizeram parte da própria história do começo da viagem.',day:1};
  return null;
 }
 function localFallback(q){
@@ -360,10 +363,24 @@ function localFallback(q){
  if(/mais dificil|trecho dificil|dia dificil|mais pesado/.test(s))return {answer:'Em distância, o maior pedal foi o Dia 11: 94,4 km entre Shtime e Skopje. Em perrengue mecânico, o Dia 3 foi pior: 79 km, espinhos e seis furos.',day:11};
  if(/koman/.test(s))return {answer:'Sim. O ferry do Lago Koman foi um dos grandes acertos da viagem. O ponto de atenção é a logística: transfer até Koman, ferry e a conexão seguinte precisam estar combinados. Depois do ferry ainda houve pedal até Bajram Curri e, mais tarde, de Gjakovë a Prizren.',day:10};
  if(/dubrovnik.*kotor|kotor.*dubrovnik|83.?4|68 km/.test(s))return {answer:'A distância útil é aproximadamente 68 km pedalados. O Garmin registrou 83,4 km brutos porque o barco Dubrovnik–Cavtat e o ferry Kamenari–Lepetane entraram no arquivo.',day:6};
- if(/sebilj/.test(s))return {answer:'O Sebilj é a fonte em forma de quiosque no centro da Baščaršija, o antigo bazar otomano de Sarajevo. A fonte original da praça era do século XVIII e a estrutura atual é do fim do século XIX. Na viagem, ele marcou o começo do primeiro pedal por Sarajevo.',day:2};
- if(/tunnel|tunel/.test(s))return {answer:'O Tunnel of Hope foi escavado em 1993 sob a pista do aeroporto durante o cerco de Sarajevo. Tinha cerca de 800 metros e serviu como ligação vital entre a cidade sitiada e o território livre, transportando pessoas e suprimentos. Ele aparece no Dia 2.',day:2};
+ if(/sebilj/.test(s))return {answer:'O Sebilj é a fonte em forma de quiosque no centro da Baščaršija, o antigo bazar otomano de Sarajevo. A estrutura atual é do fim do século XIX. Na viagem, ele marcou o começo do primeiro pedal por Sarajevo.',day:2};
+ if(/tunnel|tunel/.test(s))return {answer:'O Tunnel of Hope foi escavado em 1993 sob a pista do aeroporto durante o cerco de Sarajevo. Tinha cerca de 800 metros e serviu como ligação vital entre a cidade sitiada e o território livre, transportando pessoas e suprimentos.',day:2};
  if(/onibus|bus|bike.*onibus|biciclet.*onibus/.test(s))return {answer:'Não havia uma regra única. O transporte das bicicletas em ônibus dependia de espaço, tipo de veículo e negociação com o motorista. Van com quatro bikes foi o pior cenário; em alguns dias o grupo precisou se dividir.',day:8};
- return {answer:'Essa informação não está registrada com segurança no material da viagem que tenho aqui.',day:null};
+ const stop=new Set(['qual','quais','como','onde','quando','porque','por','que','foi','foram','uma','uns','umas','dos','das','nos','nas','com','sem','sobre','mais','menos','teve','tinha','viagem','dia','dias']);
+ const tokens=s.split(/[^a-z0-9]+/).filter(t=>t.length>2&&!stop.has(t));
+ let best=null,bestScore=0;
+ days.forEach(d=>{
+   const text=normalize([d.route,d.hook,strip(d.summary),strip(d.context),d.practical,d.food,...(d.story||[]),...(d.stops||[]).flat()].join(' '));
+   let score=(d.d===activeDay?0.15:0);
+   for(const t of tokens){if(text.includes(t))score+=1;if(normalize(d.route).includes(t))score+=0.8}
+   if(score>bestScore){bestScore=score;best=d}
+ });
+ if(best&&bestScore>=1){
+   const summary=strip(best.summary).replace(/\s+/g,' ').trim();
+   const extra=(best.story||[]).find(p=>tokens.some(t=>normalize(p).includes(t)))||'';
+   return {answer:`Isso aparece principalmente no Dia ${best.d} (${best.route}). ${summary}${extra&&normalize(extra)!==normalize(summary)?' '+extra:''}`,day:best.d};
+ }
+ return {answer:'Essa informação não aparece de forma clara no material registrado da viagem.',day:null};
 }
 async function ask(q){
  q=q.trim();if(!q)return;addMsg(q,'user');chatHistory.push({role:'user',content:q});
