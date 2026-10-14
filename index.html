@@ -303,9 +303,9 @@ async function ask(q){
 async function boot(){
  try{
   const text=await fetch('/legacy-v05.html',{cache:'force-cache'}).then(r=>r.text());
-  PHOTO_DATA=extract(text,'const PHOTO_DATA=',';\\nconst days=');
-  legacyDays=extract(text,'const days=',';\\nconst tracks=');
-  tracks=extract(text,'const tracks=',';\\nfunction');
+  PHOTO_DATA=window.PHOTO_DATA||{};
+  legacyDays=extractArray(text,'const days=');
+  tracks=extractArray(text,'const tracks=');
   days=enhanceDays(legacyDays);
   document.getElementById('heroImg').src=PHOTO_DATA.hero;
   days.forEach(d=>{const b=document.createElement('button');b.className='date-btn';b.dataset.day=d.d;b.innerHTML=`<b>${String(d.d).padStart(2,'0')}</b><span>${d.date}</span>`;b.onclick=()=>selectDay(d.d);dateStrip.appendChild(b)});
