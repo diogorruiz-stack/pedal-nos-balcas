@@ -12,8 +12,23 @@ module.exports = async function handler(req, res) {
     if (!question) return res.status(400).json({ error: 'empty_question' });
 
     const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+    const directAnswer=()=>{
+      const s=norm(question);
+      if(/(quantos|quantas).*\b(pais|paises|territorio|territorios)\b|\b(paises|territorios).*\b(passou|percorreu|viagem)\b/.test(s))return {answer:'A viagem passou por 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte.',day:null,mode:'direct'};
+      if(/(quantos|quanto).*\bkm\b|quilometr|distancia total|km.*pedal|pedalados/.test(s))return {answer:'Foram quase 700 km pedalados ao longo dos 14 dias. Esse é o total editorial; em alguns arquivos Garmin o registro bruto inclui barco ou ferry e por isso precisa de contexto.',day:null,mode:'direct'};
+      if(/(quantos|quanto).*dias|durou.*dias|duracao/.test(s))return {answer:'A viagem durou 14 dias, em setembro de 2026.',day:null,mode:'direct'};
+      if(/carro.*apoio|apoio.*carro/.test(s))return {answer:'Não houve carro de apoio. A viagem combinou bicicleta, trem, ônibus, ferry, barco e improviso.',day:null,mode:'direct'};
+      if(/quem.*(viajou|foi)|quantas pessoas|grupo|companheir/.test(s))return {answer:'A viagem começou com Diogo, Giggio e Guillermo. Léo entrou de surpresa em Trebinje e, a partir dali, o grupo passou a ter quatro pessoas.',day:4,mode:'direct'};
+      if(/maior.*pedal|maior.*distancia/.test(s))return {answer:'O maior pedal registrado foi no Dia 11: 94,4 km entre Shtime e Skopje, depois de um ônibus curto a partir de Prizren.',day:11,mode:'direct'};
+      return null;
+    };
+    const direct=directAnswer();
+    if(direct)return res.status(200).json(direct);
+
     const fallback=()=>{
       const s=norm(question);
+      if(/(quantos|quantas).*\b(pais|paises|territorio|territorios)\b/.test(s))return {answer:'A viagem passou por 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte.',day:null,mode:'fallback'};
+      if(/(quantos|quanto).*\bkm\b|quilometr|distancia total|km.*pedal|pedalados/.test(s))return {answer:'Foram quase 700 km pedalados ao longo dos 14 dias.',day:null,mode:'fallback'};
       if(/mais dificil|trecho dificil|dia dificil|mais pesado/.test(s))return {answer:'Em distância, o maior pedal foi o Dia 11: 94,4 km entre Shtime e Skopje. Em perrengue mecânico, o Dia 3 foi pior: 79 km, espinhos e seis furos.',day:11,mode:'fallback'};
       if(/koman/.test(s))return {answer:'Sim. O ferry do Lago Koman foi um dos grandes acertos da viagem. O ponto de atenção é a logística: transfer até Koman, ferry e a conexão seguinte precisam estar combinados. Depois do ferry ainda houve pedal até Bajram Curri e, mais tarde, de Gjakovë a Prizren.',day:10,mode:'fallback'};
       if(/dubrovnik.*kotor|kotor.*dubrovnik|83.?4|68 km/.test(s))return {answer:'A distância útil é aproximadamente 68 km pedalados. O Garmin registrou 83,4 km brutos porque barco e ferry entraram no arquivo.',day:6,mode:'fallback'};
