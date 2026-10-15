@@ -33,20 +33,65 @@
 .chat-launch{right:14px;bottom:14px}.chat-panel{right:7px;bottom:67px;width:calc(100vw - 14px);height:75vh}
 }
 @media(max-width:560px){.hero h1{font-size:58px}.hero-actions{gap:18px;align-items:flex-start;flex-direction:column}.date-btn{min-width:72px}.day-route{font-size:29px}.top-media{height:340px}.top-caption b{font-size:23px}.rail-card{flex-basis:88vw;height:330px}.feature-copy h2{font-size:44px}.article-grid article p{font-size:18px}.pull{font-size:29px}.footer{flex-direction:column}}
+
+/* visitor gate */
+body.profile-locked{overflow:hidden}
+.visitor-gate{position:fixed;inset:0;z-index:10000;background:rgba(244,240,231,.985);display:grid;place-items:center;padding:22px;overflow:auto}
+.visitor-gate.hidden{display:none}
+.visitor-card{width:min(720px,96vw);background:#fff;border:1px solid var(--line);box-shadow:0 28px 90px rgba(16,35,30,.16);padding:36px 38px}
+.visitor-card .mini{font-size:10px;letter-spacing:.16em;font-weight:900;color:var(--orange);text-transform:uppercase}
+.visitor-card h2{font-family:Georgia,serif;font-size:clamp(42px,6vw,66px);line-height:.96;letter-spacing:-.045em;font-weight:500;margin:10px 0 14px}
+.visitor-card .intro{color:#68635b;line-height:1.6;margin:0 0 26px;max-width:620px}
+.visitor-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.visitor-field{display:grid;gap:7px}.visitor-field.full{grid-column:1/-1}
+.visitor-field label,.interests-title{font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.visitor-field input[type=text],.visitor-field input[type=email]{width:100%;border:1px solid var(--line);background:#faf7f1;padding:14px 15px;color:var(--ink);outline:none}
+.visitor-field input:focus{border-color:var(--orange)}
+.interest-chips{display:flex;gap:8px;flex-wrap:wrap}.interest-chip input{position:absolute;opacity:0;pointer-events:none}.interest-chip span{display:block;border:1px solid var(--line);padding:10px 12px;background:#faf7f1;font-size:11px;cursor:pointer}.interest-chip input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.visitor-consent{display:flex;align-items:flex-start;gap:9px;font-size:10px;line-height:1.45;color:#746f66;margin-top:5px}.visitor-consent input{margin-top:2px}
+.visitor-submit{width:100%;border:0;background:var(--orange);color:#fff;padding:16px;font-size:11px;font-weight:900;letter-spacing:.08em;cursor:pointer;margin-top:6px}.visitor-submit:disabled{opacity:.55;cursor:wait}
+.visitor-error{min-height:18px;color:#b43b25;font-size:10px;margin-top:8px}
+@media(max-width:650px){.visitor-card{padding:28px 20px}.visitor-grid{grid-template-columns:1fr}.visitor-field.full{grid-column:auto}.visitor-card h2{font-size:46px}}
+
 </style>
 </head>
-<body>
+<body class="profile-locked">
+<div class="visitor-gate" id="visitorGate">
+  <form class="visitor-card" id="visitorForm">
+    <div class="mini" id="gateMini">ANTES DE COMEÇAR</div>
+    <h2 id="gateTitle">Quero mostrar a viagem do seu jeito.</h2>
+    <p class="intro" id="gateIntro">Conte rapidinho quem você é e o que mais gosta de descobrir numa viagem. Isso ajuda a destacar o conteúdo que combina mais com você.</p>
+    <div class="visitor-grid">
+      <div class="visitor-field"><label for="visitorName" id="nameLabel">Seu nome</label><input id="visitorName" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Como você quer ser chamado?"></div>
+      <div class="visitor-field"><label for="visitorEmail" id="emailLabel">Seu e-mail</label><input id="visitorEmail" name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></div>
+      <div class="visitor-field full">
+        <div class="interests-title" id="interestTitle">O que mais te interessa? Pode escolher mais de um.</div>
+        <div class="interest-chips">
+          <label class="interest-chip"><input type="checkbox" name="interest" value="historia"><span data-pt="História" data-en="History">História</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="dicas"><span data-pt="Dicas práticas" data-en="Practical tips">Dicas práticas</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="curiosidades"><span data-pt="Curiosidades" data-en="Curiosities">Curiosidades</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="gastronomia"><span data-pt="Gastronomia" data-en="Food">Gastronomia</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="cultura"><span data-pt="Cultura local" data-en="Local culture">Cultura local</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="paisagens"><span data-pt="Paisagens" data-en="Landscapes">Paisagens</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="logistica"><span data-pt="Logística" data-en="Logistics">Logística</span></label>
+          <label class="interest-chip"><input type="checkbox" name="interest" value="perrengues"><span data-pt="Perrengues" data-en="Mishaps">Perrengues</span></label>
+        </div>
+      </div>
+      <label class="visitor-consent visitor-field full"><input id="visitorConsent" type="checkbox" required><span id="consentText">Concordo em enviar meu nome, e-mail e interesses para personalizar esta experiência.</span></label>
+      <div class="visitor-field full"><button class="visitor-submit" id="visitorSubmit" type="submit">COMEÇAR A VIAGEM →</button><div class="visitor-error" id="visitorError"></div></div>
+    </div>
+  </form>
+</div>
 <div class="loading" id="loading">Abrindo o caderno<small>carregando fotos e rotas reais</small></div>
 <nav class="nav">
 <a class="brand" href="#top"><svg viewBox="0 0 78 48"><path d="M7 15 L21 5 L31 14 L42 4 L55 15" fill="none" stroke="#91a99e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="34" r="10" fill="none" stroke="#d9573b" stroke-width="3"/><circle cx="52" cy="34" r="10" fill="none" stroke="#d9573b" stroke-width="3"/><path d="M20 34 L31 20 L40 34 L28 34 L35 23 L47 23 L52 34 M31 20 L27 17 M47 23 L44 17" fill="none" stroke="#d9573b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="brandtype"><b>Pedal</b><span>NOS BÁLCÃS</span></span></a>
 <div class="navlinks"><a href="#roteiro">ROTEIRO</a><a href="#historia">HISTÓRIAS</a><a href="#fotosDia">FOTOS</a><a class="accent" href="#roteiro">EXPLORAR A VIAGEM ↗</a></div>
 </nav>
 
-<header class="hero" id="top"><img id="heroImg" alt="Ciclista em estrada de montanha nos Bálcãs"><div class="hero-inner"><div class="eyebrow"><i></i>CADERNO DE UMA VIAGEM REAL</div><h1>Pedal<br><em>nos Bálcãs</em></h1><p>Cidades antigas, estradas de montanha e planos que mudam no caminho. Uma viagem de bicicleta contada por quem esteve lá.</p><div class="hero-actions"><a class="primary" href="#roteiro">PERCORRER A ROTA <span>→</span></a><a class="text-link" href="#historia">LER AS HISTÓRIAS <span>↓</span></a></div></div><div class="badge"><b>14</b><span>ETAPAS<br>NARRADAS</span></div><div class="hero-footer"><span>14 DIAS · SETEMBRO DE 2026 · SEM CARRO DE APOIO</span><span>ARQUIVO PESSOAL</span></div></header>
+<header class="hero" id="top"><img id="heroImg" alt="Ciclista em estrada de montanha nos Bálcãs"><div class="hero-inner"><div class="eyebrow"><i></i>CADERNO DE UMA VIAGEM REAL</div><h1>Pedal<br><em>nos Bálcãs</em></h1><p>Cidades antigas, estradas de montanha e planos que mudam no caminho. Uma viagem de bicicleta contada por quem esteve lá.</p><div class="hero-actions"><a class="primary" href="#roteiro">PERCORRER A ROTA <span>→</span></a><a class="text-link" href="#historia">LER AS HISTÓRIAS <span>↓</span></a></div></div><div class="badge"><b>14</b><span>ETAPAS<br>NARRADAS</span></div><div class="hero-footer"><span>14 DIAS · SEM CARRO DE APOIO</span><span>ARQUIVO PESSOAL</span></div></header>
 
 <main>
 <section class="section" id="roteiro"><div class="wrap">
-<div class="section-head"><div><div class="section-kicker">Escolha uma data</div><h2>Um dia de cada vez.<br><em>O mapa, as fotos e a história mudam juntos.</em></h2></div><p>Comece pelo resumo, navegue pelas fotos daquele dia e veja onde a bicicleta passou. A matéria completa continua logo abaixo — sem obrigar quem só quer consultar a rota a ler tudo.</p></div>
+<div class="section-head"><div><div class="section-kicker">Escolha um dia</div><h2>Um dia de cada vez.<br><em>O mapa, as fotos e a história mudam juntos.</em></h2></div><p>Comece pelo resumo, navegue pelas fotos daquele dia e veja onde a bicicleta passou. A matéria completa continua logo abaixo — sem obrigar quem só quer consultar a rota a ler tudo.</p></div>
 <div class="date-strip" id="dateStrip"></div>
 
 <div class="explorer-grid">
@@ -65,7 +110,7 @@
 <section class="feature" id="historia"><div class="feature-toolbar"><div class="feature-toolbar-inner"><button id="prevDay">← DIA ANTERIOR</button><b id="featureToolbarTitle"></b><button id="nextDay">PRÓXIMO DIA →</button></div></div><div class="wrap"><div class="feature-grid"><div class="feature-no" id="featureNo"></div><div class="feature-copy"><div class="section-kicker" id="featureDate"></div><h2 id="featureRoute"></h2><div class="feature-lede" id="featureHook"></div><div class="article-grid"><article id="featureStory"></article><aside class="layers"><details open><summary>O que vale a parada</summary><div class="stop-list" id="stopList"></div></details><details open><summary>Para entender o lugar</summary><div class="context-block" id="featureContext"></div></details><details><summary>Se você fizer essa rota</summary><p id="featurePractical"></p></details><details><summary>Comida deste dia</summary><p id="featureFood"></p></details></aside></div></div></div></div></section>
 </main>
 
-<footer class="footer"><div><b>PEDAL NOS BÁLCÃS</b><br>14 dias · quase 700 km · setembro de 2026.</div><div>Fotos do arquivo pessoal. Traçados de atividade Garmin/Tredict. Mapa-base OpenStreetMap.</div></footer>
+<footer class="footer"><div><b>PEDAL NOS BÁLCÃS</b><br>14 dias · quase 700 km.</div><div>Fotos do arquivo pessoal. Traçados de atividade Garmin/Tredict. Mapa-base OpenStreetMap.</div></footer>
 
 <button class="chat-launch" id="chatLaunch"><span>◌</span> PERGUNTE À VIAGEM</button>
 <section class="chat-panel" id="chatPanel"><div class="chat-head"><div><b>Pergunte à viagem</b><small>Rotas, comida, lugares, transporte, perrengues e decisões do caminho.</small></div><button class="chat-close" id="chatClose">×</button></div><div class="chat-mid"><div class="messages" id="messages"></div><div class="quick" id="quick"></div></div><form class="chat-form" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Ex.: o que é o Sebilj?"><button id="chatSend">→</button></form></section>
@@ -417,7 +462,7 @@ function drawDay(d){
  else{const pts=d.fallback||[];if(pts.length){L.polyline(pts,{color:'#403e39',weight:2.5,dashArray:'6 8',opacity:.7}).addTo(layerGroup);map.fitBounds(pts,{padding:[52,52],maxZoom:8})}document.getElementById('mapNote').textContent='Neste dia não há um track de pedal relevante no arquivo disponível; o mapa mostra apenas a conexão editorial da etapa.'}
 }
 function renderDetail(d){
- document.getElementById('featureNo').textContent=String(d.d).padStart(2,'0');document.getElementById('featureDate').textContent=`${d.date} · 2026`;document.getElementById('featureRoute').textContent=d.route;document.getElementById('featureHook').textContent=d.hook;document.getElementById('featureToolbarTitle').textContent=`Dia ${d.d} · ${d.route}`;
+ document.getElementById('featureNo').textContent=String(d.d).padStart(2,'0');document.getElementById('featureDate').textContent=`DIA ${d.d}`;document.getElementById('featureRoute').textContent=d.route;document.getElementById('featureHook').textContent=d.hook;document.getElementById('featureToolbarTitle').textContent=`Dia ${d.d} · ${d.route}`;
  const story=document.getElementById('featureStory');story.innerHTML=(d.story||[]).map((p,i)=>i===2&&d.story.length>3?`<div class="pull">${esc(p)}</div>`:`<p>${esc(p)}</p>`).join('');
  document.getElementById('stopList').innerHTML=d.stops.map(x=>`<div class="stop-card"><b>${esc(x[0])}</b><p>${esc(x[1])}</p></div>`).join('');
  document.getElementById('featureContext').innerHTML=d.context||'';document.getElementById('featurePractical').textContent=d.practical||'';document.getElementById('featureFood').textContent=d.food||'';
@@ -425,10 +470,66 @@ function renderDetail(d){
 }
 function selectDay(n,opt={}){
  activeDay=n;topIndex=0;const d=current();document.querySelectorAll('.date-btn').forEach(b=>b.classList.toggle('active',+b.dataset.day===n));
- document.getElementById('dayNo').textContent=String(n).padStart(2,'0');document.getElementById('dayRoute').textContent=d.route;document.getElementById('dayStats').textContent=d.stats;document.getElementById('dayDate').textContent=d.date+' · 2026';document.getElementById('mapTitle').textContent=d.route;document.getElementById('dayFood').innerHTML=`<b>Comida:</b> ${esc(d.food||'')}`;document.getElementById('bridgeText').textContent=`Continue o Dia ${n}: a história completa, os lugares e as decisões que mudaram a rota.`;
- activeTab='summary';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab==='summary'));document.getElementById('tabCopy').innerHTML=tabHtml(d,'summary');renderTop(d);renderRail('photoRail',d);const moreCount=morePhotoList(d).length;document.getElementById('photoCount').textContent=moreCount?`${moreCount} fotos diferentes`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
+ document.getElementById('dayNo').textContent=String(n).padStart(2,'0');document.getElementById('dayRoute').textContent=d.route;document.getElementById('dayStats').textContent=d.stats;document.getElementById('dayDate').textContent='DIA '+d.d;document.getElementById('mapTitle').textContent=d.route;document.getElementById('dayFood').innerHTML=`<b>Comida:</b> ${esc(d.food||'')}`;document.getElementById('bridgeText').textContent=`Continue o Dia ${n}: a história completa, os lugares e as decisões que mudaram a rota.`;
+ activeTab=preferredTab();document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===activeTab));document.getElementById('tabCopy').innerHTML=tabHtml(d,activeTab);renderTop(d);renderRail('photoRail',d);const moreCount=morePhotoList(d).length;document.getElementById('photoCount').textContent=moreCount?`${moreCount} fotos diferentes`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
  if(opt.detail)document.getElementById('historia').scrollIntoView({behavior:'smooth',block:'start'});
 }
+const VISITOR_KEY='pedalVisitorProfileV1';
+let visitorProfile=null;
+let visitorLanguage='pt-BR';
+function preferredTab(){
+ const i=visitorProfile?.interests||[];
+ if(i.includes('historia')||i.includes('curiosidades')||i.includes('cultura'))return 'context';
+ if(i.includes('dicas')||i.includes('logistica'))return 'practical';
+ return 'summary';
+}
+function gateCopy(lang){
+ const en=lang==='en';
+ document.documentElement.lang=en?'en':'pt-BR';
+ document.getElementById('gateMini').textContent=en?'BEFORE YOU START':'ANTES DE COMEÇAR';
+ document.getElementById('gateTitle').textContent=en?'Let me show the trip your way.':'Quero mostrar a viagem do seu jeito.';
+ document.getElementById('gateIntro').textContent=en?'Tell me who you are and what you most enjoy discovering while traveling. I’ll use it to prioritize the content that fits you best.':'Conte rapidinho quem você é e o que mais gosta de descobrir numa viagem. Isso ajuda a destacar o conteúdo que combina mais com você.';
+ document.getElementById('nameLabel').textContent=en?'Your name':'Seu nome';
+ document.getElementById('emailLabel').textContent=en?'Your email':'Seu e-mail';
+ document.getElementById('interestTitle').textContent=en?'What interests you most? Choose as many as you like.':'O que mais te interessa? Pode escolher mais de um.';
+ document.getElementById('visitorName').placeholder=en?'How should I call you?':'Como você quer ser chamado?';
+ document.getElementById('consentText').textContent=en?'I agree to send my name, email and interests to personalize this experience.':'Concordo em enviar meu nome, e-mail e interesses para personalizar esta experiência.';
+ document.getElementById('visitorSubmit').textContent=en?'START THE JOURNEY →':'COMEÇAR A VIAGEM →';
+ document.querySelectorAll('.interest-chip span').forEach(x=>x.textContent=en?x.dataset.en:x.dataset.pt);
+}
+async function initVisitorGate(){
+ const params=new URLSearchParams(location.search);
+ if(params.get('reset')==='1')localStorage.removeItem(VISITOR_KEY);
+ try{visitorProfile=JSON.parse(localStorage.getItem(VISITOR_KEY)||'null')}catch{}
+ try{
+   const l=await fetch('/api/locale',{cache:'no-store'}).then(r=>r.ok?r.json():null);
+   visitorLanguage=l?.language||((navigator.language||'').toLowerCase().startsWith('pt')?'pt-BR':'en');
+ }catch{visitorLanguage=(navigator.language||'').toLowerCase().startsWith('pt')?'pt-BR':'en'}
+ gateCopy(visitorLanguage);
+ if(visitorProfile?.name&&visitorProfile?.email&&Array.isArray(visitorProfile?.interests)&&visitorProfile.interests.length){
+   document.getElementById('visitorGate').classList.add('hidden');document.body.classList.remove('profile-locked');return;
+ }
+ document.getElementById('visitorGate').classList.remove('hidden');
+}
+document.getElementById('visitorForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const err=document.getElementById('visitorError'),btn=document.getElementById('visitorSubmit');
+ const interests=[...document.querySelectorAll('input[name="interest"]:checked')].map(x=>x.value);
+ if(!interests.length){err.textContent=visitorLanguage==='en'?'Choose at least one interest.':'Escolha pelo menos um interesse.';return}
+ const payload={name:document.getElementById('visitorName').value.trim(),email:document.getElementById('visitorEmail').value.trim(),interests,language:visitorLanguage,consent:document.getElementById('visitorConsent').checked};
+ btn.disabled=true;err.textContent='';
+ try{
+   const r=await fetch('/api/register',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});
+   if(!r.ok)throw new Error('save');
+   const saved=await r.json();visitorProfile={...payload,country:saved.country||null};
+   localStorage.setItem(VISITOR_KEY,JSON.stringify(visitorProfile));
+   document.getElementById('visitorGate').classList.add('hidden');document.body.classList.remove('profile-locked');
+   if(typeof selectDay==='function'&&typeof activeDay!=='undefined')selectDay(activeDay);
+ }catch{err.textContent=visitorLanguage==='en'?'I couldn’t save your access. Please try again.':'Não consegui registrar seu acesso. Tente novamente.'}
+ finally{btn.disabled=false}
+});
+initVisitorGate();
+
 function normalize(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()}
 const aliases={sebilj:2,bascarsija:2,latin:2,'sarajevo rose':2,tunnel:2,tunel:2,mostar:2,blagaj:3,ravno:3,tvrdos:4,trebinje:4,dubrovnik:6,cavtat:6,kotor:7,verige:7,ulcinj:8,skadar:8,shkoder:9,koman:10,prizren:10,matka:11,skopje:11,ohrid:12,'sveti naum':13,pogradec:13,prrenjas:14,tirana:14,giggio:1,guillermo:1,leo:4,companheiro:1,companheiros:1,grupo:1};
 const stopWords=new Set('qual quais como onde porque por que pra para uma umas uns com sem dos das de da do no na nos nas o a os as e em foi eram era muito mais menos viagem voces vocês voce você sobre quero saber esse essa isso ali la lá'.split(' '));
@@ -499,7 +600,7 @@ async function boot(){
   tracks=extractArray(text,'const tracks=');
   days=enhanceDays(legacyDays);
   document.getElementById('heroImg').src=PHOTO_DATA.hero;
-  days.forEach(d=>{const b=document.createElement('button');b.className='date-btn';b.dataset.day=d.d;b.innerHTML=`<b>${String(d.d).padStart(2,'0')}</b><span>${d.date}</span>`;b.onclick=()=>selectDay(d.d);dateStrip.appendChild(b)});
+  days.forEach(d=>{const b=document.createElement('button');b.className='date-btn';b.dataset.day=d.d;b.innerHTML=`<b>${String(d.d).padStart(2,'0')}</b><span>DIA</span>`;b.onclick=()=>selectDay(d.d);dateStrip.appendChild(b)});
   map=L.map('map',{zoomControl:false,scrollWheelZoom:false,attributionControl:true});L.control.zoom({position:'bottomright'}).addTo(map);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);layerGroup=L.layerGroup().addTo(map);
   document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{activeTab=t.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));document.getElementById('tabCopy').innerHTML=tabHtml(current(),activeTab)});
   document.getElementById('readFull').onclick=()=>document.getElementById('historia').scrollIntoView({behavior:'smooth'});document.getElementById('prevDay').onclick=()=>activeDay>1&&selectDay(activeDay-1,{detail:true});document.getElementById('nextDay').onclick=()=>activeDay<14&&selectDay(activeDay+1,{detail:true});
