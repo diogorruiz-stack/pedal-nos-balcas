@@ -14,6 +14,8 @@ module.exports = async function handler(req, res) {
     const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
     const directAnswer=()=>{
       const s=norm(question);
+      if(/(km|quilometr).*(media|medio)|(?:media|medio).*(km|quilometr)/.test(s))return {answer:'Na conta simples da viagem inteira, foram cerca de 50 km pedalados por dia: quase 700 km divididos por 14 dias. Mas a média não significa que todos os dias tenham sido só de bicicleta: houve também avião, trem, ônibus, ferry, barco e táxi.',day:null,mode:'direct'};
+      if(/somente.*(pedal|bike|biciclet)|so.*(pedal|bike|biciclet)|tudo.*(pedal|bike|biciclet)|apenas.*(pedal|bike|biciclet)|foi.*so.*bike|foi.*tudo.*bike/.test(s))return {answer:'Não. A bicicleta foi o fio condutor, mas a viagem não foi feita somente pedalando. O roteiro combinou bicicleta com avião, trem, ônibus, ferry, barco e, no Dia 5, táxi porque Diogo ainda estava se recuperando de uma gastroenterite. Não havia carro de apoio.',day:null,mode:'direct'};
       if(/(quantos|quantas).*\b(pais|paises|territorio|territorios)\b|\b(paises|territorios).*\b(passou|percorreu|viagem)\b/.test(s))return {answer:'A viagem passou por 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte.',day:null,mode:'direct'};
       if(/(quantos|quanto).*\bkm\b|quilometr|distancia total|km.*pedal|pedalados/.test(s))return {answer:'Foram quase 700 km pedalados ao longo dos 14 dias. Esse é o total editorial; em alguns arquivos Garmin o registro bruto inclui barco ou ferry e por isso precisa de contexto.',day:null,mode:'direct'};
       if(/(quantos|quanto).*dias|durou.*dias|duracao/.test(s))return {answer:'A viagem durou 14 dias, em setembro de 2026.',day:null,mode:'direct'};
@@ -27,6 +29,8 @@ module.exports = async function handler(req, res) {
 
     const fallback=()=>{
       const s=norm(question);
+      if(/(km|quilometr).*(media|medio)|(?:media|medio).*(km|quilometr)/.test(s))return {answer:'Na viagem inteira, a média simples foi de aproximadamente 50 km pedalados por dia: quase 700 km ao longo de 14 dias. Os dias efetivamente pedalados variaram bastante porque o roteiro também usou outros transportes.',day:null,mode:'fallback'};
+      if(/somente.*(pedal|bike|biciclet)|so.*(pedal|bike|biciclet)|tudo.*(pedal|bike|biciclet)|apenas.*(pedal|bike|biciclet)|foi.*so.*bike|foi.*tudo.*bike/.test(s))return {answer:'Não. A viagem misturou bicicleta, avião, trem, ônibus, ferry, barco e um trecho de táxi por motivo de saúde. A bicicleta era o fio condutor, mas não havia a regra de fazer tudo pedalando.',day:null,mode:'fallback'};
       if(/(quantos|quantas).*\b(pais|paises|territorio|territorios)\b/.test(s))return {answer:'A viagem passou por 7 países/territórios: Sérvia, Bósnia e Herzegovina, Croácia, Montenegro, Albânia, Kosovo e Macedônia do Norte.',day:null,mode:'fallback'};
       if(/(quantos|quanto).*\bkm\b|quilometr|distancia total|km.*pedal|pedalados/.test(s))return {answer:'Foram quase 700 km pedalados ao longo dos 14 dias.',day:null,mode:'fallback'};
       if(/pior.*dia|dia.*pior/.test(s))return {answer:'Se “pior” significa maior perrengue, o Dia 3 (Mostar → Ravno) foi o mais caótico: 79 km, atalho errado, espinhos e seis furos, além de um resgate de carro no fim. Em esforço físico, o Dia 11 foi o maior pedal, com 94,4 km. Em saúde, o Dia 5 foi o mais comprometido, com gastroenterite e táxi até Dubrovnik.',day:3,mode:'fallback'};
@@ -54,7 +58,7 @@ REGRAS:
 - Para relatos pessoais, decisões, distâncias, preços, restaurantes, hospedagens e acontecimentos da viagem, use o CONTEXTO DA VIAGEM como fonte de verdade.
 - Para perguntas históricas, culturais, geográficas ou gastronômicas sobre os países e lugares atravessados, você pode usar seu conhecimento geral. Deixe claro quando estiver dando contexto geral e não algo vivido na viagem.
 - Não invente experiências pessoais, lugares visitados, datas, preços, distâncias, restaurantes ou opiniões atribuídas ao viajante.
-- Se a pergunta pedir algo específico da experiência e isso não estiver registrado, diga isso naturalmente, sem avisar antes.
+- Se a pergunta for sobre a viagem, raciocine sobre os 14 dias completos antes de concluir que algo não está registrado. Perguntas simples sobre o formato da viagem, meios de transporte, distâncias, pessoas, comidas ou lugares devem ser respondidas pela combinação do contexto geral com os dias.\n- Se a pergunta pedir algo específico da experiência e isso realmente não estiver registrado, diga isso naturalmente, sem avisar antes.
 - Se a pergunta mencionar um lugar, primeiro explique em uma ou duas frases o que é o lugar e por que ele importa; depois conecte com o que aconteceu na viagem.
 - Diferencie GPS bruto de distância curada quando houver essa diferença.
 - Priorize o relato real da viagem. Use contexto histórico, cultural, geográfico e gastronômico para ajudar o visitante a entender melhor o que está vendo e a planejar uma viagem semelhante.
@@ -65,7 +69,7 @@ CONTEXTO DA VIAGEM:
 ${contextText}`;
 
     let answer='',usedModel='';
-    for(const model of ['openai/gpt-5.6-sol','openai/gpt-5.6-luna']){
+    for(const model of ['openai/gpt-5.4-mini','nvidia/nemotron-3.5-lightning-free']){
       const gateway = await fetch('https://ai-gateway.vercel.sh/v1/chat/completions', {
         method:'POST',
         headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json'},
