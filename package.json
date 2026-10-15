@@ -1,0 +1,7 @@
+{
+  "name":"pedal-nos-balcas",
+  "private":true,
+  "dependencies":{
+    "@vercel/blob":"^2.3.0"
+  }
+}
