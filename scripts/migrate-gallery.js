@@ -1,0 +1,72 @@
+const fs = require('fs');
+const { put } = require('@vercel/blob');
+const convert = require('heic-convert');
+const sharp = require('sharp');
+
+const REPO = 'diogorruiz-stack/pedal-nos-balcas';
+const BRANCH = 'gallery-transfer';
+
+function safeStem(name, fallback) {
+  return String(name || '')
+    .replace(/\.[^.]+$/, '')
+    .replace(/[^a-zA-Z0-9_-]/g, '_')
+    .replace(/^_+|_+$/g, '') || fallback;
+}
+
+async function getText(url) {
+  const r = await fetch(url, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`GET ${url} -> ${r.status}`);
+  return r.text();
+}
+
+async function main() {
+  const target = JSON.parse(fs.readFileSync('migration-target.json', 'utf8'));
+  const day = Number(target.day || 0);
+  if (!day) {
+    console.log('[gallery] no migration target; skipping');
+    return;
+  }
+
+  const version = String(target.version || Date.now());
+  const root = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/transfer/day${day}`;
+  const manifest = JSON.parse(await getText(`${root}/manifest.json?v=${encodeURIComponent(version)}`));
+  if (!Array.isArray(manifest.photos) || !manifest.photos.length) throw new Error('empty migration manifest');
+
+  console.log(`[gallery] migrating day ${day}: ${manifest.photos.length} photos`);
+  for (let i = 0; i < manifest.photos.length; i++) {
+    const photo = manifest.photos[i];
+    let b64 = '';
+    for (const part of photo.parts || []) {
+      b64 += (await getText(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${part}?v=${encodeURIComponent(version)}`)).trim();
+    }
+    const raw = Buffer.from(b64, 'base64');
+    if (!raw.length) throw new Error(`empty reconstructed photo: ${photo.name}`);
+
+    let input = raw;
+    if (/heic|heif/i.test(photo.name || '')) {
+      input = Buffer.from(await convert({ buffer: raw, format: 'JPEG', quality: 0.9 }));
+    }
+
+    const optimized = await sharp(input)
+      .rotate()
+      .resize({ width: 1800, height: 1800, fit: 'inside', withoutEnlargement: true })
+      .jpeg({ quality: 84, mozjpeg: true })
+      .toBuffer();
+
+    const stem = safeStem(photo.stem || photo.name, `photo_${String(i + 1).padStart(3, '0')}`);
+    const pathname = `curated/day${day}/${stem}.jpg`;
+    const blob = await put(pathname, optimized, {
+      access: 'public',
+      addRandomSuffix: false,
+      contentType: 'image/jpeg',
+      cacheControlMaxAge: 31536000
+    });
+    console.log(`[gallery] ${i + 1}/${manifest.photos.length} ${photo.name} -> ${blob.url}`);
+  }
+  console.log(`[gallery] day ${day} complete`);
+}
+
+main().catch(err => {
+  console.error('[gallery] migration failed', err);
+  process.exitCode = 1;
+});
