@@ -21,26 +21,34 @@ async function getText(url) {
 
 async function main() {
   const target = JSON.parse(fs.readFileSync('migration-target.json', 'utf8'));
-  const day = Number(target.day || 0);
-  if (!day) {
+  const days = Array.isArray(target.days) ? target.days.map(Number).filter(Boolean) : [Number(target.day || 0)].filter(Boolean);
+  if (!days.length) {
     console.log('[gallery] no migration target; skipping');
     return;
   }
 
   const version = String(target.version || Date.now());
-  const root = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/transfer/day${day}`;
-  const manifest = JSON.parse(await getText(`${root}/manifest.json?v=${encodeURIComponent(version)}`));
-  if (!Array.isArray(manifest.photos) || !manifest.photos.length) throw new Error('empty migration manifest');
+  for (const day of days) {
+    const root = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/transfer/day${day}`;
+    const manifest = JSON.parse(await getText(`${root}/manifest.json?v=${encodeURIComponent(version)}`));
+    if (!Array.isArray(manifest.photos) || !manifest.photos.length) throw new Error(`empty migration manifest for day ${day}`);
 
-  console.log(`[gallery] migrating day ${day}: ${manifest.photos.length} photos`);
-  for (let i = 0; i < manifest.photos.length; i++) {
-    const photo = manifest.photos[i];
-    let b64 = '';
-    for (const part of photo.parts || []) {
-      b64 += (await getText(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${part}?v=${encodeURIComponent(version)}`)).trim();
-    }
-    const raw = Buffer.from(b64, 'base64');
-    if (!raw.length) throw new Error(`empty reconstructed photo: ${photo.name}`);
+    console.log(`[gallery] migrating day ${day}: ${manifest.photos.length} photos`);
+    for (let i = 0; i < manifest.photos.length; i++) {
+      const photo = manifest.photos[i];
+      let raw;
+      if (photo.rawPath) {
+        const rr = await fetch(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${photo.rawPath}?v=${encodeURIComponent(version)}`, { cache: 'no-store' });
+        if (!rr.ok) throw new Error(`GET raw ${photo.rawPath} -> ${rr.status}`);
+        raw = Buffer.from(await rr.arrayBuffer());
+      } else {
+        let b64 = '';
+        for (const part of photo.parts || []) {
+          b64 += (await getText(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${part}?v=${encodeURIComponent(version)}`)).trim();
+        }
+        raw = Buffer.from(b64, 'base64');
+      }
+      if (!raw.length) throw new Error(`empty reconstructed photo: ${photo.name}`);
 
     let input = raw;
     if (/heic|heif/i.test(photo.name || '')) {
@@ -61,9 +69,10 @@ async function main() {
       contentType: 'image/jpeg',
       cacheControlMaxAge: 31536000
     });
-    console.log(`[gallery] ${i + 1}/${manifest.photos.length} ${photo.name} -> ${blob.url}`);
+      console.log(`[gallery] ${i + 1}/${manifest.photos.length} ${photo.name} -> ${blob.url}`);
+    }
+    console.log(`[gallery] day ${day} complete`);
   }
-  console.log(`[gallery] day ${day} complete`);
 }
 
 main().catch(err => {
