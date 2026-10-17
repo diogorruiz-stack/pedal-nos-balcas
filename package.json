@@ -1,7 +1,9 @@
 {
-  "name":"pedal-nos-balcas",
-  "private":true,
-  "dependencies":{
-    "@vercel/blob":"^2.3.0"
+  "name": "pedal-nos-balcas",
+  "private": true,
+  "dependencies": {
+    "@vercel/blob": "^2.3.0",
+    "heic-convert": "^2.1.0",
+    "sharp": "^0.34.4"
   }
 }
