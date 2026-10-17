@@ -19,6 +19,24 @@ async function getText(url) {
   return r.text();
 }
 
+async function getRaw(photo, version) {
+  if (photo.sourceUrl) {
+    const rr = await fetch(photo.sourceUrl, { cache: 'no-store' });
+    if (!rr.ok) throw new Error(`GET source ${photo.name} -> ${rr.status}`);
+    return Buffer.from(await rr.arrayBuffer());
+  }
+  if (photo.rawPath) {
+    const rr = await fetch(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${photo.rawPath}?v=${encodeURIComponent(version)}`, { cache: 'no-store' });
+    if (!rr.ok) throw new Error(`GET raw ${photo.rawPath} -> ${rr.status}`);
+    return Buffer.from(await rr.arrayBuffer());
+  }
+  let b64 = '';
+  for (const part of photo.parts || []) {
+    b64 += (await getText(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${part}?v=${encodeURIComponent(version)}`)).trim();
+  }
+  return Buffer.from(b64, 'base64');
+}
+
 async function main() {
   const target = JSON.parse(fs.readFileSync('migration-target.json', 'utf8'));
   const days = Array.isArray(target.days) ? target.days.map(Number).filter(Boolean) : [Number(target.day || 0)].filter(Boolean);
@@ -33,46 +51,36 @@ async function main() {
     const manifest = JSON.parse(await getText(`${root}/manifest.json?v=${encodeURIComponent(version)}`));
     if (!Array.isArray(manifest.photos) || !manifest.photos.length) throw new Error(`empty migration manifest for day ${day}`);
 
-    console.log(`[gallery] migrating day ${day}: ${manifest.photos.length} photos`);
-    for (let i = 0; i < manifest.photos.length; i++) {
-      const photo = manifest.photos[i];
-      let raw;
-      if (photo.sourceUrl) {
-        const rr = await fetch(photo.sourceUrl, { cache: 'no-store' });
-        if (!rr.ok) throw new Error(`GET source ${photo.name} -> ${rr.status}`);
-        raw = Buffer.from(await rr.arrayBuffer());
-      } else if (photo.rawPath) {
-        const rr = await fetch(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${photo.rawPath}?v=${encodeURIComponent(version)}`, { cache: 'no-store' });
-        if (!rr.ok) throw new Error(`GET raw ${photo.rawPath} -> ${rr.status}`);
-        raw = Buffer.from(await rr.arrayBuffer());
-      } else {
-        let b64 = '';
-        for (const part of photo.parts || []) {
-          b64 += (await getText(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${part}?v=${encodeURIComponent(version)}`)).trim();
-        }
-        raw = Buffer.from(b64, 'base64');
-      }
+    console.log(`[gallery] prefetching day ${day}: ${manifest.photos.length} photos`);
+    const prefetched = await Promise.all(manifest.photos.map(async (photo, i) => {
+      const raw = await getRaw(photo, version);
       if (!raw.length) throw new Error(`empty reconstructed photo: ${photo.name}`);
+      console.log(`[gallery] prefetched ${i + 1}/${manifest.photos.length} ${photo.name}`);
+      return { photo, raw };
+    }));
 
-    let input = raw;
-    if (/heic|heif/i.test(photo.name || '')) {
-      input = Buffer.from(await convert({ buffer: raw, format: 'JPEG', quality: 0.9 }));
-    }
+    console.log(`[gallery] converting/uploading day ${day}`);
+    for (let i = 0; i < prefetched.length; i++) {
+      const { photo, raw } = prefetched[i];
+      let input = raw;
+      if (/heic|heif/i.test(photo.name || '')) {
+        input = Buffer.from(await convert({ buffer: raw, format: 'JPEG', quality: 0.9 }));
+      }
 
-    const optimized = await sharp(input)
-      .rotate()
-      .resize({ width: 1800, height: 1800, fit: 'inside', withoutEnlargement: true })
-      .jpeg({ quality: 84, mozjpeg: true })
-      .toBuffer();
+      const optimized = await sharp(input)
+        .rotate()
+        .resize({ width: 1800, height: 1800, fit: 'inside', withoutEnlargement: true })
+        .jpeg({ quality: 84, mozjpeg: true })
+        .toBuffer();
 
-    const stem = safeStem(photo.stem || photo.name, `photo_${String(i + 1).padStart(3, '0')}`);
-    const pathname = `curated/day${day}/${stem}.jpg`;
-    const blob = await put(pathname, optimized, {
-      access: 'public',
-      addRandomSuffix: false,
-      contentType: 'image/jpeg',
-      cacheControlMaxAge: 31536000
-    });
+      const stem = safeStem(photo.stem || photo.name, `photo_${String(i + 1).padStart(3, '0')}`);
+      const pathname = `curated/day${day}/${stem}.jpg`;
+      const blob = await put(pathname, optimized, {
+        access: 'public',
+        addRandomSuffix: false,
+        contentType: 'image/jpeg',
+        cacheControlMaxAge: 31536000
+      });
       console.log(`[gallery] ${i + 1}/${manifest.photos.length} ${photo.name} -> ${blob.url}`);
     }
     console.log(`[gallery] day ${day} complete`);
