@@ -78,6 +78,7 @@ async function main() {
       const blob = await put(pathname, optimized, {
         access: 'public',
         addRandomSuffix: false,
+        allowOverwrite: true,
         contentType: 'image/jpeg',
         cacheControlMaxAge: 31536000
       });
