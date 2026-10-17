@@ -37,7 +37,11 @@ async function main() {
     for (let i = 0; i < manifest.photos.length; i++) {
       const photo = manifest.photos[i];
       let raw;
-      if (photo.rawPath) {
+      if (photo.sourceUrl) {
+        const rr = await fetch(photo.sourceUrl, { cache: 'no-store' });
+        if (!rr.ok) throw new Error(`GET source ${photo.name} -> ${rr.status}`);
+        raw = Buffer.from(await rr.arrayBuffer());
+      } else if (photo.rawPath) {
         const rr = await fetch(`https://raw.githubusercontent.com/${REPO}/${BRANCH}/${photo.rawPath}?v=${encodeURIComponent(version)}`, { cache: 'no-store' });
         if (!rr.ok) throw new Error(`GET raw ${photo.rawPath} -> ${rr.status}`);
         raw = Buffer.from(await rr.arrayBuffer());
