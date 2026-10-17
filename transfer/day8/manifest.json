@@ -1,0 +1,75 @@
+{
+  "day": 8,
+  "photos": [
+    {
+      "name": "IMG_6808.HEIC",
+      "stem": "IMG_6808",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-5d40-820e-b25f-b88f66fa17b3/raw?se=2026-10-17T14%3A40%3A33Z&sp=r&sv=2026-02-06&sr=b&scid=e05610d5-1df1-59d1-bcbe-b4ce68131bea&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T12%3A12%3A29Z&ske=2026-10-18T12%3A12%3A29Z&sks=b&skv=2026-02-06&sig=HhqJtKPwg6ET/qrntTJP470efhCko7BL3jxr2%2BSqvK8%3D"
+    },
+    {
+      "name": "IMG_6816.HEIC",
+      "stem": "IMG_6816",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-b3dc-820e-a400-9aacaceabb38/raw?se=2026-10-17T14%3A40%3A34Z&sp=r&sv=2026-02-06&sr=b&scid=63d8122b-a62a-5ea1-b9de-87e692f1c41c&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T12%3A12%3A30Z&ske=2026-10-18T12%3A12%3A30Z&sks=b&skv=2026-02-06&sig=aMOumsFMfsinQkAFJxqocE7pY%2BPDWpTqzFu8//mgWw0%3D"
+    },
+    {
+      "name": "IMG_6829.HEIC",
+      "stem": "IMG_6829",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-3f3c-820e-afe2-6e91717ee4e8/raw?se=2026-10-17T14%3A40%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=db67b837-269c-51ab-acd8-1c69cb6255d0&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T10%3A40%3A54Z&ske=2026-10-18T10%3A40%3A54Z&sks=b&skv=2026-02-06&sig=m65rm8k8lb0SC5zKj/8vFt0KW6m3hYUxwXSylVlHUTI%3D"
+    },
+    {
+      "name": "IMG_6843.HEIC",
+      "stem": "IMG_6843",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-1568-820e-8317-92fac2466355/raw?se=2026-10-17T14%3A40%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=84ffe674-0852-58ee-91eb-d69130f30906&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T09%3A42%3A05Z&ske=2026-10-18T09%3A42%3A05Z&sks=b&skv=2026-02-06&sig=HU87CS3isLjEEkA7cUfELLDcFeyKatDy/epKi5Tzb88%3D"
+    },
+    {
+      "name": "IMG_6847.HEIC",
+      "stem": "IMG_6847",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-4048-820e-81ab-5598f979b962/raw?se=2026-10-17T14%3A40%3A36Z&sp=r&sv=2026-02-06&sr=b&scid=e2f0c501-a643-5baf-9d63-86002a386f60&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-16T20%3A41%3A58Z&ske=2026-10-17T20%3A41%3A58Z&sks=b&skv=2026-02-06&sig=WscMU3APnQLl7S%2BbhD22jQJCoV%2BGU0rVX4ITUK87I1U%3D"
+    },
+    {
+      "name": "IMG_6850.HEIC",
+      "stem": "IMG_6850",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-2f1c-820e-8645-d011691a095b/raw?se=2026-10-17T14%3A40%3A36Z&sp=r&sv=2026-02-06&sr=b&scid=6c2db111-c013-57d1-a885-dd088ebceee3&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T11%3A45%3A55Z&ske=2026-10-18T11%3A45%3A55Z&sks=b&skv=2026-02-06&sig=pGoa9MMtdr18LqLxS%2B1SEoooq2rUqwfty5FyL6LEtGk%3D"
+    },
+    {
+      "name": "IMG_6860.HEIC",
+      "stem": "IMG_6860",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-2088-820e-81bd-bb8425ff2904/raw?se=2026-10-17T14%3A40%3A37Z&sp=r&sv=2026-02-06&sr=b&scid=4a5bb6c9-23d2-5aa4-8b8c-b0e4118abc50&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-16T20%3A43%3A24Z&ske=2026-10-17T20%3A43%3A24Z&sks=b&skv=2026-02-06&sig=WS%2Brfd27EkC8lEoy4LKBmPTmB4Z15wvPL9Ttv7frycY%3D"
+    },
+    {
+      "name": "IMG_6881.HEIC",
+      "stem": "IMG_6881",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-dd68-820e-8b5b-be622278e518/raw?se=2026-10-17T14%3A40%3A37Z&sp=r&sv=2026-02-06&sr=b&scid=926305c2-97c6-56a7-8b1a-9d20d50d23fd&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T08%3A58%3A27Z&ske=2026-10-18T08%3A58%3A27Z&sks=b&skv=2026-02-06&sig=WVpkqKunEP4e6f8icdpPU2gQTea8kq3dRv3IrlDkYiA%3D"
+    },
+    {
+      "name": "IMG_6886.HEIC",
+      "stem": "IMG_6886",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-9b18-820e-baed-4af72bb437c0/raw?se=2026-10-17T14%3A40%3A38Z&sp=r&sv=2026-02-06&sr=b&scid=a6f4941f-1e18-53ab-ac30-a35a0a2375d8&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-16T20%3A50%3A54Z&ske=2026-10-17T20%3A50%3A54Z&sks=b&skv=2026-02-06&sig=RgIP2H6pEXPvcmGVe65gnPhNfDQsNajp%2BqmblF%2Bcu5M%3D"
+    },
+    {
+      "name": "IMG_6890.HEIC",
+      "stem": "IMG_6890",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-e644-820e-bda6-7aaf2f933521/raw?se=2026-10-17T14%3A40%3A38Z&sp=r&sv=2026-02-06&sr=b&scid=fc676b67-da44-578c-84f5-4f45b545f0be&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T11%3A28%3A29Z&ske=2026-10-18T11%3A28%3A29Z&sks=b&skv=2026-02-06&sig=vEQKcESg/ooyC559T1xVma02AxO/1CkfGj24o6gkvp8%3D"
+    },
+    {
+      "name": "IMG_6904.HEIC",
+      "stem": "IMG_6904",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-6ad8-820e-9a5a-ee3d1d3cc3e2/raw?se=2026-10-17T14%3A40%3A39Z&sp=r&sv=2026-02-06&sr=b&scid=3b7f834f-dad5-5857-bc98-c2fec62631ac&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T12%3A40%3A52Z&ske=2026-10-18T12%3A40%3A52Z&sks=b&skv=2026-02-06&sig=nb1dduDN9BsQSzvV3215SY2cKndpe/oL/dbEvAnBNOQ%3D"
+    },
+    {
+      "name": "IMG_6914.HEIC",
+      "stem": "IMG_6914",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-68fc-820e-a399-3eadc5cc49f8/raw?se=2026-10-17T14%3A40%3A40Z&sp=r&sv=2026-02-06&sr=b&scid=e0d7514f-124b-57a0-a067-a96203cd5969&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T12%3A41%3A48Z&ske=2026-10-18T12%3A41%3A48Z&sks=b&skv=2026-02-06&sig=03tHFcxQoKmR6My3QFtjqDvJhELkKHBk0eQpg4r5g1M%3D"
+    },
+    {
+      "name": "IMG_6922.HEIC",
+      "stem": "IMG_6922",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-c3e8-820e-92c9-47b6f4ff6d2f/raw?se=2026-10-17T14%3A40%3A40Z&sp=r&sv=2026-02-06&sr=b&scid=4f456b48-da81-5486-8dca-d299964090cc&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T13%3A23%3A56Z&ske=2026-10-18T13%3A23%3A56Z&sks=b&skv=2026-02-06&sig=2BCV/b41V33H/QnJOQRcTBdMYzCzyfXbZyUdbb9TUuE%3D"
+    },
+    {
+      "name": "IMG_6937.HEIC",
+      "stem": "IMG_6937",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-e9f8-820e-a3bb-569042f42a61/raw?se=2026-10-17T14%3A40%3A41Z&sp=r&sv=2026-02-06&sr=b&scid=bd1e91fb-c7b0-5e0e-9bd6-9f006c93d244&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T11%3A28%3A29Z&ske=2026-10-18T11%3A28%3A29Z&sks=b&skv=2026-02-06&sig=gDkJc9zjCCSqDdPJDF9H52deE07Y%2BmZzjNZEQrqo%2BwE%3D"
+    }
+  ]
+}
