@@ -635,8 +635,11 @@ function topPhotoList(d){
 }
 function morePhotoList(d){
  const all=allPhotoList(d),cfg=(window.CURATION_EXT||CURATION)[d.d];
- if(cfg?.more){const picked=listByKeys(d,cfg.more);if(picked.length)return picked}
- const used=new Set(topPhotoList(d).map(p=>p.key));return all.filter(p=>!used.has(p.key))
+ const used=new Set(topPhotoList(d).map(p=>p.key));
+ const ordered=cfg?.more?listByKeys(d,cfg.more):[];
+ const seen=new Set(used),out=[];
+ [...ordered,...all].forEach(p=>{if(!seen.has(p.key)){out.push(p);seen.add(p.key)}});
+ return out
 }
 function renderTop(d){
  const ps=topPhotoList(d),box=document.getElementById('topMedia');
@@ -811,7 +814,7 @@ async function boot(){
   tracks=extractArray(text,'const tracks=');
   days=enhanceDays(legacyDays);
   document.getElementById('heroImg').src=PHOTO_DATA.hero;
-  days.forEach(d=>{const b=document.createElement('button');b.className='date-btn';b.dataset.day=d.d;b.innerHTML=`<b>${String(d.d).padStart(2,'0')}</b><span>DIA</span>`;b.onclick=()=>selectDay(d.d);dateStrip.appendChild(b)});
+  days.forEach(d=>{const b=document.createElement('button');b.className='date-btn';b.dataset.day=d.d;b.innerHTML=`<span>DIA</span><b>${String(d.d).padStart(2,'0')}</b>`;b.onclick=()=>selectDay(d.d);dateStrip.appendChild(b)});
   map=L.map('map',{zoomControl:false,scrollWheelZoom:false,attributionControl:true});L.control.zoom({position:'bottomright'}).addTo(map);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);layerGroup=L.layerGroup().addTo(map);
   document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{activeTab=t.dataset.tab;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===t));document.getElementById('tabCopy').innerHTML=tabHtml(current(),activeTab)});
   document.getElementById('readFull').onclick=()=>document.getElementById('historia').scrollIntoView({behavior:'smooth'});document.getElementById('prevDay').onclick=()=>activeDay>1&&selectDay(activeDay-1,{detail:true});document.getElementById('nextDay').onclick=()=>activeDay<14&&selectDay(activeDay+1,{detail:true});
