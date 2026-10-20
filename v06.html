@@ -610,8 +610,10 @@ function enhanceDays(base){
  return base.map(d=>{
    const e=ENHANCE[d.d]||{};
    const extras=EXTRA_PHOTOS[d.d]||[];
+   const complete=window.COMPLETE_DAY_PHOTOS?.[d.d];
    let photos;
-   if(d.d===1) photos=CURATED_DAY1_PHOTOS;
+   if(Array.isArray(complete)&&complete.length) photos=complete;
+   else if(d.d===1) photos=CURATED_DAY1_PHOTOS;
    else if(d.d===12) photos=CURATED_DAY12_PHOTOS;
    else {
      photos=[...extras,...(d.photos||[])];
