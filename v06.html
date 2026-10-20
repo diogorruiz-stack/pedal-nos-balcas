@@ -139,7 +139,7 @@ body.profile-locked{overflow:hidden}
 <script src="photos-extra-d9.js"></script>
 <script src="photos-extra-d10.js"></script>
 <script src="photos-extra-d11.js"></script>
-<script src="photos-extra-d13b.js"></script>
+<script src="photos-extra-d13b.js"></script>\n<script src="photos-complete-drive.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 let PHOTO_DATA={},legacyDays=[],tracks=[],days=[],map,layerGroup,activeDay=1,activeTab='summary',topIndex=0;
@@ -633,7 +633,14 @@ function topPhotoList(d){
  if(cfg?.top){const picked=listByKeys(d,cfg.top);if(picked.length)return picked}
  const cut=Math.max(1,Math.ceil(all.length/2));return all.slice(0,cut)
 }
+function completePhotoList(d){
+ const rows=window.COMPLETE_DAY_PHOTOS?.[d.d];
+ if(!Array.isArray(rows)||!rows.length)return null;
+ return rows.filter(p=>PHOTO_DATA[p[0]]).map(p=>({key:p[0],title:p[1]||('Dia '+d.d+' · arquivo pessoal'),caption:p[2]||'Registro fotográfico desta etapa da viagem.'}));
+}
 function morePhotoList(d){
+ const complete=completePhotoList(d);
+ if(complete)return complete;
  const all=allPhotoList(d),cfg=(window.CURATION_EXT||CURATION)[d.d];
  const used=new Set(topPhotoList(d).map(p=>p.key));
  const ordered=cfg?.more?listByKeys(d,cfg.more):[];
@@ -672,7 +679,7 @@ function renderDetail(d){
 function selectDay(n,opt={}){
  activeDay=n;topIndex=0;const d=current();document.querySelectorAll('.date-btn').forEach(b=>b.classList.toggle('active',+b.dataset.day===n));
  document.getElementById('dayNo').textContent=String(n).padStart(2,'0');document.getElementById('dayRoute').textContent=d.route;document.getElementById('dayStats').textContent=d.stats;document.getElementById('dayDate').textContent='DIA '+d.d;document.getElementById('mapTitle').textContent=d.route;document.getElementById('dayFood').innerHTML=`<b>Comida:</b> ${esc(d.food||'')}`;document.getElementById('bridgeText').textContent=`Continue o Dia ${n}: a história completa, os lugares e as decisões que mudaram a rota.`;
- activeTab=preferredTab();document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===activeTab));document.getElementById('tabCopy').innerHTML=tabHtml(d,activeTab);renderTop(d);renderRail('photoRail',d);const moreCount=morePhotoList(d).length,totalPhotos=allPhotoList(d).length;document.getElementById('photoCount').textContent=totalPhotos?`${totalPhotos} fotos no dia · ${moreCount} nesta galeria`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
+ activeTab=preferredTab();document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===activeTab));document.getElementById('tabCopy').innerHTML=tabHtml(d,activeTab);renderTop(d);renderRail('photoRail',d);const moreCount=morePhotoList(d).length,totalPhotos=completePhotoList(d)?.length||allPhotoList(d).length;document.getElementById('photoCount').textContent=totalPhotos?`${totalPhotos} fotos no dia · ${moreCount} nesta galeria`:'em curadoria';renderDetail(d);drawDay(d);setTimeout(()=>map.invalidateSize(),60);
  if(opt.detail)document.getElementById('historia').scrollIntoView({behavior:'smooth',block:'start'});
 }
 const VISITOR_KEY='pedalVisitorProfileV1';
