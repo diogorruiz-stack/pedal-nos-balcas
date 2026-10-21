@@ -1,0 +1,30 @@
+name: Materialize photo galleries
+on:
+  push:
+    paths:
+      - gallery-materialize-target.json
+permissions:
+  contents: write
+jobs:
+  galleries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: node scripts/materialize-static-gallery.js
+      - name: Commit static galleries
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gallery photos-static-drive.js
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Materialize static galleries for days 7 10 11"
+            git push origin main
+          fi
