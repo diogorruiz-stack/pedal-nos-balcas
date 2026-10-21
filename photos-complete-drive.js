@@ -209,86 +209,22 @@ window.COMPLETE_DAY_PHOTOS[3]=[
   ]
 ];
 window.COMPLETE_DAY_PHOTOS[4]=[
-  [
-    "d4f_IMG_0390",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_0391",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_0400",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_0461",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_0500",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6225",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6230",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6232",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6269",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6275",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6285",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6287",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6294",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6302",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6305",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d4f_IMG_6310",
-    "Dia 4 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d4f_IMG_0390","As bikes antes de voltar à estrada","A manhã em Ravno começou no chão, literalmente: bicicletas desmontadas e ajustes antes de seguir viagem para Trebinje."],
+  ["d4f_IMG_0391","Manutenção ainda em Ravno","Antes de encarar o calor do interior da Herzegovina, foi preciso conferir pneu e transmissão e deixar a bicicleta pronta para mais um dia."],
+  ["d4f_IMG_0400","Bicicleta de cabeça para baixo","A cena clássica de viagem autossuficiente: sem oficina por perto, a própria calçada e um pedaço de sombra viram área de manutenção."],
+  ["d4f_IMG_0461","Popovo Polje aparece no caminho","O vale cárstico se abre entre montanhas e vinhedos. É uma das paisagens mais características do trecho entre Ravno e Trebinje."],
+  ["d4f_IMG_0500","Sol forte na Herzegovina","O céu limpo deixava a paisagem bonita e o pedal mais duro. Com pouca sombra, água passou a ser parte central da logística do dia."],
+  ["d4f_IMG_6225","Café da manhã antes do pedal","Antes de sair de Ravno, o grupo reforçou as energias com um café da manhã completo. Na estrada, esse tipo de refeição faz diferença quando não se sabe onde será a próxima parada."],
+  ["d4f_IMG_6230","O pequeno detalhe que dá trabalho","Um objeto perfurante retirado durante a manutenção mostra como um problema minúsculo pode consumir um bom pedaço da manhã numa viagem de bicicleta."],
+  ["d4f_IMG_6232","A marca no pneu","O close deixa evidente o ponto de perfuração no pneu — mais um lembrete de que kit de reparo e autonomia mecânica não eram opcionais nessa viagem."],
+  ["d4f_IMG_6269","Vinhedos de Popovo Polje","Parreirais acompanham a estrada pelo vale. A região de Trebinje tem tradição vitivinícola antiga, favorecida pelo clima quente e seco da Herzegovina."],
+  ["d4f_IMG_6275","De volta ao asfalto","Com os reparos resolvidos, a viagem voltou ao ritmo do pedal, cercada por montanhas secas e longos trechos expostos ao sol."],
+  ["d4f_IMG_6285","A estrada começa a fechar entre montanhas","Na aproximação de Trebinje, o relevo fica mais dramático e a estrada passa a serpentear pelo maciço calcário."],
+  ["d4f_IMG_6287","Curvas da Herzegovina","As paredes rochosas e a vegetação baixa mostram a mudança de cenário conforme o grupo deixa Popovo Polje e se aproxima de Trebinje."],
+  ["d4f_IMG_6294","Fim de tarde com a bicicleta","Depois de horas de calor e pouca água, a luz baixa marcou os últimos movimentos do dia antes da chegada definitiva a Trebinje."],
+  ["d4f_IMG_6302","Mosteiro de Tvrdoš","Nos arredores de Trebinje, o mosteiro ortodoxo de Tvrdoš foi uma parada cultural e também prática: ali finalmente foi possível reabastecer água."],
+  ["d4f_IMG_6305","Vinho dentro do mosteiro","Tvrdoš também é conhecido pela produção de vinho. Barris e espaços de degustação conectam a vida monástica à tradição vitivinícola da região."],
+  ["d4f_IMG_6310","Tvrdoš no fim do dia","A área externa do mosteiro encerra a sequência fotográfica do trecho antes de Trebinje, misturando arquitetura ortodoxa, pedra e paisagem mediterrânea."]
 ];
 window.COMPLETE_DAY_PHOTOS[5]=[
   [
