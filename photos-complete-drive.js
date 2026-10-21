@@ -1,120 +1,28 @@
 window.COMPLETE_DAY_PHOTOS=window.COMPLETE_DAY_PHOTOS||{};
 window.COMPLETE_DAY_PHOTOS[2]=[
-  [
-    "d2f_IMG_6092",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5905",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5926",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5947",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5940",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5943",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5950",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5953",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5958",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5961",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5978",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5982",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5987",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6080",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_5991",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6003",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6047",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6058",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6072",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6077",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6081",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6098",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d2f_IMG_6103",
-    "Dia 2 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d2f_IMG_6092","Stari Most à noite","A ponte histórica de Mostar já iluminada, refletida no Neretva. O Dia 2 terminou muito diferente da manhã em Sarajevo."],
+  ["d2f_IMG_5905","Sebilj e a bicicleta","O primeiro pedal por Sarajevo começou na Baščaršija. A fonte Sebilj, os pombos e a bicicleta colocam a cidade otomana no começo da etapa."],
+  ["d2f_IMG_5926","Ponte Latina","A ponte sobre o rio Miljacka fica ao lado do local do assassinato do arquiduque Francisco Ferdinando, em 1914."],
+  ["d2f_IMG_5947","Uma Sarajevo Rose no chão","As marcas de impactos de morteiros preservadas no pavimento transformam a memória do cerco em parte visível da cidade."],
+  ["d2f_IMG_5940","Academia de Belas Artes e Festina Lente","À margem do Miljacka, o prédio histórico da Academia de Belas Artes aparece ligado à cidade pela passarela Festina Lente."],
+  ["d2f_IMG_5943","Cicatrizes nas fachadas","Marcas de disparos e estilhaços ainda aparecem em prédios de Sarajevo, deixando a guerra visível fora dos museus."],
+  ["d2f_IMG_5950","Pedal entre as marcas da guerra","A bicicleta passa ao lado de uma Sarajevo Rose: memória recente e vida cotidiana ocupando o mesmo espaço."],
+  ["d2f_IMG_5953","A bicicleta sobre uma Sarajevo Rose","Um dos registros mais diretos do dia: a roda da bike ao lado de uma marca preservada do cerco de Sarajevo."],
+  ["d2f_IMG_5958","Prédio marcado pelo cerco","A fachada mostra como a guerra dos anos 1990 ainda permanece inscrita na paisagem urbana de Sarajevo."],
+  ["d2f_IMG_5961","Bikes no centro histórico","As bicicletas encostadas numa construção antiga de Sarajevo antes de seguir pelo restante do circuito urbano."],
+  ["d2f_IMG_5978","Baščaršija sobre duas rodas","Mesquita, minarete e bicicleta no mesmo quadro: a herança otomana acompanhou boa parte do primeiro pedal por Sarajevo."],
+  ["d2f_IMG_5982","O grupo no Sebilj","As bikes reunidas diante da fonte que virou símbolo de Sarajevo antes de seguir para a estação."],
+  ["d2f_IMG_5987","Entre mercado e minaretes","A bicicleta atravessa a Baščaršija, onde comércio, mesquitas e ruas estreitas formam o núcleo histórico da cidade."],
+  ["d2f_IMG_6080","Stari Most ao entardecer","A ponte de Mostar apareceu primeiro com a última luz do dia, antes de ganhar a iluminação noturna."],
+  ["d2f_IMG_5991","Pedal pelo centro de Sarajevo","O trajeto urbano continuou pelas avenidas e trilhos da cidade antes da mudança de modal para o trem."],
+  ["d2f_IMG_6003","As bicicletas dentro do trem","Sarajevo → Mostar foi uma das conexões mais simples da viagem: as bikes entraram no vagão sem o drama que surgiria depois nos ônibus."],
+  ["d2f_IMG_6047","O Neretva pela janela do trem","A viagem ferroviária para Mostar atravessa montanhas e acompanha trechos de água verde-esmeralda — uma das paisagens mais bonitas do deslocamento."],
+  ["d2f_IMG_6058","Chegada depois do trem","Bicicletas e grupo novamente juntos ao fim da conexão ferroviária, já na aproximação de Mostar."],
+  ["d2f_IMG_6072","Primeiro encontro com Stari Most","A ponte histórica aparece ainda com luz natural, vista de um dos terraços da cidade antiga."],
+  ["d2f_IMG_6077","Mostar no fim da tarde","A cidade já mudava de luz quando o passeio a pé começou a se aproximar da Stari Most e do centro histórico."],
+  ["d2f_IMG_6081","A ponte começando a acender","Poucos minutos depois, a iluminação da Stari Most começa a destacar o arco de pedra contra as montanhas."],
+  ["d2f_IMG_6098","Stari Most refletida no Neretva","À noite, a ponte e seu reflexo transformam completamente a paisagem que tinha sido vista ainda de dia."],
+  ["d2f_IMG_6103","Mostar antiga à noite","Pedra, vegetação e construções tradicionais fecham a caminhada noturna pelo entorno da ponte."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d2f_IMG_6092": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6092.jpg",
@@ -142,71 +50,19 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d2f_IMG_6103": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6103.jpg"
 });
 window.COMPLETE_DAY_PHOTOS[3]=[
-  [
-    "d3f_IMG_6114",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6119",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6137",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6145",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6152",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6155",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6161",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6173",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6208",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6209",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_IMG_6211",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_photo_0ae5e0",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d3f_CA725CFE-325E-4579-A757-5EF2BD49046A",
-    "Dia 3 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d3f_IMG_6114","Mostar ficando para trás","O Dia 3 começou ainda junto ao rio e aos minaretes de Mostar, antes de a rota seguir para Blagaj e o interior da Herzegovina."],
+  ["d3f_IMG_6119","O grupo na saída de Mostar","Três ciclistas e as bikes carregadas no começo de uma etapa que acabaria sendo uma das mais difíceis da viagem."],
+  ["d3f_IMG_6137","Bikes sobre o rio","Uma parada com as bicicletas antes de entrar de vez nas estradas do interior da Herzegovina."],
+  ["d3f_IMG_6145","Vinhedos da Herzegovina","Parreirais e montanhas passam a dominar a paisagem depois de Mostar, num trecho exposto ao calor."],
+  ["d3f_IMG_6152","Blagaj aos pés do paredão","A nascente do rio Buna surge diretamente da base da montanha, ao lado do conjunto histórico de Blagaj."],
+  ["d3f_IMG_6155","Tekija de Blagaj","A casa dervixe construída junto à nascente do Buna é uma das imagens mais reconhecíveis da região de Mostar."],
+  ["d3f_IMG_6161","Bikes à beira d’água","Uma pausa sob as árvores antes de a etapa se transformar numa sequência de furos e improvisos."],
+  ["d3f_IMG_6173","Um raro momento de calma","Água e sombra ainda davam ao dia uma aparência tranquila antes dos problemas mecânicos dominarem a rota."],
+  ["d3f_IMG_6208","Quando a bicicleta precisou de carro","Uma das bikes aparece acomodada dentro de um carro — registro direto do resgate improvisado que entrou na história daquele dia."],
+  ["d3f_IMG_6209","Depois de horas de perrengue","No fim da etapa, o corpo no chão ao lado das bicicletas resume melhor o desgaste do que qualquer número de quilômetros."],
+  ["d3f_IMG_6211","Jantar depois do caos","A recompensa no fim do dia: comida, mesa e o alívio de finalmente ter chegado a Ravno."],
+  ["d3f_photo_0ae5e0","Pôr do sol com a bike carregada","A bicicleta pronta para viagem diante do sol baixo, num dia em que a luz acabou antes dos problemas."],
+  ["d3f_CA725CFE-325E-4579-A757-5EF2BD49046A","Mais um reparo no pneu","Mãos na roda e pneu desmontado: os furos foram o problema central do Dia 3 e consumiram boa parte do tempo da etapa."]
 ];
 window.COMPLETE_DAY_PHOTOS[4]=[
   ["d4f_IMG_0390","As bikes antes de voltar à estrada","A manhã em Ravno começou no chão, literalmente: bicicletas desmontadas e ajustes antes de seguir viagem para Trebinje."],
