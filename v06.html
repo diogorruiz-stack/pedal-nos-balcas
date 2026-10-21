@@ -606,7 +606,15 @@ function extractArray(text,marker){
  throw new Error('Array incompleto para '+marker);
 }
 function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function photoFor(d,key){const ov=ENHANCE[d.d]?.photoCaptions?.[key];if(ov)return ov;const p=d.photos?.find(x=>x[0]===key);return p?[p[1],p[2]]:[key,'Arquivo pessoal da viagem.']}
+function photoFor(d,key){
+ const ov=ENHANCE[d.d]?.photoCaptions?.[key];if(ov)return ov;
+ const p=d.photos?.find(x=>x[0]===key);
+ if(!p)return [key,'Registro do Dia '+d.d+': '+d.route+'. Foto do arquivo pessoal desta etapa da viagem.'];
+ const rawTitle=String(p[1]||'').trim(),rawCaption=String(p[2]||'').trim();
+ const title=(!rawTitle||/^Dia \\d+ · arquivo pessoal$/i.test(rawTitle))?('Dia '+d.d+' · '+d.route):rawTitle;
+ const caption=(!rawCaption||rawCaption==='Registro fotográfico desta etapa da viagem.'||rawCaption==='Arquivo pessoal da viagem.')?('Registro do Dia '+d.d+': '+d.route+'. Foto do arquivo pessoal desta etapa da viagem.'):rawCaption;
+ return [title,caption];
+}
 function enhanceDays(base){
  return base.map(d=>{
    const e=ENHANCE[d.d]||{};
