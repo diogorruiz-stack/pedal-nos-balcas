@@ -1,4 +1,146 @@
 window.COMPLETE_DAY_PHOTOS=window.COMPLETE_DAY_PHOTOS||{};
+window.COMPLETE_DAY_PHOTOS[2]=[
+  [
+    "d2f_IMG_6092",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5905",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5926",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5947",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5940",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5943",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5950",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5953",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5958",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5961",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5978",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5982",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5987",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6080",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_5991",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6003",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6047",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6058",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6072",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6077",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6081",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6098",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ],
+  [
+    "d2f_IMG_6103",
+    "Dia 2 · arquivo pessoal",
+    "Registro fotográfico desta etapa da viagem."
+  ]
+];
+Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
+  "d2f_IMG_6092": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6092.jpg",
+  "d2f_IMG_5905": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5905.jpg",
+  "d2f_IMG_5926": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5926.jpg",
+  "d2f_IMG_5947": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5947.jpg",
+  "d2f_IMG_5940": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5940.jpg",
+  "d2f_IMG_5943": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5943.jpg",
+  "d2f_IMG_5950": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5950.jpg",
+  "d2f_IMG_5953": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5953.jpg",
+  "d2f_IMG_5958": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5958.jpg",
+  "d2f_IMG_5961": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5961.jpg",
+  "d2f_IMG_5978": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5978.jpg",
+  "d2f_IMG_5982": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5982.jpg",
+  "d2f_IMG_5987": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5987.jpg",
+  "d2f_IMG_6080": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6080.jpg",
+  "d2f_IMG_5991": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_5991.jpg",
+  "d2f_IMG_6003": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6003.jpg",
+  "d2f_IMG_6047": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6047.jpg",
+  "d2f_IMG_6058": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6058.jpg",
+  "d2f_IMG_6072": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6072.jpg",
+  "d2f_IMG_6077": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6077.jpg",
+  "d2f_IMG_6081": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6081.jpg",
+  "d2f_IMG_6098": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6098.jpg",
+  "d2f_IMG_6103": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day2/IMG_6103.jpg"
+});
 window.COMPLETE_DAY_PHOTOS[3]=[
   [
     "d3f_IMG_6114",
