@@ -83,46 +83,14 @@ window.COMPLETE_DAY_PHOTOS[4]=[
   ["d4f_IMG_6310","Tvrdoš no fim do dia","A área externa do mosteiro encerra a sequência fotográfica do trecho antes de Trebinje, misturando arquitetura ortodoxa, pedra e paisagem mediterrânea."]
 ];
 window.COMPLETE_DAY_PHOTOS[5]=[
-  [
-    "d5f_IMG_0959",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_0977",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_1024",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_6335",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_6340",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_6344",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_6348",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d5f_IMG_6350",
-    "Dia 5 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d5f_IMG_0959","Adriático no fim da tarde","A chegada à costa trouxe uma mudança completa de paisagem: depois do interior montanhoso da Herzegovina, o mar dominou o horizonte."],
+  ["d5f_IMG_0977","Pôr do sol sobre o Adriático","A luz baixa sobre as ilhas e o mar registra a chegada à região de Dubrovnik num dia em que o grupo se dividiu entre bicicleta e táxi."],
+  ["d5f_IMG_1024","Uma pausa já em Dubrovnik","Depois da travessia e do desgaste dos dias anteriores, o fim da tarde foi de descanso e recuperação antes de voltar à bicicleta."],
+  ["d5f_IMG_6335","Trebinje → Dubrovnik de táxi","Com a gastroenterite ainda ativa, Diogo fez a etapa de carro enquanto os outros três seguiram pedalando."],
+  ["d5f_IMG_6340","Dubrovnik vista de cima","Telhados de pedra, mar e muralhas começam a aparecer juntos na chegada à cidade croata."],
+  ["d5f_IMG_6344","Bagagem nas escadas da Old Town","Hospedagem dentro da cidade murada parecia ótima no mapa, mas escadas e pedra transformaram a logística com malas e bikes em trabalho extra."],
+  ["d5f_IMG_6348","A logística entra pela viela","Bagagem e equipamento ocupam uma rua estreita de pedra — um retrato mais fiel da chegada do que qualquer cartão-postal."],
+  ["d5f_IMG_6350","A escada que o anúncio não mostra","O acesso à hospedagem deixa claro por que ficar dentro da Old Town pode ser pouco prático para quem viaja com bicicleta e muita bagagem."]
 ];
 window.COMPLETE_DAY_PHOTOS[8]=[
   [
