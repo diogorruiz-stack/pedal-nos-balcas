@@ -623,6 +623,7 @@ function enhanceDays(base){
    if(Array.isArray(complete)&&complete.length) photos=complete;
    else if(d.d===1) photos=CURATED_DAY1_PHOTOS;
    else if(d.d===12) photos=CURATED_DAY12_PHOTOS;
+   else if(Array.isArray(d.photos)&&d.photos.length) photos=d.photos;
    else photos=[];
    return {...d,...e,photos,stops:e.stops||d.worth.map(x=>[x,'Parada registrada no diário desta etapa.'])};
  })
