@@ -1,0 +1,45 @@
+{
+  "day": 7,
+  "photos": [
+    {
+      "name": "IMG_6585.HEIC",
+      "stem": "IMG_6585",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-9534-820e-b0ab-1fa236d6a972/raw?se=2026-10-21T20%3A06%3A50Z&sp=r&sv=2026-02-06&sr=b&scid=a99e80f0-08ed-5829-a018-eabbb581f5a0&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T09%3A01%3A48Z&ske=2026-10-22T09%3A01%3A48Z&sks=b&skv=2026-02-06&sig=GKc5KS6lchZb9bfUPxfM6mXwVsN6I/XiiKhy2F7%2B12Y%3D"
+    },
+    {
+      "name": "IMG_6587.HEIC",
+      "stem": "IMG_6587",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-f088-820e-b9f3-9b8e9ee6b4d0/raw?se=2026-10-21T20%3A06%3A52Z&sp=r&sv=2026-02-06&sr=b&scid=4c7fec30-9728-577f-8007-790f42020544&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T10%3A40%3A08Z&ske=2026-10-22T10%3A40%3A08Z&sks=b&skv=2026-02-06&sig=yHpZCJKiYr3lqNNxVtR0OnhnF8ikS3gPeoC/ws5MIGo%3D"
+    },
+    {
+      "name": "IMG_6589.HEIC",
+      "stem": "IMG_6589",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-6878-820e-90ea-61f3316bb0e3/raw?se=2026-10-21T20%3A06%3A54Z&sp=r&sv=2026-02-06&sr=b&scid=6e6890eb-6a98-5469-a767-a8347b26b768&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T13%3A28%3A51Z&ske=2026-10-22T13%3A28%3A51Z&sks=b&skv=2026-02-06&sig=yOoHIlqdz6RuVppGhv2xDthae%2BFzgyu7h/UzaOyYTes%3D"
+    },
+    {
+      "name": "IMG_6593.HEIC",
+      "stem": "IMG_6593",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-98c8-820e-aabd-7a58911f9dde/raw?se=2026-10-21T20%3A06%3A57Z&sp=r&sv=2026-02-06&sr=b&scid=b158b16a-e32b-5139-9d03-97aea6c3c14d&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T11%3A27%3A59Z&ske=2026-10-22T11%3A27%3A59Z&sks=b&skv=2026-02-06&sig=F%2B3i%2BISGW24v0Dj6WPIMjriPaIuVepIkJ6HoUktP41U%3D"
+    },
+    {
+      "name": "IMG_6599.HEIC",
+      "stem": "IMG_6599",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-1108-820e-861c-a551ce90cab5/raw?se=2026-10-21T20%3A06%3A59Z&sp=r&sv=2026-02-06&sr=b&scid=c2864316-4d2c-542c-a659-573584827785&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T11%3A13%3A56Z&ske=2026-10-22T11%3A13%3A56Z&sks=b&skv=2026-02-06&sig=8RtZar445KhBrwKjH5ptZKmc7M/m5DDKCnLCIbIeh3s%3D"
+    },
+    {
+      "name": "IMG_6642.HEIC",
+      "stem": "IMG_6642",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-dcb0-820e-bd4d-eca20a74b820/raw?se=2026-10-21T20%3A07%3A02Z&sp=r&sv=2026-02-06&sr=b&scid=e588e827-2be0-5083-a681-d471f6b34eae&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T08%3A30%3A57Z&ske=2026-10-22T08%3A30%3A57Z&sks=b&skv=2026-02-06&sig=3VtEJYIKUhodXhkuNxM5qAOaW8XzUvBfPLKNsveqon4%3D"
+    },
+    {
+      "name": "8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3.jpg",
+      "stem": "8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-5ab0-820e-8540-b4dda3d534a2/raw?se=2026-10-21T20%3A07%3A03Z&sp=r&sv=2026-02-06&sr=b&scid=16ba7010-8a19-525d-9910-843b23d25fa5&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T12%3A15%3A57Z&ske=2026-10-22T12%3A15%3A57Z&sks=b&skv=2026-02-06&sig=8m/eZwwpb6Dfq%2BdOhYGukzaAa6CrQwfmN%2BOACV7D0Hs%3D"
+    },
+    {
+      "name": "IMG_6613.HEIC",
+      "stem": "IMG_6613",
+      "sourceUrl": "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-a898-820e-aef2-0869c4afa53f/raw?se=2026-10-21T20%3A07%3A12Z&sp=r&sv=2026-02-06&sr=b&scid=b564b3b9-8855-5124-941f-5687bab89de9&skoid=ba7c401a-35d6-40a0-a0f3-2259cc50bbe2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-21T12%3A55%3A45Z&ske=2026-10-22T12%3A55%3A45Z&sks=b&skv=2026-02-06&sig=F3dQKV%2BT5hhsUKkYT6VUXAgaF%2B9BhChKVc76Fn1B7Ag%3D"
+    }
+  ]
+}
