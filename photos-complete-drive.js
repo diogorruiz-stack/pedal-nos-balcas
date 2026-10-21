@@ -93,235 +93,55 @@ window.COMPLETE_DAY_PHOTOS[5]=[
   ["d5f_IMG_6350","A escada que o anúncio não mostra","O acesso à hospedagem deixa claro por que ficar dentro da Old Town pode ser pouco prático para quem viaja com bicicleta e muita bagagem."]
 ];
 window.COMPLETE_DAY_PHOTOS[8]=[
-  [
-    "d8f_IMG_6808",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6816",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6829",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6843",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6847",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6850",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6860",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6881",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6886",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6890",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6904",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6914",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6922",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d8f_IMG_6937",
-    "Dia 8 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d8f_IMG_6808","Última manhã em Kotor","A bicicleta diante da Torre do Relógio antes de deixar a cidade e começar a combinação de ônibus, pedal e trem."],
+  ["d8f_IMG_6816","Igreja na Old Town antes da saída","Mais uma volta curta pelas pedras de Kotor antes de seguir para Cetinje."],
+  ["d8f_IMG_6829","Subindo de ônibus para Cetinje","A primeira parte do dia aconteceu dentro do ônibus, poupando uma longa subida com as bikes carregadas."],
+  ["d8f_IMG_6843","O atalho deixa de ser estrada","A rota curta no mapa virou um caminho de pedras pouco adequado para bicicleta carregada."],
+  ["d8f_IMG_6847","Bike parada no trecho ruim","A foto mostra por que nem toda trilha aparentemente possível no mapa vale a tentativa com bagagem."],
+  ["d8f_IMG_6850","Amoras no caminho","As estradas rurais trouxeram pequenas pausas para comer fruta direto da beira da estrada."],
+  ["d8f_IMG_6860","De volta ao asfalto","Depois do desvio, a descida voltou a ficar fluida por estradas secundárias de Montenegro."],
+  ["d8f_IMG_6881","Curvas descendo das montanhas","O trecho entre Cetinje e a região do Lago Skadar foi um dos pedais mais leves do dia."],
+  ["d8f_IMG_6886","Virpazar e a água","Barcos e canais anunciam a chegada à região do Lago Skadar antes da troca para o trem."],
+  ["d8f_IMG_6890","O trem em Virpazar","As bicicletas entraram inteiras no trem para Bar — uma logística muito mais simples que a dos ônibus."],
+  ["d8f_IMG_6904","Grupo reunido na conexão ferroviária","Bikes e ciclistas juntos durante a troca de modal em mais um dia híbrido."],
+  ["d8f_IMG_6914","Bicicletas diante do pôr do sol","Depois do trem, ainda faltava estrada até Ulcinj e o Adriático voltou a aparecer no horizonte."],
+  ["d8f_IMG_6922","Últimos quilômetros com o sol baixo","A bike segue pela costa já perto do fim da luz."],
+  ["d8f_IMG_6937","Ulcinj à noite","Minarete, palco e bandeiras na cidade que encerrou um dia de ônibus, trilha, trem e bicicleta."]
 ];
 window.COMPLETE_DAY_PHOTOS[9]=[
-  [
-    "d9f_IMG_6947",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6949",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6960",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6962",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6973",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6980",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6983",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6988",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_6996",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_7004",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_7010",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_7020",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_7027",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_7029",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d9f_IMG_7034",
-    "Dia 9 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d9f_IMG_6947","Manhã na praia de Ulcinj","Antes de seguir para a Albânia, o dia começou com o Adriático e a cidade antiga ao fundo."],
+  ["d9f_IMG_6949","A praia antes da estrada","Guarda-sóis coloridos e mar calmo pouco antes de o tempo fechar no caminho."],
+  ["d9f_IMG_6960","Nuvens pesadas sobre a estrada","A rota para a fronteira começou sob um céu escuro que logo mudaria o ritmo do pedal."],
+  ["d9f_IMG_6962","Asfalto molhado entre montanhas","O sul de Montenegro alternou curvas e paredões sob tempo instável."],
+  ["d9f_IMG_6973","Descida com chuva rondando","Montanhas escuras e estrada vazia acompanharam boa parte da aproximação da fronteira."],
+  ["d9f_IMG_6980","Abrigo improvisado da chuva","A bicicleta parou sob uma estrutura simples à beira da estrada enquanto a chuva forte passava."],
+  ["d9f_IMG_6983","Pedal retomado depois da chuva","Com o tempo melhorando, a viagem voltou ao asfalto rumo a Sukobin–Muriqan."],
+  ["d9f_IMG_6988","Estrada cortando o rochedo","Um dos trechos mais dramáticos do relevo antes da fronteira com a Albânia."],
+  ["d9f_IMG_6996","Montanhas no sul de Montenegro","A estrada segue aberta entre o relevo seco já perto da saída do país."],
+  ["d9f_IMG_7004","Sukobin aparece na sinalização","A placa confirma a aproximação da passagem de fronteira usada pelas bicicletas."],
+  ["d9f_IMG_7010","Bem-vindo à Albânia","A placa de estrada marca a mudança de país e já aponta Shkodër como próximo destino."],
+  ["d9f_IMG_7020","Centro de Shkodër","Arquitetura urbana e espaço público na cidade albanesa onde a bicicleta faz parte do cotidiano."],
+  ["d9f_IMG_7027","Shkodër vista do alto","A cidade se espalha entre montanhas no fim do pedal do Dia 9."],
+  ["d9f_IMG_7029","Chegada urbana em Shkodër","Mais um registro da cidade que virou base para resolver a logística do Lago Koman no dia seguinte."],
+  ["d9f_IMG_7034","Jantar albanês no Fisi","A mesa trouxe pratos locais, incluindo tavë kosi, e também a lembrança prática de que cartão nem sempre resolvia."]
 ];
 window.COMPLETE_DAY_PHOTOS[14]=[
-  [
-    "d14f_IMG_1783",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7761",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7767",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7783",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7790",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7795",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7803",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7810",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7812",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7818",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7821",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7839",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7862",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7864",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_IMG_7889",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d14f_F2B17188-5441-446A-9729-54AB73D09EB6",
-    "Dia 14 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d14f_IMG_1783","Última refeição em grupo na estrada","Uma mesa ao ar livre antes de a viagem entrar definitivamente na fase de ônibus, caixas e aeroporto."],
+  ["d14f_IMG_7761","Estrada rumo a Elbasan","O último grande pedal começou entre montanhas e asfalto aberto no interior da Albânia."],
+  ["d14f_IMG_7767","A sombra da bike na estrada","Sol forte e bicicleta carregada resumem o ritmo do último dia sobre duas rodas."],
+  ["d14f_IMG_7783","Construção de pedra no caminho","Uma parada diante de um edifício de aparência fortificada antes de seguir pelo vale."],
+  ["d14f_IMG_7790","Elbasan e Tirana na sinalização","A placa de estrada confirma a aproximação de Elbasan, onde a logística dos ônibus mudaria o grupo."],
+  ["d14f_IMG_7795","Parada ainda no trecho rodoviário","Um registro do deslocamento final antes de chegar à cidade onde seria necessário dividir bicicletas entre ônibus."],
+  ["d14f_IMG_7803","Muralhas e torre em Elbasan","A cidade entrou no roteiro antes da tentativa de colocar quatro bicicletas no mesmo ônibus para Tirana."],
+  ["d14f_IMG_7810","Bikes na rodoviária","As bicicletas aguardam ao lado dos ônibus, já no momento em que ficou claro que todas não caberiam juntas."],
+  ["d14f_IMG_7812","Esperando a próxima solução","Parte do grupo permanece na rodoviária enquanto a viagem se divide em dois ônibus."],
+  ["d14f_IMG_7818","Pedal urbano já em Tirana","Depois da conexão, a bicicleta volta às ruas da capital albanesa antes de ser desmontada."],
+  ["d14f_IMG_7821","As bikes na oficina","A última missão mecânica era transformar bicicletas de viagem em bagagem de avião."],
+  ["d14f_IMG_7839","A caixa de papelão entra na história","Uma das caixas conseguidas em Tirana começa a resolver o problema de despachar a bike."],
+  ["d14f_IMG_7862","Fim de tarde em Tirana","Uma cena urbana já sem o ritmo de estrada, quando a viagem passa a ser quase toda logística de retorno."],
+  ["d14f_IMG_7864","Skanderbeg Square à noite","A estátua de Skanderbeg e a praça central aparecem iluminadas no encerramento da passagem por Tirana."],
+  ["d14f_IMG_7889","A bicicleta encaixotada no transporte","A caixa já pronta segue dentro do veículo rumo ao aeroporto."],
+  ["d14f_F2B17188-5441-446A-9729-54AB73D09EB6","Caixa da bike no aeroporto","A bicicleta virou oficialmente bagagem: caixa sobre o carrinho no terminal antes do embarque."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d3f_IMG_6114": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day3/IMG_6114.jpg",
@@ -409,101 +229,25 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[6]=[
-  [
-    "d6f_IMG_1146",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6508",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6513",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6517",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6550",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_0462",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6374",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6378",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6398",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6405",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6413",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6420",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6424",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_1114",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6467",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6472",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6481",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6486",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d6f_IMG_6490",
-    "Dia 6 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d6f_IMG_1146","Barcos iluminados no fim do dia","A noite junto à água fechou a etapa depois de um dia inteiro alternando cidade, barco, bicicleta e ferry."],
+  ["d6f_IMG_6508","Montanhas fechando a Baía de Kotor","Ao entrar na baía, o horizonte fica cercado por montanhas e a água passa a acompanhar praticamente todo o trecho final."],
+  ["d6f_IMG_6513","A bicicleta entrando no ferry","Em Kamenari, a bike segue pela rampa do ferry que atravessa o estreito até Lepetane."],
+  ["d6f_IMG_6517","Ferry Kamenari–Lepetane","Carros e bicicletas dividem o convés numa travessia curta que evita a volta completa pela baía."],
+  ["d6f_IMG_6550","Igreja na Old Town à noite","A chegada a Kotor terminou entre pedra, igrejas e ruas vazias da cidade murada."],
+  ["d6f_IMG_0462","Pedal entre vinhedos e montanhas","Um trecho aberto da rota antes de a paisagem se fechar definitivamente em torno da Baía de Kotor."],
+  ["d6f_IMG_6374","Fortificações junto ao Adriático","A saída de Dubrovnik pelo mar permite ver a costa rochosa e as muralhas por um ângulo que a estrada não entrega."],
+  ["d6f_IMG_6378","Dubrovnik vista da água","A cidade murada aparece recortada entre rocha e mar durante o deslocamento de barco."],
+  ["d6f_IMG_6398","Porto e muralhas de Dubrovnik","Antes de voltar ao pedal, a viagem ainda passou pelo cenário marítimo que define a cidade croata."],
+  ["d6f_IMG_6405","Os quatro com as bikes em Dubrovnik","O grupo reunido antes de seguir viagem, já com Léo integrado à aventura."],
+  ["d6f_IMG_6413","Uma pausa antes do barco","Bebida, sombra e alguns minutos de descanso antes de embarcar com as bicicletas."],
+  ["d6f_IMG_6420","Bicicletas a bordo","As bikes seguem presas no barco, transformando o deslocamento pelo Adriático em parte da própria rota."],
+  ["d6f_IMG_6424","O grupo no barco","Uma selfie no convés registra a mudança de modal sem abandonar as bicicletas."],
+  ["d6f_IMG_1114","Montenegro entra no roteiro","A bandeira montenegrina à beira-mar marca a entrada em mais um país da viagem."],
+  ["d6f_IMG_6467","Pedal rente ao Adriático","A estrada costeira alterna mar aberto, pequenas praias e trechos tranquilos antes da baía."],
+  ["d6f_IMG_6472","Escultura sobre a água","Uma pequena figura instalada no rochedo aparece isolada diante da baía e das montanhas."],
+  ["d6f_IMG_6481","Estrada florida rumo a Kotor","O trecho final combina montanha, vegetação mediterrânea e uma estrada estreita acompanhando a água."],
+  ["d6f_IMG_6486","Barcos na Baía de Kotor","Pequenas embarcações e montanhas reforçam a escala fechada da baía."],
+  ["d6f_IMG_6490","Vilarejo à beira da baía","Casas e barcos praticamente encostados na água durante a aproximação de Kotor."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d6f_IMG_1146": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day6/IMG_1146.jpg",
@@ -528,121 +272,29 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[7]=[
-  [
-    "d7f_IMG_6561",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_1189",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6554",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6565",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6569",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6576",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6582",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6583",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6585",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6587",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6589",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6593",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6599",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6642",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6613",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6629",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6644",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6728",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6732",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6748",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6753",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ],
-  [
-    "d7f_IMG_6765",
-    "Dia 7 · arquivo pessoal",
-    "Registro fotográfico desta etapa da viagem."
-  ]
+  ["d7f_IMG_6561","Torre do Relógio de Kotor","A manhã começou dentro da Old Town, com a torre marcando uma das entradas mais reconhecíveis da cidade murada."],
+  ["d7f_IMG_1189","Mesa cheia antes do pedal","Com um dia sem bagagem pesada, houve espaço para comer com calma antes de sair pela margem da baía."],
+  ["d7f_IMG_6554","As bikes descansando dentro de casa","Depois de vários dias carregadas, as bicicletas começaram o Dia 7 leves, sem alforjes."],
+  ["d7f_IMG_6565","Canhão na praça de Kotor","As marcas militares aparecem junto às praças e muralhas da cidade histórica."],
+  ["d7f_IMG_6569","Pizza pelas ruas da Old Town","Uma parada simples de comida no meio do passeio a pé pelas vielas de Kotor."],
+  ["d7f_IMG_6576","Igreja entre as montanhas","A arquitetura religiosa ocupa as pequenas praças de Kotor com o paredão rochoso sempre ao fundo."],
+  ["d7f_IMG_6582","Muralhas subindo a montanha","As fortificações deixam a Old Town e escalam o relevo quase vertical atrás da cidade."],
+  ["d7f_IMG_6583","Casas de pedra dentro das muralhas","Ruelas estreitas, fachadas antigas e montanhas fazem Kotor parecer comprimida entre pedra e pedra."],
+  ["d7f_IMG_6585","Cruzeiro ancorado diante de Kotor","O tamanho do navio contrasta com a escala compacta da cidade e explica parte do movimento intenso durante o dia."],
+  ["d7f_IMG_6587","Old Town vista de cima","A torre, os telhados e a montanha aparecem juntos numa das leituras mais claras da geografia de Kotor."],
+  ["d7f_IMG_6589","O porto de Kotor","Cruzeiro, marina e montanhas reunidos antes de a bicicleta assumir o restante do dia."],
+  ["d7f_IMG_6593","Pedal pela margem oeste","Sem bagagem, a bike ganhou outro ritmo acompanhando a água por Muo, Prčanj e Stoliv."],
+  ["d7f_IMG_6599","Bike e veleiro lado a lado","Uma pausa à beira da baía num dia em que a paisagem era o próprio objetivo do pedal."],
+  ["d7f_IMG_6642","Bicicleta diante da baía","A bike parada junto à água, com as montanhas fechando o horizonte do outro lado."],
+  ["d7f_8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3","Almoço depois do pedal","Massa, cerveja e comida de verdade depois de algumas horas percorrendo a margem da baía."],
+  ["d7f_IMG_6613","Vilarejos entre água e montanha","A margem oeste alterna pequenas casas, igrejas e embarcações quase sem separar rua e baía."],
+  ["d7f_IMG_6629","Selfie com a bike e a baía","Um registro simples de um dos dias mais leves da viagem, pedalando só porque o lugar valia a pena."],
+  ["d7f_IMG_6644","Nossa Senhora das Rochas ao longe","A pequena ilha artificial em frente a Perast aparece isolada no meio da água."],
+  ["d7f_IMG_6728","Nossa Senhora dos Anjos em Verige","A pequena igreja junto ao estreito aparece com um grande cruzeiro se aproximando ao fundo."],
+  ["d7f_IMG_6732","A igreja minúscula diante do cruzeiro","O navio ocupa quase todo o estreito de Verige e transforma a pequena Nossa Senhora dos Anjos em escala."],
+  ["d7f_IMG_6748","Montanhas no fim da tarde","A luz quente muda o relevo da baía no caminho de volta para Kotor."],
+  ["d7f_IMG_6753","Jantar com a baía ao fundo","O dia terminou com comida e conversa à beira da água depois do pedal sem bagagem."],
+  ["d7f_IMG_6765","Pedra e água já de noite","Uma construção histórica junto à margem fecha um dos dias mais bonitos da viagem."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d7f_IMG_6561": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6561.jpg",
