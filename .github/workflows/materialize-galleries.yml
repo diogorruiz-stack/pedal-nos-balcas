@@ -26,5 +26,6 @@ jobs:
             echo "No changes"
           else
             git commit -m "Materialize static galleries for days 7 10 11"
+            git pull --rebase origin main
             git push origin main
           fi
