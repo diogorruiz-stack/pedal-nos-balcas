@@ -1,11 +1,10 @@
 window.COMPLETE_DAY_PHOTOS=window.COMPLETE_DAY_PHOTOS||{};
 window.COMPLETE_DAY_PHOTOS[2]=[
-  ["d2f_IMG_6092","Stari Most à noite","A ponte histórica de Mostar já iluminada, refletida no Neretva. O Dia 2 terminou muito diferente da manhã em Sarajevo."],
   ["d2f_IMG_5905","Sebilj e a bicicleta","O primeiro pedal por Sarajevo começou na Baščaršija. A fonte Sebilj, os pombos e a bicicleta colocam a cidade otomana no começo da etapa."],
   ["d2f_IMG_5926","Ponte Latina","A ponte sobre o rio Miljacka fica ao lado do local do assassinato do arquiduque Francisco Ferdinando, em 1914."],
-  ["d2f_IMG_5947","Uma Sarajevo Rose no chão","As marcas de impactos de morteiros preservadas no pavimento transformam a memória do cerco em parte visível da cidade."],
   ["d2f_IMG_5940","Academia de Belas Artes e Festina Lente","À margem do Miljacka, o prédio histórico da Academia de Belas Artes aparece ligado à cidade pela passarela Festina Lente."],
   ["d2f_IMG_5943","Cicatrizes nas fachadas","Marcas de disparos e estilhaços ainda aparecem em prédios de Sarajevo, deixando a guerra visível fora dos museus."],
+  ["d2f_IMG_5947","Uma Sarajevo Rose no chão","As marcas de impactos de morteiros preservadas no pavimento transformam a memória do cerco em parte visível da cidade."],
   ["d2f_IMG_5950","Pedal entre as marcas da guerra","A bicicleta passa ao lado de uma Sarajevo Rose: memória recente e vida cotidiana ocupando o mesmo espaço."],
   ["d2f_IMG_5953","A bicicleta sobre uma Sarajevo Rose","Um dos registros mais diretos do dia: a roda da bike ao lado de uma marca preservada do cerco de Sarajevo."],
   ["d2f_IMG_5958","Prédio marcado pelo cerco","A fachada mostra como a guerra dos anos 1990 ainda permanece inscrita na paisagem urbana de Sarajevo."],
@@ -13,14 +12,15 @@ window.COMPLETE_DAY_PHOTOS[2]=[
   ["d2f_IMG_5978","Baščaršija sobre duas rodas","Mesquita, minarete e bicicleta no mesmo quadro: a herança otomana acompanhou boa parte do primeiro pedal por Sarajevo."],
   ["d2f_IMG_5982","O grupo no Sebilj","As bikes reunidas diante da fonte que virou símbolo de Sarajevo antes de seguir para a estação."],
   ["d2f_IMG_5987","Entre mercado e minaretes","A bicicleta atravessa a Baščaršija, onde comércio, mesquitas e ruas estreitas formam o núcleo histórico da cidade."],
-  ["d2f_IMG_6080","Stari Most ao entardecer","A ponte de Mostar apareceu primeiro com a última luz do dia, antes de ganhar a iluminação noturna."],
   ["d2f_IMG_5991","Pedal pelo centro de Sarajevo","O trajeto urbano continuou pelas avenidas e trilhos da cidade antes da mudança de modal para o trem."],
   ["d2f_IMG_6003","As bicicletas dentro do trem","Sarajevo → Mostar foi uma das conexões mais simples da viagem: as bikes entraram no vagão sem o drama que surgiria depois nos ônibus."],
   ["d2f_IMG_6047","O Neretva pela janela do trem","A viagem ferroviária para Mostar atravessa montanhas e acompanha trechos de água verde-esmeralda — uma das paisagens mais bonitas do deslocamento."],
   ["d2f_IMG_6058","Chegada depois do trem","Bicicletas e grupo novamente juntos ao fim da conexão ferroviária, já na aproximação de Mostar."],
   ["d2f_IMG_6072","Primeiro encontro com Stari Most","A ponte histórica aparece ainda com luz natural, vista de um dos terraços da cidade antiga."],
   ["d2f_IMG_6077","Mostar no fim da tarde","A cidade já mudava de luz quando o passeio a pé começou a se aproximar da Stari Most e do centro histórico."],
+  ["d2f_IMG_6080","Stari Most ao entardecer","A ponte de Mostar apareceu primeiro com a última luz do dia, antes de ganhar a iluminação noturna."],
   ["d2f_IMG_6081","A ponte começando a acender","Poucos minutos depois, a iluminação da Stari Most começa a destacar o arco de pedra contra as montanhas."],
+  ["d2f_IMG_6092","Stari Most à noite","A ponte histórica de Mostar já iluminada, refletida no Neretva. O Dia 2 terminou muito diferente da manhã em Sarajevo."],
   ["d2f_IMG_6098","Stari Most refletida no Neretva","À noite, a ponte e seu reflexo transformam completamente a paisagem que tinha sido vista ainda de dia."],
   ["d2f_IMG_6103","Mostar antiga à noite","Pedra, vegetação e construções tradicionais fecham a caminhada noturna pelo entorno da ponte."]
 ];
@@ -58,23 +58,23 @@ window.COMPLETE_DAY_PHOTOS[3]=[
   ["d3f_IMG_6155","Tekija de Blagaj","A casa dervixe construída junto à nascente do Buna é uma das imagens mais reconhecíveis da região de Mostar."],
   ["d3f_IMG_6161","Bikes à beira d’água","Uma pausa sob as árvores antes de a etapa se transformar numa sequência de furos e improvisos."],
   ["d3f_IMG_6173","Um raro momento de calma","Água e sombra ainda davam ao dia uma aparência tranquila antes dos problemas mecânicos dominarem a rota."],
+  ["d3f_CA725CFE-325E-4579-A757-5EF2BD49046A","Mais um reparo no pneu","Mãos na roda e pneu desmontado: os furos foram o problema central do Dia 3 e consumiram boa parte do tempo da etapa."],
+  ["d3f_photo_0ae5e0","Pôr do sol com a bike carregada","A bicicleta pronta para viagem diante do sol baixo, num dia em que a luz acabou antes dos problemas."],
   ["d3f_IMG_6208","Quando a bicicleta precisou de carro","Uma das bikes aparece acomodada dentro de um carro — registro direto do resgate improvisado que entrou na história daquele dia."],
   ["d3f_IMG_6209","Depois de horas de perrengue","No fim da etapa, o corpo no chão ao lado das bicicletas resume melhor o desgaste do que qualquer número de quilômetros."],
-  ["d3f_IMG_6211","Jantar depois do caos","A recompensa no fim do dia: comida, mesa e o alívio de finalmente ter chegado a Ravno."],
-  ["d3f_photo_0ae5e0","Pôr do sol com a bike carregada","A bicicleta pronta para viagem diante do sol baixo, num dia em que a luz acabou antes dos problemas."],
-  ["d3f_CA725CFE-325E-4579-A757-5EF2BD49046A","Mais um reparo no pneu","Mãos na roda e pneu desmontado: os furos foram o problema central do Dia 3 e consumiram boa parte do tempo da etapa."]
+  ["d3f_IMG_6211","Jantar depois do caos","A recompensa no fim do dia: comida, mesa e o alívio de finalmente ter chegado a Ravno."]
 ];
 window.COMPLETE_DAY_PHOTOS[4]=[
-  ["d4f_IMG_0390","As bikes antes de voltar à estrada","A manhã em Ravno começou no chão, literalmente: bicicletas desmontadas e ajustes antes de seguir viagem para Trebinje."],
-  ["d4f_IMG_0391","Manutenção ainda em Ravno","Antes de encarar o calor do interior da Herzegovina, foi preciso conferir pneu e transmissão e deixar a bicicleta pronta para mais um dia."],
-  ["d4f_IMG_0400","Bicicleta de cabeça para baixo","A cena clássica de viagem autossuficiente: sem oficina por perto, a própria calçada e um pedaço de sombra viram área de manutenção."],
-  ["d4f_IMG_0461","Popovo Polje aparece no caminho","O vale cárstico se abre entre montanhas e vinhedos. É uma das paisagens mais características do trecho entre Ravno e Trebinje."],
-  ["d4f_IMG_0500","Sol forte na Herzegovina","O céu limpo deixava a paisagem bonita e o pedal mais duro. Com pouca sombra, água passou a ser parte central da logística do dia."],
   ["d4f_IMG_6225","Café da manhã antes do pedal","Antes de sair de Ravno, o grupo reforçou as energias com um café da manhã completo. Na estrada, esse tipo de refeição faz diferença quando não se sabe onde será a próxima parada."],
   ["d4f_IMG_6230","O pequeno detalhe que dá trabalho","Um objeto perfurante retirado durante a manutenção mostra como um problema minúsculo pode consumir um bom pedaço da manhã numa viagem de bicicleta."],
   ["d4f_IMG_6232","A marca no pneu","O close deixa evidente o ponto de perfuração no pneu — mais um lembrete de que kit de reparo e autonomia mecânica não eram opcionais nessa viagem."],
+  ["d4f_IMG_0390","As bikes antes de voltar à estrada","A manhã em Ravno começou no chão, literalmente: bicicletas desmontadas e ajustes antes de seguir viagem para Trebinje."],
+  ["d4f_IMG_0391","Manutenção ainda em Ravno","Antes de encarar o calor do interior da Herzegovina, foi preciso conferir pneu e transmissão e deixar a bicicleta pronta para mais um dia."],
+  ["d4f_IMG_0400","Bicicleta de cabeça para baixo","A cena clássica de viagem autossuficiente: sem oficina por perto, a própria calçada e um pedaço de sombra viram área de manutenção."],
   ["d4f_IMG_6269","Vinhedos de Popovo Polje","Parreirais acompanham a estrada pelo vale. A região de Trebinje tem tradição vitivinícola antiga, favorecida pelo clima quente e seco da Herzegovina."],
   ["d4f_IMG_6275","De volta ao asfalto","Com os reparos resolvidos, a viagem voltou ao ritmo do pedal, cercada por montanhas secas e longos trechos expostos ao sol."],
+  ["d4f_IMG_0461","Popovo Polje aparece no caminho","O vale cárstico se abre entre montanhas e vinhedos. É uma das paisagens mais características do trecho entre Ravno e Trebinje."],
+  ["d4f_IMG_0500","Sol forte na Herzegovina","O céu limpo deixava a paisagem bonita e o pedal mais duro. Com pouca sombra, água passou a ser parte central da logística do dia."],
   ["d4f_IMG_6285","A estrada começa a fechar entre montanhas","Na aproximação de Trebinje, o relevo fica mais dramático e a estrada passa a serpentear pelo maciço calcário."],
   ["d4f_IMG_6287","Curvas da Herzegovina","As paredes rochosas e a vegetação baixa mostram a mudança de cenário conforme o grupo deixa Popovo Polje e se aproxima de Trebinje."],
   ["d4f_IMG_6294","Fim de tarde com a bicicleta","Depois de horas de calor e pouca água, a luz baixa marcou os últimos movimentos do dia antes da chegada definitiva a Trebinje."],
@@ -83,14 +83,14 @@ window.COMPLETE_DAY_PHOTOS[4]=[
   ["d4f_IMG_6310","Tvrdoš no fim do dia","A área externa do mosteiro encerra a sequência fotográfica do trecho antes de Trebinje, misturando arquitetura ortodoxa, pedra e paisagem mediterrânea."]
 ];
 window.COMPLETE_DAY_PHOTOS[5]=[
-  ["d5f_IMG_0959","Adriático no fim da tarde","A chegada à costa trouxe uma mudança completa de paisagem: depois do interior montanhoso da Herzegovina, o mar dominou o horizonte."],
-  ["d5f_IMG_0977","Pôr do sol sobre o Adriático","A luz baixa sobre as ilhas e o mar registra a chegada à região de Dubrovnik num dia em que o grupo se dividiu entre bicicleta e táxi."],
-  ["d5f_IMG_1024","Uma pausa já em Dubrovnik","Depois da travessia e do desgaste dos dias anteriores, o fim da tarde foi de descanso e recuperação antes de voltar à bicicleta."],
   ["d5f_IMG_6335","Trebinje → Dubrovnik de táxi","Com a gastroenterite ainda ativa, Diogo fez a etapa de carro enquanto os outros três seguiram pedalando."],
   ["d5f_IMG_6340","Dubrovnik vista de cima","Telhados de pedra, mar e muralhas começam a aparecer juntos na chegada à cidade croata."],
   ["d5f_IMG_6344","Bagagem nas escadas da Old Town","Hospedagem dentro da cidade murada parecia ótima no mapa, mas escadas e pedra transformaram a logística com malas e bikes em trabalho extra."],
   ["d5f_IMG_6348","A logística entra pela viela","Bagagem e equipamento ocupam uma rua estreita de pedra — um retrato mais fiel da chegada do que qualquer cartão-postal."],
-  ["d5f_IMG_6350","A escada que o anúncio não mostra","O acesso à hospedagem deixa claro por que ficar dentro da Old Town pode ser pouco prático para quem viaja com bicicleta e muita bagagem."]
+  ["d5f_IMG_6350","A escada que o anúncio não mostra","O acesso à hospedagem deixa claro por que ficar dentro da Old Town pode ser pouco prático para quem viaja com bicicleta e muita bagagem."],
+  ["d5f_IMG_0959","Adriático no fim da tarde","A chegada à costa trouxe uma mudança completa de paisagem: depois do interior montanhoso da Herzegovina, o mar dominou o horizonte."],
+  ["d5f_IMG_0977","Pôr do sol sobre o Adriático","A luz baixa sobre as ilhas e o mar registra a chegada à região de Dubrovnik num dia em que o grupo se dividiu entre bicicleta e táxi."],
+  ["d5f_IMG_1024","Uma pausa já em Dubrovnik","Depois da travessia e do desgaste dos dias anteriores, o fim da tarde foi de descanso e recuperação antes de voltar à bicicleta."]
 ];
 window.COMPLETE_DAY_PHOTOS[8]=[
   ["d8f_IMG_6808","Última manhã em Kotor","A bicicleta diante da Torre do Relógio antes de deixar a cidade e começar a combinação de ônibus, pedal e trem."],
@@ -126,7 +126,6 @@ window.COMPLETE_DAY_PHOTOS[9]=[
   ["d9f_IMG_7034","Jantar albanês no Fisi","A mesa trouxe pratos locais, incluindo tavë kosi, e também a lembrança prática de que cartão nem sempre resolvia."]
 ];
 window.COMPLETE_DAY_PHOTOS[14]=[
-  ["d14f_IMG_1783","Última refeição em grupo na estrada","Uma mesa ao ar livre antes de a viagem entrar definitivamente na fase de ônibus, caixas e aeroporto."],
   ["d14f_IMG_7761","Estrada rumo a Elbasan","O último grande pedal começou entre montanhas e asfalto aberto no interior da Albânia."],
   ["d14f_IMG_7767","A sombra da bike na estrada","Sol forte e bicicleta carregada resumem o ritmo do último dia sobre duas rodas."],
   ["d14f_IMG_7783","Construção de pedra no caminho","Uma parada diante de um edifício de aparência fortificada antes de seguir pelo vale."],
@@ -137,11 +136,12 @@ window.COMPLETE_DAY_PHOTOS[14]=[
   ["d14f_IMG_7812","Esperando a próxima solução","Parte do grupo permanece na rodoviária enquanto a viagem se divide em dois ônibus."],
   ["d14f_IMG_7818","Pedal urbano já em Tirana","Depois da conexão, a bicicleta volta às ruas da capital albanesa antes de ser desmontada."],
   ["d14f_IMG_7821","As bikes na oficina","A última missão mecânica era transformar bicicletas de viagem em bagagem de avião."],
+  ["d14f_IMG_1783","Última refeição em grupo na estrada","Uma mesa ao ar livre antes de a viagem entrar definitivamente na fase de ônibus, caixas e aeroporto."],
   ["d14f_IMG_7839","A caixa de papelão entra na história","Uma das caixas conseguidas em Tirana começa a resolver o problema de despachar a bike."],
   ["d14f_IMG_7862","Fim de tarde em Tirana","Uma cena urbana já sem o ritmo de estrada, quando a viagem passa a ser quase toda logística de retorno."],
   ["d14f_IMG_7864","Skanderbeg Square à noite","A estátua de Skanderbeg e a praça central aparecem iluminadas no encerramento da passagem por Tirana."],
-  ["d14f_IMG_7889","A bicicleta encaixotada no transporte","A caixa já pronta segue dentro do veículo rumo ao aeroporto."],
-  ["d14f_F2B17188-5441-446A-9729-54AB73D09EB6","Caixa da bike no aeroporto","A bicicleta virou oficialmente bagagem: caixa sobre o carrinho no terminal antes do embarque."]
+  ["d14f_F2B17188-5441-446A-9729-54AB73D09EB6","Caixa da bike no aeroporto","A bicicleta virou oficialmente bagagem: caixa sobre o carrinho no terminal antes do embarque."],
+  ["d14f_IMG_7889","A bicicleta encaixotada no transporte","A caixa já pronta segue dentro do veículo rumo ao aeroporto."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d3f_IMG_6114": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day3/IMG_6114.jpg",
@@ -229,12 +229,6 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[6]=[
-  ["d6f_IMG_1146","Barcos iluminados no fim do dia","A noite junto à água fechou a etapa depois de um dia inteiro alternando cidade, barco, bicicleta e ferry."],
-  ["d6f_IMG_6508","Montanhas fechando a Baía de Kotor","Ao entrar na baía, o horizonte fica cercado por montanhas e a água passa a acompanhar praticamente todo o trecho final."],
-  ["d6f_IMG_6513","A bicicleta entrando no ferry","Em Kamenari, a bike segue pela rampa do ferry que atravessa o estreito até Lepetane."],
-  ["d6f_IMG_6517","Ferry Kamenari–Lepetane","Carros e bicicletas dividem o convés numa travessia curta que evita a volta completa pela baía."],
-  ["d6f_IMG_6550","Igreja na Old Town à noite","A chegada a Kotor terminou entre pedra, igrejas e ruas vazias da cidade murada."],
-  ["d6f_IMG_0462","Pedal entre vinhedos e montanhas","Um trecho aberto da rota antes de a paisagem se fechar definitivamente em torno da Baía de Kotor."],
   ["d6f_IMG_6374","Fortificações junto ao Adriático","A saída de Dubrovnik pelo mar permite ver a costa rochosa e as muralhas por um ângulo que a estrada não entrega."],
   ["d6f_IMG_6378","Dubrovnik vista da água","A cidade murada aparece recortada entre rocha e mar durante o deslocamento de barco."],
   ["d6f_IMG_6398","Porto e muralhas de Dubrovnik","Antes de voltar ao pedal, a viagem ainda passou pelo cenário marítimo que define a cidade croata."],
@@ -242,12 +236,18 @@ window.COMPLETE_DAY_PHOTOS[6]=[
   ["d6f_IMG_6413","Uma pausa antes do barco","Bebida, sombra e alguns minutos de descanso antes de embarcar com as bicicletas."],
   ["d6f_IMG_6420","Bicicletas a bordo","As bikes seguem presas no barco, transformando o deslocamento pelo Adriático em parte da própria rota."],
   ["d6f_IMG_6424","O grupo no barco","Uma selfie no convés registra a mudança de modal sem abandonar as bicicletas."],
-  ["d6f_IMG_1114","Montenegro entra no roteiro","A bandeira montenegrina à beira-mar marca a entrada em mais um país da viagem."],
+  ["d6f_IMG_0462","Pedal entre vinhedos e montanhas","Um trecho aberto da rota antes de a paisagem se fechar definitivamente em torno da Baía de Kotor."],
   ["d6f_IMG_6467","Pedal rente ao Adriático","A estrada costeira alterna mar aberto, pequenas praias e trechos tranquilos antes da baía."],
   ["d6f_IMG_6472","Escultura sobre a água","Uma pequena figura instalada no rochedo aparece isolada diante da baía e das montanhas."],
+  ["d6f_IMG_1114","Montenegro entra no roteiro","A bandeira montenegrina à beira-mar marca a entrada em mais um país da viagem."],
   ["d6f_IMG_6481","Estrada florida rumo a Kotor","O trecho final combina montanha, vegetação mediterrânea e uma estrada estreita acompanhando a água."],
   ["d6f_IMG_6486","Barcos na Baía de Kotor","Pequenas embarcações e montanhas reforçam a escala fechada da baía."],
-  ["d6f_IMG_6490","Vilarejo à beira da baía","Casas e barcos praticamente encostados na água durante a aproximação de Kotor."]
+  ["d6f_IMG_6490","Vilarejo à beira da baía","Casas e barcos praticamente encostados na água durante a aproximação de Kotor."],
+  ["d6f_IMG_6508","Montanhas fechando a Baía de Kotor","Ao entrar na baía, o horizonte fica cercado por montanhas e a água passa a acompanhar praticamente todo o trecho final."],
+  ["d6f_IMG_6513","A bicicleta entrando no ferry","Em Kamenari, a bike segue pela rampa do ferry que atravessa o estreito até Lepetane."],
+  ["d6f_IMG_6517","Ferry Kamenari–Lepetane","Carros e bicicletas dividem o convés numa travessia curta que evita a volta completa pela baía."],
+  ["d6f_IMG_1146","Barcos iluminados no fim do dia","A noite junto à água fechou a etapa depois de um dia inteiro alternando cidade, barco, bicicleta e ferry."],
+  ["d6f_IMG_6550","Igreja na Old Town à noite","A chegada a Kotor terminou entre pedra, igrejas e ruas vazias da cidade murada."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d6f_IMG_1146": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day6/IMG_1146.jpg",
@@ -272,10 +272,10 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[7]=[
-  ["d7f_IMG_1189","Café da manhã antes de sair","O dia começou sem pressa, com comida à mesa antes de voltar à Old Town e depois pegar as bicicletas leves."],
   ["d7f_IMG_6554","Bikes leves para um dia sem bagagem","As bicicletas ficaram prontas dentro da hospedagem sem o peso dos alforjes usados nos dias de deslocamento."],
   ["d7f_IMG_6561","Torre do Relógio de Kotor","A manhã passou pela principal praça da Old Town, com a torre de pedra marcando uma das imagens mais reconhecíveis de Kotor."],
   ["d7f_IMG_6565","Canhão dentro da cidade murada","As marcas militares aparecem em plena praça histórica, lembrando a longa função defensiva de Kotor."],
+  ["d7f_IMG_1189","Café da manhã antes de sair","O dia começou sem pressa, com comida à mesa antes de voltar à Old Town e depois pegar as bicicletas leves."],
   ["d7f_IMG_6569","Pizza no meio da Old Town","Uma parada rápida para comer entre as vielas antes de o dia migrar definitivamente da caminhada para a bicicleta."],
   ["d7f_IMG_6576","Igreja entre pedra e montanha","A arquitetura religiosa de Kotor aparece comprimida entre as construções antigas e o paredão rochoso."],
   ["d7f_IMG_6582","Muralhas subindo o relevo","As fortificações deixam a cidade e escalam a montanha quase vertical atrás da Old Town."],
@@ -323,47 +323,93 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[10]=[
-  ["d10f_IMG_7044","As bicicletas entram no ônibus","O Dia 10 começou no transporte para Koman, com o grupo e as bikes espremidos na primeira conexão da manhã."],
-  ["d10f_IMG_7051","Estrada rumo a Koman","Da janela do ônibus, o relevo começa a fechar e anuncia a aproximação das montanhas do norte da Albânia."],
-  ["d10f_IMG_7062","Água e montanhas antes do ferry","A paisagem já muda completamente antes mesmo de embarcar no Lago Koman."],
-  ["d10f_IMG_7081","Embarque no Lago Koman","Passageiros e veículos se organizam junto ao ferry para uma das travessias mais marcantes da viagem."],
-  ["d10f_IMG_7097","Lago Koman entre paredões","A água estreita e as montanhas íngremes explicam por que esse trecho entrou entre os grandes acertos do roteiro."],
-  ["d10f_IMG_7118","No convés do ferry","O grupo aproveita a travessia enquanto o barco avança pelos corredores naturais do lago."],
-  ["d10f_IMG_7121","As bicicletas no ferry","As bikes viajaram presas no convés, prontas para voltar ao asfalto em Fierzë."],
-  ["d10f_IMG_7131","O lago se fecha entre montanhas","A travessia alterna trechos largos e passagens estreitas cercadas de rocha."],
-  ["d10f_IMG_7155","Proa apontada para o cânion","A vista da frente do ferry coloca a escala dos paredões em primeiro plano."],
-  ["d10f_IMG_7177","O grupo no Lago Koman","Uma foto dos quatro durante a travessia que virou um dos momentos mais memoráveis da viagem."],
-  ["d10f_IMG_7184","Koman–Fierzë","A própria estrutura do ferry registra a rota da travessia entre Koman e Fierzë."],
-  ["d10f_IMG_7190","Chegada a Fierzë","O ferry se aproxima do terminal entre montanhas antes de as bicicletas voltarem à estrada."],
-  ["d10f_IMG_7197","De volta ao pedal","A saída de Fierzë recoloca o grupo sobre duas rodas em direção a Bajram Curri."],
-  ["d10f_IMG_7205","Estrada aberta no norte da Albânia","Montanhas ao fundo e pouco trânsito tornam esse trecho um dos mais agradáveis depois do ferry."],
-  ["d10f_IMG_7210","Pedal em grupo","Os ciclistas seguem juntos pela estrada depois da travessia do lago."],
-  ["d10f_IMG_7220","A espera pelo ônibus","A corrida para chegar a Bajram Curri terminou debaixo de uma árvore: o ônibus ainda demoraria bastante."],
-  ["d10f_IMG_7222","Bikes estacionadas durante a pausa","Com tempo de sobra, as bicicletas ficaram paradas enquanto o grupo esperava a próxima conexão."],
-  ["d10f_IMG_7226","Parada já no caminho para Kosovo","Monumento e bandeiras marcam a mudança de cenário antes de seguir para a próxima etapa."],
-  ["d10f_IMG_7235","As bicicletas voltam para a rua","Depois do ônibus, foi preciso reorganizar as bikes antes do último pedal do dia."],
-  ["d10f_IMG_7244","Últimos quilômetros até Prizren","A luz já estava baixando quando a bicicleta voltou a ser protagonista na aproximação da cidade."],
-  ["d10f_IMG_7248","Prizren e a ponte de pedra","A paisagem histórica da cidade aparece com mesquita, rio e ponte no fim do Dia 10."],
-  ["d10f_IMG_7253","Bikes e bandeiras em Prizren","As bicicletas finalmente paradas no centro depois de ferry, ônibus e dois trechos de pedal."],
-  ["d10f_IMG_7269","Fim do dia em Prizren","O grupo reunido com as bicicletas encerra uma das etapas mais variadas da viagem."]
+  ["d10f_IMG_7044","Saída cedo de Shkodër","O Dia 10 começou antes das 7h30 com as bicicletas entrando no ônibus que faria a ligação até Koman."],
+  ["d10f_IMG_7051","Estrada rumo a Koman","A aproximação ao lago passa por vales e montanhas ainda sob a luz baixa da manhã."],
+  ["d10f_IMG_7062","Primeiro encontro com o reservatório","A água começa a aparecer entre as montanhas antes da chegada ao terminal do ferry."],
+  ["d10f_IMG_7081","Embarque no Lago Koman","Passageiros e bagagens se organizam no pequeno terminal antes da travessia."],
+  ["d10f_IMG_7097","Paredões do Lago Koman","A paisagem fecha rapidamente entre encostas quase verticais, uma das imagens mais marcantes do dia."],
+  ["d10f_IMG_7118","No convés do ferry","A travessia pelo lago acontece em ritmo lento, cercada por água estreita e montanhas."],
+  ["d10f_IMG_7121","Bicicletas a bordo","As bikes viajaram presas no ferry enquanto o grupo atravessava o Lago Koman."],
+  ["d10f_IMG_7131","O corredor de água entre montanhas","O lago se afunila em diversos pontos e parece um fiorde encaixado nos Alpes Albaneses."],
+  ["d10f_IMG_7155","Proa apontada para o cânion","O barco avança pelo trecho mais dramático da travessia, com paredões dos dois lados."],
+  ["d10f_IMG_7177","O grupo no ferry","Registro dos quatro durante uma das experiências que mais justificaram a logística complicada do Dia 10."],
+  ["d10f_IMG_7184","Fierzë–Koman","A própria placa do ferry registra a travessia que conectou Koman a Fierzë."],
+  ["d10f_IMG_7190","Chegada a Fierzë","O desembarque devolveu as bicicletas à estrada para seguir em direção a Bajram Curri."],
+  ["d10f_IMG_7197","De volta ao pedal","A estrada abre entre montanhas logo depois de Fierzë."],
+  ["d10f_IMG_7205","Alpes Albaneses no horizonte","O relevo continua dominando o caminho até Bajram Curri."],
+  ["d10f_IMG_7210","Pedal rumo a Bajram Curri","Com o ferry para trás, o grupo voltou a ganhar quilômetros sobre duas rodas."],
+  ["d10f_IMG_7220","Esperando o ônibus","A corrida para não perder a conexão terminou numa espera longa à sombra."],
+  ["d10f_IMG_7222","Bikes encostadas durante a espera","As bicicletas ficaram paradas enquanto o grupo recuperava energia antes de cruzar para Kosovo."],
+  ["d10f_IMG_7226","Kosovo","A chegada ao novo país é marcada por bandeiras e monumento antes da próxima etapa."],
+  ["d10f_IMG_7235","Bicicletas junto ao ônibus","Mais uma troca de modal no Dia 10, agora já em território kosovar."],
+  ["d10f_IMG_7244","Últimos quilômetros até Prizren","Depois de descer em Gjakovë, a viagem voltou ao pedal para completar a chegada a Prizren."],
+  ["d10f_IMG_7248","Prizren aparece ao fim do dia","A cidade histórica surge cercada por morros na luz do início da noite."],
+  ["d10f_IMG_7253","Bicicletas no centro de Prizren","As bikes finalmente paradas diante do conjunto urbano que encerrou o dia."],
+  ["d10f_IMG_7269","Chegada completa a Prizren","O grupo reunido com as bicicletas no centro histórico depois de ferry, ônibus e dois trechos pedalados."]
 ];
 
 window.COMPLETE_DAY_PHOTOS[11]=[
-  ["d11f_IMG_7286","Mesquita pela manhã em Prizren","O Dia 11 começou ainda na cidade, antes do ônibus curto usado para evitar a grande subida inicial."],
-  ["d11f_IMG_7289","Últimos minutos em Prizren","A placa da cidade marca a despedida antes de seguir rumo a Shtime."],
-  ["d11f_IMG_7295","Rio atravessando Prizren","Mais uma imagem da cidade antes de a rota voltar a ganhar caráter de estrada."],
-  ["d11f_IMG_7298","Prizren antes da saída","Bandeiras, trânsito e minarete no último giro urbano da manhã."],
-  ["d11f_IMG_7313","Mercado de rua","Frutas e legumes expostos na calçada registram uma cena cotidiana antes da conexão rodoviária."],
-  ["d11f_IMG_7329","Interior de Kosovo pela janela","Campos e trilhos acompanham a transição entre o ônibus curto e o início do grande pedal."],
-  ["d11f_IMG_7337","Bikes numa parada de estrada","Uma pausa rápida para reorganizar o grupo antes de seguir para a fronteira e Skopje."],
-  ["d11f_IMG_7367","Pedal longo rumo à Macedônia do Norte","Estrada aberta e montanhas ocupam boa parte dos 94 km registrados naquele dia."],
-  ["d11f_IMG_7391","Entrada na região de Matka","O relevo começa a fechar quando o desvio para o cânion sai da rota principal."],
-  ["d11f_IMG_7393","A placa confirma Matka","A sinalização para Kanjon Matka aparece já perto do fim da luz."],
-  ["d11f_IMG_7396","Cânion Matka","A água represada e as paredes rochosas aparecem no fim de um desvio que merecia ter começado mais cedo."],
-  ["d11f_IMG_7400","Barcos no Cânion Matka","Caiaques e embarcações ficam praticamente encostados aos paredões de pedra."],
-  ["d11f_IMG_7408","Skopje à noite","A Praça Macedônia surge iluminada depois do maior pedal da viagem."],
-  ["d11f_IMG_7411","O monumento no centro monumental","A estátua equestre domina a praça e resume a estética grandiosa do projeto Skopje 2014."],
-  ["d11f_IMG_7417","Centro de Skopje iluminado","A arquitetura monumental se reflete no rio enquanto a caminhada noturna continua."],
-  ["d11f_IMG_7430","O carneiro do Old City House","O jantar trouxe o prato que entrou entre as melhores comidas da viagem."],
-  ["d11f_IMG_7435","Estátua no centro de Skopje","Mais um monumento urbano fecha a caminhada noturna pela capital da Macedônia do Norte."]
+  ["d11f_IMG_7286","Mesquita na manhã de Prizren","O Dia 11 começou caminhando pelo centro histórico antes da saída para Shtime."],
+  ["d11f_IMG_7289","Prizren pela manhã","A cidade ainda fazia parte do roteiro antes de o grupo embarcar no ônibus curto."],
+  ["d11f_IMG_7295","Rio e centro histórico de Prizren","Últimas imagens da cidade antes de deixar Kosovo em direção à Macedônia do Norte."],
+  ["d11f_IMG_7298","Prizren ainda acordando","Bandeiras, mesquita e movimento local fecham a sequência urbana da manhã."],
+  ["d11f_IMG_7313","Mercado de rua","Frutas e comércio local aparecem antes do trecho rodoviário do dia."],
+  ["d11f_IMG_7329","Paisagem vista da conexão","O deslocamento até Shtime corta áreas abertas antes de o pedal começar de verdade."],
+  ["d11f_IMG_7337","Bikes na parada","As bicicletas voltam ao chão e o grupo se prepara para o trecho longo até Skopje."],
+  ["d11f_IMG_7367","Pedal aberto rumo à Macedônia do Norte","A estrada ganha espaço e relevo no maior dia de pedal da viagem."],
+  ["d11f_IMG_7391","Entrada na região de Matka","As montanhas ficam mais fechadas quando o desvio para o cânion começa."],
+  ["d11f_IMG_7393","Placa para Matka","A sinalização marca a aproximação do cânion já no fim da tarde."],
+  ["d11f_IMG_7396","Cânion Matka quase sem luz","A água e os paredões aparecem quando o dia já estava acabando."],
+  ["d11f_IMG_7400","Caiaques em Matka","O grupo chegou tarde demais para explorar o lugar com calma, mas ainda encontrou a base de atividades junto à água."],
+  ["d11f_IMG_7408","Skopje à noite","A chegada à capital muda completamente o cenário: monumentos iluminados substituem estrada e cânion."],
+  ["d11f_IMG_7411","Guerreiro a Cavalo","A grande estátua na Praça Macedônia é uma das peças centrais do projeto Skopje 2014."],
+  ["d11f_IMG_7417","Centro monumental refletido no Vardar","Pontes e fachadas iluminadas mostram a estética deliberadamente monumental da capital."],
+  ["d11f_IMG_7430","Jantar no Old City House","Depois de 94 km e problemas mecânicos, o dia terminou com uma das melhores refeições da viagem."],
+  ["d11f_IMG_7435","Monumento a São Clemente de Ohrid","Último registro noturno no centro de Skopje antes de encerrar o maior pedal da viagem."]
 ];
+
+Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
+  "d10f_IMG_7044": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7044.jpg",
+  "d10f_IMG_7051": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7051.jpg",
+  "d10f_IMG_7062": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7062.jpg",
+  "d10f_IMG_7081": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7081.jpg",
+  "d10f_IMG_7097": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7097.jpg",
+  "d10f_IMG_7118": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7118.jpg",
+  "d10f_IMG_7121": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7121.jpg",
+  "d10f_IMG_7131": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7131.jpg",
+  "d10f_IMG_7155": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7155.jpg",
+  "d10f_IMG_7177": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7177.jpg",
+  "d10f_IMG_7184": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7184.jpg",
+  "d10f_IMG_7190": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7190.jpg",
+  "d10f_IMG_7197": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7197.jpg",
+  "d10f_IMG_7205": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7205.jpg",
+  "d10f_IMG_7210": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7210.jpg",
+  "d10f_IMG_7220": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7220.jpg",
+  "d10f_IMG_7222": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7222.jpg",
+  "d10f_IMG_7226": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7226.jpg",
+  "d10f_IMG_7235": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7235.jpg",
+  "d10f_IMG_7244": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7244.jpg",
+  "d10f_IMG_7248": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7248.jpg",
+  "d10f_IMG_7253": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7253.jpg",
+  "d10f_IMG_7269": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7269.jpg"
+});
+
+Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
+  "d11f_IMG_7286": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7286.jpg",
+  "d11f_IMG_7289": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7289.jpg",
+  "d11f_IMG_7295": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7295.jpg",
+  "d11f_IMG_7298": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7298.jpg",
+  "d11f_IMG_7313": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7313.jpg",
+  "d11f_IMG_7329": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7329.jpg",
+  "d11f_IMG_7337": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7337.jpg",
+  "d11f_IMG_7367": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7367.jpg",
+  "d11f_IMG_7391": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7391.jpg",
+  "d11f_IMG_7393": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7393.jpg",
+  "d11f_IMG_7396": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7396.jpg",
+  "d11f_IMG_7400": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7400.jpg",
+  "d11f_IMG_7408": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7408.jpg",
+  "d11f_IMG_7411": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7411.jpg",
+  "d11f_IMG_7417": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7417.jpg",
+  "d11f_IMG_7430": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7430.jpg",
+  "d11f_IMG_7435": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day11/IMG_7435.jpg"
+});
