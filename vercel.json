@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "node scripts/migrate-gallery.js || true",
+  "buildCommand": "node scripts/migrate-gallery.js && node scripts/check-gallery.js",
   "outputDirectory": ".",
   "cleanUrls": false,
   "rewrites": [
