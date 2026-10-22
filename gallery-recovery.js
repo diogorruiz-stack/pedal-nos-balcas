@@ -13,7 +13,7 @@
     const dict=window.PHOTO_DATA||{};
     const exact=Object.entries(dict).find(([key,val])=>
       (key.startsWith('d'+day+'_')||key.startsWith('d'+day+'x_')||key.startsWith('d'+day+'f_')) &&
-      key.endsWith('_'+stem.replace(/^IMG_/i,'')) &&
+      (key.toLowerCase().endsWith('_'+stem.toLowerCase()) || key.toLowerCase().endsWith('_'+stem.replace(/^IMG_/i,'').toLowerCase())) &&
       typeof val==='string' && val.startsWith('data:image/'));
     if(exact){
       img.src=exact[1];
