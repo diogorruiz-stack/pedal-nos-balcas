@@ -365,7 +365,7 @@ window.COMPLETE_DAY_PHOTOS[11]=[
   ["d11f_IMG_7411","Guerreiro a Cavalo","A grande estátua na Praça Macedônia é uma das peças centrais do projeto Skopje 2014."],
   ["d11f_IMG_7417","Centro monumental refletido no Vardar","Pontes e fachadas iluminadas mostram a estética deliberadamente monumental da capital."],
   ["d11f_IMG_7430","Jantar no Old City House","Depois de 94 km e problemas mecânicos, o dia terminou com uma das melhores refeições da viagem."],
-  ["d11f_IMG_7435","Monumento a São Clemente de Ohrid","Último registro noturno no centro de Skopje antes de encerrar o maior pedal da viagem."]
+  ["d11f_IMG_7435","Monumento iluminado no centro de Skopje","Último registro noturno no centro de Skopje antes de encerrar o maior pedal da viagem."]
 ];
 
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
