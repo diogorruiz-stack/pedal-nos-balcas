@@ -1,8 +1,6 @@
 name: Materialize photo galleries
 on:
-  push:
-    paths:
-      - gallery-materialize-target.json
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
