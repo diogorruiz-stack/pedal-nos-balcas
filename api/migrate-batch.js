@@ -15,7 +15,7 @@ module.exports=async function handler(req,res){
     if(String(req.query.key||'')!==SECRET) return res.status(403).json({error:'forbidden'});
     const day=Number(req.query.day||0),start=Math.max(0,Number(req.query.start||0));
     const count=Math.max(1,Math.min(2,Number(req.query.count||2)));
-    if(![10,11,13].includes(day)) return res.status(400).json({error:'bad_day'});
+    if(![7,10,11,13].includes(day)) return res.status(400).json({error:'bad_day'});
     const root=`https://raw.githubusercontent.com/${REPO}/${BRANCH}/transfer/day${day}`;
     const mr=await fetch(root+'/manifest.json?ts='+Date.now(),{cache:'no-store'});
     if(!mr.ok) return res.status(502).json({error:'manifest_fetch_failed',status:mr.status});
