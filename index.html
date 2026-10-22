@@ -141,7 +141,6 @@ body.profile-locked{overflow:hidden}
 <script src="photos-extra-d11.js"></script>
 <script src="photos-extra-d13b.js"></script>
 <script src="photos-complete-drive.js"></script>
-<script src="photos-static-drive.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 let PHOTO_DATA={},legacyDays=[],tracks=[],days=[],map,layerGroup,activeDay=1,activeTab='summary',topIndex=0;
@@ -624,8 +623,11 @@ function enhanceDays(base){
    if(Array.isArray(complete)&&complete.length) photos=complete;
    else if(d.d===1) photos=CURATED_DAY1_PHOTOS;
    else if(d.d===12) photos=CURATED_DAY12_PHOTOS;
-   else if(Array.isArray(d.photos)&&d.photos.length) photos=d.photos;
-   else photos=[];
+   else {
+     const merged=[...(Array.isArray(d.photos)?d.photos:[]),...(Array.isArray(EXTRA_PHOTOS[d.d])?EXTRA_PHOTOS[d.d]:[])];
+     const seen=new Set();
+     photos=merged.filter(p=>p&&p[0]&&!seen.has(p[0])&&seen.add(p[0]));
+   }
    return {...d,...e,photos,stops:e.stops||d.worth.map(x=>[x,'Parada registrada no diário desta etapa.'])};
  })
 }
