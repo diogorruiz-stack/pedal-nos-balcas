@@ -134,14 +134,14 @@ window.COMPLETE_DAY_PHOTOS[14]=[
   ["d14f_IMG_7803","Muralhas e torre em Elbasan","A cidade entrou no roteiro antes da tentativa de colocar quatro bicicletas no mesmo ônibus para Tirana."],
   ["d14f_IMG_7810","Bikes na rodoviária","As bicicletas aguardam ao lado dos ônibus, já no momento em que ficou claro que todas não caberiam juntas."],
   ["d14f_IMG_7812","Esperando a próxima solução","Parte do grupo permanece na rodoviária enquanto a viagem se divide em dois ônibus."],
+  ["d14f_IMG_1783","Última refeição em grupo na estrada","Uma mesa ao ar livre antes de a viagem entrar definitivamente na fase de ônibus, caixas e aeroporto."],
   ["d14f_IMG_7818","Pedal urbano já em Tirana","Depois da conexão, a bicicleta volta às ruas da capital albanesa antes de ser desmontada."],
   ["d14f_IMG_7821","As bikes na oficina","A última missão mecânica era transformar bicicletas de viagem em bagagem de avião."],
-  ["d14f_IMG_1783","Última refeição em grupo na estrada","Uma mesa ao ar livre antes de a viagem entrar definitivamente na fase de ônibus, caixas e aeroporto."],
   ["d14f_IMG_7839","A caixa de papelão entra na história","Uma das caixas conseguidas em Tirana começa a resolver o problema de despachar a bike."],
   ["d14f_IMG_7862","Fim de tarde em Tirana","Uma cena urbana já sem o ritmo de estrada, quando a viagem passa a ser quase toda logística de retorno."],
   ["d14f_IMG_7864","Skanderbeg Square à noite","A estátua de Skanderbeg e a praça central aparecem iluminadas no encerramento da passagem por Tirana."],
-  ["d14f_F2B17188-5441-446A-9729-54AB73D09EB6","Caixa da bike no aeroporto","A bicicleta virou oficialmente bagagem: caixa sobre o carrinho no terminal antes do embarque."],
-  ["d14f_IMG_7889","A bicicleta encaixotada no transporte","A caixa já pronta segue dentro do veículo rumo ao aeroporto."]
+  ["d14f_IMG_7889","A bicicleta encaixotada no transporte","A caixa já pronta segue dentro do veículo rumo ao aeroporto."],
+  ["d14f_F2B17188-5441-446A-9729-54AB73D09EB6","Caixa da bike no aeroporto","A bicicleta virou oficialmente bagagem: caixa sobre o carrinho no terminal antes do embarque."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
   "d3f_IMG_6114": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day3/IMG_6114.jpg",
@@ -272,10 +272,10 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[7]=[
+  ["d7f_IMG_1189","Café da manhã antes de sair","O dia começou sem pressa, com comida à mesa antes de voltar à Old Town e depois pegar as bicicletas leves."],
   ["d7f_IMG_6554","Bikes leves para um dia sem bagagem","As bicicletas ficaram prontas dentro da hospedagem sem o peso dos alforjes usados nos dias de deslocamento."],
   ["d7f_IMG_6561","Torre do Relógio de Kotor","A manhã passou pela principal praça da Old Town, com a torre de pedra marcando uma das imagens mais reconhecíveis de Kotor."],
   ["d7f_IMG_6565","Canhão dentro da cidade murada","As marcas militares aparecem em plena praça histórica, lembrando a longa função defensiva de Kotor."],
-  ["d7f_IMG_1189","Café da manhã antes de sair","O dia começou sem pressa, com comida à mesa antes de voltar à Old Town e depois pegar as bicicletas leves."],
   ["d7f_IMG_6569","Pizza no meio da Old Town","Uma parada rápida para comer entre as vielas antes de o dia migrar definitivamente da caminhada para a bicicleta."],
   ["d7f_IMG_6576","Igreja entre pedra e montanha","A arquitetura religiosa de Kotor aparece comprimida entre as construções antigas e o paredão rochoso."],
   ["d7f_IMG_6582","Muralhas subindo o relevo","As fortificações deixam a cidade e escalam a montanha quase vertical atrás da Old Town."],
