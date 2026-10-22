@@ -1,0 +1,27 @@
+name: Invoke gallery migration
+on:
+  push:
+    paths:
+      - migration-invoke-target.txt
+permissions:
+  contents: read
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Migrate Day 10
+        run: |
+          set -e
+          for start in 0 2 4 6 8 10 12 14 16 18 20 22; do
+            echo "D10 start=$start"
+            curl --retry 2 --retry-delay 2 -fSs "https://pedal-nos-balcas.vercel.app/api/migrate-batch?key=gallery-20261017-migrate&day=10&start=$start&count=2"
+            echo
+          done
+      - name: Migrate Day 11
+        run: |
+          set -e
+          for start in 0 2 4 6 8 10 12 14 16; do
+            echo "D11 start=$start"
+            curl --retry 2 --retry-delay 2 -fSs "https://pedal-nos-balcas.vercel.app/api/migrate-batch?key=gallery-20261017-migrate&day=11&start=$start&count=2"
+            echo
+          done
