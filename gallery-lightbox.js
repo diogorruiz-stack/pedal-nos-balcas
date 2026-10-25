@@ -3,19 +3,30 @@
   'use strict';
   const style=document.createElement('style');
   style.textContent=`
-    #photoLightbox{position:fixed;inset:0;z-index:10000;background:rgba(4,10,9,.96);display:none;align-items:center;justify-content:center;color:#fff}
+    #photoLightbox{position:fixed;inset:0;z-index:10000;background:#0c1311;display:none;flex-direction:column;align-items:center;justify-content:center;color:#fff;padding:72px 74px 0}
     #photoLightbox.is-open{display:flex}
-    #photoLightbox img{display:block;max-width:calc(100vw - 110px);max-height:calc(100dvh - 125px);width:auto;height:auto;object-fit:contain;user-select:none}
-    #photoLightbox button{position:absolute;z-index:3;border:1px solid rgba(255,255,255,.35);background:rgba(15,24,22,.72);color:white;cursor:pointer;border-radius:50%;width:45px;height:45px;font-size:26px;display:grid;place-items:center}
+    #photoLightbox img{display:block;max-width:100%;max-height:calc(100dvh - 235px);width:auto;height:auto;object-fit:contain;user-select:none;min-height:0;flex:0 1 auto}
+    #photoLightbox button{position:absolute;z-index:3;border:1px solid rgba(255,255,255,.32);background:rgba(15,24,22,.85);color:white;cursor:pointer;border-radius:50%;width:46px;height:46px;font-size:27px;display:grid;place-items:center;transition:background .18s}
+    #photoLightbox button:hover{background:#263a33}
     #photoLightbox button:focus-visible{outline:3px solid #e5ad55;outline-offset:3px}
-    #photoLightbox .lb-close{top:20px;right:20px}
-    #photoLightbox .lb-prev{left:20px;top:50%;transform:translateY(-50%)}
-    #photoLightbox .lb-next{right:20px;top:50%;transform:translateY(-50%)}
-    #photoLightbox .lb-details{position:absolute;bottom:0;left:0;right:0;text-align:center;background:linear-gradient(transparent,rgba(0,0,0,.65));padding:20px 45px 16px;pointer-events:none;font:13px/1.5 system-ui,sans-serif}
-    #photoLightbox .lb-details strong{display:block;font-size:14px}
-    #photoLightbox .lb-counter{font-size:11px;opacity:.8;margin-top:4px}
+    #photoLightbox .lb-close{top:18px;right:24px}
+    #photoLightbox .lb-prev{left:18px;top:46%;transform:translateY(-50%)}
+    #photoLightbox .lb-next{right:18px;top:46%;transform:translateY(-50%)}
+    #photoLightbox .lb-details{position:relative;flex:0 0 auto;align-self:stretch;margin-top:18px;padding:16px 0 20px;text-align:center;background:transparent;pointer-events:none;max-width:900px;margin-left:auto;margin-right:auto}
+    #photoLightbox .lb-details strong{display:block;font:400 clamp(24px,3vw,36px)/1.14 Georgia,'Times New Roman',serif;letter-spacing:-.025em;color:#f5f0e6;margin:0 0 9px;text-wrap:balance}
+    #photoLightbox .lb-details span{display:block;font:400 14px/1.65 Inter,system-ui,sans-serif;color:#d4d8d2;max-width:760px;margin:0 auto}
+    #photoLightbox .lb-counter{font:700 11px/1.4 Inter,system-ui,sans-serif;letter-spacing:.16em;color:#e5ad55;margin-top:12px}
     .top-media,.photo-rail .rail-card{cursor:zoom-in}
-    @media(max-width:640px){#photoLightbox img{max-width:100vw;max-height:calc(100dvh - 160px)}#photoLightbox .lb-prev{left:8px;top:auto;bottom:72px;transform:none}#photoLightbox .lb-next{right:8px;top:auto;bottom:72px;transform:none}#photoLightbox .lb-close{top:12px;right:12px}#photoLightbox .lb-details{padding:12px 60px 18px}}
+    @media(max-width:640px){
+      #photoLightbox{padding:62px 12px 0}
+      #photoLightbox img{max-width:100%;max-height:calc(100dvh - 285px)}
+      #photoLightbox .lb-close{top:10px;right:12px}
+      #photoLightbox .lb-prev{left:8px;top:42%;transform:translateY(-50%)}
+      #photoLightbox .lb-next{right:8px;top:42%;transform:translateY(-50%)}
+      #photoLightbox .lb-details{margin-top:14px;padding:10px 12px 22px}
+      #photoLightbox .lb-details strong{font-size:25px}
+      #photoLightbox .lb-details span{font-size:12px;line-height:1.5}
+    }
   `;
   document.head.appendChild(style);
   const overlay=document.createElement('div');
