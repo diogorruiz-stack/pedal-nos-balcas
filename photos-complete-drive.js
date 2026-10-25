@@ -276,12 +276,12 @@ window.COMPLETE_DAY_PHOTOS[7]=[
   ["d7f_IMG_6554","Bikes leves para um dia sem bagagem","As bicicletas ficaram prontas dentro da hospedagem sem o peso dos alforjes usados nos dias de deslocamento."],
   ["d7f_IMG_6561","Torre do Relógio de Kotor","A manhã passou pela principal praça da Old Town, com a torre de pedra marcando uma das imagens mais reconhecíveis de Kotor."],
   ["d7f_IMG_6565","Canhão dentro da cidade murada","As marcas militares aparecem em plena praça histórica, lembrando a longa função defensiva de Kotor."],
-  ["d7f_IMG_6569","Pizza no meio da Old Town","Uma parada rápida para comer entre as vielas antes de o dia migrar definitivamente da caminhada para a bicicleta."],
+  ["d7f_IMG_6569","A pizza que marcou a recuperação","Na Old Town, após a passagem pela Senso Bakery, a pizza da loja ao lado acabou substituindo o croissant que não havia. Depois da gastroenterite, comer sem voltar a passar mal foi uma pequena vitória narrada no diário."],
   ["d7f_IMG_6576","Igreja entre pedra e montanha","A arquitetura religiosa de Kotor aparece comprimida entre as construções antigas e o paredão rochoso."],
   ["d7f_IMG_6582","Muralhas subindo o relevo","As fortificações deixam a cidade e escalam a montanha quase vertical atrás da Old Town."],
   ["d7f_IMG_6583","Casas de pedra sob a montanha","As construções antigas mostram como Kotor ocupa uma faixa estreita entre a baía e o relevo."],
   ["d7f_IMG_6585","Cruzeiro diante de Kotor","O navio ancorado ajuda a colocar em escala a cidade compacta e o movimento turístico da baía."],
-  ["d7f_IMG_6587","Old Town vista de cima","Telhados, torre e montanhas aparecem juntos antes do início do pedal pela margem oeste."],
+  ["d7f_IMG_6587","Kotor, a cidade-maquete","Os telhados e as construções de pedra espremidos entre as muralhas e a montanha ajudam a entender a impressão do diário: a Old Town parecia uma maquete medieval, mas era uma cidade histórica real."],
   ["d7f_IMG_6589","Porto de Kotor","A marina e o grande cruzeiro ficam para trás quando a bicicleta passa a conduzir o restante do dia."],
   ["d7f_IMG_6593","Pedal rente à água","Sem bagagem, a bicicleta ganhou outro ritmo pela margem oeste da Baía de Kotor."],
   ["d7f_IMG_6599","Bike e veleiro lado a lado","Uma pausa à beira da baía com a bicicleta praticamente encostada na água."],
@@ -292,8 +292,8 @@ window.COMPLETE_DAY_PHOTOS[7]=[
   ["d7f_IMG_6728","Nossa Senhora dos Anjos em Verige","A pequena igreja junto ao estreito aparece exatamente quando um grande navio começa a atravessar a passagem."],
   ["d7f_IMG_6732","A igreja diante do cruzeiro","O navio ocupa quase todo o estreito de Verige e transforma a pequena igreja em referência de escala."],
   ["d7f_IMG_6748","Baía no fim da tarde","A luz quente muda as montanhas no caminho de volta para Kotor."],
-  ["d7f_IMG_6753","Uma parada à beira da água","Mesa, baía e montanhas numa pausa já na parte final do pedal."],
-  ["d7f_8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3","Jantar depois do pedal","Massa, salada e cerveja fecham a parte gastronômica de um dia inteiro em torno da baía."],
+  ["d7f_IMG_6753","Pausa na margem da baía","Na volta do passeio, o diário registra uma parada de Diogo e Giggio no Capasanta Seafood Restaurant, em Prčanj, para repetir a sopa de peixe da noite anterior. A mesa junto à água combina com essa passagem do relato."],
+  ["d7f_8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3","Jantar na Old Town após o pedal","O diário encerra o Dia 7 com jantar na Trattoria Karampana, dentro da cidade antiga de Kotor. Depois, o grupo voltou a percorrer as vielas já mais tranquilas, sem o movimento dos cruzeiros."],
   ["d7f_IMG_6765","Pedra e água já de noite","Uma construção histórica iluminada junto à margem encerra o Dia 7."]
 ];
 Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
