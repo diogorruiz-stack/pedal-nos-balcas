@@ -1,0 +1,399 @@
+{
+  "versao": 1,
+  "fonte": "Drive / Balcãs _ Melhores",
+  "dias": [
+    {
+      "dia": 7,
+      "fotos": [
+        {
+          "ordem": 1,
+          "arquivo": "/imagens/dia-07/IMG_1189.jpg",
+          "chave": "d7f_IMG_1189",
+          "sha256": "9f3eebb36544779e2f65d18352a5b437004ea7b721b4529b8179cce8b0e3130a"
+        },
+        {
+          "ordem": 2,
+          "arquivo": "/imagens/dia-07/IMG_6554.jpg",
+          "chave": "d7f_IMG_6554",
+          "sha256": "bd82f2f0cb150539d127b44616f640cf8640d90b0c1752b1b152d83adfbc6fd5"
+        },
+        {
+          "ordem": 3,
+          "arquivo": "/imagens/dia-07/IMG_6561.jpg",
+          "chave": "d7f_IMG_6561",
+          "sha256": "cd6d2e32d90d6b27725148b988af3a2cc076185154eb885790f1968bccacc681"
+        },
+        {
+          "ordem": 4,
+          "arquivo": "/imagens/dia-07/IMG_6565.jpg",
+          "chave": "d7f_IMG_6565",
+          "sha256": "b6447964300aea5d9f563b96156e6c479d6b21a25c34aa9e9d5274d6b2eae289"
+        },
+        {
+          "ordem": 5,
+          "arquivo": "/imagens/dia-07/IMG_6569.jpg",
+          "chave": "d7f_IMG_6569",
+          "sha256": "92d1d33ef7a9ada1917551bdc07015a50fcff12980929d17a24cff7d3aad6605"
+        },
+        {
+          "ordem": 6,
+          "arquivo": "/imagens/dia-07/IMG_6576.jpg",
+          "chave": "d7f_IMG_6576",
+          "sha256": "41686287b30e528736affc48b2ef3af8cfcf0d0b19d77501d7395d733499db53"
+        },
+        {
+          "ordem": 7,
+          "arquivo": "/imagens/dia-07/IMG_6582.jpg",
+          "chave": "d7f_IMG_6582",
+          "sha256": "7329b5e1944175655a44781ca3599415e0352b94fdc77bb50ad51b5a70072f1b"
+        },
+        {
+          "ordem": 8,
+          "arquivo": "/imagens/dia-07/IMG_6583.jpg",
+          "chave": "d7f_IMG_6583",
+          "sha256": "55095a7538f049002aa27de99b920a5d4b472bb6a261a03ca48c97040482bc1b"
+        },
+        {
+          "ordem": 9,
+          "arquivo": "/imagens/dia-07/IMG_6585.jpg",
+          "chave": "d7f_IMG_6585",
+          "sha256": "fe99b1412fd03c9cecbabe4e9ed86a08beac9be3e669d0520c8c934f6e036257"
+        },
+        {
+          "ordem": 10,
+          "arquivo": "/imagens/dia-07/IMG_6587.jpg",
+          "chave": "d7f_IMG_6587",
+          "sha256": "67d810f969263e352d443ea347df0359df7bb104cabf085b87336b68465f19f9"
+        },
+        {
+          "ordem": 11,
+          "arquivo": "/imagens/dia-07/IMG_6589.jpg",
+          "chave": "d7f_IMG_6589",
+          "sha256": "4dc28c513dc0aac10efc2c4d50184250820066401eb118ee36a6d5748ab4cbea"
+        },
+        {
+          "ordem": 12,
+          "arquivo": "/imagens/dia-07/IMG_6593.jpg",
+          "chave": "d7f_IMG_6593",
+          "sha256": "0a8e60b80ca215e81ac8f9762b96a6127e61e0f65baeec2c89eb4e17aacfcdc8"
+        },
+        {
+          "ordem": 13,
+          "arquivo": "/imagens/dia-07/IMG_6599.jpg",
+          "chave": "d7f_IMG_6599",
+          "sha256": "4ef0e2f1d5b83e4368edde62a1e42082671cd790b2b2d3117b7698cf45c5534c"
+        },
+        {
+          "ordem": 14,
+          "arquivo": "/imagens/dia-07/IMG_6613.jpg",
+          "chave": "d7f_IMG_6613",
+          "sha256": "867331f147e648ef92eb351b7e47b4b55cdd10b3bd2138176b45151c066fc895"
+        },
+        {
+          "ordem": 15,
+          "arquivo": "/imagens/dia-07/IMG_6629.jpg",
+          "chave": "d7f_IMG_6629",
+          "sha256": "c49b1342f3f4609784853e9a68f144643948d63e769e2effd415b2dacbccb80f"
+        },
+        {
+          "ordem": 16,
+          "arquivo": "/imagens/dia-07/IMG_6642.jpg",
+          "chave": "d7f_IMG_6642",
+          "sha256": "225f6e17db60ea28b7f1fd3a9f6f57d6acecac4d68e5969bd83a58c28e6ee93b"
+        },
+        {
+          "ordem": 17,
+          "arquivo": "/imagens/dia-07/IMG_6644.jpg",
+          "chave": "d7f_IMG_6644",
+          "sha256": "df3354c439f7435d74b2d94fcc9ce9105d599675ad41f750962f7cb0b4914b34"
+        },
+        {
+          "ordem": 18,
+          "arquivo": "/imagens/dia-07/IMG_6728.jpg",
+          "chave": "d7f_IMG_6728",
+          "sha256": "52b07142973b90cb8c5f600049f0fbd792faacacdea3ad727b91eaff0515f5b4"
+        },
+        {
+          "ordem": 19,
+          "arquivo": "/imagens/dia-07/IMG_6732.jpg",
+          "chave": "d7f_IMG_6732",
+          "sha256": "1b79a4e3581cb8df1505b052207a810250b2af95441444fdc5fc213995039338"
+        },
+        {
+          "ordem": 20,
+          "arquivo": "/imagens/dia-07/IMG_6748.jpg",
+          "chave": "d7f_IMG_6748",
+          "sha256": "f66b1ff3338fbcfd1c0ebf957718f30139b09a8dc3a8db3b3ebbb7244b33eb40"
+        },
+        {
+          "ordem": 21,
+          "arquivo": "/imagens/dia-07/IMG_6753.jpg",
+          "chave": "d7f_IMG_6753",
+          "sha256": "220b4f5393d0eb118211d582fbfa84081efd51895959895139eacb6606ef70d6"
+        },
+        {
+          "ordem": 22,
+          "arquivo": "/imagens/dia-07/IMG_6765.jpg",
+          "chave": "d7f_IMG_6765",
+          "sha256": "eb7fc668c23ef31afa62175b795afdb732ac9d410f1a563d2483015dd168d3a9"
+        },
+        {
+          "ordem": 23,
+          "arquivo": "/imagens/dia-07/8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3.jpg",
+          "chave": "d7f_8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3",
+          "sha256": "ad4cff9a9d5d8a89ec5e376b99630c7a608e95f35f81e5703ae8f3d88accfe26"
+        }
+      ]
+    },
+    {
+      "dia": 10,
+      "fotos": [
+        {
+          "ordem": 1,
+          "arquivo": "/imagens/dia-10/IMG_7044.jpg",
+          "chave": "d10f_IMG_7044",
+          "sha256": "8726d0a124e5b5dd2b8f01d993248e7859fe61bc8c82065c3d83b0eea2fd5f12"
+        },
+        {
+          "ordem": 2,
+          "arquivo": "/imagens/dia-10/IMG_7051.jpg",
+          "chave": "d10f_IMG_7051",
+          "sha256": "12965aa1bd99f019365bb9aff8c6bfb059bcb0c2a93f86bc8f90ef55ae946632"
+        },
+        {
+          "ordem": 3,
+          "arquivo": "/imagens/dia-10/IMG_7062.jpg",
+          "chave": "d10f_IMG_7062",
+          "sha256": "58d9f32f382f68483fc6117a31544fc758ff6a1de31cc3a9080d9f3c781f3284"
+        },
+        {
+          "ordem": 4,
+          "arquivo": "/imagens/dia-10/IMG_7081.jpg",
+          "chave": "d10f_IMG_7081",
+          "sha256": "545d7c8c51ce0c9079ffa03d2fda2c31964eb82b11f9f2f9c8f3aadff7c75ad3"
+        },
+        {
+          "ordem": 5,
+          "arquivo": "/imagens/dia-10/IMG_7097.jpg",
+          "chave": "d10f_IMG_7097",
+          "sha256": "d564d79b9211279226e7df66491d8d5f089406d8bc9344b43610d09ec2ec3318"
+        },
+        {
+          "ordem": 6,
+          "arquivo": "/imagens/dia-10/IMG_7118.jpg",
+          "chave": "d10f_IMG_7118",
+          "sha256": "c48ff00ca9aaf0c7cdc97386a25588a884ef7d238a634d3cfbe24dcba8c54cc1"
+        },
+        {
+          "ordem": 7,
+          "arquivo": "/imagens/dia-10/IMG_7121.jpg",
+          "chave": "d10f_IMG_7121",
+          "sha256": "48df1550b19d1cc5c4e3e98566b604118ef9d80cd6d9ed2b99c0fc2aa956b424"
+        },
+        {
+          "ordem": 8,
+          "arquivo": "/imagens/dia-10/IMG_7131.jpg",
+          "chave": "d10f_IMG_7131",
+          "sha256": "3e0437fbc9b2dae8c01b8e93c489ce9c4dd89b5b16290dd5ccfdf2b57890a055"
+        },
+        {
+          "ordem": 9,
+          "arquivo": "/imagens/dia-10/IMG_7155.jpg",
+          "chave": "d10f_IMG_7155",
+          "sha256": "5e85cc5db5142bcd1f16dc459670eb8c954874c0848ee2881d3f2aec1f404ab6"
+        },
+        {
+          "ordem": 10,
+          "arquivo": "/imagens/dia-10/IMG_7177.jpg",
+          "chave": "d10f_IMG_7177",
+          "sha256": "a77ab8b1986af8a92fc4a3af30e7fb81f7e821e4b8e7a54e474512c10c595720"
+        },
+        {
+          "ordem": 11,
+          "arquivo": "/imagens/dia-10/IMG_7184.jpg",
+          "chave": "d10f_IMG_7184",
+          "sha256": "7238a638e219e2eadcf239fec00fb3ef40760bfe0bed3628d67e2e1d91554db8"
+        },
+        {
+          "ordem": 12,
+          "arquivo": "/imagens/dia-10/IMG_7190.jpg",
+          "chave": "d10f_IMG_7190",
+          "sha256": "5ff521757e7044579365d0969329946920f533b4a54177e7338e5e0efe69bee7"
+        },
+        {
+          "ordem": 13,
+          "arquivo": "/imagens/dia-10/IMG_7197.jpg",
+          "chave": "d10f_IMG_7197",
+          "sha256": "3db05b3c02caa0e3d0a4e2d8dea684fe03e294f8af34e4251e22b99eba83a396"
+        },
+        {
+          "ordem": 14,
+          "arquivo": "/imagens/dia-10/IMG_7205.jpg",
+          "chave": "d10f_IMG_7205",
+          "sha256": "b5cda61536f932d85452ea7f9be12ca5daed06a61ea2d5c3b1db64d8067beec5"
+        },
+        {
+          "ordem": 15,
+          "arquivo": "/imagens/dia-10/IMG_7210.jpg",
+          "chave": "d10f_IMG_7210",
+          "sha256": "e0b119203170f4e1fdbc4a6af5694185bdd43f1c0fb72a3c7f5735129e48edcf"
+        },
+        {
+          "ordem": 16,
+          "arquivo": "/imagens/dia-10/IMG_7220.jpg",
+          "chave": "d10f_IMG_7220",
+          "sha256": "35d5450cce446ff1148d517575f63372a78f979d4d348c3181109b1dfda6e535"
+        },
+        {
+          "ordem": 17,
+          "arquivo": "/imagens/dia-10/IMG_7222.jpg",
+          "chave": "d10f_IMG_7222",
+          "sha256": "3a12b444401529ad85f138f1bed997a9571a647b9fe833421f9098db7ddb9f58"
+        },
+        {
+          "ordem": 18,
+          "arquivo": "/imagens/dia-10/IMG_7226.jpg",
+          "chave": "d10f_IMG_7226",
+          "sha256": "222508d1ceb0c2590172e733fa9b5653afd2d36db859d84229986666e71cb907"
+        },
+        {
+          "ordem": 19,
+          "arquivo": "/imagens/dia-10/IMG_7235.jpg",
+          "chave": "d10f_IMG_7235",
+          "sha256": "e42356b50f747a0154b2a96a6bbff1b20759aecccbbbfb16ccefb040ec9d81b3"
+        },
+        {
+          "ordem": 20,
+          "arquivo": "/imagens/dia-10/IMG_7244.jpg",
+          "chave": "d10f_IMG_7244",
+          "sha256": "46f620fda2b83b2e2073bfdc4abc2135aee69f50f5afe313d077daddeb8cca13"
+        },
+        {
+          "ordem": 21,
+          "arquivo": "/imagens/dia-10/IMG_7248.jpg",
+          "chave": "d10f_IMG_7248",
+          "sha256": "edd0486f58a1f23e7c9a464fb72fe4d48eda7225dfef5d655e5e72d342f9e5a8"
+        },
+        {
+          "ordem": 22,
+          "arquivo": "/imagens/dia-10/IMG_7253.jpg",
+          "chave": "d10f_IMG_7253",
+          "sha256": "70b534b8ca71faab8298c43a90512dfa4656a567a1f87957f748153e077c11c8"
+        },
+        {
+          "ordem": 23,
+          "arquivo": "/imagens/dia-10/IMG_7269.jpg",
+          "chave": "d10f_IMG_7269",
+          "sha256": "424f70d300ef559e89bc3ad7d6c772a26d150d016cf12e5be9d4439a445b25ee"
+        }
+      ]
+    },
+    {
+      "dia": 11,
+      "fotos": [
+        {
+          "ordem": 1,
+          "arquivo": "/imagens/dia-11/IMG_7286.jpg",
+          "chave": "d11f_IMG_7286",
+          "sha256": "3a35471b0a88520e685f78ef77e2e74c306df8ac8883465d3a765b12a2d73972"
+        },
+        {
+          "ordem": 2,
+          "arquivo": "/imagens/dia-11/IMG_7289.jpg",
+          "chave": "d11f_IMG_7289",
+          "sha256": "ef03e406a3e2116f005f0a7d730fbdf6b550c6a1786a038c58dec5057fa51dd3"
+        },
+        {
+          "ordem": 3,
+          "arquivo": "/imagens/dia-11/IMG_7295.jpg",
+          "chave": "d11f_IMG_7295",
+          "sha256": "29f6833c37e3496d871b13b703a50b70c73f68f80e75fab3b0820ec6db8ddb12"
+        },
+        {
+          "ordem": 4,
+          "arquivo": "/imagens/dia-11/IMG_7298.jpg",
+          "chave": "d11f_IMG_7298",
+          "sha256": "fb79a7317da73bca5341a797e4e7a27dd93c8ac223f46bac6883304446ae47a8"
+        },
+        {
+          "ordem": 5,
+          "arquivo": "/imagens/dia-11/IMG_7313.jpg",
+          "chave": "d11f_IMG_7313",
+          "sha256": "004894952c7ccfc8a5156e36c05de54ce7f2e18b7944f124cea6112813609ca8"
+        },
+        {
+          "ordem": 6,
+          "arquivo": "/imagens/dia-11/IMG_7329.jpg",
+          "chave": "d11f_IMG_7329",
+          "sha256": "2ed98c53fe1cba12fd2e61a36f396f42497d9b8ee59f80d2d1833ef1275b6441"
+        },
+        {
+          "ordem": 7,
+          "arquivo": "/imagens/dia-11/IMG_7337.jpg",
+          "chave": "d11f_IMG_7337",
+          "sha256": "fcbd45236328f4c06ce6c6866721f26a6ee3759cc84924d476ccb1dc0f6ebba3"
+        },
+        {
+          "ordem": 8,
+          "arquivo": "/imagens/dia-11/IMG_7367.jpg",
+          "chave": "d11f_IMG_7367",
+          "sha256": "b2e73cb67f3854e659fe7ffd2bb7a712c4f3d99ad397a7f2835287449b51d343"
+        },
+        {
+          "ordem": 9,
+          "arquivo": "/imagens/dia-11/IMG_7391.jpg",
+          "chave": "d11f_IMG_7391",
+          "sha256": "ccb35a23c290f5276ef49448d2b9583e9de14f535bfddd7e09b52b871de3aea7"
+        },
+        {
+          "ordem": 10,
+          "arquivo": "/imagens/dia-11/IMG_7393.jpg",
+          "chave": "d11f_IMG_7393",
+          "sha256": "a50f2ea494b00924b6ae2db57277ecaede8fc9573f20fd252fd3d4bac39c6c9b"
+        },
+        {
+          "ordem": 11,
+          "arquivo": "/imagens/dia-11/IMG_7396.jpg",
+          "chave": "d11f_IMG_7396",
+          "sha256": "4b52ac485d73b020530c32ad5b94fcc7a0a1037b9a42f4b6a4a14c8d95a0a6b2"
+        },
+        {
+          "ordem": 12,
+          "arquivo": "/imagens/dia-11/IMG_7400.jpg",
+          "chave": "d11f_IMG_7400",
+          "sha256": "423b6b39123037949800605be7ee4e1662464f0be480cd4f209a1aae602ba820"
+        },
+        {
+          "ordem": 13,
+          "arquivo": "/imagens/dia-11/IMG_7408.jpg",
+          "chave": "d11f_IMG_7408",
+          "sha256": "1ac738051bcb3b7c2283fbb438c466b99f394ccf30ff242fe2f18f4f29e8cc48"
+        },
+        {
+          "ordem": 14,
+          "arquivo": "/imagens/dia-11/IMG_7411.jpg",
+          "chave": "d11f_IMG_7411",
+          "sha256": "899a17e7e80f3d55bd7551f60e210c4e41d2823b62fc19370559cf920a79a96c"
+        },
+        {
+          "ordem": 15,
+          "arquivo": "/imagens/dia-11/IMG_7417.jpg",
+          "chave": "d11f_IMG_7417",
+          "sha256": "2260676d9036d3383737b0452e8aca38c9d5451ea6ae4e7e8999f0ca6aea4a96"
+        },
+        {
+          "ordem": 16,
+          "arquivo": "/imagens/dia-11/IMG_7430.jpg",
+          "chave": "d11f_IMG_7430",
+          "sha256": "34cc35e84561068415178215da4a42eb68ddfb075f40ee41ac74fab0247fbbd2"
+        },
+        {
+          "ordem": 17,
+          "arquivo": "/imagens/dia-11/IMG_7435.jpg",
+          "chave": "d11f_IMG_7435",
+          "sha256": "e786659a7ba7753036f740f09a5e0504b926c03386c7dbcd66fb6385c1646c10"
+        }
+      ]
+    }
+  ]
+}
