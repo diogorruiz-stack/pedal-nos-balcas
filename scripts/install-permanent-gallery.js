@@ -23,7 +23,7 @@ for(const day of days){
   if(crypto.createHash('sha256').update(bytes).digest('hex')!==p.sha256)throw Error('SHA256 não corresponde: '+p.arquivo);
   const stem=path.basename(p.arquivo,'.jpg');
   const key='d'+day.dia+'f_'+stem;
-  pairs.push([key,p.arquivo]);
+  pairs.push([key,'/public'+p.arquivo]);
   rows.push([key,'Registro do dia '+day.dia,'Fotografia selecionada da viagem.']);
  }
  js+='(function(){const day='+day.dia+';const previous=window.COMPLETE_DAY_PHOTOS[day]||[]; const captions=new Map(previous.map(p=>[p[0],p]));\n';
