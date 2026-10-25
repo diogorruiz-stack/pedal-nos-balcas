@@ -2,7 +2,17 @@ const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const root=path.resolve(__dirname,'..');
 const rpath=path.join(root,'dados','relatorio-recuperacao.json'),cpath=path.join(root,'dados','fotografias-recuperadas.json');
 const report=JSON.parse(fs.readFileSync(rpath)),catalog=JSON.parse(fs.readFileSync(cpath));
-const failed=[],recovered=[];let next=0;const jobs=report.missingRemote.filter(x=>x.source.startsWith('https://izelw0312hubtv8g.public.blob.vercel-storage.com/'));
+const failed=[],recovered=[];let next=0;
+const local=report.missingRemote.find(x=>x.key==='d1_shop');
+if(local){
+ const bytes=fs.readFileSync(path.join(root,'public','day1-bike-shop.jpg'));
+ const dst=path.join(root,'public','imagens','dia-01','d1_shop.jpg');
+ fs.mkdirSync(path.dirname(dst),{recursive:true});fs.writeFileSync(dst,bytes);
+ const day=catalog.dias.find(d=>d.dia===1);
+ day.fotos.push({ordem:0,chave:'d1_shop',arquivo:'/imagens/dia-01/d1_shop.jpg',titulo:'',legenda:'',sha256:crypto.createHash('sha256').update(bytes).digest('hex')});
+ recovered.push({dia:1,key:'d1_shop',url:'/imagens/dia-01/d1_shop.jpg'});
+}
+const jobs=report.missingRemote.filter(x=>x.source.startsWith('https://izelw0312hubtv8g.public.blob.vercel-storage.com/'));
 async function worker(){
  while(next<jobs.length){
   const job=jobs[next++];try{
