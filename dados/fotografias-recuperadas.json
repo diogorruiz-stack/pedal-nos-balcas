@@ -43,6 +43,14 @@
           "titulo": "",
           "legenda": "",
           "sha256": "293e4e0f10ab08d395067247a2bcb37f8862f858f8b9052cecea536edd435228"
+        },
+        {
+          "ordem": 6,
+          "chave": "d1_shop",
+          "arquivo": "/imagens/dia-01/d1_shop.jpg",
+          "titulo": "",
+          "legenda": "",
+          "sha256": "60ce442811f58b4fe18867cf793c971354d6db6c908b82f8e3f427c3767dcd48"
         }
       ]
     },

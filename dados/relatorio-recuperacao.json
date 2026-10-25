@@ -73,11 +73,6 @@
   },
   "missingRemote": [
     {
-      "dia": 1,
-      "key": "d1_shop",
-      "source": "/day1-bike-shop.jpg"
-    },
-    {
       "dia": 3,
       "key": "d3f_CA725CFE-325E-4579-A757-5EF2BD49046A",
       "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day3/CA725CFE-325E-4579-A757-5EF2BD49046A.jpg"
@@ -404,7 +399,7 @@
     }
   ],
   "embedded": 122,
-  "remoteRecovered": 122,
+  "remoteRecovered": 123,
   "remoteFailed": [
     {
       "dia": 3,
@@ -418,7 +413,7 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6561",
+      "key": "d7f_IMG_1189",
       "error": "HTTP 404"
     },
     {
@@ -428,7 +423,12 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_1189",
+      "key": "d7f_IMG_6582",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 7,
+      "key": "d7f_IMG_6561",
       "error": "HTTP 404"
     },
     {
@@ -443,21 +443,6 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6576",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 7,
-      "key": "d7f_IMG_6587",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 7,
-      "key": "d7f_IMG_6582",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 7,
       "key": "d7f_IMG_6583",
       "error": "HTTP 404"
     },
@@ -468,17 +453,27 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6644",
+      "key": "d7f_IMG_6576",
       "error": "HTTP 404"
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6629",
+      "key": "d7f_IMG_6587",
       "error": "HTTP 404"
     },
     {
       "dia": 7,
       "key": "d7f_IMG_6589",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 7,
+      "key": "d7f_IMG_6613",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 7,
+      "key": "d7f_IMG_6629",
       "error": "HTTP 404"
     },
     {
@@ -493,12 +488,7 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6613",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 7,
-      "key": "d7f_IMG_6732",
+      "key": "d7f_IMG_6642",
       "error": "HTTP 404"
     },
     {
@@ -508,7 +498,12 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6642",
+      "key": "d7f_IMG_6644",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 7,
+      "key": "d7f_IMG_6732",
       "error": "HTTP 404"
     },
     {
@@ -523,17 +518,22 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6753",
+      "key": "d7f_IMG_6748",
       "error": "HTTP 404"
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6748",
+      "key": "d7f_IMG_6753",
       "error": "HTTP 404"
     },
     {
       "dia": 10,
       "key": "d10f_IMG_7044",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7051",
       "error": "HTTP 404"
     },
     {
@@ -573,7 +573,7 @@
     },
     {
       "dia": 10,
-      "key": "d10f_IMG_7197",
+      "key": "d10f_IMG_7184",
       "error": "HTTP 404"
     },
     {
@@ -583,42 +583,17 @@
     },
     {
       "dia": 10,
-      "key": "d10f_IMG_7205",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7051",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7220",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7184",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7235",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7222",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7226",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
       "key": "d10f_IMG_7190",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7197",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7205",
       "error": "HTTP 404"
     },
     {
@@ -628,12 +603,17 @@
     },
     {
       "dia": 10,
-      "key": "d10f_IMG_7248",
+      "key": "d10f_IMG_7220",
       "error": "HTTP 404"
     },
     {
-      "dia": 11,
-      "key": "d11f_IMG_7286",
+      "dia": 10,
+      "key": "d10f_IMG_7226",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7235",
       "error": "HTTP 404"
     },
     {
@@ -642,13 +622,23 @@
       "error": "HTTP 404"
     },
     {
-      "dia": 11,
-      "key": "d11f_IMG_7295",
+      "dia": 10,
+      "key": "d10f_IMG_7248",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7269",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7253",
       "error": "HTTP 404"
     },
     {
       "dia": 11,
-      "key": "d11f_IMG_7298",
+      "key": "d11f_IMG_7286",
       "error": "HTTP 404"
     },
     {
@@ -658,27 +648,7 @@
     },
     {
       "dia": 11,
-      "key": "d11f_IMG_7329",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 11,
-      "key": "d11f_IMG_7337",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7253",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7269",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 11,
-      "key": "d11f_IMG_7367",
+      "key": "d11f_IMG_7298",
       "error": "HTTP 404"
     },
     {
@@ -688,17 +658,32 @@
     },
     {
       "dia": 11,
+      "key": "d11f_IMG_7295",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
+      "key": "d11f_IMG_7329",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
+      "key": "d11f_IMG_7367",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 10,
+      "key": "d10f_IMG_7222",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
+      "key": "d11f_IMG_7337",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
       "key": "d11f_IMG_7391",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 11,
-      "key": "d11f_IMG_7393",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 11,
-      "key": "d11f_IMG_7396",
       "error": "HTTP 404"
     },
     {
@@ -708,7 +693,22 @@
     },
     {
       "dia": 11,
+      "key": "d11f_IMG_7393",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
       "key": "d11f_IMG_7408",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
+      "key": "d11f_IMG_7396",
+      "error": "HTTP 404"
+    },
+    {
+      "dia": 11,
+      "key": "d11f_IMG_7411",
       "error": "HTTP 404"
     },
     {
@@ -724,11 +724,6 @@
     {
       "dia": 11,
       "key": "d11f_IMG_7435",
-      "error": "HTTP 404"
-    },
-    {
-      "dia": 11,
-      "key": "d11f_IMG_7411",
       "error": "HTTP 404"
     }
   ]
