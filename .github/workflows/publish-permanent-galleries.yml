@@ -2,7 +2,7 @@ name: Publish permanent galleries
 on:
   push:
     branches: [main]
-    paths: [gallery-recovery.zip]
+    paths: ['gallery-recovery-part-1.zip', 'gallery-recovery-part-2.zip']
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,8 +15,10 @@ jobs:
           persist-credentials: true
       - name: Extract recovered JPGs and catalog
         run: |
-          test -f gallery-recovery.zip
-          unzip -o gallery-recovery.zip -d .
+          test -f gallery-recovery-part-1.zip
+          test -f gallery-recovery-part-2.zip
+          unzip -o gallery-recovery-part-1.zip -d .
+          unzip -o gallery-recovery-part-2.zip -d .
       - name: Validate files and build permanent catalog
         run: node scripts/install-permanent-gallery.js
       - name: Validate expected counts
@@ -29,8 +31,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          rm gallery-recovery.zip
-          git add -A public/imagens/dia-07 public/imagens/dia-10 public/imagens/dia-11 dados/catalogo-definitivo.json photos-fixed-local.js gallery-recovery.zip
+          rm gallery-recovery-part-1.zip gallery-recovery-part-2.zip
+          git add -A public/imagens/dia-07 public/imagens/dia-10 public/imagens/dia-11 dados/catalogo-definitivo.json photos-fixed-local.js gallery-recovery-part-1.zip gallery-recovery-part-2.zip
           git commit -m "Publish 63 permanent gallery images for days 7 10 11"
           git pull --rebase origin main
           git push origin main
