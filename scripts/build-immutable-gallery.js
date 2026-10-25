@@ -7,6 +7,7 @@
  */
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
 const sharp=require('sharp');
+const convert=require('heic-convert');
 const root=path.resolve(__dirname,'..');
 const source=path.join(root,'assets','originals'),dest=path.join(root,'public','imagens');
 const supported=/\.(jpe?g|png|webp|heic|heif)$/i;
@@ -38,7 +39,9 @@ async function main(){
    const name=String(i+1).padStart(3,'0')+'.webp';
    const output=path.join(dest,dayFolder,name);
    fs.mkdirSync(path.dirname(output),{recursive:true});
-   await sharp(path.join(input,file)).rotate().resize({width:1920,height:1920,fit:'inside',withoutEnlargement:true}).webp({quality:84,effort:4}).toFile(output);
+   const raw=fs.readFileSync(path.join(input,file));
+   const decoded=/\.hei[cf]$/i.test(file)?Buffer.from(await convert({buffer:raw,format:'JPEG',quality:0.92})):raw;
+   await sharp(decoded).rotate().resize({width:1920,height:1920,fit:'inside',withoutEnlargement:true}).webp({quality:84,effort:4}).toFile(output);
    const bytes=fs.readFileSync(output);
    photos.push({ordem:i+1,arquivo:'/imagens/'+dayFolder+'/'+name,original:file,titulo:title,legenda:caption,sha256:crypto.createHash('sha256').update(bytes).digest('hex')});
   }
