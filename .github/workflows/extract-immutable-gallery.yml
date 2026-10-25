@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/extract-immutable-gallery.yml'
       - 'scripts/extract-embedded-gallery.js'
+      - 'scripts/recover-blob-gallery.js'
 permissions:
   contents: write
 jobs:
@@ -18,6 +19,7 @@ jobs:
         with:
           node-version: '20'
       - run: node scripts/extract-embedded-gallery.js
+      - run: node scripts/recover-blob-gallery.js
       - name: Commit extracted permanent photos
         run: |
           git config user.name 'github-actions[bot]'
