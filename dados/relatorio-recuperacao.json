@@ -109,11 +109,6 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6576",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6576.jpg"
-    },
-    {
-      "dia": 7,
       "key": "d7f_IMG_6582",
       "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6582.jpg"
     },
@@ -149,11 +144,6 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6613",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6613.jpg"
-    },
-    {
-      "dia": 7,
       "key": "d7f_IMG_6629",
       "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6629.jpg"
     },
@@ -169,33 +159,13 @@
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6728",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6728.jpg"
-    },
-    {
-      "dia": 7,
-      "key": "d7f_IMG_6732",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6732.jpg"
-    },
-    {
-      "dia": 7,
       "key": "d7f_IMG_6748",
       "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6748.jpg"
     },
     {
       "dia": 7,
-      "key": "d7f_IMG_6753",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6753.jpg"
-    },
-    {
-      "dia": 7,
       "key": "d7f_8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3",
       "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/8223A4BE-ECE9-4FA2-B0E4-3E39F2477CB3.jpg"
-    },
-    {
-      "dia": 7,
-      "key": "d7f_IMG_6765",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day7/IMG_6765.jpg"
     },
     {
       "dia": 10,
@@ -236,11 +206,6 @@
       "dia": 10,
       "key": "d10f_IMG_7131",
       "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7131.jpg"
-    },
-    {
-      "dia": 10,
-      "key": "d10f_IMG_7155",
-      "source": "https://izelw0312hubtv8g.public.blob.vercel-storage.com/curated/day10/IMG_7155.jpg"
     },
     {
       "dia": 10,
@@ -726,5 +691,54 @@
       "key": "d11f_IMG_7435",
       "error": "HTTP 404"
     }
-  ]
+  ],
+  "duplicateReferencesResolved": [
+    {
+      "dia": 7,
+      "sourceKey": "d7f_IMG_6576",
+      "permanentKey": "d7x_6576",
+      "arquivo": "/imagens/dia-07/d7x_6576.jpg"
+    },
+    {
+      "dia": 7,
+      "sourceKey": "d7f_IMG_6613",
+      "permanentKey": "d7x_6613",
+      "arquivo": "/imagens/dia-07/d7x_6613.jpg"
+    },
+    {
+      "dia": 7,
+      "sourceKey": "d7f_IMG_6728",
+      "permanentKey": "d7x_6728",
+      "arquivo": "/imagens/dia-07/d7x_6728.jpg"
+    },
+    {
+      "dia": 7,
+      "sourceKey": "d7f_IMG_6732",
+      "permanentKey": "d7x_6732",
+      "arquivo": "/imagens/dia-07/d7x_6732.jpg"
+    },
+    {
+      "dia": 7,
+      "sourceKey": "d7f_IMG_6753",
+      "permanentKey": "d7x_6753",
+      "arquivo": "/imagens/dia-07/d7x_6753.jpg"
+    },
+    {
+      "dia": 7,
+      "sourceKey": "d7f_IMG_6765",
+      "permanentKey": "d7x_6765",
+      "arquivo": "/imagens/dia-07/d7x_6765.jpg"
+    },
+    {
+      "dia": 10,
+      "sourceKey": "d10f_IMG_7155",
+      "permanentKey": "d10x_7155",
+      "arquivo": "/imagens/dia-10/d10x_7155.jpg"
+    }
+  ],
+  "remainingByDay": {
+    "7": 17,
+    "10": 22,
+    "11": 17
+  }
 }
