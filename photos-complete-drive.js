@@ -272,7 +272,7 @@ Object.assign(window.PHOTO_DATA||(window.PHOTO_DATA={}),{
 });
 
 window.COMPLETE_DAY_PHOTOS[7]=[
-  ["d7f_IMG_1189","Café da manhã antes de sair","O dia começou sem pressa, com comida à mesa antes de voltar à Old Town e depois pegar as bicicletas leves."],
+  ["d7f_IMG_1189","Café da manhã na Old Town de Kotor","Dentro da cidade murada, o grupo parou para comer. Segundo o diário, a manhã começou na Senso Bakery, mas a falta do croissant desejado levou à pizza da loja ao lado. Depois de dias de gastroenterite, comer e passar bem foi um sinal de recuperação."],
   ["d7f_IMG_6554","Bikes leves para um dia sem bagagem","As bicicletas ficaram prontas dentro da hospedagem sem o peso dos alforjes usados nos dias de deslocamento."],
   ["d7f_IMG_6561","Torre do Relógio de Kotor","A manhã passou pela principal praça da Old Town, com a torre de pedra marcando uma das imagens mais reconhecíveis de Kotor."],
   ["d7f_IMG_6565","Canhão dentro da cidade murada","As marcas militares aparecem em plena praça histórica, lembrando a longa função defensiva de Kotor."],
