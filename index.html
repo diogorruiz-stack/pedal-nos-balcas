@@ -636,29 +636,34 @@ function enhanceDays(base){
 function current(){return days.find(x=>x.d===activeDay)}
 function allPhotoList(d){return (d.photos||[]).filter(p=>PHOTO_DATA[p[0]]).map(p=>({key:p[0],title:photoFor(d,p[0])[0],caption:photoFor(d,p[0])[1]}))}
 function listByKeys(d,keys){const by=new Map(allPhotoList(d).map(p=>[p.key,p]));return (keys||[]).map(k=>by.get(k)).filter(Boolean)}
-function topPhotoList(d){
- const seq=completePhotoList(d)||allPhotoList(d);
- if(!seq.length)return [];
- const cut=Math.max(1,Math.ceil(seq.length/2));
- return seq.slice(0,cut)
-}
-function completePhotoList(d){
+function uniqueDayPhotos(d){
  const rows=window.COMPLETE_DAY_PHOTOS?.[d.d];
- if(!Array.isArray(rows)||!rows.length)return null;
- const generic='Registro fotográfico desta etapa da viagem.';
- return rows.filter(p=>PHOTO_DATA[p[0]]).map(p=>{
-   const rawTitle=String(p[1]||'').trim();
-   const rawCaption=String(p[2]||'').trim();
-   const title=(!rawTitle||/^Dia \\d+ · arquivo pessoal$/i.test(rawTitle))?('Dia '+d.d+' · '+d.route):rawTitle;
-   const caption=(!rawCaption||rawCaption===generic)?('Registro do Dia '+d.d+': '+d.route+'. Foto do arquivo pessoal desta etapa da viagem.'):rawCaption;
-   return {key:p[0],title,caption};
+ const source=Array.isArray(rows)&&rows.length
+  ? rows.map(p=>({key:p[0],title:String(p[1]||'').trim(),caption:String(p[2]||'').trim()}))
+  : allPhotoList(d);
+ const usedKeys=new Set(),usedImages=new Set();
+ return source.filter(p=>{
+  const url=PHOTO_DATA[p.key];
+  if(!url||usedKeys.has(p.key))return false;
+  const identity=typeof url==='string'?url.split('?')[0]:p.key;
+  if(usedImages.has(identity))return false;
+  usedKeys.add(p.key);usedImages.add(identity);
+  if(!p.title)p.title='Dia '+d.d+' · '+d.route;
+  if(!p.caption)p.caption='Registro fotográfico desta etapa da viagem.';
+  return true;
  });
 }
+function topPhotoList(d){
+ const seq=uniqueDayPhotos(d);
+ return seq.slice(0,Math.max(1,Math.ceil(seq.length/2)));
+}
+function completePhotoList(d){
+ return uniqueDayPhotos(d);
+}
 function morePhotoList(d){
- const seq=completePhotoList(d)||allPhotoList(d);
- if(!seq.length)return [];
- const cut=Math.max(1,Math.ceil(seq.length/2));
- return seq.slice(cut)
+ const seq=uniqueDayPhotos(d);
+ const upper=new Set(topPhotoList(d).map(p=>p.key));
+ return seq.filter(p=>!upper.has(p.key));
 }
 function renderTop(d){
  const ps=topPhotoList(d),box=document.getElementById('topMedia');
