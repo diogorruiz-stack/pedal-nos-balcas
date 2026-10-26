@@ -1,6 +1,10 @@
 name: Prepare translations (free offline models)
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/extract-i18n-source.js'
+      - 'scripts/build-i18n-free.py'
 permissions:
   contents: write
 jobs:
