@@ -20,6 +20,11 @@
    const title=code==='en'?'Cycling<br><em>the Balkans</em>':code==='es'?'Ciclismo<br><em>por los Balcanes</em>':'Pedal<br><em>nos Bálcãs</em>';
    if(heroTitle.innerHTML!==title)heroTitle.innerHTML=title;
   }
+  const brandTop=document.querySelector('.brandtype > b');
+  const brandBottom=document.querySelector('.brandtype > span');
+  const brand=code==='en'?['Cycling','THE BALKANS']:code==='es'?['Ciclismo','POR LOS BALCANES']:['Pedal','NOS BÁLCÃS'];
+  if(brandTop)brandTop.textContent=brand[0];
+  if(brandBottom)brandBottom.textContent=brand[1];
   set('.hero p',l.intro);
   const cta=document.querySelector('.hero-actions .primary');if(cta)cta.innerHTML=l.cta+' <span>→</span>';
   const read=document.querySelector('.hero-actions .text-link');if(read)read.innerHTML=l.read+' <span>↓</span>';
