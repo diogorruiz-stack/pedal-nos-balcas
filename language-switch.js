@@ -94,6 +94,20 @@
   if(typeof activeDay!=='undefined'){
     set('#bridgeText',t.continue.replace('{n}',activeDay));
     set('#dayDate',t.day+' '+activeDay);
+    set('#featureToolbarTitle',t.day+' '+activeDay+' · '+(typeof current==='function'?(current()?.route||''):''));
+    const count=document.getElementById('photoCount');
+    if(count){
+      const total=typeof completePhotoList==='function'?completePhotoList(current()).length:0;
+      const lower=typeof morePhotoList==='function'?morePhotoList(current()).length:0;
+      const countValue=code==='en'?total+' photos this day · '+lower+' in this gallery':code==='es'?total+' fotos del día · '+lower+' en esta galería':total+' fotos no dia · '+lower+' nesta galeria';
+      if(count.textContent!==countValue)count.textContent=countValue;
+    }
+    const stats=document.getElementById('dayStats');
+    if(stats){
+      const pt=original?.days?.find(x=>x.d===activeDay)?.stats||stats.textContent;
+      const translated=code==='pt'?pt:pt.replace(/ÔNIBUS/gi,code==='en'?'BUS':'AUTOBÚS').replace(/TREM/gi,code==='en'?'TRAIN':'TREN').replace(/BARCO/gi,code==='en'?'BOAT':'BARCO').replace(/BICICLETA/gi,code==='en'?'BICYCLE':'BICICLETA').replace(/MONTENEGRO/gi,code==='en'?'MONTENEGRO':'MONTENEGRO').replace(/SÉRVIA/gi,code==='en'?'SERBIA':'SERBIA').replace(/BÓSNIA/gi,code==='en'?'BOSNIA':'BOSNIA');
+      if(stats.textContent!==translated)stats.textContent=translated;
+    }
     const food=document.querySelector('#dayFood');if(food)food.innerHTML='<b>'+t.food+':</b> '+food.textContent.replace(/^.*?:\s*/,'');
     document.querySelectorAll('.date-btn span').forEach(e=>e.textContent=t.day);
   }
@@ -139,6 +153,7 @@
  }
  select.addEventListener('change',()=>{localStorage.setItem(key,select.value);localize(select.value);});
  apply(selected);localize(selected);
+ window.PEDAL_AFTER_DAY_RENDER=()=>{if(loadedLanguage!=='pt')applyFixed(loadedLanguage)};
  const observer=new MutationObserver(()=>{if(loadedLanguage!=='pt')applyFixed(loadedLanguage)});
  const region=document.querySelector('.photo-rail-wrap');if(region)observer.observe(region,{childList:true,subtree:true});
  const mapNote=document.getElementById('mapNote');if(mapNote)observer.observe(mapNote,{childList:true,characterData:true,subtree:true});
