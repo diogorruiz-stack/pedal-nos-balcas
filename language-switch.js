@@ -20,6 +20,27 @@
   const read=document.querySelector('.hero-actions .text-link');if(read)read.innerHTML=l.read+' <span>↓</span>';
   select.value=code;
  }
+ const ui={
+  en:{gallery:'More photos from this day',archive:'Personal archive',bridge:'YOU HAVE SEEN THE SUMMARY. NOW DIVE DEEPER.',full:'READ THE FULL STORY ↓',previous:'← PREVIOUS DAY',next:'NEXT DAY →',ask:'ASK ABOUT THE TRIP',day:'DAY',food:'Food',continue:'Continue Day {n}: the full story, places and decisions that changed the route.'},
+  es:{gallery:'Más imágenes de este día',archive:'Archivo personal',bridge:'YA VISTE EL RESUMEN. AHORA DESCUBRE MÁS.',full:'LEER LA HISTORIA COMPLETA ↓',previous:'← DÍA ANTERIOR',next:'DÍA SIGUIENTE →',ask:'PREGUNTA SOBRE EL VIAJE',day:'DÍA',food:'Comida',continue:'Continúa el día {n}: la historia completa, los lugares y las decisiones que cambiaron la ruta.'},
+  pt:{gallery:'Mais imagens deste dia',archive:'Arquivo pessoal',bridge:'VOCÊ VIU O RESUMO. AGORA DÁ PARA MERGULHAR.',full:'LER A HISTÓRIA COMPLETA ↓',previous:'← DIA ANTERIOR',next:'PRÓXIMO DIA →',ask:'PERGUNTE À VIAGEM',day:'DIA',food:'Comida',continue:'Continue o Dia {n}: a história completa, os lugares e as decisões que mudaram a rota.'}
+ };
+ function applyFixed(code){
+  const t=ui[code]||ui.pt;
+  const set=(selector,value)=>{const e=document.querySelector(selector);if(e)e.textContent=value};
+  set('.photo-rail-wrap .section-kicker',t.archive);
+  set('.photo-rail-wrap h3',t.gallery);
+  set('.story-bridge small',t.bridge);
+  set('#readFull',t.full);
+  set('#prevDay',t.previous);set('#nextDay',t.next);
+  const launch=document.querySelector('#chatLaunch');if(launch)launch.innerHTML='<span>◌</span> '+t.ask;
+  if(typeof activeDay!=='undefined'){
+    set('#bridgeText',t.continue.replace('{n}',activeDay));
+    set('#dayDate',t.day+' '+activeDay);
+    const food=document.querySelector('#dayFood');if(food)food.innerHTML='<b>'+t.food+':</b> '+food.textContent.replace(/^.*?:\s*/,'');
+    document.querySelectorAll('.date-btn span').forEach(e=>e.textContent=t.day);
+  }
+ }
  let original=null,loadedLanguage='pt',generation=0;
  function ready(){try{return Array.isArray(days)&&days.length===14&&typeof selectDay==='function'}catch{return false}}
  function copy(obj){return JSON.parse(JSON.stringify(obj))}
@@ -30,7 +51,7 @@
   if(code==='pt'){
    days=copy(original.days);
    for(const [d,e] of Object.entries(original.captions)) ENHANCE[d]=copy(e);
-   loadedLanguage=code;selectDay(activeDay||1);apply(code);return;
+   loadedLanguage=code;selectDay(activeDay||1);apply(code);applyFixed(code);return;
   }
   let translated;
   try{
@@ -57,8 +78,10 @@
    for(const [id,p] of photoMap)ENHANCE[day.d].photoCaptions[id]=[p.title,p.caption];
    return result;
   });
-  loadedLanguage=code;apply(code);selectDay(activeDay||1);
+  loadedLanguage=code;apply(code);selectDay(activeDay||1);applyFixed(code);
  }
  select.addEventListener('change',()=>{localStorage.setItem(key,select.value);localize(select.value);});
  apply(selected);localize(selected);
+ const observer=new MutationObserver(()=>{if(loadedLanguage!=='pt')applyFixed(loadedLanguage)});
+ const region=document.querySelector('.photo-rail-wrap');if(region)observer.observe(region,{childList:true,subtree:true});
 })();
