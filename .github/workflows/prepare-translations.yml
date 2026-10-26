@@ -1,0 +1,29 @@
+name: Prepare translations
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Extract canonical Portuguese content
+        run: node scripts/extract-i18n-source.js
+      - name: Translate into English and Spanish
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/build-i18n.js
+      - name: Validate complete translations
+        run: node scripts/check-i18n.js
+      - name: Save validated catalogs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add i18n/
+          git diff --cached --quiet || git commit -m "Build complete EN and ES translations"
+          git pull --rebase origin main
+          git push origin main
