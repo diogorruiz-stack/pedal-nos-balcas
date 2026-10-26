@@ -15,6 +15,11 @@
   const set=(selector,value)=>{const el=document.querySelector(selector);if(el)el.textContent=value;};
   ['#roteiro','#historia','#fotosDia'].forEach((id,i)=>set('.navlinks a[href="'+id+'"]',[l.route,l.stories,l.photos][i]));
   set('.navlinks a.accent',l.explore);
+  const heroTitle=document.querySelector('.hero h1');
+  if(heroTitle){
+   const title=code==='en'?'Cycling<br><em>the Balkans</em>':code==='es'?'Ciclismo<br><em>por los Balcanes</em>':'Pedal<br><em>nos Bálcãs</em>';
+   if(heroTitle.innerHTML!==title)heroTitle.innerHTML=title;
+  }
   set('.hero p',l.intro);
   const cta=document.querySelector('.hero-actions .primary');if(cta)cta.innerHTML=l.cta+' <span>→</span>';
   const read=document.querySelector('.hero-actions .text-link');if(read)read.innerHTML=l.read+' <span>↓</span>';
