@@ -25,8 +25,30 @@
   es:{gallery:'Más imágenes de este día',archive:'Archivo personal',bridge:'YA VISTE EL RESUMEN. AHORA DESCUBRE MÁS.',full:'LEER LA HISTORIA COMPLETA ↓',previous:'← DÍA ANTERIOR',next:'DÍA SIGUIENTE →',ask:'PREGUNTA SOBRE EL VIAJE',day:'DÍA',food:'Comida',continue:'Continúa el día {n}: la historia completa, los lugares y las decisiones que cambiaron la ruta.'},
   pt:{gallery:'Mais imagens deste dia',archive:'Arquivo pessoal',bridge:'VOCÊ VIU O RESUMO. AGORA DÁ PARA MERGULHAR.',full:'LER A HISTÓRIA COMPLETA ↓',previous:'← DIA ANTERIOR',next:'PRÓXIMO DIA →',ask:'PERGUNTE À VIAGEM',day:'DIA',food:'Comida',continue:'Continue o Dia {n}: a história completa, os lugares e as decisões que mudaram a rota.'}
  };
+ const staticUi={
+ en:{section:'Choose a day',heading:'One day at a time.',subheading:'The map, photos and story change together.',intro:'Start with the summary, browse the photos from that day and see where the bicycle went. The full story continues below.',tabs:['STORY','UNDERSTAND THE PLACE','PRACTICAL'],route:'Day route',gps:'Actual GPS when available',aside:['Worth stopping for','Understanding the place','If you follow this route','Food of the day'],footer:'Personal photographs. Garmin/Tredict activity tracks. OpenStreetMap basemap.',stats:'14 days · almost 700 km.',chat:'Ask about the trip',chatIntro:'Routes, food, places, transportation, setbacks and decisions along the way.',chatPlaceholder:'E.g.: what is the Sebilj?'},
+ es:{section:'Elige un día',heading:'Un día a la vez.',subheading:'El mapa, las fotos y la historia cambian juntos.',intro:'Empieza por el resumen, recorre las fotos de cada día y descubre por dónde pasó la bicicleta. La historia completa continúa más abajo.',tabs:['RELATO','CONOCE EL LUGAR','PRÁCTICO'],route:'Ruta del día',gps:'GPS real cuando esté disponible',aside:['Paradas que merecen la pena','Para entender el lugar','Si haces esta ruta','Comida del día'],footer:'Fotografías personales. Rutas Garmin/Tredict. Mapa base OpenStreetMap.',stats:'14 días · casi 700 km.',chat:'Pregunta sobre el viaje',chatIntro:'Rutas, comida, lugares, transporte, contratiempos y decisiones del camino.',chatPlaceholder:'Ej.: ¿qué es el Sebilj?'},
+ pt:{section:'Escolha um dia',heading:'Um dia de cada vez.',subheading:'O mapa, as fotos e a história mudam juntos.',intro:'Comece pelo resumo, navegue pelas fotos daquele dia e veja onde a bicicleta passou. A matéria completa continua logo abaixo — sem obrigar quem só quer consultar a rota a ler tudo.',tabs:['RELATO','ENTENDA O LUGAR','PRÁTICO'],route:'Rota do dia',gps:'GPS real quando disponível',aside:['O que vale a parada','Para entender o lugar','Se você fizer essa rota','Comida deste dia'],footer:'Fotos do arquivo pessoal. Traçados de atividade Garmin/Tredict. Mapa-base OpenStreetMap.',stats:'14 dias · quase 700 km.',chat:'Pergunte à viagem',chatIntro:'Rotas, comida, lugares, transporte, perrengues e decisões do caminho.',chatPlaceholder:'Ex.: o que é o Sebilj?'}
+ };
+ function applyStatic(code){
+  const t=staticUi[code]||staticUi.pt;
+  const put=(css,value)=>{const el=document.querySelector(css);if(el&&el.textContent!==value)el.textContent=value};
+  put('#roteiro .section-head .section-kicker',t.section);
+  const h=document.querySelector('#roteiro .section-head h2');
+  if(h)h.innerHTML=t.heading+'<br><em>'+t.subheading+'</em>';
+  put('#roteiro .section-head p',t.intro);
+  document.querySelectorAll('.day-copy .tabs .tab').forEach((node,i)=>{if(t.tabs[i]&&node.textContent!==t.tabs[i])node.textContent=t.tabs[i]});
+  put('.map-head .section-kicker',t.route);put('.map-head > span',t.gps);
+  document.querySelectorAll('.feature .layers details > summary').forEach((node,i)=>{if(t.aside[i]&&node.textContent!==t.aside[i])node.textContent=t.aside[i]});
+  put('.footer > div:last-child',t.footer);
+  const footer=document.querySelector('.footer > div:first-child');if(footer){const br=footer.querySelector('br');if(br&&br.nextSibling&&br.nextSibling.nodeType===3)br.nextSibling.textContent=t.stats;}
+  put('.chat-head b',t.chat);put('.chat-head small',t.chatIntro);
+  const input=document.querySelector('#chatInput');if(input)input.placeholder=t.chatPlaceholder;
+  document.querySelectorAll('.feature-day-label').forEach(node=>{if(node.textContent!==ui[code].day)node.textContent=ui[code].day});
+ }
  function applyFixed(code){
   const t=ui[code]||ui.pt;
+  applyStatic(code);
   const set=(selector,value)=>{const e=document.querySelector(selector);if(e&&e.textContent!==value)e.textContent=value};
   set('.photo-rail-wrap .section-kicker',t.archive);
   set('.photo-rail-wrap h3',t.gallery);
