@@ -36,3 +36,5 @@ if(catalog.length!==14)throw Error('Expected 14 days; got '+catalog.length);
 fs.mkdirSync(path.join(root,'i18n'),{recursive:true});
 fs.writeFileSync(path.join(root,'i18n','pt-BR.json'),JSON.stringify({version:1,days:catalog},null,2)+'\n');
 console.log('Portuguese source generated:',catalog.length,'days',catalog.reduce((n,d)=>n+d.photos.length,0),'captions');
+
+// Updating curated gallery sources triggers an automatic no-cost translation rebuild.
