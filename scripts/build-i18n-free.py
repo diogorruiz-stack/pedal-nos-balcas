@@ -16,7 +16,8 @@ for dest in ('en','es'):
         wanted=[pt_en,en_es]
     for p in wanted:
         installed=argostranslate.translate.get_installed_languages()
-        if not any(x.code==p.from_code and any(t.code==p.to_code for t in x.translations_from) for x in installed):
+        existing=next((x for x in installed if x.code==p.from_code),None)
+        if existing is None or not any(t.to_lang.code==p.to_code for t in existing.translations_from):
             argostranslate.package.install_from_path(p.download())
 def translate_string(value,dest):
     if not value.strip():return value
