@@ -27,13 +27,13 @@
  };
  function applyFixed(code){
   const t=ui[code]||ui.pt;
-  const set=(selector,value)=>{const e=document.querySelector(selector);if(e)e.textContent=value};
+  const set=(selector,value)=>{const e=document.querySelector(selector);if(e&&e.textContent!==value)e.textContent=value};
   set('.photo-rail-wrap .section-kicker',t.archive);
   set('.photo-rail-wrap h3',t.gallery);
   set('.story-bridge small',t.bridge);
   set('#readFull',t.full);
   set('#prevDay',t.previous);set('#nextDay',t.next);
-  const launch=document.querySelector('#chatLaunch');if(launch)launch.innerHTML='<span>◌</span> '+t.ask;
+  const launch=document.querySelector('#chatLaunch');if(launch&&launch.textContent.trim()!=='◌ '+t.ask)launch.innerHTML='<span>◌</span> '+t.ask;
   if(typeof activeDay!=='undefined'){
     set('#bridgeText',t.continue.replace('{n}',activeDay));
     set('#dayDate',t.day+' '+activeDay);
