@@ -20,6 +20,45 @@
   const read=document.querySelector('.hero-actions .text-link');if(read)read.innerHTML=l.read+' <span>↓</span>';
   select.value=code;
  }
- select.addEventListener('change',()=>{localStorage.setItem(key,select.value);apply(select.value);});
- apply(selected);
+ let original=null,loadedLanguage='pt',generation=0;
+ function ready(){try{return Array.isArray(days)&&days.length===14&&typeof selectDay==='function'}catch{return false}}
+ function copy(obj){return JSON.parse(JSON.stringify(obj))}
+ async function localize(code){
+  const n=++generation;
+  if(!ready()){setTimeout(()=>{if(n===generation)localize(code)},250);return}
+  if(!original)original={days:copy(days),captions:copy(ENHANCE)};
+  if(code==='pt'){
+   days=copy(original.days);
+   for(const [d,e] of Object.entries(original.captions)) ENHANCE[d]=copy(e);
+   loadedLanguage=code;selectDay(activeDay||1);apply(code);return;
+  }
+  let translated;
+  try{
+   const response=await fetch('/i18n/'+code+'.json');
+   if(!response.ok)throw Error('Missing catalog');
+   translated=await response.json();
+   if(!Array.isArray(translated.days)||translated.days.length!==14)throw Error('Incomplete catalog');
+  }catch(error){console.error('Translation could not load',error);select.value=loadedLanguage;return}
+  if(n!==generation)return;
+  days=original.days.map(day=>{
+   const t=translated.days.find(x=>x.day===day.d);
+   if(!t)return copy(day);
+   const result=copy(day);
+   for(const field of ['route','hook','summary','context','story','practical','food','stops']){
+    if(t[field]!==undefined&&t[field]!==null&&(!Array.isArray(t[field])||t[field].length))result[field]=t[field];
+   }
+   const photoMap=new Map((t.photos||[]).map(p=>[p.id,p]));
+   result.photos=(result.photos||[]).map(photo=>{
+    const p=photoMap.get(photo[0]);
+    return p?[photo[0],p.title||photo[1],p.caption||photo[2]]:photo;
+   });
+   const originalEnhance=original.captions[day.d]||{};
+   ENHANCE[day.d]={...copy(originalEnhance),photoCaptions:{...(originalEnhance.photoCaptions||{})}};
+   for(const [id,p] of photoMap)ENHANCE[day.d].photoCaptions[id]=[p.title,p.caption];
+   return result;
+  });
+  loadedLanguage=code;apply(code);selectDay(activeDay||1);
+ }
+ select.addEventListener('change',()=>{localStorage.setItem(key,select.value);localize(select.value);});
+ apply(selected);localize(selected);
 })();
