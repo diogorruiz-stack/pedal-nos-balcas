@@ -1,4 +1,4 @@
-name: Prepare translations
+name: Prepare translations (free offline models)
 on:
   workflow_dispatch:
 permissions:
@@ -6,24 +6,28 @@ permissions:
 jobs:
   translate:
     runs-on: ubuntu-latest
+    timeout-minutes: 110
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Extract canonical Portuguese content
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Extract original Portuguese text
         run: node scripts/extract-i18n-source.js
-      - name: Translate into English and Spanish
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: node scripts/build-i18n.js
-      - name: Validate complete translations
+      - name: Install free offline translator
+        run: pip install argostranslate
+      - name: Generate translations locally (no paid API)
+        run: python scripts/build-i18n-free.py
+      - name: Validate translations
         run: node scripts/check-i18n.js
-      - name: Save validated catalogs
+      - name: Commit language catalogs
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add i18n/
-          git diff --cached --quiet || git commit -m "Build complete EN and ES translations"
+          git diff --cached --quiet || git commit -m "Build complete EN and ES translations using free offline models"
           git pull --rebase origin main
           git push origin main
