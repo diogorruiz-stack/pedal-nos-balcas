@@ -6,14 +6,14 @@
       "route": "Belgrado → Sarajevo",
       "hook": "Pocas horas de madrugada, desperté a un amigo en la base del golpe en la puerta y, horas después, estaba comprando una bicicleta en Sarajevo.",
       "summary": "<p><strong>Belgrado fue el prólogo.</strong>Antes de existir un gran tramo de bicicleta, el guion pasó por el Templo de San Sava, por la fortaleza de Kalemegdan, Pobednik y por la pequeña Iglesia Ružica, donde lustres hechos con cartuchos, baionetas y otras piezas militares transforman memoria de guerra en ornamentación religiosa.</p><p>Luego vino el vuelo a Sarajevo y un cambio completo de escenario: Baščaršija, arquitectura otomana y marcas de la guerra aún visibles en las fachadas. Pero faltaba el objeto principal del viaje:<strong>Las bicicletas todavía necesitaban ser elegidas y compradas allí.</strong>Diogo salió del Trek Bike Centar con una Trek Marlin 5; Giggio compró una Specialized en M-Bike. La foto dentro de la tienda registra el momento en que el guion dejó de ser solo un plan y ganó las bikes que atravesarían los Balcanes.</p>",
-      "context": "<p><strong>Belgrado.</strong>La ciudad ocupa una posición estratégica en el encuentro de los ríos Sava y Danubio; la región ya era ocupada por la Singidunum romana.</p><p><strong>Sarajevo.</strong>La llegada se sitúa junto a la herencia otomana de Baščaršija y marcas muy recientes del asedio de 1992-1996. El primer pedal por la ciudad vendría solo la mañana siguiente.</p><p><strong>Por qué la elección de las bikes importa.</strong>Esta no fue un viaje en el que las bicicletas llegaron listas de casa. Parte del primer día fue justamente encontrar modelos adecuados, comprar y empezar a montar la logística sobre dos ruedas.</p>",
+      "context": "<p><strong>Belgrado.</strong>La ciudad ocupa una posición estratégica en el encuentro de los ríos Sava y Danubio; la región ya era ocupada por la Singidunum romana.</p><p><strong>Sarajevo.</strong>La llegada es parte de la herencia otomana de Baščaršija y marcas muy recientes del asedio de 1992-1996. El primer pedal por la ciudad vendría apenas la mañana siguiente.</p><p><strong>Por qué la elección de las bikes importa.</strong>Esta no fue un viaje en el que las bicicletas llegaron listas de casa. Parte del primer día fue justamente encontrar modelos adecuados, comprar y empezar a montar la logística sobre dos ruedas.</p>",
       "story": [
         "Belgrado abrió el viaje antes de que la bicicleta entrara en escena. El guion pasó por el Templo de San Sava, por la fortaleza de Kalemegdan, Pobednik y la Iglesia Ružica. Dentro de la pequeña iglesia, los lustres hechos con cartuchos, baionetas y otras piezas militares condensaban en una imagen sólo la relación de la región con guerras sucesivas.",
-        "En la hora de seguir al aeropuerto apareció la primera improvisación logística: sin dinero serbia y con autobús que no aceptaban tarjeta, fue necesario encontrar una combinación de transporte que no dependese de dinero vivo. Luego vino el vuelo a Sarajevo.",
-        "Baščaršija marcó la llegada a Bosnia, pero la misión más importante de esa noche todavía estaba pendiente: no había bicicleta esperando lista. Diogo compró una Trek Marlin 5 en el Trek Bike Centar; Giggio salió de la M-Bike con una Specialized. Elegir los bikes allí formaba parte del propio guión — era el equipo que sustentaría el resto del viaje.",
+        "En el momento de seguir al aeropuerto apareció la primera improvisación logística: sin dinero serbia y con bus que no aceptaban tarjeta, fue necesario encontrar una combinación de transporte que no dependese de dinero vivo. Luego vino el vuelo a Sarajevo.",
+        "Baščaršija marcó la llegada a Bosnia, pero la misión más importante de esa noche todavía estaba pendiente: no había bicicleta esperando lista. Diogo compró una Trek Marlin 5 en el Trek Bike Centar; Giggio salió de M-Bike con una Specialized. Elegir los bikes allí formaba parte del propio guión — era el equipo que sustentaría el resto del viaje.",
         "El día terminó con comida bósnia — sirnica y kaftas — y las bicicletas finalmente resueltas. El primer pedal por Sarajevo quedaría a la mañana siguiente."
       ],
-      "practical": "No cuente con tarjeta en el transporte local. Si el viaje comienza comprando una bicicleta, reserve la primera noche para ajustar la posición, el bagageiro y las herramientas.",
+      "practical": "No cuente con tarjeta en el transporte local. Si el viaje comienza comprando una bicicleta, reserve la primera noche para ajustar la posición, el equipaje y las herramientas.",
       "food": "Sirnica + kaftas. En Bosnia, burek es la versión con carne; con queso, el nombre es sirnica.",
       "stops": [
         [
@@ -35,29 +35,59 @@
       ],
       "photos": [
         {
-          "id": "d1_1",
+          "id": "d1c_5739",
+          "title": "Belgrado antes de las bicicletas",
+          "caption": "El viaje comienza en la capital serbia, aún sin bicicleta. Las primeras horas fueron para sentir la ciudad antes de seguir a Sarajevo."
+        },
+        {
+          "id": "d1c_5746",
+          "title": "Templo de San Sava",
+          "caption": "Una de las primeras grandes paradas en Belgrado. El enorme templo ortodoxo domina el horizonte y ayuda a presentar la identidad serbia justo al principio del viaje."
+        },
+        {
+          "id": "d1c_5747",
+          "title": "En San Sava",
+          "caption": "El interior monumental contrasta con la fachada clara. Los mosaicos dorados cubren la cúpula y transforman la visita en una de las imágenes más fuertes de Belgrado."
+        },
+        {
+          "id": "d1c_5764",
           "title": "Kalemegdan",
-          "caption": "Belgrado antes de que la bicicleta entre en la historia."
+          "caption": "La fortaleza ocupa la posición estratégica donde se encuentran los ríos Sava y Danubio. Es uno de los mejores lugares para entender por qué Belgrado fue disputada tantas veces."
         },
         {
-          "id": "d1_2",
+          "id": "d1c_5766",
+          "title": "Pobednik y la fortaleza",
+          "caption": "El Monumento al ganador en Kalemegdan se convirtió en uno de los símbolos de Belgrado. Dali, la ciudad se abre sobre los dos ríos."
+        },
+        {
+          "id": "d1c_5779",
           "title": "Iglesia Ružica",
-          "caption": "Una pequeña iglesia dentro de la fortaleza y una de las imágenes más inesperadas del día."
+          "caption": "Escondida dentro de Kalemegdan, la pequeña iglesia ortodoxa contrasta con la escala de la fortaleza y guarda uno de los detalles más curiosos del día."
         },
         {
-          "id": "d1_3",
-          "title": "Ružica por dentro",
-          "caption": "Los lustres hechos con material militar."
+          "id": "d1c_5785",
+          "title": "Ružica entre las murallas",
+          "caption": "Otra visión de la iglesia dentro de la fortaleza. El entorno deja claro como patrimonio religioso y memoria militar conviven en el mismo espacio."
         },
         {
-          "id": "d1_4",
-          "title": "Detalle de los lustres",
-          "caption": "Cartuchos y piezas militares transformadas en ornamentación."
+          "id": "d1c_5792",
+          "title": "Los lustres hechos con material militar",
+          "caption": "Dentro de la Ružica, lustres incorporan cartuchos, baionetas y otras piezas militares. Es un detalle inusual que resume parte de la historia de guerras de la región."
         },
         {
-          "id": "d1_5",
-          "title": "Fin del primer día",
-          "caption": "Ya en Sarajevo, antes del primer pedal de la mañana siguiente."
+          "id": "d1c_9f4e",
+          "title": "La bicicleta entra en la historia",
+          "caption": "Ya en Sarajevo, llegó la hora de elegir las bikes que sustentarían el resto del viaje. Hasta aquí, el guion todavía había ocurrido sin pedal."
+        },
+        {
+          "id": "d1c_5848",
+          "title": "Elegir bicicletas en Sarajevo",
+          "caption": "En la tienda, el viaje ganó finalmente sus bicicletas. Diogo compró una Trek Marlin 5 en Trek Bike Centar y Giggio una Specialized en M-Bike."
+        },
+        {
+          "id": "d1c_5860",
+          "title": "Primera noche en Sarajevo",
+          "caption": "El día terminó con comida bósnia y las bicicletas resueltas. El primer pedal de verdad por Sarajevo quedaría a la mañana siguiente."
         }
       ]
     },
@@ -65,14 +95,14 @@
       "day": 2,
       "route": "Sarajevo → Mostar",
       "hook": "32,7 km por la ciudad, un túnel de guerra, una frontera que no es frontera y uno de los trayectos de tren más bonitos de los Balcanes.",
-      "summary": "<p><strong>El primer pedal comenzó en el corazón otomano de Sarajevo.</strong>Baščaršija es el antiguo bazar de la ciudad y, en el centro de la plaza, Sebilj, la fuente en forma de quiosco que se convirtió en uno de los símbolos de Sarajevo. La tradición de este tipo de fuente pública viene del período otomano; la fuente original de la plaza era del siglo XVIII y la estructura actual es del final del siglo XIX. Fue dali que las bicicletas comenzaron a coser lugares que, vistos sólo como una lista, parecen no tener relación entre sí.</p><p>De la fuente seguimos para la<strong>Puente Latina</strong>, al lado del punto donde Francisco Ferdinando y Sophie fueron asesinados en 1914, y para las<strong>Sarajevo Roses</strong>: marcas de impactos de muertes preservadas en el pavimento y rellenas de rojo para recordar civiles muertos durante el cerco. Después vino el<strong>Tunnel of Hope</strong>, excavado bajo la pista del aeropuerto en 1993 para conectar la ciudad sitiada al territorio libre.</p><p>En la vuelta entramos en<strong>Estočno Sarajevo</strong>, ya en la Republika Srpska. No era una frontera internacional: continuábamos en Bosnia y Herzegovina, pero símbolos, placas y alfabeto cambiaban lo suficientemente rápido como para hacer visible la arquitectura política de posguerra. Después de corregir el bagageiro de Guillermo, el pedal por Sarajevo terminó en la estación. Las bicicletas entraron enteras en el tren a Mostar, una de las decisiones logísticas más fáciles y bonitas del viaje. El vagón siguió por las montañas de Bosnia hasta Herzegovina; ya en Mostar, la noche terminó delante de la Stari Most iluminada.</p>",
-      "context": "<p><strong>Una ciudad en capas.</strong>Baščaršija y Sebilj ayudan a ver a Sarajevo otomana; el Puente Latina sitúa la ciudad en el centro de la historia europea de 1914; Sarajevo Roses y Tunnel of Hope traen el cerco de 1992-1996 a la escala de la calle.</p><p><strong>Estočno Sarajevo.</strong>Bosnia y Herzegovina está formada por entidades políticas internas. Al pedalear para estočno Sarajevo, el viaje entró en la Republika Srpska sin salir del país, por lo que la sensación de “frontera sin frontera”.</p><p><strong>Mostar.</strong>Stari Most fue construida en el siglo XVI, destruida durante la guerra de los años 1990 y reconstruida. Hoy en día, el área del puente histórico es Patrimonio Mundial de la UNESCO.</p>",
+      "summary": "<p><strong>El primer pedal comenzó en el corazón otomano de Sarajevo.</strong>Baščaršija es el antiguo bazar de la ciudad y, en el centro de la plaza, Sebilj, la fuente en forma de quiosco que se convirtió en uno de los símbolos de Sarajevo. La tradición de este tipo de fuente pública viene del período otomano; la fuente original de la plaza era del siglo XVIII y la estructura actual es del final del siglo XIX. Fue dali que las bicicletas comenzaron a coser lugares que, vistos sólo como una lista, parecen no tener relación entre sí.</p><p>De la fuente seguimos para la<strong>Puente Latina</strong>, al lado del punto donde Francisco Ferdinando y Sophie fueron asesinados en 1914, y para las<strong>Sarajevo Roses</strong>: marcas de impactos de muertes preservadas en el pavimento y rellenas de rojo para recordar civiles muertos durante el asedio. Después vino el<strong>Tunnel of Hope</strong>, excavado bajo la pista del aeropuerto en 1993 para conectar la ciudad sitiada al territorio libre.</p><p>En la vuelta entramos en<strong>Estočno Sarajevo</strong>, ya en la Republika Srpska. No era una frontera internacional: continuábamos en Bosnia y Herzegovina, pero símbolos, placas y alfabeto cambiaban lo suficiente para hacer visible la arquitectura política de posguerra. Después de corregir el bagageiro de Guillermo, el pedal por Sarajevo terminó en la estación. Las bicicletas entraron enteras en el tren a Mostar, una de las decisiones logísticas más fáciles y bonitas del viaje. El vagón siguió por las montañas de Bosnia hasta Herzegovina; ya en Mostar, la noche terminó delante de la Stari Most iluminada.</p>",
+      "context": "<p><strong>Una ciudad en capas.</strong>Baščaršija y Sebilj ayudan a ver a Sarajevo otomana; el Puente Latina sitúa la ciudad en el centro de la historia europea de 1914; Sarajevo Roses y Tunnel of Hope traen el asedio de 1992-1996 a la escala de la calle.</p><p><strong>Estočno Sarajevo.</strong>Bosnia y Herzegovina está formada por entidades políticas internas. Al pedalear a estočno Sarajevo, el viaje entró en la Republika Srpska sin salir del país, por lo que la sensación de “frontera sin frontera”.</p><p><strong>Mostar.</strong>Stari Most fue construida en el siglo XVI, destruida durante la guerra de los años 1990 y reconstruida. Hoy en día, el área del puente histórico es Patrimonio Mundial de la UNESCO.</p>",
       "story": [
         "El primer pedal del viaje comenzó en Baščaršija, el antiguo bazar otomano de Sarajevo. En el centro de la plaza está Sebilj, la fuente en forma de quiosco que se convirtió en símbolo de la ciudad. La tradición de este tipo de fuente pública viene del período otomano; la estructura actual es del fin del siglo XIX. No era solo un punto hermoso para empezar a pedalear: era una forma de entrar en la historia de la ciudad por el lugar en que el comercio, la religión y la vida cotidiana se encontraban.",
-        "Desde Baščaršija seguimos hasta el Puente de Latina. El puente es discreta, pero al lado de ella sucedió uno de los episodios más conocidos del siglo XX: el 28 de junio de 1914, Gavrilo Princip asesinó al archiduque Francisco Ferdinando y su esposa Sophie. Poco después vinieron a Sarajevo Roses — cicatrices dejadas por explosiones de morteros en el suelo durante el cerco de la ciudad, algunas llenas de rojo como memoriales.",
+        "Desde Baščaršija seguimos hasta el Puente de Latina. El puente es discreta, pero al lado de ella sucedió uno de los episodios más conocidos del siglo XX: el 28 de junio de 1914, Gavrilo Princip asesinó al archiduque Francisco Ferdinando y su esposa Sophie. Poco después vinieron a Sarajevo Roses — cicatrices dejadas por explosiones de morteros en el suelo durante el asedio de la ciudad, algunas llenas de rojo como memoriales.",
         "El Tunnel of Hope puso la guerra en otra escala. Escavado en 1993 bajo la pista del aeropuerto, el túnel tenía cerca de 800 metros y conectaba a Sarajevo sitiada al territorio libre. Por allí pasaron personas, alimentos, medicamentos, cables y otros suministros. Visitar el lugar ayuda a entender por qué el sitio todavía aparece tan claramente en la memoria urbana.",
         "En la vuelta, la bicicleta entró en estočno Sarajevo. No había una frontera internacional: todavía era Bosnia y Herzegovina. Pero esa área pertenece a la Republika Srpska, una de las entidades internas del país, y esto aparece rápidamente en las banderas, en los símbolos y en el uso más frecuente del alfabeto cirílico. Fue una de las primeras veces en que la geopolítica dejó de ser una explicación abstracta y se volvió parte visible del camino.",
-        "Antes de seguir a Mostar, todavía fue necesario volver a la bicicletaría para corregir el bagageiro de Guillermo. Después, las bicicletas entraron en el tren con una facilidad que contrastaría con muchos autobuses de los días siguientes. La travesía ferroviaria por las montañas de Bosnia hasta Herzegovina se convirtió en una de las mejores decisiones logísticas del viaje.",
+        "Antes de seguir a Mostar, todavía fue necesario volver a la bicicletaría para corregir el bagageiro de Guillermo. Después, las bicicletas entraron en el tren con una facilidad que contrastaría con muchos autobuses de los días siguientes. La travesía ferroviaria por las montañas de Bosnia hasta Herzegovina se ha convertido en una de las mejores decisiones logísticas del viaje.",
         "Mostar apareció ya al final del día. Stari Most, construida en el siglo XVI, destruida en 1993 y reconstruida después de la guerra, fue vista primero con la luz bajando y después iluminada por la noche. La caminata pasó por la Spanish Square y la Sniper Tower, otro recordatorio de cómo, en los Balcanes, belleza y memoria de guerra a menudo ocupan el mismo cuadra."
       ],
       "practical": "Llegue a la estación con descanso. En este viaje, el tren fue mucho más sencillo para transportar bicicletas que varios autobuses.",
@@ -92,14 +122,14 @@
         ],
         [
           "Tunnel of Hope",
-          "Escavado en 1993 bajo la pista del aeropuerto, tenía unos 800 metros y fue una conexión vital entre Sarajevo sitiada y el territorio libre. Por allí pasaron personas, alimentos, medicamentos, cables y otros suministros. Hoy parte del túnel se puede visitar."
+          "Escavado en 1993 bajo la pista del aeropuerto, tenía cerca de 800 metros y fue una conexión vital entre Sarajevo sitiada y el territorio libre. Por allí pasaron personas, alimentos, medicamentos, cables y otros suministros. Hoy parte del túnel se puede visitar."
         ],
         [
           "Estočno Sarajevo",
           "Atravesar hacia el lado oriental fue importante justamente porque no había una frontera internacional. Todavía era Bosnia y Herzegovina, pero ya dentro de la Republika Srpska; banderas, escrita y referencias cambiaban delante de la bicicleta."
         ],
         [
-          "Tren Sarajevo-Mostar",
+          "Trem Sarajevo-Mostar",
           "Después del pedal urbano, el tren fue una de las mejores decisiones logísticas del viaje: bikes simple de embarcar y una travesía montañosa que desciende hacia Herzegovina."
         ],
         [
@@ -126,7 +156,7 @@
         {
           "id": "d2f_IMG_5943",
           "title": "Cicatriz en las fachadas",
-          "caption": "Las marcas de disparos y estijos aún aparecen en edificios de Sarajevo, dejando la guerra visible fuera de los museos."
+          "caption": "Las marcas de disparos y estijas todavía aparecen en edificios de Sarajevo, dejando la guerra visible fuera de los museos."
         },
         {
           "id": "d2f_IMG_5947",
@@ -145,7 +175,7 @@
         },
         {
           "id": "d2f_IMG_5958",
-          "title": "Edificio marcado por el cerco",
+          "title": "Edificio marcado por el sitio",
           "caption": "La fachada muestra cómo la guerra de los años 1990 sigue siendo inscrita en el paisaje urbano de Sarajevo."
         },
         {
@@ -210,7 +240,7 @@
         },
         {
           "id": "d2f_IMG_6092",
-          "title": "Stari Most anoche",
+          "title": "Stari Most la noche",
           "caption": "El puente histórico de Mostar ya iluminado, reflejado en Neretva. El Día 2 terminó muy diferente de la mañana en Sarajevo."
         },
         {
@@ -229,8 +259,8 @@
       "day": 3,
       "route": "Mostar → Ravno",
       "hook": "79 km, seis cámaras perforadas, una cámara enviada de moto y una carana de un desconocido que solo apareció porque necesitaba tirar la basura.",
-      "summary": "<p><strong>Este fue el día en que un error pequeño se volvió el mayor perrengue mecánico del viaje.</strong>Después de Blagaj y vinhedos de Herzegovina, Google Maps estaba configurado en el modo a pie y llevó las bicicletas cargadas a un camino lleno de espinas. Ellos quedaron atrapados en los neumáticos y comenzaron una secuencia de seis agujeros.</p><p>Cambiar la cámara no bastaba: si el espina continuase dentro del neumático, el problema volvía. Después vinieron la subida de Svitava, la carona que llevó a Giggio, el neumático de Diogo ya sin condición de continuar y el habitante que desvío decenas de kilómetros para llevarlo hasta Ravno. Guillermo fue quien completó el tramo final pedaleando.</p>",
-      "context": "<p><strong>Blagaj.</strong>El nacimiento del río Buna surge a los pies de un gran paredón cárstico y forma parte de uno de los paisajes más conocidos de Herzegovina.</p><p><strong>Vinhedos de Herzegovina.</strong>La ruta atravesó una región asociada a las uvas Žilavka y Blatina antes de entrar en el tramo que causó los agujeros.</p><p><strong>Ćiro Trail y Ravno.</strong>Parte de la ruta acompaña al antiguo corredor ferroviario de Herzegovina. El Hotel Stanica Ravno, instalado en una antigua estación, terminó volviendo el puerto seguro de un día caótico.</p>",
+      "summary": "<p><strong>Este fue el día en que un error pequeño se volvió el mayor perrengue mecánico del viaje.</strong>Después de Blagaj y vinhedos de Herzegovina, Google Maps estaba configurado en el modo a pie y llevó las bicicletas cargadas a un camino lleno de espinas. Ellos quedaron atrapados en los neumáticos y comenzaron una secuencia de seis agujeros.</p><p>Cambiar la cámara no bastaba: si el espina continuase dentro del neumático, el problema volvía. Después vinieron la subida de Svitava, la carona que llevó a Giggio, el neumático de Diogo ya sin condición de continuar y el habitante que desvió decenas de kilómetros para llevarlo hasta Ravno. Guillermo fue quien completó el tramo final pedaleando.</p>",
+      "context": "<p><strong>Blagaj.</strong>El nacimiento del río Buna surge a los pies de un gran muro cártico y forma parte de uno de los paisajes más conocidos de Herzegovina.</p><p><strong>Vinhedos de Herzegovina.</strong>La ruta atravesó una región asociada a las uvas Žilavka y Blatina antes de entrar en el tramo que causó los agujeros.</p><p><strong>Ćiro Trail y Ravno.</strong>Parte de la ruta acompaña al antiguo corredor ferroviario de Herzegovina. El Hotel Stanica Ravno, instalado en una antigua estación, terminó volviendo el puerto seguro de un día caótico.</p>",
       "story": [
         "El día salió de Mostar por Blagaj y entró en los viñedos de Herzegovina. Hasta allí, era exactamente el tipo de pedal que justificaba el viaje: paisaje, carretera rural y calor.",
         "El problema comenzó con un detalle banal. Google Maps estaba en el modo a pie y sugirió un camino que parecía acceso rápido. Para bicicletas cargadas, no era. El trecho tenía espinas, y se quedaron atrapados en los neumáticos.",
@@ -251,18 +281,18 @@
         ],
         [
           "Subida de Svitava",
-          "Después de los furos, todavía faltaba ganar la subida. El desgaste mecánico transformó un tramo ya exigente en un problema logístico."
+          "Después de los furos, todavía faltaba ganar la subida. El desgaste mecánico ha transformado un tramo ya exigente en un problema logístico."
         ],
         [
           "Hotel Stanica Ravno",
-          "Antigua estación ferroviaria transformada en hotel. Después de los furos, de la carona y del fin del pedal, se convirtió en el punto de llegada perfecto."
+          "Antigua estación ferroviaria transformada en hotel. Después de los furos, de la carana y del fin del pedal, se convirtió en el punto de llegada perfecto."
         ]
       ],
       "photos": [
         {
           "id": "d3f_IMG_6114",
           "title": "Mostar quedando atrás",
-          "caption": "El Día 3 comenzó junto al río y a los minaretes de Mostar, antes de que la ruta siga hacia Blagaj y el interior de Herzegovina."
+          "caption": "El día 3 comenzó junto al río y a los minaretes de Mostar, antes de que la ruta siga hacia Blagaj y el interior de Herzegovina."
         },
         {
           "id": "d3f_IMG_6119",
@@ -282,7 +312,7 @@
         {
           "id": "d3f_IMG_6152",
           "title": "Blagaj a los pies del paredón",
-          "caption": "La naciente del río Buna surge directamente de la base de la montaña, al lado del conjunto histórico de Blagaj."
+          "caption": "La fuente del río Buna surge directamente de la base de la montaña, al lado del conjunto histórico de Blagaj."
         },
         {
           "id": "d3f_IMG_6155",
@@ -307,7 +337,7 @@
         {
           "id": "d3f_photo_0ae5e0",
           "title": "Pôr del sol con la bike cargada",
-          "caption": "La bicicleta preparada para viajar delante del sol bajo, en un día en que la luz terminó antes de los problemas."
+          "caption": "La bicicleta preparada para viajar delante del sol bajo, en un día en que la luz acabó antes de los problemas."
         },
         {
           "id": "d3f_IMG_6208",
@@ -407,7 +437,7 @@
         },
         {
           "id": "d4f_IMG_6285",
-          "title": "La carretera empieza a cerrar entre montañas",
+          "title": "La carretera comienza a cerrar entre montañas",
           "caption": "En la aproximación de Trebinje, el relieve está más dramático y la carretera pasa a serpentear por el macizo caliza."
         },
         {
@@ -449,7 +479,7 @@
         "Llegué antes y sin mucha energía. Fue suficiente para descubrir una regla práctica que vale más que una foto hermosa de Airbnb: dentro de Old Town, piedra y escalera pueden transformar un alojamiento “perfecto” en un problema para quien carga bicicleta y equipaje.",
         "Los otros tres hicieron una llegada espectacular por la costa con el sol puesta. Preservé energía para poder volver a la bike al día siguiente."
       ],
-      "practical": "Quedarse enfermo no es motivo para probar nada en la bicicleta. Y alojamiento dentro de Old Town puede ser hermosa, pero poco práctica con equipaje y bike.",
+      "practical": "Quedarse enfermo no es motivo para probar nada en la bicicleta. Y el alojamiento dentro de Old Town puede ser hermoso, pero poco práctica con equipaje y bike.",
       "food": "Día de recuperación: la prioridad fue llegar bien, no transformar comida en guión.",
       "stops": [
         [
@@ -473,7 +503,7 @@
         },
         {
           "id": "d5f_IMG_6340",
-          "title": "Dubrovnik vista arriba",
+          "title": "Dubrovnik vista desde arriba",
           "caption": "Telhados de piedra, mar y murallas comienzan a aparecer juntos a la llegada a la ciudad croata."
         },
         {
@@ -518,7 +548,7 @@
         "Antes de salir, todavía hubo tiempo para conocer a Dubrovnik con un poco más de energía. En lugar de hacer toda la salida por la carretera, las bicicletas embarcaron en un barco hasta Cavtat. A partir de allí el pedal realmente comenzó.",
         "El camino atravesó el extremo sur de Croacia, cruzó la frontera de Montenegro y terminó dentro de la geografía cerrada de la bahía de Kotor. En Kamenari, otro tramo sobre el agua: el ferry a Lepetane. Después, más bicicleta margeando la bahía hasta Prčanj.",
         "Por la noche, la cena fue en Capasanta Seafood Restaurant. En la salida pensé que había olvidado el cable del reloj y volví solo. El cable estaba en el bolsillo. La vuelta solo tuvo sentido porque las gafas, esos sí, se habían quedado en el restaurante.",
-        "Es también un buen ejemplo de por qué números GPS necesitan contexto: el archivo bruto de Garmin marca 83,4 km, pero barco y ferry entraron en el registro. Para quien quiere repetir la etapa, el número útil es aproximadamente 68 km efectivamente pedaleados."
+        "También es un buen ejemplo de por qué números GPS necesitan contexto: el archivo bruto de Garmin marca 83,4 km, pero barco y ferry entraron en el registro. Para quien quiere repetir la etapa, el número útil es aproximadamente 68 km efectivamente pedaleados."
       ],
       "practical": "Desconte barcos y ferries cuando interpreta un archivo GPS. Y lleve una luz buena: muchos días terminan después de la puesta del sol.",
       "food": "Capasanta Seafood Restaurant. El propietario estaba casado con una brasileña.",
@@ -564,7 +594,7 @@
         {
           "id": "d6f_IMG_6413",
           "title": "Una pausa antes del barco",
-          "caption": "Bebidas, sombra y unos minutos de descanso antes de embarcarse con las bicicletas."
+          "caption": "Bebidas, sombra y algunos minutos de descanso antes de embarcarse con las bicicletas."
         },
         {
           "id": "d6f_IMG_6420",
@@ -624,7 +654,7 @@
         {
           "id": "d6f_IMG_6517",
           "title": "Ferry Kamenari-Lepetane",
-          "caption": "Coches y bicicletas dividen el cubierta en una travesía corta que evita la vuelta completa por la bahía."
+          "caption": "Los coches y bicicletas dividen la cubierta en una travesía corta que evita la vuelta completa por la bahía."
         },
         {
           "id": "d6f_IMG_1146",
@@ -633,7 +663,7 @@
         },
         {
           "id": "d6f_IMG_6550",
-          "title": "Iglesia en Old Town por la noche",
+          "title": "Iglesia en Old Town",
           "caption": "La llegada a Kotor terminó entre piedra, iglesias y calles vacías de la ciudad murada."
         }
       ]
@@ -688,7 +718,7 @@
         },
         {
           "id": "d7f_IMG_6565",
-          "title": "Canhão dentro de la ciudad murada",
+          "title": "Canhão en la ciudad murada",
           "caption": "Las marcas militares aparecen en plena plaza histórica, recordando la larga función defensiva de Kotor."
         },
         {
@@ -719,7 +749,7 @@
         {
           "id": "d7f_IMG_6587",
           "title": "Kotor, la ciudad-maquete",
-          "caption": "Los tejados y construcciones de piedra espremidos entre las murallas y la montaña ayudan a entender la impresión del diario: Old Town parecía una maquete medieval, pero era una ciudad histórica real."
+          "caption": "Los tejados y las construcciones de piedra espremidos entre las murallas y la montaña ayudan a entender la impresión del diario: Old Town parecía una maquete medieval, pero era una ciudad histórica real."
         },
         {
           "id": "d7f_IMG_6589",
@@ -744,7 +774,7 @@
         {
           "id": "d7f_IMG_6629",
           "title": "Selfie en medio del pedal",
-          "caption": "Un registro simple de un día en que no había hotel para alcanzar: la idea era simplemente continuar porque el paisaje valía la pena."
+          "caption": "Un simple registro de un día en que no había hotel para alcanzar: la idea era simplemente continuar porque el paisaje valía la pena."
         },
         {
           "id": "d7f_IMG_6642",
@@ -792,11 +822,11 @@
       "day": 8,
       "route": "Kotor → Ulcinj",
       "hook": "El paso costaba €7. El conductor quería €20 en bicicleta. Y ese fue solo el comienzo.",
-      "summary": "Un autobús ganó la subida de Kotor hasta Cetinje. Dali vinieron cerca de 34 km descendiendo hacia el lago Skadar, un atajo que se convirtió en una ruta cerrada, el tren Virpazar–Bar y más 27 km de bike hasta Ulcinj.",
+      "summary": "Un autobús ganó la subida de Kotor hasta Cetinje. Dali vinieron alrededor de 34 km de camino hacia el lago Skadar, un atajo que se convirtió en una ruta cerrada, el tren Virpazar–Bar y más 27 km de bike hasta Ulcinj.",
       "context": "Cetinje fue la antigua capital real de Montenegro. El lago Skadar es el lago más grande de los Balcanes y se extiende entre Montenegro y Albania.",
       "story": [
-        "Usar transporte formaba parte del diseño del viaje. En la salida de Kotor, el autobús fue usado para comprar tiempo y piernas: el billete hasta Cetinje costaba €7, pero el conductor quería €20 por bicicleta.",
-        "De Cetinje comenzó uno de los tramos más ligeros y divertidos: cerca de 34 km bajando hacia el lago Skadar, por carreteras rurales con manzanas y amoras por el camino. Hasta un nuevo “atajo” girar un sendero cerrado y obligar una vuelta.",
+        "Usar transporte formaba parte del diseño del viaje. En la salida de Kotor, el autobús fue utilizado para comprar tiempo y piernas: el billete hasta Cetinje costaba €7, pero el conductor quería €20 por bicicleta.",
+        "De Cetinje comenzó uno de los tramos más ligeros y divertidos: cerca de 34 km bajando hacia el lago Skadar, por carreteras rurales con manzanas y amoras por el camino. Incluso un nuevo “atajo” gira cerrada y obligará una vuelta.",
         "En Virpazar, el tren a Bar fue simple: las bikes entraron enteras y sin costo extra. El único problema fue bajar una estación antes. El propio personal del tren nos puso de vuelta.",
         "De Bar todavía faltaban cerca de 27 km hasta Ulcinj. La etapa terminó en el Hotel Continental y en el Lungo Mare."
       ],
@@ -809,7 +839,7 @@
         ],
         [
           "Descida al lago Skadar",
-          "Alrededor de 34 km por carreteras rurales, con manzanas y amoras en el camino y una sensación muy diferente de la costa."
+          "Cerca de 34 km por carreteras rurales, con manzanas y amoras en el camino y una sensación muy diferente de la costa."
         ],
         [
           "Virpazar → Bar de tren",
@@ -817,7 +847,7 @@
         ],
         [
           "Ulcinj",
-          "La llegada llegó ya por la noche, cerrando un día que mezcló bus, pedal, ruta equivocada y tren."
+          "La llegada llegó ya por la noche, cerrando un día que mezcló bus, pedal, sendero equivocado y tren."
         ]
       ],
       "photos": [
@@ -839,7 +869,7 @@
         {
           "id": "d8f_IMG_6843",
           "title": "El acceso rápido deja de ser carretera",
-          "caption": "La ruta corta en el mapa se convirtió en un camino de piedras poco adecuado para bicicleta cargada."
+          "caption": "La ruta corta en el mapa se ha convertido en un camino de piedras poco adecuado para bicicleta cargada."
         },
         {
           "id": "d8f_IMG_6847",
@@ -897,7 +927,7 @@
       "day": 9,
       "route": "Ulcinj → Shkodër",
       "hook": "46 km, lluvia fuerte, una frontera en la que la bicicleta fue más rápida que los coches y la llegada a la ciudad más ciclista de Albania.",
-      "summary": "La lluvia apretó en el camino y yo y Léo nos abrigamos en una estructura abandonada. En la frontera Sukobin-Muriqan, las bicicletas pasaron rápidamente mientras los coches formaban fila. En Shkodër, el fin del día fue dedicado a resolver la logística del Lago Koman.",
+      "summary": "La lluvia apretó en el camino y yo y Léo nos abrigamos en una estructura abandonada. En la frontera Sukobin-Muriqan, las bicicletas pasaron rápidamente mientras los autos formaban fila. En Shkodër, el fin del día fue dedicado a resolver la logística del Lago Koman.",
       "context": "Shkodër es una de las ciudades históricas más importantes del norte de Albania y también una de las más asociadas al uso cotidiano de la bicicleta.",
       "story": [
         "Salimos de Ulcinj hacia Albania con lluvia. Cuando apretó de verdad, yo y Léo encontramos una estructura abandonada al borde de la carretera y esperamos allí.",
@@ -929,7 +959,7 @@
         {
           "id": "d9f_IMG_6947",
           "title": "Mañana en la playa de Ulcinj",
-          "caption": "Antes de seguir a Albania, el día comenzó con el Adriático y la antigua ciudad al fondo."
+          "caption": "Antes de seguir a Albania, el día comenzó con el Adriático y la ciudad antigua al fondo."
         },
         {
           "id": "d9f_IMG_6949",
@@ -943,7 +973,7 @@
         },
         {
           "id": "d9f_IMG_6962",
-          "title": "Asfalto mojado entre montañas",
+          "title": "Asfalto mojado entre las montañas",
           "caption": "El sur de Montenegro alternou curvas y paredones bajo tiempo inestable."
         },
         {
@@ -1008,10 +1038,10 @@
       "route": "Shkodër → Prizren",
       "hook": "Autobús, ferry por el lago Koman, Alpes Albaneses, Kosovo y dos pedales el mismo día.",
       "summary": "El autobús salió del Hotel Rozafa con las bicicletas dentro y llevó a Koman. El ferry fue uno de los grandes aciertos del viaje. Luego vinieron Fierzë, Bajram Curri, un autobús para Kosovo, Gjakovë y más 35 km de bike hasta Prizren.",
-      "context": "Prizren tiene fuerte herencia otomana e importancia central para la historia albanesa: allí surgió la Liga de Prizren, en 1878.",
+      "context": "Prizren tiene una fuerte herencia otomana e importancia central para la historia albanesa: allí surgió la Liga de Prizren, en 1878.",
       "story": [
         "El Día 10 comenzó con la parte menos romántica de un paisaje espectacular: poner cuatro bicicletas dentro de un autobús y llegar a Koman en el horario.",
-        "El ferry por el lago Koman se convirtió en uno de los grandes momentos del viaje. Paredones, agua estrecha entre montañas y la sensación de estar muy lejos de un guión obvio. En Fierzë, las bikes volvieron al asfalto hasta Bajram Curri.",
+        "El ferry por el lago Koman se convirtió en uno de los grandes momentos del viaje. Paredones, agua estrecha entre las montañas y la sensación de estar muy lejos de un guión obvio. En Fierzë, las bikes volvieron al asfalto hasta Bajram Curri.",
         "Creemos que el autobús saldrá sin nosotros. Cuando llegamos, descubrimos que todavía faltaba casi una hora. La espera se convirtió en isotónico y cerveza bajo un árbol. Después el autobús cruzó a Kosovo.",
         "Descemos en Gjakovë y todavía faltaban cerca de 35 km hasta Prizren. La entrada en la ciudad de bicicleta fue de aquellas que justifican combinar transporte con pedal: el autobús compró tiempo para que la parte final todavía pasara sobre dos ruedas.",
         "Por la noche, todo el mundo recomendó Beska. Fue un buen recuerdo de que unanimidad local también puede equivocarse: comida y servicio quedaron entre las concepciones del viaje."
@@ -1050,7 +1080,7 @@
         {
           "id": "d10f_IMG_7062",
           "title": "Primero encuentro con el depósito",
-          "caption": "El agua empieza a aparecer entre las montañas antes de la llegada al terminal del ferry."
+          "caption": "El agua comienza a aparecer entre las montañas antes de la llegada al terminal del ferry."
         },
         {
           "id": "d10f_IMG_7081",
@@ -1165,7 +1195,7 @@
         "Cerca de Matka, yo y Guillermo nos separamos de los otros dos para hacer la desviación. Un camino que parecía área militar o restringida obligó a volver. Poco después, su bagageiro comenzó a soltarse.",
         "Una pequeña ferraje resolvió el problema de una forma que se volvió memoria del viaje: el hombre nos dio tornillos y se negó a cobrar. Matka apareció ya al final de la luz, demasiado tarde para merecer la visita que el lugar pedía.",
         "En la salida, mi neumático comenzó a perder aire lento. La solución fue pragmática: llenar, pedalear, llenar de nuevo y continuar hasta Skopje.",
-        "Por la noche vino el contraste: el centro monumental parece antiguo, pero gran parte es fruto del proyecto Skopje 2014. El mejor resultado fue el Old City House, donde apareció el mejor carnero del viaje."
+        "La noche vino el contraste: el centro monumental parece antiguo, pero gran parte es fruto del proyecto Skopje 2014. El mejor resultado fue el Old City House, donde apareció el mejor carnero del viaje."
       ],
       "practical": "Matka merece medio período, no media hora. Llévese tornillos o abrazaderas extras para equipaje y mantenga la bomba accesible si el neumático comienza a perder aire.",
       "food": "Old City House: el mejor carnero del viaje.",
@@ -1184,7 +1214,7 @@
         ],
         [
           "Skopje",
-          "La primera impresión fue monumental. Solo después quedó claro que buena parte de la apariencia “antiga” del centro venía del proyecto Skopje 2014."
+          "La primera impresión fue monumental. Solo después quedó claro que buena parte de la apariencia “antigua” del centro venía del proyecto Skopje 2014."
         ]
       ],
       "photos": [
@@ -1201,7 +1231,7 @@
         {
           "id": "d11f_IMG_7295",
           "title": "Río y centro histórico de Prizren",
-          "caption": "Últimas imágenes de la ciudad antes de dejar a Kosovo hacia Macedonia del Norte."
+          "caption": "Últimas imágenes de la ciudad antes de dejar Kosovo hacia Macedonia del Norte."
         },
         {
           "id": "d11f_IMG_7298",
@@ -1215,7 +1245,7 @@
         },
         {
           "id": "d11f_IMG_7329",
-          "title": "Panel vista de conexión",
+          "title": "Paisaje vista de conexión",
           "caption": "El desplazamiento hasta Shtime corta áreas abiertas antes de que el pedal comience de verdad."
         },
         {
@@ -1255,7 +1285,7 @@
         },
         {
           "id": "d11f_IMG_7411",
-          "title": "Guerrero a Caballo",
+          "title": "Guerrero a Cavalo",
           "caption": "La gran estatua en la Plaza Macedonia es una de las piezas centrales del proyecto Skopje 2014."
         },
         {
@@ -1278,13 +1308,13 @@
     {
       "day": 12,
       "route": "Skopje → Ohrid",
-      "hook": "Tres bicicletarias, un intento fallido de autobús a las 11h, un último cacero y la llegada a una de las ciudades más bonitas del viaje.",
+      "hook": "Tres bicicletarias, un intento fallido de autobús a las 11.h, un último cajón y la llegada a una de las ciudades más hermosas del viaje.",
       "summary": "La misión de la mañana era encontrar una maleta o caja para despachar las bikes. Tres tiendas y nada. El autobús de las 11h lotó; las opciones siguientes eran vans que no cabían cuatro bicicletas. Un autobús más grande resolvió la tarde y Ohrid aún apareció con luz.",
       "context": "Ohrid fue uno de los grandes centros religiosos y culturales del mundo eslavo medieval. La tradición de las “365 iglesias” explica el apodo de Jerusalén de los Balcanes.",
       "story": [
-        "La mañana en Skopje tenía una misión concreta: encontrar una solución para despachar la bicicleta al vuelo de vuelta. Tres bicicletarias después, todavía no había mala ni caja.",
+        "La mañana en Skopje tenía una misión concreta: encontrar una solución para enviar la bicicleta al vuelo de vuelta. Tres bicicletarias después, todavía no había mala ni caja.",
         "El autobús de las 11h a Ohrid ya estaba lleno. Las alternativas siguientes eran vans — y cuatro bicicletas cambiaban completamente la ecuación. Logramos garantizar un autobús mayor para más tarde.",
-        "Léo se quedó en la carretera para una reunión de trabajo. Giggio aprovechamos la espera para volver al Old City House y repetir el carnero que acababa la noche anterior. También pedaleamos por el centro, pasando por la casa maestra de Madre Teresa y por la nueva Iglesia de San Constantino y Santa Helena.",
+        "Léo se quedó en la carretera para una reunión de trabajo. Giggio aprovechamos la espera para volver al Old City House y repetir el carnero que acababa la noche anterior. Todavía pedaleamos por el centro, pasando por la casa maestra de Madre Teresa y por la nueva Iglesia de San Constantino y Santa Helena.",
         "El autobús llegó a Ohrid antes del final de la luz. Santa Sofía, la orla y el lago hicieron entrar inmediatamente entre las más bonitas del viaje. La cena terminó en Vkusno."
       ],
       "practical": "Van casi nunca es buena noticia con cuatro bikes. Si necesita bike bag o box para el vuelo, resuelva antes del último día.",
@@ -1292,7 +1322,7 @@
       "stops": [
         [
           "Skopje de bike",
-          "La búsqueda de una maleta para la bicicleta terminó con un paseo urbano por tres bicicletarias y por el monumental centro."
+          "La búsqueda de una maleta para la bicicleta se ha convertido en un paseo urbano por tres bicicletarias y el monumental centro."
         ],
         [
           "Mother Teresa Memorial House",
@@ -1304,49 +1334,114 @@
         ],
         [
           "Ohrid",
-          "La llegada aún con luz reveló inmediatamente por qué la ciudad sería una de las favoritas: lago, iglesias y un centro histórico que desciende hasta el agua."
+          "La llegada todavía con luz reveló inmediatamente por qué la ciudad sería una de las favoritas: lago, iglesias y un centro histórico que desciende hasta el agua."
         ]
       ],
       "photos": [
         {
-          "id": "d12_1",
-          "title": "Skopje por la mañana",
-          "caption": "El monumental centro visto antes de seguir a Ohrid."
+          "id": "d12c_7441",
+          "title": "Mañana en Skopje",
+          "caption": "El día 12 comenzó en Skopje, con la misión práctica de descubrir cómo seguir el viaje llevando cuatro bicicletas."
         },
         {
-          "id": "d12_2",
-          "title": "Iglesia en Skopje",
-          "caption": "Una de las paradas del pedal urbano de la mañana."
+          "id": "d12c_7443",
+          "title": "Skopje antes de la carretera",
+          "caption": "Antes del autobús a Ohrid, todavía hubo tiempo para circular por la ciudad y resolver la logística de las bikes."
         },
         {
-          "id": "d12_3",
+          "id": "d12c_7448",
+          "title": "Buscando una solución para bicicletas",
+          "caption": "Fueron tres bicicletarias detrás de bolsa o caja para el vuelo final, y ninguna resolvió en ese momento."
+        },
+        {
+          "id": "d12c_7449",
+          "title": "Últimas vueltas por Skopje",
+          "caption": "La mañana mezcló desplazamiento, intento de resolver equipos y un poco más de ciudad antes de la carretera."
+        },
+        {
+          "id": "d12c_7456",
+          "title": "Skopje en bicicleta",
+          "caption": "Incluso en un día con autobús, la bicicleta continuó siendo el hilo conductor para conocer los lugares y conectar los tramos."
+        },
+        {
+          "id": "d12c_7461",
+          "title": "Memorial de Madre Teresa",
+          "caption": "Skopje es la ciudad natal de Madre Teresa. El monumento entró en el guión mientras el grupo todavía rodaba por el centro."
+        },
+        {
+          "id": "d12c_7463",
+          "title": "Centro de Skopje",
+          "caption": "Una escena del último giro por la capital de Macedonia del Norte antes de seguir a Ohrid."
+        },
+        {
+          "id": "d12c_7466",
+          "title": "Esperando por el autobús",
+          "caption": "El autobús de las 11h estaba lleno. Las siguientes opciones eran vans, y cuatro bicicletas simplemente no cabían."
+        },
+        {
+          "id": "d12c_7468",
+          "title": "Cuatro bikes cambian cualquier logística",
+          "caption": "Viajar en grupo significaba que no bastaba existir transporte: era necesario haber espacio real para cuatro bicicletas."
+        },
+        {
+          "id": "d12c_7470",
+          "title": "Catedral de San Clemente de Ohrid",
+          "caption": "En Skopje, la catedral ortodoxa destaca la arquitectura moderna y la torre sineira separada del cuerpo principal de la iglesia."
+        },
+        {
+          "id": "d12c_7498",
           "title": "Llegada a Ohrid",
-          "caption": "La ciudad empieza a aparecer con el lago al fondo."
+          "caption": "El cambio de escenario es inmediato: después de la capital, el lago Ohrid comienza a dominar el paisaje."
         },
         {
-          "id": "d12_4",
-          "title": "Ohrid",
-          "caption": "Calles de piedra y lago antes de oscurecer."
+          "id": "d12c_7499",
+          "title": "Primeros minutos en Ohrid",
+          "caption": "El grupo llegó con suficiente luz para aprovechar la orla antes de anochecer."
         },
         {
-          "id": "d12_5",
-          "title": "Lago Ohrid al atardecer",
-          "caption": "El fin del Día 12."
+          "id": "d12c_7505",
+          "title": "Lago Ohrid",
+          "caption": "Uno de los lagos más antiguos y profundos de Europa se convirtió en el fondo del fin del Día 12."
+        },
+        {
+          "id": "d12c_7510",
+          "title": "Ohrid al final de la tarde",
+          "caption": "La ciudad histórica y el agua ocupan prácticamente el mismo paisaje: uno de los motivos de Ohrid es tan notable."
+        },
+        {
+          "id": "d12c_7520",
+          "title": "Santa Sofía y la ciudad antigua",
+          "caption": "La iglesia de Santa Sofía es uno de los grandes hitos medievales de Ohrid y entró en la caminata del fin del día."
+        },
+        {
+          "id": "d12c_7526",
+          "title": "La orla de Ohrid",
+          "caption": "Después de autobús, espera y logística, el fin de la tarde finalmente volvió a tener ritmo de viaje."
+        },
+        {
+          "id": "d12c_d98",
+          "title": "Las bicicletas delante del lago Ohrid",
+          "caption": "Las cuatro bikes reunidas delante del lago: una imagen que resume bien un día en que el transporte colectivo fue sólo una herramienta para continuar el viaje."
+        },
+        {
+          "id": "d12c_7536",
+          "title": "Fin del día 12 en Ohrid",
+          "caption": "La noche terminó en Ohrid; la cena fue en el Vkusno, antes de que el pedal vuelva a ganar protagonismo al día siguiente."
         }
       ]
     },
     {
       "day": 13,
       "route": "Ohrid → Prrenjas",
-      "hook": "Un santo cuyo “coración” juro que oí, pato defumado, vino y una van que nos obligó a volver a la bicicleta.",
+      "hook": "Un santo cuyo “coración” yo juro que oí, pato defumado, vino y una van que nos obligó a volver a la bicicleta.",
       "summary": "Burek y croissant de pistache abrieron el día. El margen del lago Ohrid llevó a Sveti Naum, Sveta Petka y a la frontera albanesa. En Pogradec, pato defumado y vino. Después de casi dos horas de espera, van no llevó las bikes, entonces el día volvió a ser pedal.",
-      "context": "Parte del agua del Lago Prespa atraviesa subterraneamente la montaña de Galičica y reaparece en los nacimientos de Sveti Naum. Prrenjas se encuentra en un corredor usado desde la antigua Vía Egnatia.",
+      "context": "Parte del agua del Lago Prespa atraviesa subterraneamente la montaña de Galičica y reaparece en las nacientes de Sveti Naum. Prrenjas se encuentra en un corredor usado desde la antigua Vía Egnatia.",
       "story": [
         "El día 13 comenzó en Wake & Bake con burek de carne y croissant de pistache. La salida de Ohrid fue leve, acompañando a uno de los lagos más antiguos de Europa.",
         "Léo y Guillermo pasaron directo por Sveti Naum sin darse cuenta de que el monasterio estaba allí. Yo entrei; Giggio, que venía atrás, entró también. En la tumba de San Naum existe la tradición de acostar al oído y escuchar golpes. Oí.",
         "Poco después, Sveta Petka mostró otra imagen difícil de olvidar: agua cristalina corriendo por dentro de la pequeña capilla. La frontera Sveti Naum–Tushemisht puso el viaje nuevamente en Albania.",
         "En Pogradec, la parada en Rosa y Tymosur fue larga: pato defumado — una de las comidas favoritas de Guillermo — y vino. En la carretera, casi dos horas esperando una van terminaron en una respuesta simple: las bicicletas no cabían.",
-        "El resultado fue volver al selim. Más subida, más kilómetros y puesta del sol en el camino hasta Prrenjas, donde el alojamiento tuvo que resolverse en el lugar."
+        "El resultado fue volver al selim. Más ascenso, más kilómetros y la puesta del sol en el camino hacia Prrenjas, donde el alojamiento tuvo que resolverse en el lugar."
       ],
       "practical": "Sólo considere el autobús resuelto después de que la bike esté dentro. Sveti Naum merece una parada real, no solo una foto rápida.",
       "food": "Wake & Bake: burek de carne + croissant de pistache. En Pogradec, Rosa y Tymosur: pato defumado y vino.",
@@ -1357,7 +1452,7 @@
         ],
         [
           "Monasterio de Sveti Naum",
-          "En la tumba del santo existe la tradición de encostar el oído y escuchar golpes. En la experiencia de Diogo, él escuchó."
+          "En la tumba del santo existe la tradición de acostar al oído y escuchar golpes. En la experiencia de Diogo, él escuchó."
         ],
         [
           "Sveta Petka",
@@ -1377,7 +1472,7 @@
         {
           "id": "d13_2",
           "title": "Lagadin",
-          "caption": "El lago acompaña buena parte del comienzo del día."
+          "caption": "El lago acompaña buena parte del inicio del día."
         },
         {
           "id": "d13_3",
@@ -1415,7 +1510,7 @@
       "story": [
         "El último gran pedal siguió el valle del Shkumbin hasta Elbasan. Era el Día 14 y el viaje todavía podía crear un problema nuevo: cuatro bicicletas y un autobús que solo aceptaba dos.",
         "Yo y Léo conseguimos el primero. Giggio y Guillermo tuvieron que esperar lo siguiente. En Tirana, fui directo a Absolute Bike & Rent, con quien ya había hablado antes, y conseguí tres cajas de cartón. Léo había llevado la propia maleta de bike.",
-        "El almuerzo en Capital Restaurant Piceri sucedió mientras el alojamiento estaba reservado. Luego compré un Adidas Adizero Evo SL para la maratón, Guillermo compró jamón y vino y hicimos la última cena juntos.",
+        "El almuerzo en Capital Restaurant Piceri ocurrió mientras el alojamiento estaba reservado. Luego compré un Adidas Adizero Evo SL para la maratón, Guillermo compró jamón y vino y hicimos la última cena juntos.",
         "Yo era el único que volaría en aquella madrugada. En el punto del aeropuerto, el “ônibus” prometido apareció como una van. La bicicleta fue desmontada, se remonta al estacionamiento del aeropuerto y se desmonta de nuevo en la terminal para finalmente ser despachada.",
         "Fue un final coherente con los 14 días: la bicicleta era el hilo del viaje; improvisar el transporte era parte del guion."
       ],

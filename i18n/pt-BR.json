@@ -35,29 +35,59 @@
       ],
       "photos": [
         {
-          "id": "d1_1",
+          "id": "d1c_5739",
+          "title": "Belgrado antes das bicicletas",
+          "caption": "A viagem começa na capital sérvia, ainda sem bicicleta. As primeiras horas foram para sentir a cidade antes de seguir para Sarajevo."
+        },
+        {
+          "id": "d1c_5746",
+          "title": "Templo de São Sava",
+          "caption": "Uma das primeiras grandes paradas em Belgrado. O enorme templo ortodoxo domina o horizonte e ajuda a apresentar a identidade sérvia logo no início da viagem."
+        },
+        {
+          "id": "d1c_5747",
+          "title": "Por dentro de São Sava",
+          "caption": "O interior monumental contrasta com a fachada clara. Mosaicos dourados cobrem a cúpula e transformam a visita em uma das imagens mais fortes de Belgrado."
+        },
+        {
+          "id": "d1c_5764",
           "title": "Kalemegdan",
-          "caption": "Belgrado antes da bicicleta entrar na história."
+          "caption": "A fortaleza ocupa a posição estratégica onde os rios Sava e Danúbio se encontram. É um dos melhores lugares para entender por que Belgrado foi disputada tantas vezes."
         },
         {
-          "id": "d1_2",
+          "id": "d1c_5766",
+          "title": "Pobednik e a fortaleza",
+          "caption": "O Monumento ao Vencedor, em Kalemegdan, virou um dos símbolos de Belgrado. Dali, a cidade se abre sobre os dois rios."
+        },
+        {
+          "id": "d1c_5779",
           "title": "Igreja Ružica",
-          "caption": "Uma igreja pequena dentro da fortaleza — e uma das imagens mais inesperadas do dia."
+          "caption": "Escondida dentro de Kalemegdan, a pequena igreja ortodoxa contrasta com a escala da fortaleza e guarda um dos detalhes mais curiosos do dia."
         },
         {
-          "id": "d1_3",
-          "title": "Ružica por dentro",
-          "caption": "Os lustres feitos com material militar."
+          "id": "d1c_5785",
+          "title": "Ružica entre as muralhas",
+          "caption": "Outra visão da igreja dentro da fortaleza. O entorno deixa claro como patrimônio religioso e memória militar convivem no mesmo espaço."
         },
         {
-          "id": "d1_4",
-          "title": "Detalhe dos lustres",
-          "caption": "Cartuchos e peças militares transformados em ornamentação."
+          "id": "d1c_5792",
+          "title": "Os lustres feitos com material militar",
+          "caption": "Dentro da Ružica, lustres incorporam cartuchos, baionetas e outras peças militares. É um detalhe incomum que resume parte da história de guerras da região."
         },
         {
-          "id": "d1_5",
-          "title": "Fim do primeiro dia",
-          "caption": "Já em Sarajevo, antes do primeiro pedal da manhã seguinte."
+          "id": "d1c_9f4e",
+          "title": "A bicicleta entra na história",
+          "caption": "Já em Sarajevo, chegou a hora de escolher as bikes que sustentariam o restante da viagem. Até aqui, o roteiro ainda tinha acontecido sem pedal."
+        },
+        {
+          "id": "d1c_5848",
+          "title": "Escolhendo as bicicletas em Sarajevo",
+          "caption": "Na loja, a viagem ganhou finalmente suas bicicletas. Diogo comprou uma Trek Marlin 5 no Trek Bike Centar e Giggio uma Specialized na M-Bike."
+        },
+        {
+          "id": "d1c_5860",
+          "title": "Primeira noite em Sarajevo",
+          "caption": "O dia terminou com comida bósnia e as bicicletas resolvidas. O primeiro pedal de verdade por Sarajevo ficaria para a manhã seguinte."
         }
       ]
     },
@@ -1309,29 +1339,94 @@
       ],
       "photos": [
         {
-          "id": "d12_1",
-          "title": "Skopje pela manhã",
-          "caption": "O centro monumental visto antes de seguir para Ohrid."
+          "id": "d12c_7441",
+          "title": "Manhã em Skopje",
+          "caption": "O Dia 12 começou ainda em Skopje, com a missão prática de descobrir como seguir viagem levando quatro bicicletas."
         },
         {
-          "id": "d12_2",
-          "title": "Igreja em Skopje",
-          "caption": "Uma das paradas do pedal urbano da manhã."
+          "id": "d12c_7443",
+          "title": "Skopje antes da estrada",
+          "caption": "Antes do ônibus para Ohrid, ainda houve tempo para circular pela cidade e resolver a logística das bikes."
         },
         {
-          "id": "d12_3",
+          "id": "d12c_7448",
+          "title": "À procura de uma solução para as bicicletas",
+          "caption": "Foram três bicicletarias atrás de bolsa ou caixa para o voo final — e nenhuma resolveu naquele momento."
+        },
+        {
+          "id": "d12c_7449",
+          "title": "Últimas voltas por Skopje",
+          "caption": "A manhã misturou deslocamento, tentativa de resolver equipamento e um pouco mais de cidade antes da rodoviária."
+        },
+        {
+          "id": "d12c_7456",
+          "title": "Skopje de bicicleta",
+          "caption": "Mesmo num dia com ônibus, a bicicleta continuou sendo o fio condutor para conhecer os lugares e conectar os trechos."
+        },
+        {
+          "id": "d12c_7461",
+          "title": "Memorial de Madre Teresa",
+          "caption": "Skopje é a cidade natal de Madre Teresa. O memorial entrou no roteiro enquanto o grupo ainda rodava pelo centro."
+        },
+        {
+          "id": "d12c_7463",
+          "title": "Centro de Skopje",
+          "caption": "Mais uma cena do último giro pela capital da Macedônia do Norte antes de seguir para Ohrid."
+        },
+        {
+          "id": "d12c_7466",
+          "title": "A espera pelo ônibus",
+          "caption": "O ônibus das 11h estava cheio. As opções seguintes eram vans — e quatro bicicletas simplesmente não cabiam."
+        },
+        {
+          "id": "d12c_7468",
+          "title": "Quatro bikes mudam qualquer logística",
+          "caption": "Viajar em grupo significava que não bastava existir transporte: era preciso haver espaço real para quatro bicicletas."
+        },
+        {
+          "id": "d12c_7470",
+          "title": "Catedral de São Clemente de Ohrid",
+          "caption": "Em Skopje, a catedral ortodoxa chama atenção pela arquitetura moderna e pela torre sineira separada do corpo principal da igreja."
+        },
+        {
+          "id": "d12c_7498",
           "title": "Chegada a Ohrid",
-          "caption": "A cidade começa a aparecer com o lago ao fundo."
+          "caption": "A mudança de cenário é imediata: depois da capital, o Lago Ohrid começa a dominar a paisagem."
         },
         {
-          "id": "d12_4",
-          "title": "Ohrid",
-          "caption": "Ruas de pedra e lago antes de escurecer."
+          "id": "d12c_7499",
+          "title": "Primeiros minutos em Ohrid",
+          "caption": "O grupo chegou ainda com luz suficiente para aproveitar a orla antes de anoitecer."
         },
         {
-          "id": "d12_5",
-          "title": "Lago Ohrid ao entardecer",
-          "caption": "O fim do Dia 12."
+          "id": "d12c_7505",
+          "title": "Lago Ohrid",
+          "caption": "Um dos lagos mais antigos e profundos da Europa virou o pano de fundo do fim do Dia 12."
+        },
+        {
+          "id": "d12c_7510",
+          "title": "Ohrid no fim da tarde",
+          "caption": "A cidade histórica e a água ocupam praticamente a mesma paisagem — um dos motivos de Ohrid ser tão marcante."
+        },
+        {
+          "id": "d12c_7520",
+          "title": "Santa Sofia e a cidade antiga",
+          "caption": "A igreja de Santa Sofia é um dos grandes marcos medievais de Ohrid e entrou na caminhada do fim do dia."
+        },
+        {
+          "id": "d12c_7526",
+          "title": "A orla de Ohrid",
+          "caption": "Depois de ônibus, espera e logística, o fim da tarde finalmente voltou a ter ritmo de viagem."
+        },
+        {
+          "id": "d12c_d98",
+          "title": "As bicicletas diante do Lago Ohrid",
+          "caption": "As quatro bikes reunidas diante do lago: uma imagem que resume bem um dia em que o transporte coletivo foi só uma ferramenta para continuar a viagem."
+        },
+        {
+          "id": "d12c_7536",
+          "title": "Fim do Dia 12 em Ohrid",
+          "caption": "A noite terminou em Ohrid; o jantar foi no Vkusno, antes de o pedal voltar a ganhar protagonismo no dia seguinte."
         }
       ]
     },
