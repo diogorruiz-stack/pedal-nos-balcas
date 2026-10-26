@@ -23,11 +23,13 @@ const days=evalVar(legacy,'days'),enhance=evalVar(html,'ENHANCE');
 const context={window:{PHOTO_DATA:{},COMPLETE_DAY_PHOTOS:{}},console};
 vm.createContext(context);
 vm.runInContext(photoJS+'\n'+fixedJS,context,{timeout:15000});
+const curated1=evalVar(html,'CURATED_DAY1_PHOTOS');
+const curated12=evalVar(html,'CURATED_DAY12_PHOTOS');
 const catalog=[];
 for(const day of days){
  const e=enhance[day.d]||{};
- const captionRows=context.window.COMPLETE_DAY_PHOTOS[day.d]||day.photos||[];
- const photos=captionRows.map(p=>({id:p[0],title:p[1]||'',caption:p[2]||''}));
+ const captionRows=(day.d===1?curated1:day.d===12?curated12:context.window.COMPLETE_DAY_PHOTOS[day.d]||day.photos||[]);
+ const photos=captionRows.map(p=>({id:p[0],title:e.photoCaptions?.[p[0]]?.[0]||p[1]||'',caption:e.photoCaptions?.[p[0]]?.[1]||p[2]||''}));
  catalog.push({day:day.d,route:day.route||'',hook:e.hook||day.hook||'',summary:e.summary||day.summary||'',context:e.context||day.context||'',story:e.story||day.story||[],practical:e.practical||day.practical||'',food:e.food||day.food||'',stops:e.stops||day.stops||[],photos});
 }
 if(catalog.length!==14)throw Error('Expected 14 days; got '+catalog.length);
