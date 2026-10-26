@@ -56,9 +56,34 @@
   const input=document.querySelector('#chatInput');if(input)input.placeholder=t.chatPlaceholder;
   document.querySelectorAll('.feature-day-label').forEach(node=>{if(node.textContent!==ui[code].day)node.textContent=ui[code].day});
  }
+ const mapNotes={
+  pt:{
+   track:'O traçado pedalado está em laranja forte com halo claro. As bicicletas ajudam a diferenciar o pedal das conexões por outros transportes.',
+   six:'O Garmin registrou 83,4 km brutos, mas a distância pedalada curada é ≈68 km: barco e ferry entraram no arquivo.',
+   other:'Neste dia não há um track de pedal relevante no arquivo disponível; o mapa mostra apenas a conexão editorial da etapa.'
+  },
+  en:{
+   track:'The cycling route is shown in bright orange with a light outline. Bicycle markers distinguish riding segments from connections using other forms of transport.',
+   six:'Garmin recorded 83.4 km in total, but the verified cycling distance is approximately 68 km: boat and ferry segments were also included in the activity file.',
+   other:'There is no significant recorded cycling track for this day; the map shows only the editorial connection between stops.'
+  },
+  es:{
+   track:'El recorrido en bicicleta aparece en naranja intenso con un contorno claro. Los iconos de bicicleta permiten distinguir los tramos pedaleados de las conexiones en otros medios de transporte.',
+   six:'Garmin registró 83,4 km en total, pero la distancia verificada en bicicleta es de unos 68 km: el archivo también incluía trayectos en barco y ferry.',
+   other:'Este día no tiene un recorrido en bicicleta relevante registrado; el mapa muestra únicamente la conexión indicativa de la etapa.'
+  }
+ };
+ function applyMapNote(code){
+  const node=document.getElementById('mapNote');if(!node)return;
+  const d=typeof activeDay==='number'?activeDay:1;
+  const kind=typeof tracks!=='undefined'&&Array.isArray(tracks)&&tracks.some(t=>t.day===d)?(d===6?'six':'track'):'other';
+  const value=(mapNotes[code]||mapNotes.pt)[kind];
+  if(node.textContent!==value)node.textContent=value;
+ }
  function applyFixed(code){
   const t=ui[code]||ui.pt;
   applyStatic(code);
+  applyMapNote(code);
   const set=(selector,value)=>{const e=document.querySelector(selector);if(e&&e.textContent!==value)e.textContent=value};
   set('.photo-rail-wrap .section-kicker',t.archive);
   set('.photo-rail-wrap h3',t.gallery);
@@ -116,4 +141,5 @@
  apply(selected);localize(selected);
  const observer=new MutationObserver(()=>{if(loadedLanguage!=='pt')applyFixed(loadedLanguage)});
  const region=document.querySelector('.photo-rail-wrap');if(region)observer.observe(region,{childList:true,subtree:true});
+ const mapNote=document.getElementById('mapNote');if(mapNote)observer.observe(mapNote,{childList:true,characterData:true,subtree:true});
 })();
