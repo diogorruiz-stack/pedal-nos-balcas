@@ -58,8 +58,6 @@ window.COMPLETE_DAY_PHOTOS[3]=[
   ["d3f_IMG_6155","Tekija de Blagaj","A casa dervixe construída junto à nascente do Buna é uma das imagens mais reconhecíveis da região de Mostar."],
   ["d3f_IMG_6161","Bikes à beira d’água","Uma pausa sob as árvores antes de a etapa se transformar numa sequência de furos e improvisos."],
   ["d3f_IMG_6173","Um raro momento de calma","Água e sombra ainda davam ao dia uma aparência tranquila antes dos problemas mecânicos dominarem a rota."],
-  ["d3f_CA725CFE-325E-4579-A757-5EF2BD49046A","Mais um reparo no pneu","Mãos na roda e pneu desmontado: os furos foram o problema central do Dia 3 e consumiram boa parte do tempo da etapa."],
-  ["d3f_photo_0ae5e0","Pôr do sol com a bike carregada","A bicicleta pronta para viagem diante do sol baixo, num dia em que a luz acabou antes dos problemas."],
   ["d3f_IMG_6208","Quando a bicicleta precisou de carro","Uma das bikes aparece acomodada dentro de um carro — registro direto do resgate improvisado que entrou na história daquele dia."],
   ["d3f_IMG_6209","Depois de horas de perrengue","No fim da etapa, o corpo no chão ao lado das bicicletas resume melhor o desgaste do que qualquer número de quilômetros."],
   ["d3f_IMG_6211","Jantar depois do caos","A recompensa no fim do dia: comida, mesa e o alívio de finalmente ter chegado a Ravno."]
